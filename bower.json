@@ -1,0 +1,23 @@
+/**
+* Created with devFestSite-2014.
+* User: jefBinomed
+* Date: 2014-03-19
+* Time: 08:51 PM
+* To change this template use Tools | Templates.
+*/
+{
+  "name": "DevFestNanteSite2014",
+  "version": "1.0.0",
+  "dependencies": {
+    "jquery": "latest",
+    "fastclick": "latest",
+    "hammerjs":"latest",
+    "jquery-hammerjs":"latest",
+    "prefix-free": "gh-pages",
+    "angular": "1.2.9",
+    "angular-route": "1.2.9",
+    "angular-animate": "1.2.9",
+    "bootstrap":"3.0.2",
+    "font-awesome":"4.0.3"
+  }
+}

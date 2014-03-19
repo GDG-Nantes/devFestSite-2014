@@ -1,0 +1,37 @@
+/**
+* Created with devFestSite-2014.
+* User: jefBinomed
+* Date: 2014-03-19
+* Time: 08:52 PM
+* To change this template use Tools | Templates.
+*/
+{
+  "author": "GDGNantes",
+  "name": "DevFestNanteSite2014",
+  "version": "1.0.0",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/GDG-Nantes/devFestSite-2014"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-debug": "~0.0.3",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.2",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-usemin": "~2.0.2",
+    "grunt-contrib-csslint": "~0.1.2",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-karma": "~0.4.4",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-compass": "0.7.0",
+    "grunt-browser-sync": "~0.4.1",
+    "load-grunt-tasks": "~0.2.0",
+    "node-static": "~0.7.2",
+    "connect": "~2.8.4",
+    "http-proxy": "https://github.com/jayv/node-http-proxy/tarball/master"
+  }
+}

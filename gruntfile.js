@@ -23,31 +23,29 @@ module.exports = function (grunt) {
     **/
     src: {
       html: {
-        dir: 'src/main/html',
-        index: 'src/main/html/index.html',
-        all : 'src/main/html/**/*.html'
+        dir: 'html',
+        index: 'index.html',
+        all : 'html/**/*.html'
       },
-      res:  'src/main/assets',
+      res:  'assets',
       comp: {
-        components: 'src/main/components',
-        bower :     'src/main/bower_components',
-        fonts :     'src/main/bower_components/font-awesome/fonts'
+        components: 'components',
+        bower :     'bower_components',
+        fonts :     'bower_components/font-awesome/fonts'
       },
       js:   {
-        all: 'src/main/javascript/**/*.js',
-        dir: 'src/main/javascript'
+        all: 'javascript/**/*.js',
+        dir: 'javascript'
       }, 
       scss: {
-        all: 'src/main/scss/**/*.scss',
-        dir: 'src/main/scss/'
+        all: 'scss/**/*.scss',
+        dir: 'scss/'
       },
       css: {
-        all: 'src/main/css/**/*.css',
-        dir: 'src/main/css/'
+        all: 'css/**/*.css',
+        dir: 'css/'
       },
-      manifest_web: 'src/main/cst_appcache.manifest',
-      manifest_firefox: 'src/main/manifest.webapp',
-      test: ['src/test/javascript/**/*.js']
+      manifest_web: 'devfest_appcache.manifest'
 
     },
     
@@ -57,56 +55,20 @@ module.exports = function (grunt) {
     dest: {
       // Distant parameters
       root: 'dist',
-      // Firefox Build
-      firefox: {
-        root:       'dist/firefox',
-        html: {
-          all:      'dist/firefox/html',
-          index:    'dist/firefox/html/index.html' 
-        },      
-        comp: {
-          components: 'dist/firefox/components',
-          bower:      'dist/firefox/bower_components',
-          fonts :     'dist/firefox/fonts'
-        },     
-        res:        'dist/firefox/assets',
-        css:        'dist/firefox/css',
-        js:         'dist/firefox/javascript',
-        manifest:  'dist/firefox/manifest.webapp'
-      },
-      // Chrome Build
-      chrome: {
-        root:       'dist/chrome',
-        html: {
-          all:      'dist/chrome/html',
-          index:    'dist/chrome/html/index.html' 
+      html: {
+            all:      'dist/html',
+            index:    'dist/index.html' 
         },
-        res:        'dist/chrome/assets',
+        res:        'dist/assets',
         comp: {
-          components: 'dist/chrome/components',
-          bower:      'dist/chrome/bower_components',
-          fonts :     'dist/chrome/fonts'
+            components: 'dist/components',
+            bower:      'dist/bower_components',
+            fonts :     'dist/fonts'
         },     
-        css:        'dist/chrome/css',
-        js:         'dist/chrome/javascript'
-      },
-      // Standard Web Build
-      web: {
-        root:       'dist/web',
-        html: {
-          all:      'dist/web/html',
-          index:    'dist/web/html/index.html' 
-        },
-        res:        'dist/web/assets',
-        comp: {
-          components: 'dist/web/components',
-          bower:      'dist/web/bower_components',
-          fonts :     'dist/web/fonts'
-        },     
-        css:        'dist/web/css',
-        js:         'dist/web/javascript',
-        manifest:   'dist/web/cst_appcache.manifest'
-      }      
+        css:        'dist/css',
+        js:         'dist/javascript',
+        manifest:   'dist/devfest_appcache.manifest'
+            
     },
 
 
@@ -121,36 +83,13 @@ module.exports = function (grunt) {
     **/
     clean: {
       tmp:      ['.tmp'],
-      all:      ['<%= dest.root %> '],
-      firefox:  ['<%= dest.firefox.root %>'],
-      chrome:   ['<%= dest.chrome.root %>'],
-      web:      ['<%= dest.web.root %>']      
+      all:      ['<%= dest.root %> ']      
     },
 
     /*
     * COPY FILES
     **/
     copy: {
-      // Firefox Copies
-      firefox: {
-        files: [
-          { expand: true, cwd: '<%= src.html.dir %>', src: ['**'], dest: '<%= dest.firefox.html.all %>' },
-          { expand: true, cwd: '<%= src.res %>', src: ['**'], dest: '<%= dest.firefox.res %>' },
-          { expand: true, cwd: '<%= src.comp.components %>', src: ['**'], dest: '<%= dest.firefox.comp.components %>' },
-          { expand: true, cwd: '<%= src.comp.bower %>', src: ['**'], dest: '<%= dest.firefox.comp.bower %>' },
-          { expand: true, cwd: '<%= src.comp.fonts %>', src: ['**'], dest: '<%= dest.firefox.comp.fonts %>' },
-          { src: '<%= src.manifest_firefox %>', dest: '<%= dest.firefox.manifest %>' }
-        ]
-      },// Chrome Copies
-      chrome: {
-        files: [
-          { expand: true, cwd: '<%= src.html.dir %>', src: ['**'], dest: '<%= dest.chrome.html.all %>' },
-          { expand: true, cwd: '<%= src.res %>', src: ['**'], dest: '<%= dest.chrome.res %>' },
-          { expand: true, cwd: '<%= src.comp.components %>', src: ['**'], dest: '<%= dest.chrome.comp.components %>' },
-          { expand: true, cwd: '<%= src.comp.bower %>', src: ['**'], dest: '<%= dest.chrome.comp.bower %>' },
-          { expand: true, cwd: '<%= src.comp.fonts %>', src: ['**'], dest: '<%= dest.chrome.comp.fonts %>' }
-        ]
-      },
       // Standard Web Copies
       web: {
         files: [
@@ -166,22 +105,6 @@ module.exports = function (grunt) {
 
     /* Config auto des taches concat, uglify et cssmin */
     useminPrepare: {
-      firefox: {
-        src: ['<%= dest.firefox.html.index %>'],
-        options: {
-          dest : '<%= dest.firefox.html.all %>',
-          root : '<%= src.html.dir %>'
-        }
-        
-      },
-      chrome: {
-        src: ['<%= dest.chrome.html.index %>'],
-        options: {
-          dest : '<%= dest.chrome.html.all %>',
-          root : '<%= src.html.dir %>'
-        }
-        
-      },
       web: {
         src: ['<%= dest.web.html.index %>'],
         options: {

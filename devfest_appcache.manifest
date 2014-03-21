@@ -1,0 +1,34 @@
+CACHE MANIFEST
+#revision {timestamp}   <== A incrementer pour forcer le rechargement des ressources mises en cache
+
+CACHE:
+
+#images
+#images/favicon.ico
+
+#internal HTML documents
+index.html
+partials/main.html
+
+#style sheets
+css/app.css
+
+#json 
+
+#style sheet images
+
+#javascript files
+js/app.js
+
+
+NETWORK:
+*
+
+FALLBACK:
+css/app.css css/app.css?ver={timestamp}
+js/app.js js/app.js?ver={timestamp}
+images/sprites/devfest-sprite.png images/sprites/devfest-sprite.png?ver={timestamp}
+images/sprites/speakers-sprite.png images/sprites/speakers-sprite.png?ver={timestamp}
+images/sprites/team-sprite.png images/sprites/team-sprite.png?ver={timestamp}
+images/sprites/technos-sprite.png images/sprites/technos-sprite.png?ver={timestamp}
+images/sprites/sponsors-sprite.png images/sprites/sponsors-sprite.png?ver={timestamp}

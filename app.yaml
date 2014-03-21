@@ -1,0 +1,26 @@
+application: devfestnantes
+version: 2014-1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+default_expiration: "30d"
+
+handlers:
+# re-direct to index.html if no path is give
+- url: /
+  static_files: index.html
+  upload: index.html
+  expiration: "5m"
+  
+# re-direct to index.html
+- url: /index.html(.*)
+  static_files: index.html
+  upload: index.html(.*)
+  expiration: "5m"
+
+# access the static resources in the root director
+
+- url: /(.*)
+  static_files: \1
+  upload: (.*)

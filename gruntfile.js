@@ -23,11 +23,11 @@ module.exports = function (grunt) {
     **/
     src: {
       html: {
-        dir: 'html',
+        root:'./',
+        dir: 'partials',
         index: 'index.html',
-        all : 'html/**/*.html'
+        all : '**/*.html'
       },
-      res:  'assets',
       comp: {
         components: 'components',
         bower :     'bower_components',
@@ -45,7 +45,13 @@ module.exports = function (grunt) {
         all: 'css/**/*.css',
         dir: 'css/'
       },
-      manifest_web: 'devfest_appcache.manifest'
+      assets:{
+        dir:            'assets',
+        manifest:   'devfest_appcache.manifest',
+        sitemap:        'sitemap.xml',
+        robots:         'robots.txt',
+        yaml:           'app.yaml'
+      }
 
     },
     
@@ -56,10 +62,9 @@ module.exports = function (grunt) {
       // Distant parameters
       root: 'dist',
       html: {
-            all:      'dist/html',
+            all:      'dist/partials',
             index:    'dist/index.html' 
         },
-        res:        'dist/assets',
         comp: {
             components: 'dist/components',
             bower:      'dist/bower_components',
@@ -67,7 +72,13 @@ module.exports = function (grunt) {
         },     
         css:        'dist/css',
         js:         'dist/javascript',
-        manifest:   'dist/devfest_appcache.manifest'
+        assets:{
+          dir:            'dist/assets',
+          manifest:   'dist/devfest_appcache.manifest',
+          sitemap:        'dist/sitemap.xml',
+          robots:         'dist/robots.txt',
+          yaml:           'dist/app.yaml'
+        }
             
     },
 
@@ -91,14 +102,16 @@ module.exports = function (grunt) {
     **/
     copy: {
       // Standard Web Copies
-      web: {
+      site:{        
         files: [
-          { expand: true, cwd: '<%= src.html.dir %>', src: ['**'], dest: '<%= dest.web.html.all %>' },
-          { expand: true, cwd: '<%= src.res %>', src: ['**'], dest: '<%= dest.web.res %>' },
-          { expand: true, cwd: '<%= src.comp.components %>', src: ['**'], dest: '<%= dest.web.comp.components %>' },
-          { expand: true, cwd: '<%= src.comp.bower %>', src: ['**'], dest: '<%= dest.web.comp.bower %>' },
-          { expand: true, cwd: '<%= src.comp.fonts %>', src: ['**'], dest: '<%= dest.web.comp.fonts %>' },
-          { src: '<%= src.manifest_web %>', dest: '<%= dest.web.manifest %>' }
+          { expand: true, cwd: '<%= src.html.dir %>', src: ['**'], dest: '<%= dest.html.all %>' },
+          { expand: true, cwd: '<%= src.assets.dir %>', src: ['**'], dest: '<%= dest.assets.dir %>' },
+          { expand: true, cwd: '<%= src.comp.fonts %>', src: ['**'], dest: '<%= dest.comp.fonts %>' },
+          { src: '<%= src.html.index %>', dest: '<%= dest.html.index %>' },
+          { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
+          { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
+          { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' },
+          { src: '<%= src.assets.yaml %>', dest: '<%= dest.assets.yaml %>' }
         ]     
       }
     },
@@ -106,10 +119,10 @@ module.exports = function (grunt) {
     /* Config auto des taches concat, uglify et cssmin */
     useminPrepare: {
       web: {
-        src: ['<%= dest.web.html.index %>'],
+        src: ['<%= dest.html.index %>'],
         options: {
-          dest : '<%= dest.web.html.all %>',
-          root : '<%= src.html.dir %>'
+          dest : '<%= dest.root %>',
+          root : '<%= src.html.root %>'
         }
         
       }
@@ -117,9 +130,7 @@ module.exports = function (grunt) {
 
     /* Usemin task */
     usemin: {
-      html:['<%= dest.firefox.html.index %>',
-          '<%= dest.chrome.html.index %>',
-          '<%= dest.web.html.index %>']
+      html:['<%= dest.html.index %>']
     },
 
 
@@ -137,7 +148,6 @@ module.exports = function (grunt) {
         options: {
           sassDir: '<%= src.scss.dir %>',
           cssDir: '<%= src.css.dir %>'
-          //,environment: 'production'
         }
       }
     },
@@ -182,42 +192,6 @@ module.exports = function (grunt) {
       }
     },
 
-    /*
-    * Tests
-    **/
-    karma: {
-      unit: {
-        configFile : 'src/test/config/karma-unit.conf.js',
-        reporters: ['progress', 'coverage'],
-        browsers: ['Chrome']
-      },     
-      e2e: {
-        configFile : 'src/test/config/karma-e2e.conf.js',
-        reporters: ['progress'],
-        browsers: ['Chrome']/*,
-        singleRun: false*/
-      },
-      dev_unit: {
-        configFile : 'src/test/config/karma-unit.conf.js',
-        reporters: ['progress', 'coverage'],
-        browsers: ['Chrome'], 
-        singleRun: false
-      },
-      dev_e2e: {
-        configFile : 'src/test/config/karma-e2e.conf.js',
-        reporters: ['progress'],
-        browsers: ['Chrome'] ,
-        singleRun: false
-      },
-      ic_unit: {
-        configFile: 'src/test/config/karma-unit.conf.js'
-      },
-      ic_e2e: {
-        configFile: 'src/test/config/karma-e2e.conf.js'
-      }
-    },
-
-
     browser_sync:{
       files: ['<%= src.css.all %>','<%= src.html.all %>','<%= src.js.all %>'],
       options:{
@@ -241,10 +215,10 @@ module.exports = function (grunt) {
         tasks: ['compass']
       },
       html: {
-        files: ['src/main/html/**/*.html']
+        files: ['**/*.html']
       },
       js: {
-        files: ['src/main/javascript/**/*.js']
+        files: ['javascript/**/*.js']
       }
     },
 
@@ -257,9 +231,6 @@ module.exports = function (grunt) {
   grunt.registerTask('lint',        ['jshint:dev', 'compass', 'csslint:dev']);
   grunt.registerTask('test',        ['lint', 'karma:unit', 'karma:e2e']);
   grunt.registerTask('ic',          ['jshint:ic', 'compass', 'csslint:ic', 'karma:ic_unit', 'karma:ic_e2e']);
-  grunt.registerTask('dist_firefox',['compass', 'clean', 'copy:firefox', 'useminPrepare:firefox', 'concat', 'uglify', 'cssmin', 'usemin', 'clean:tmp']);
-  grunt.registerTask('dist_chrome', ['compass', 'clean', 'copy:chrome', 'useminPrepare:chrome', 'concat', 'uglify', 'cssmin', 'usemin', 'clean:tmp']);
-  grunt.registerTask('dist_web',    ['compass', 'clean', 'copy:web', 'useminPrepare:web', 'concat', 'uglify', 'cssmin', 'usemin', 'clean:tmp']);
   grunt.registerTask('release',     [/*'ic', */'compass', 'clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'clean:tmp']);
   grunt.registerTask('default',     ['test', 'release']);
 

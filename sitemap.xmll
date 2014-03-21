@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+<url>
+  <loc>http://devfest.gdgnantes.com/</loc>
+  <changefreq>monthly</changefreq>
+  <priority>1</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/subscribe</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/speakers</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/sponsors</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<!--
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/sessions</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/agenda</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/afterparty</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.4</priority>
+</url>
+-->
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/contacts</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/cfp</loc>
+  <changefreq>never</changefreq>
+  <priority>0.5</priority>
+</url>
+<url>
+  <loc>http://devfest.gdgnantes.com/index.html#/presse</loc>
+  <changefreq>weekly</changefreq>
+  <priority>0.6</priority>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/2013_11_08_devfest.png</image:loc>
+    <image:title>Affiche DevFest Nantes 2013</image:title>
+    <image:caption>Affiche DevFest Nantes 2013</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_468x60.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 468x60 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 468x60 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_160x400.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 160x400 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 160x400 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_300x250.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 300x250 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 300x250 px</image:caption>
+  </image:image>
+  <image:image>
+    <image:loc>http://devfest.gdgnantes.com/images/devfest/banniere_300x125.png</image:loc>
+    <image:title>Bannière DevFest Nantes 2013 300x125 px</image:title>
+    <image:caption>Bannière DevFest Nantes 2013 300x125 px</image:caption>
+  </image:image>
+</url>
+</urlset>

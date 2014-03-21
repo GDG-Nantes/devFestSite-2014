@@ -160,14 +160,18 @@ module.exports = function (grunt) {
         jshintrc: '.jshintrc'
       },
       dev: {
-        files: ['<%= src.js.all %>', '<%= src.test %>']
+        files: {
+          app: ['<%= src.js.all %>']
+        }
       },
       ic: {
         options: {
           reporter: 'checkstyle',
-          reporterOutput: 'target/jshint_checkstyle.xml'
+          reporterOutput: 'checkstyle/jshint_checkstyle.xml'
         },
-        files: ['<%= src.js.all %>', '<%= src.test %>']
+        files: {
+          app: ['<%= src.js.all %>']
+        }
       }
     },
 
@@ -185,7 +189,7 @@ module.exports = function (grunt) {
       ic: {
         options: {
           formatters: [
-            { id: 'checkstyle-xml', dest: 'target/csslint_checkstyle.xml' }
+            { id: 'checkstyle-xml', dest: 'checkstyle/csslint_checkstyle.xml' }
           ]
         },
         src: '<%= src.css.all %>'

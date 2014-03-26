@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html id="ng-app" ng-app="devfest" lang="fr" >
+<html lang="fr" >
 <!--<html id="ng-app" ng-app="devfest" lang="fr" manifest="./devfest_appcache.manifest">-->
 <head>
 	<meta charset="utf-8" />
@@ -17,11 +17,134 @@
 	<link rel="stylesheet" href="./css/devfest.css" />
 	<!-- endbuild -->		
 </head>
-<body ng-controller="DevFestCtrl" class='light'>
-	<div id="main-content" class="view-animate-controler" ng-class="direction">			
-		<div id="content" ng-view class="view-animate"></div>	
+<body class='light'>	
+
+	<!--Slide 1 -->
+	<div data-0="transform:translate(0,0%);opacity:1;" 
+	 data-200p="opacity:0.5;" 
+	 data-300p="transform:translate(0,0%);" 
+	 data-400p="transform:translate(0,-100%);opacity:0;" 
+	 class="skrollable skrollable-between slide1" 
+	 style="-webkit-transform: translate(0px, 0%);">
+	
+	</div>
+
+	<!--Slide 2.1 -->
+	<div data-0="transform:translate(0,100%);" 
+	     data-100p="transform:translate(0,15%);" 
+	     data-_box-100p="" 
+	     data-_box-200p="transform:translate(0,-100%);" 
+	     class="skrollable skrollable-between container slide2" 
+	     style="-webkit-transform: translate(0px, 100%);">
+
+	    <div class="row">
+			<div class="col-md-6 col-md-offset-3 well">
+				<p class="lead center-block">
+					Le <strong class="text-danger">Devfest Nantes 2014</strong> est la troisième édition d'un événement national qui a réuni plus de 250 participants en 2012 et 350 en 2013. Il s’agit d’une journée complète de conférences sur Android, Dart, AppEngine, Angular JS, Chrome, HTML5, Google Drive, Go, GWT... Une occasion unique de partager et d’échanger autour des technologies du Web et du Cloud.
+				</p>
+			</div>
+		</div>
+
+	</div>
+	<!--Slide 2.2 -->
+	<div data-150p="transform:translate(0,100%);" 
+	     data-200p="transform:translate(0,55%);" 
+	     data-_box-100p="" 
+	     data-_box-200p="transform:translate(0,-100%);" 
+	     class="skrollable skrollable-between container slide2" 
+	     style="-webkit-transform: translate(0px, 100%);">
+		<div class="row well">
+			<div class="col-md-4">
+				<p class="lead text-primary">
+					<i class="fa fa-calendar fa-4x pull-left"></i>
+					Vendredi 7 novembre 2014<br>
+					8h30 à 18h
+				</p>
+			</div>
+			<div class="col-md-5">
+				<p class="lead text-danger">
+					<i class="fa fa-group fa-4x pull-left"></i>
+					500 participants<br>
+					Pass standard : 30€ (éligible DIF)<br>
+					Pass académique : Gratuit
+				</p>
+			</div>
+			<div class="col-md-3">
+				<p class="lead text-warning">
+					<i class="fa fa-map-marker fa-4x pull-left"></i>
+					A la cité de congrès de Nantes
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	<!--Slide 3 -->
+	<div data-_box-100p="transform:translate(0,100%);" 
+		 data-_box-200p="transform:translate(0,0%);" 
+		 data-_box-200p="" 
+	     data-_box-300p="transform:translate(0,-100%)" 
+		 class="skrollable skrollable-before container slide3" 
+		 style="-webkit-transform: translate(0px, 100%);">
+
+		<p class="lead">
+			<strong class="text-success">Cet évènement est organisé par l’association GDG Nantes</strong> (Google Developper Group Nantes ) est née en Janvier 2011 de la volonté de trois fondateurs, Julien LANDURE, Jean-François GARREAU et Benjamin PETETOT, de développer la vie et l’expertise de la communauté informatique de l’agglomération nantaise.
+		</p>
+		<p class="lead">
+			L’association <strong class="text-primary">GDG Nantes</strong> a ainsi développé des relations de confiance entre les acteurs universitaires et technologiques de sa région, ainsi qu’avec les leaders technologiques mondiaux afin de faciliter la transmission des savoirs et des compétences de ce secteur de pointe.
+		</p>
+		<p class="lead">
+			L’ensemble du milieu nantais des nouvelles technologies se voit désormais proposer des événements réguliers, conviviaux, fait de conférences, d’échanges et d’essais, autour d’un leader incontournable des nouvelles technologies : <strong class="text-warning">Google</strong>.
+		</p>
+		<p class="lead">
+			Ces événements, réalisés par des passionnés de nouvelles technologies du Web et mobiles, à destination de passionnés, ont pour objectifs de renforcer l’essor technologique de l'Ouest, de participer au dynamisme professionnel local, et de faire de Nantes un <strong class="text-danger">pôle de compétences nationalement reconnu</strong> dans le domaine des nouvelles technologies.
+		</p>
 		
-    </div>
+	</div>
+
+	<!--Slide 4 -->
+	<div data-_box-200p="transform:translate(0,100%);" 
+		 data-_box-300p="transform:translate(0,0%);" 
+		 data-_box2-300p="" 
+	     data-_box2-400p="transform:translate(0,-100%)" 
+		 class="skrollable skrollable-before container slide3" 
+		 style="-webkit-transform: translate(0px, 100%);">
+
+		<h1 class="text-success">L'objectif du DevFest</h1>
+
+		<p class="lead">
+			L’objectif de cette conférence est de devenir une référence nationale sur les technologies Google, Web et mobile. Pour cela, nous mettons en oeuvre plusieurs thèmes très porteurs : <strong class="text-warning">le Web, le Cloud, la Mobilité et l’Innovation.</strong>
+		</p>
+		<p class="lead">
+			Ces thèmes développés par des passionnés de nouvelles technologies du Web et mobiles, à destination de passionnés, ont pour objectifs de renforcer l’essor technologique de l'Ouest, de participer au dynamisme professionnel local, et de faire de Nantes un pôle de compétences nationalement reconnu dans le domaine des nouvelles technologies et de l’innovation.
+		</p>
+		
+	</div>
+
+	<!-- Le contenu -->
+	<div data-_box-300p="transform:translate(0,100%);" 
+		 data-_box-400p="transform:translate(0,0%);" 
+		 data-_box-400p="" 
+	     data-_box-500p="transform:translate(0,-100%)" 
+		 class="skrollable skrollable-before container slide3" 
+		 style="-webkit-transform: translate(0px, 100%);">
+
+		<h1 class="text-success">Le contenu</h1>
+
+		<p class="lead">
+			Plus de 25 Conférences (1h) présentés par des speakers renommés, des Googlers évoquant leurs technologies favorites. Des sessions sont également animées par les sponsors Platiniums.
+		</p>
+		<p class="lead">
+			Des codes labs (2h) seront une occasion concrète de s'essayer à une technologie en compagnie d'un expert.
+		</p>
+		<p class="lead">
+			Des stands de démonstrations technologiques et innovations (Google Glass, Oculus Rift…), proposés au sponsors (niveau Gold et plus) mais également aux start-ups ou simples développeurs souhaitant partager et présenter leur produit.
+		</p>
+		<p class="lead">
+			La journée se termine par une after party pour discuter de manière conviviale et faire du networking.
+		</p>
+		
+	</div>
 
 	<!-- build:js ./javascript/app.js -->
 	<script src="./bower_components/fastclick/lib/fastclick.js"></script>
@@ -35,6 +158,17 @@
 	<script src="./bower_components/skrollr/dist/skrollr.min.js"></script>
 	<script src="./javascript/app.js"></script>
 	<!-- Directives -->
+
+	<script type="text/javascript">
+	skrollr.init({
+		constants: {
+			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
+			//adjust for shorter/longer pause
+			box: '200p',
+			box2: '350p'
+		}
+	});
+	</script>
     
     
 	<!-- endbuild -->

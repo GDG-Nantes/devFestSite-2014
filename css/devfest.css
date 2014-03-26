@@ -1,4 +1,62 @@
 /* line 1, ../scss/devfest.scss */
-body {
+* {
   margin: 0;
+  padding: 0;
+}
+
+/* line 6, ../scss/devfest.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 11, ../scss/devfest.scss */
+body {
+  font-family: sans-serif;
+}
+
+/* slide 1 */
+/* line 15, ../scss/devfest.scss */
+.slide1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent center no-repeat;
+  background-size: cover;
+  background-image: url(http://5nodes.fr/wp-content/uploads/2013/11/devfest-nantes-2013.jpg);
+}
+
+/* slide 2 */
+/* line 27, ../scss/devfest.scss */
+.slide2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent center no-repeat;
+  overflow: hidden;
+}
+
+/* slide 3 */
+/* line 38, ../scss/devfest.scss */
+.slide3 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent center no-repeat;
+  background-size: cover;
+  /*background-image:url(http://5nodes.fr/wp-content/uploads/2013/11/devfest-nantes-2013.jpg);*/
+}
+
+/* line 49, ../scss/devfest.scss */
+.box {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  background: #09f;
 }

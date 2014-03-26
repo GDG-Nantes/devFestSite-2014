@@ -13,11 +13,11 @@ app.config(['$routeProvider', function($routeProvider) {
 /**
  * Un module fonctionnel...
  */
-var devfest = angular.module('devfest.main', [])
-.run(['$rootScope', '$window', function($rootScope,$window){
+var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', function($rootScope,$window) {
     
   // publish current transition direction on rootScope
   $rootScope.direction = '';
+
   // listen change start events
   $rootScope.$on('$routeChangeStart', function(event, next, current) {
     if (next.direction){
@@ -31,6 +31,7 @@ var devfest = angular.module('devfest.main', [])
     $rootScope.back = function() {
       $window.history.back();
     }
+
   });
 }]);
 
@@ -38,11 +39,8 @@ var devfest = angular.module('devfest.main', [])
 /*
 * Controler
 */
-devfest.controller('DevFestCtrl',	
-	['$rootScope', '$scope', '$http', '$location' ,
-	function($rootScope, $scope, $http, $location) {
+devfest.controller('DevFestCtrl',	['$rootScope', '$scope', '$http', '$location', function($rootScope, $scope, $http, $location) {
 
-
-
+  
 
 }]);

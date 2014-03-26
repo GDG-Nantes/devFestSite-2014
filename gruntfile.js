@@ -197,7 +197,12 @@ module.exports = function (grunt) {
     },
 
     browser_sync:{
-      files: ['<%= src.css.all %>','<%= src.html.all %>','<%= src.js.all %>'],
+      files: [
+        '<%= src.css.all %>',
+        '*.html',
+        'partials/*.html',
+        'javascript/*.js'
+      ],
       options:{
         server: {
           baseDir: "./"
@@ -219,10 +224,15 @@ module.exports = function (grunt) {
         tasks: ['compass']
       },
       html: {
-        files: ['**/*.html']
+        files: [
+          '*.html',
+          'partials/*.html'
+        ]
       },
       js: {
-        files: ['javascript/**/*.js']
+        files: [
+          'javascript/*.js'
+        ]
       }
     },
 

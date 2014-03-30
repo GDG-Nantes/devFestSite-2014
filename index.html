@@ -9,85 +9,118 @@
 	<link rel="icon" type="image/ico" href="./assets/images/favicon.ico" />
 	<!-- build:css ./css/app.css -->
   	<!-- font-awesome -->
-  	<link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.css" />  	
+  	<link rel="stylesheet" type="text/css" href="./bower_components/font-awesome/css/font-awesome.css" />
   	<!-- bootstrap -->
-  	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css" />
-	<link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+  	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap-theme.css" />
+	<link rel="stylesheet" type="text/css" href="./bower_components/bootstrap/dist/css/bootstrap.css" />
+	<!-- fullpage -->
+  	<link rel="stylesheet" type="text/css" href="./bower_components/fullpage.js/jquery.fullPage.css" />  
   	<!--devfest-->
 	<link rel="stylesheet" href="./css/devfest.css" />
-	<!-- endbuild -->		
-</head>
-<body class='light'>	
+	<!-- endbuild -->
 
-	<!--Slide 1 -->
-	<div data-0="transform:translate(0,0%);opacity:1;"  
-	 	data-300p="opacity:0.1;" 
-	 	data-end="opacity:1;" 
-	 	class="skrollable skrollable-between slide1" 
-	 	style="-webkit-transform: translate(0px, 0%);">
+			
+</head>
+<body>	
+
+	<!--Slide "Home" -->
+	<div class="section slide1">
 	
 	</div>
 
-	<!--Slide 2.1 -->
-	<div data-0="transform:translate(0,100%);" 
-	     data-100p="transform:translate(0,15%);" 
-	     data-_box-100p="" 
-	     data-_box-200p="transform:translate(0,-100%);" 
-	     class="skrollable skrollable-between container slide2" 
-	     style="-webkit-transform: translate(0px, 100%);">
-
-	    <div class="row">
-			<div class="col-md-6 col-md-offset-3 well">
-				<p class="lead center-block">
+	<!--Slide  "Qu'est ce que le DevFest ?"-->
+	<div class="section slide2">
+		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
+		
+	    <div class="row ">
+			<div class="col-md-6 col-md-offset-5 well">
+				<p class="lead">
 					Le <strong class="text-danger">Devfest Nantes 2014</strong> est la troisième édition d'un événement national qui a réuni plus de 250 participants en 2012 et 350 en 2013. Il s’agit d’une journée complète de conférences sur Android, Dart, AppEngine, Angular JS, Chrome, HTML5, Google Drive, Go, GWT... Une occasion unique de partager et d’échanger autour des technologies du Web et du Cloud.
 				</p>
 			</div>
 		</div>
-
+		
 	</div>
-	<!--Slide 2.2 -->
-	<div data-150p="transform:translate(0,100%);" 
-	     data-200p="transform:translate(0,55%);" 
-	     data-_box-100p="" 
-	     data-_box-200p="transform:translate(0,-100%);" 
-	     class="skrollable skrollable-between container slide2" 
-	     style="-webkit-transform: translate(0px, 100%);">
-		<div class="row well">
-			<div class="col-md-4">
+
+	<!--Slide "Quand ? Ou ? Combien ?"-->
+	<div class="section">
+		<div class="title-left"><h1>DevFest Nantes 2014</h1></div>
+
+		<img src="../assets/images/chevron-right.png" class="chevron-right"/>
+
+		<div class="row padded">
+			<div class="col-md-1 col-md-offset-2">
+				<i class="fa fa-calendar fa-4x text-primary"></i>
+			</div>
+			<div class="col-md-3 ">
 				<p class="lead text-primary">
-					<i class="fa fa-calendar fa-4x pull-left"></i>
 					Vendredi 7 novembre 2014<br>
 					8h30 à 18h
 				</p>
 			</div>
-			<div class="col-md-5">
+		</div>
+		<div class="row padded">
+			<div class="col-md-1 col-md-offset-2">
+				<i class="fa fa-group fa-4x text-danger"></i>
+			</div>
+			<div class="col-md-3 ">
 				<p class="lead text-danger">
-					<i class="fa fa-group fa-4x pull-left"></i>
 					500 participants<br>
 					Pass standard : 30€ (éligible DIF)<br>
 					Pass académique : 10€
 				</p>
 			</div>
+		</div>
+		<div class="row padded">
+			<div class="col-md-1 col-md-offset-2">
+				<i class="fa fa-map-marker fa-4x text-warning"></i>
+			</div>
 			<div class="col-md-3">
 				<p class="lead text-warning">
-					<i class="fa fa-map-marker fa-4x pull-left"></i>
-					A la cité de congrès de Nantes
+					Nantes, France<br>
+					A la cité des congrès de Nantes
 				</p>
 			</div>
 		</div>
 
 	</div>
 
-	<!--Slide 3 -->
-	<div data-_box-150p="transform:translate(0,100%);" 
-		 data-_box-200p="transform:translate(0,33%);" 
-		 data-_box-100p="" 
-	     data-_box-200p="transform:translate(0,-100%);" 
-		 class="skrollable skrollable-before container slide3" 
-		 style="-webkit-transform: translate(0px, 100%);">
+	<!--Slide "Contenu"-->
+	<div class="section">
 
-		 <div class="row">
-			<div class="col-md-3 col-md-offset-8 well lead">
+		<div class="title-right"><h1>Contenu</h1></div>
+
+		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
+
+		<div class="row padded">
+			<div class="col-md-6 col-md-offset-4">
+				<p class="lead">
+					Contenu : Conf, code labs, démos...<br>
+					Technos : Android, Web cloud...
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+	
+	<!--Slide "Sponsoring"-->
+	<div class="section">
+
+		<div class="title-left"><h1>Sponsoring</h1></div>
+
+		<img src="../assets/images/chevron-right.png" class="chevron-right"/>
+
+		<div class="row padded">
+			<div class="col-md-6 col-md-offset-1">
+				<p class="lead">
+					Pourquoi nous recherchons des sponsors...
+				</p>
+			</div>
+		</div>
+
+		<div class="row padded">
+			<div class="col-md-3 col-md-offset-1 well lead">
 				<p class="lead center-block" style="text-align:center">
 					<a href="http://goo.gl/gPQ5Kv" target="_blank"><i class="fa fa-cloud-download fa-4x"></i><br>Téléchargez notre dossier de partenariat</a>
 				</p>
@@ -95,49 +128,30 @@
 		</div>
 	</div>
 
-	<!--Slide 4 
-	<div data-_box-200p="transform:translate(0,100%);" 
-		 data-_box-300p="transform:translate(0,0%);" 
-		 data-_box2-300p="" 
-	     data-_box2-400p="transform:translate(0,-100%)" 
-		 class="skrollable skrollable-before container slide3" 
-		 style="-webkit-transform: translate(0px, 100%);">
+	
 
-		<h1 class="text-success">L'objectif du DevFest</h1>
+	<!--Slide "Le GDG Nantes"-->
+	<div class="section">
+		<div class="slide slideGDG"></div>
+	</div>
 
-		<p class="lead">
-			L’objectif de cette conférence est de devenir une référence nationale sur les technologies Google, Web et mobile. Pour cela, nous mettons en oeuvre plusieurs thèmes très porteurs : <strong class="text-warning">le Web, le Cloud, la Mobilité et l’Innovation.</strong>
-		</p>
-		<p class="lead">
-			Ces thèmes développés par des passionnés de nouvelles technologies du Web et mobiles, à destination de passionnés, ont pour objectifs de renforcer l’essor technologique de l'Ouest, de participer au dynamisme professionnel local, et de faire de Nantes un pôle de compétences nationalement reconnu dans le domaine des nouvelles technologies et de l’innovation.
-		</p>
-		
-	</div>-->
+	<!--Slide "Contacts"-->
+	<div class="section">
 
-	<!-- Le contenu 
-	<div data-_box-300p="transform:translate(0,100%);" 
-		 data-_box-400p="transform:translate(0,0%);" 
-		 data-_box-400p="" 
-	     data-_box-500p="transform:translate(0,-100%)" 
-		 class="skrollable skrollable-before container slide3" 
-		 style="-webkit-transform: translate(0px, 100%);">
+		<div class="title-right"><h1>Suivez-nous...</h1></div>
 
-		<h1 class="text-success">Le contenu</h1>
+		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
 
-		<p class="lead">
-			Plus de 25 Conférences (1h) présentés par des speakers renommés, des Googlers évoquant leurs technologies favorites. Des sessions sont également animées par les sponsors Platiniums.
-		</p>
-		<p class="lead">
-			Des codes labs (2h) seront une occasion concrète de s'essayer à une technologie en compagnie d'un expert.
-		</p>
-		<p class="lead">
-			Des stands de démonstrations technologiques et innovations (Google Glass, Oculus Rift…), proposés au sponsors (niveau Gold et plus) mais également aux start-ups ou simples développeurs souhaitant partager et présenter leur produit.
-		</p>
-		<p class="lead">
-			La journée se termine par une after party pour discuter de manière conviviale et faire du networking.
-		</p>
-		
-	</div>-->
+		<div class="row padded">
+			<div class="col-md-6 col-md-offset-4">
+				<p class="lead">
+					Google plus, twitter, Youtube gdg France, site edition 2013...<br>
+					Adresse du bureau
+				</p>
+			</div>
+		</div>
+
+	</div>
 
 	<!-- build:js ./javascript/app.js -->
 	<script src="./bower_components/fastclick/lib/fastclick.js"></script>
@@ -146,23 +160,48 @@
     <script src="./bower_components/angular/angular.js"></script>
 	<script src="./bower_components/angular-route/angular-route.js"></script>
 	<script src="./bower_components/angular-animate/angular-animate.js"></script>
+
+
 	<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
 	<script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
-	<script src="./bower_components/skrollr/src/skrollr.js"></script>
+	<script src="./bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+	<script src="./bower_components/fullpage.js/jquery.fullPage.js"></script>
+
 	<script src="./javascript/app.js"></script>
 	<!-- Directives -->
 
 	<!-- endbuild -->
 	<script type="text/javascript">
-	skrollr.init({
-		constants: {
-			//fill the box for a "duration" of 150% of the viewport (pause for 150%)
-			//adjust for shorter/longer pause
-			box: '200p',
-			box2: '350p'
-		}
-	});
+		$(document).ready(function() {
+			$.fn.fullpage({
+				verticalCentered: true,
+		        resize : false,
+		        slidesColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+		        scrollingSpeed: 700,
+		        easing: 'easeInQuart',
+		        menu: true,
+		        navigation: true,
+		        navigationPosition: 'left',
+		        slidesNavigation: false,
+		        slidesNavPosition: 'bottom',
+		        loopBottom: false,
+		        loopTop: false,
+		        loopHorizontal: true,
+		        autoScrolling: true,
+		        scrollOverflow: false,
+		        css3: false,
+		        keyboardScrolling: true,
+		        touchSensitivity: 15,
+		        continuousVertical: false,
+		        animateAnchor: true,
+			});
+		});
 	</script>
+
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

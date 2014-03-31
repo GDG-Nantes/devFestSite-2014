@@ -21,16 +21,15 @@ var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', f
   // listen change start events
   $rootScope.$on('$routeChangeStart', function(event, next, current) {
     if (next.direction){
-    	$rootScope.direction = next.direction;
+      $rootScope.direction = next.direction;
     }else{
-    	$rootScope.direction = 'rtl';
-    	
+      $rootScope.direction = 'rtl';
     }
 
     // back
     $rootScope.back = function() {
       $window.history.back();
-    }
+    };
 
   });
 }]);

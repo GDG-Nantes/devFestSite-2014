@@ -11,6 +11,7 @@
     "angular-animate": "1.2.9",
     "bootstrap":"3.0.2",
     "skrollr":"0.6.21",
+    "fullpage.js":"1.7.5",
     "font-awesome":"4.0.3"
   }
 }

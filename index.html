@@ -16,6 +16,7 @@
 	<!-- fullpage -->
   	<link rel="stylesheet" type="text/css" href="./bower_components/fullpage.js/jquery.fullPage.css" />  
   	<!--devfest-->
+  	<link rel="stylesheet" href="./assets/fonts/roboto/stylesheet.css" />
 	<link rel="stylesheet" href="./css/devfest.css" />
 	<!-- endbuild -->
 
@@ -25,16 +26,27 @@
 
 	<!--Slide "Home" -->
 	<div class="section slide1">
-	
+		 <div class="row" style="background-color:#DDD;opacity:0.7;padding-left:50px">
+		 	<div class="col-md-12 lead padded">
+				<h1>DevFest Nantes 2014</h1>
+				<h3>Le 7 novembre 2014, Nantes, France</h3>
+				<h4>Organisé par le GDG Nantes</h4>
+			</div>
+		</div>
+		<div class="more-info text-center">
+			<a href="#slide02"><i class="fa fa-chevron-down fa-4x"></i></a>
+		</div>
 	</div>
 
 	<!--Slide  "Qu'est ce que le DevFest ?"-->
 	<div class="section slide2">
-		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
+		<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
+
+		<div class="title-center text-danger hidden-xs"><h1>Qu'est ce que le DevFest ?</h1></div>
 		
 	    <div class="row ">
-			<div class="col-md-6 col-md-offset-5 well">
-				<p class="lead">
+			<div class="col-md-4 col-md-offset-4">
+				<p class="lead well">
 					Le <strong class="text-danger">Devfest Nantes 2014</strong> est la troisième édition d'un événement national qui a réuni plus de 250 participants en 2012 et 350 en 2013. Il s’agit d’une journée complète de conférences sur Android, Dart, AppEngine, Angular JS, Chrome, HTML5, Google Drive, Go, GWT... Une occasion unique de partager et d’échanger autour des technologies du Web et du Cloud.
 				</p>
 			</div>
@@ -43,46 +55,46 @@
 	</div>
 
 	<!--Slide "Quand ? Ou ? Combien ?"-->
-	<div class="section">
+	<div class="section slide3">
 		<div class="title-left"><h1>DevFest Nantes 2014</h1></div>
 
-		<img src="../assets/images/chevron-right.png" class="chevron-right"/>
-
-		<div class="row padded">
-			<div class="col-md-1 col-md-offset-2">
-				<i class="fa fa-calendar fa-4x text-primary"></i>
+		<img src="../assets/images/chevron-right.png" class="chevron-right hidden-xs"/>
+		<div class="row well" style="opacity:0.9">
+			<div class="row">
+				<div class="col-md-1 col-md-offset-2 text-center">
+					<i class="fa fa-calendar fa-4x text-primary"></i>
+				</div>
+				<div class="col-md-3 ">
+					<p class="lead text-primary">
+						Vendredi 7 novembre 2014<br>
+						8h30 à 18h
+					</p>
+				</div>
 			</div>
-			<div class="col-md-3 ">
-				<p class="lead text-primary">
-					Vendredi 7 novembre 2014<br>
-					8h30 à 18h
-				</p>
+			<div class="row padded ">
+				<div class="col-md-1 col-md-offset-2 text-center">
+					<i class="fa fa-group fa-4x text-danger"></i>
+				</div>
+				<div class="col-md-3 ">
+					<p class="lead text-danger">
+						500 participants<br>
+						Pass standard : 30€ (éligible DIF)<br>
+						Pass académique : 10€
+					</p>
+				</div>
+			</div>
+			<div class="row ">
+				<div class="col-md-1 col-md-offset-2 text-center">
+					<i class="fa fa-map-marker fa-4x text-warning"></i>
+				</div>
+				<div class="col-md-3">
+					<p class="lead text-warning">
+						Nantes, France<br>
+						A la cité des congrès de Nantes
+					</p>
+				</div>
 			</div>
 		</div>
-		<div class="row padded">
-			<div class="col-md-1 col-md-offset-2">
-				<i class="fa fa-group fa-4x text-danger"></i>
-			</div>
-			<div class="col-md-3 ">
-				<p class="lead text-danger">
-					500 participants<br>
-					Pass standard : 30€ (éligible DIF)<br>
-					Pass académique : 10€
-				</p>
-			</div>
-		</div>
-		<div class="row padded">
-			<div class="col-md-1 col-md-offset-2">
-				<i class="fa fa-map-marker fa-4x text-warning"></i>
-			</div>
-			<div class="col-md-3">
-				<p class="lead text-warning">
-					Nantes, France<br>
-					A la cité des congrès de Nantes
-				</p>
-			</div>
-		</div>
-
 	</div>
 
 	<!--Slide "Contenu"-->
@@ -90,13 +102,35 @@
 
 		<div class="title-right"><h1>Contenu</h1></div>
 
-		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
+		<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
 
-		<div class="row padded">
-			<div class="col-md-6 col-md-offset-4">
+		<div class="row padded  padded-left">
+			<div class="col-md-1 col-md-offset-4 text-center">
+				<div class="circular-img img-sessions"></div>
+			</div>
+			<div class="col-md-6">
 				<p class="lead">
-					Contenu : Conf, code labs, démos...<br>
-					Technos : Android, Web cloud...
+					<strong class="text-danger">Plus de 25 Conférences (1h)</strong> présentés par des speakers renommés, des Googlers évoquant leurs technologies favorites. Des sessions sont également animées par les sponsors Platiniums.
+				</p>
+			</div>
+		</div>
+		<div class="row padded  padded-left">
+			<div class="col-md-1 col-md-offset-4 text-center">
+				<div class="circular-img img-codelabs"></div>
+			</div>
+			<div class="col-md-6">
+				<p class="lead">
+					<strong class="text-success">Des codes labs (2h)</strong> seront une occasion concrète de s'essayer à une technologie en compagnie d'un expert.
+				</p>
+			</div>
+		</div>
+		<div class="row padded  padded-left">
+			<div class="col-md-1 col-md-offset-4 text-center">
+				<div class="circular-img img-demos "></div>
+			</div>
+			<div class="col-md-6">
+				<p class="lead">
+					<strong class="text-primary">Des stands de démonstrations technologiques et innovations</strong> (Google Glass, Oculus Rift...), proposés au sponsors (niveau Gold et plus) mais également aux start-ups ou simples développeurs souhaitant partager et présenter leur produit.
 				</p>
 			</div>
 		</div>
@@ -109,23 +143,27 @@
 
 		<div class="title-left"><h1>Sponsoring</h1></div>
 
-		<img src="../assets/images/chevron-right.png" class="chevron-right"/>
+		<img src="../assets/images/chevron-right.png" class="chevron-right hidden-xs"/>
 
-		<div class="row padded">
+		<div class="row padded-left well">
+
 			<div class="col-md-6 col-md-offset-1">
 				<p class="lead">
-					Pourquoi nous recherchons des sponsors...
+					<strong class="text-danger">Aidez-nous et profitez</strong> de ce que peut apporter à votre entreprise le sponsoring d'un évènement d'envergure comme le DevFest.
+				</p>
+				<p class="lead">
+					En associant votre nom à l’événement, <strong class="text-success">vous augmentez votre popularité, la visibilité de vos projets et votre savoir-faire</strong> auprès des acteurs les plus impliqués du secteur des nouvelles technologies mobiles et du Web.
+				</p>
+				<p class="lead">
+					Assurez vous de rencontrer les professionnels les plus impliqués de la 2ème ville de France en nombre d’organisations dédiées au numérique et au Web. 
+				</p>
+				<p class="lead center-block" style="text-align:center">
+					<a href="http://goo.gl/gPQ5Kv" target="_blank"><i class="fa fa-cloud-download fa-4x"></i><br>
+						Téléchargez notre dossier de partenariat</a>
 				</p>
 			</div>
 		</div>
 
-		<div class="row padded">
-			<div class="col-md-3 col-md-offset-1 well lead">
-				<p class="lead center-block" style="text-align:center">
-					<a href="http://goo.gl/gPQ5Kv" target="_blank"><i class="fa fa-cloud-download fa-4x"></i><br>Téléchargez notre dossier de partenariat</a>
-				</p>
-			</div>
-		</div>
 	</div>
 
 	
@@ -140,7 +178,7 @@
 
 		<div class="title-right"><h1>Suivez-nous...</h1></div>
 
-		<img src="../assets/images/chevron-left.png" class="chevron-left"/>
+		<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
 
 		<div class="row padded">
 			<div class="col-md-6 col-md-offset-4">
@@ -179,12 +217,12 @@
 				verticalCentered: true,
 		        resize : false,
 		        slidesColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
-				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05', 'slide06', 'slide07'],
 		        scrollingSpeed: 700,
 		        easing: 'easeInQuart',
 		        menu: true,
 		        navigation: true,
-		        navigationPosition: 'left',
+		        navigationPosition: 'top',
 		        slidesNavigation: false,
 		        slidesNavPosition: 'bottom',
 		        loopBottom: false,
@@ -195,8 +233,7 @@
 		        css3: false,
 		        keyboardScrolling: true,
 		        touchSensitivity: 15,
-		        continuousVertical: false,
-		        animateAnchor: true,
+		        animateAnchor: true
 			});
 		});
 	</script>

@@ -1,15 +1,50 @@
-.section div {
+h1 {
+  font-family: 'RobotoThin', Arial, sans-serif;
+  font-size: 3.5em;
+  margin: 5px;
+  white-space: nowrap;
+}
 
+.white {
+	color: white;
 }
 
 .padded {
-	padding : 20px;
+	padding : 10px;
+}
+
+.padded-left {
+	padding-left : 30px;
 }
 
 .table {
 	margin-bottom: 0px !important;
 }
 
+
+
+.circular-img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+}
+
+.img-sessions {
+	background: url(../assets/images/2013/glasses_100.png) no-repeat;
+}
+
+.img-codelabs {
+	background: url(../assets/images/2013/codelabs_100.png) no-repeat;
+}
+
+.img-demos {
+	background: url(../assets/images/2013/glass_100.png) no-repeat;
+}
+
+
+/* Titles */
 .title-right {
 	position:absolute;
 	top:0;
@@ -21,6 +56,13 @@
 	position:absolute;
 	top:0;
 	left:0;
+	padding:10px
+}
+
+.title-center {
+	position:absolute;
+	top:0;
+	left:320px;
 	padding:10px
 }
 
@@ -38,20 +80,36 @@
 	right: 0;
 }
 
+/* Slides */
 .slide1 {
 	width:100%;
 	height:100%;
-	background:transparent center no-repeat;
-	background-size:cover;
-	background-image:url(../assets/images/back.png);
+	background:transparent right no-repeat;
+	background-size:contain;
+	background-image:url(../assets/images/logo.png);
+}
+
+.more-info {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 10px;
 }
 
 .slide2 {
 	width:100%;
 	height:100%;
-	background:transparent center no-repeat;
+	background:transparent right no-repeat;
+	background-size:contain;
+	background-image:url(../assets/images/2013/banniere.jpg);
+}
+
+.slide3 {
+	width:100%;
+	height:100%;
+	background:transparent right no-repeat;
 	background-size:cover;
-	background-image:url(../assets/images/angular.png);
+	background-image:url(../assets/images/2013/angular.png);
 }
 
 .slideGDG {

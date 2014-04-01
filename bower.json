@@ -14,5 +14,8 @@
     "skrollr":"0.6.21",
     "fullpage.js":"1.7.5",
     "font-awesome":"4.0.3"
+  },
+  "resolutions": {
+    "jquery": "1.9.1"
   }
 }

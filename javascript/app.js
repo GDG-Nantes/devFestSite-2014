@@ -1,14 +1,16 @@
 /* exported app */
 'use strict';
 
-var app = angular.module('devfest', ['ngRoute', 'ngAnimate', 'devfest.main']);
+var app = angular.module('devfest', [/*'ngRoute', */'ngAnimate', 'devfest.main']);
 
-app.config(['$routeProvider', function($routeProvider) {
+/*app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
     $routeProvider
     .when('/main',       { controller: 'DevFestCtrl',    templateUrl: 'partials/main.html', direction:'lrt' })
     .otherwise({ redirectTo:  '/main' })
     ;
+    //$locationProvider.hashPrefix('@');
 }]);
+  */
 
 /**
  * Un module fonctionnel...
@@ -19,7 +21,7 @@ var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', f
   $rootScope.direction = '';
 
   // listen change start events
-  $rootScope.$on('$routeChangeStart', function(event, next, current) {
+  /*$rootScope.$on('$routeChangeStart', function(event, next, current) {
     if (next.direction){
       $rootScope.direction = next.direction;
     }else{
@@ -31,7 +33,7 @@ var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', f
       $window.history.back();
     };
 
-  });
+  });*/
 }]);
 
 
@@ -40,6 +42,40 @@ var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', f
 */
 devfest.controller('DevFestCtrl',	['$rootScope', '$scope', '$http', '$location', function($rootScope, $scope, $http, $location) {
 
-  
+  var contentLoad = 0;
+  $scope.$on('$includeContentLoaded', function(evtName, args){
+    contentLoad++;
+    if (contentLoad === 6 ){
+      
+    }
+    console.log(contentLoad);
+    console.log(evtName);
+    console.log(args);
+  });
+/*
+  setTimeout(function() {
+    $.fn.fullpage({
+        verticalCentered: true,
+            resize : false,
+            slidesColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],
+            anchors: ['slide01', 'slide02', 'slide03', 'slide04', 'slide05', 'slide06', 'slide07'],
+            scrollingSpeed: 700,
+            easing: 'easeInQuart',
+            menu: true,
+            navigation: true,
+            navigationPosition: 'top',
+            slidesNavigation: false,
+            slidesNavPosition: 'bottom',
+            loopBottom: false,
+            loopTop: false,
+            loopHorizontal: true,
+            autoScrolling: true,
+            scrollOverflow: false,
+            css3: false,
+            keyboardScrolling: true,
+            touchSensitivity: 15,
+            animateAnchor: true
+      });
+  }, 1000);*/
 
 }]);

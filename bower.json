@@ -8,7 +8,6 @@
     "prefix-free": "gh-pages",
     "lodash": "2.4.1",
     "angular": "1.2.9",
-    "angular-route": "1.2.9",
     "angular-animate": "1.2.9",
     "bootstrap":"3.0.2",
     "skrollr":"0.6.21",

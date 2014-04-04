@@ -3,22 +3,22 @@
 
 var app = angular.module('devfest', [/*'ngRoute', */'ngAnimate', 'devfest.main']);
 
-/*app.config(['$routeProvider', '$locationProvider', function($routeProvider, $locationProvider) {
-    $routeProvider
-    .when('/main',       { controller: 'DevFestCtrl',    templateUrl: 'partials/main.html', direction:'lrt' })
-    .otherwise({ redirectTo:  '/main' })
-    ;
-    //$locationProvider.hashPrefix('@');
+app.config([/*'$routeProvider', */'$locationProvider', function(/*$routeProvider, */$locationProvider) {
+/*    $routeProvider
+    .when('/',       { controller: 'DevFestCtrl',    templateUrl: 'partials/main.html', direction:'lrt' })
+    .otherwise({ redirectTo:  '/' })
+    ;*/
+    $locationProvider.html5Mode(true);
 }]);
-  */
+
 
 /**
  * Un module fonctionnel...
  */
-var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', function($rootScope,$window) {
+var devfest = angular.module('devfest.main', []).run([/*'$rootScope', '$window', */function(/*$rootScope,$window*/) {
     
   // publish current transition direction on rootScope
-  $rootScope.direction = '';
+  //$rootScope.direction = '';
 
   // listen change start events
   /*$rootScope.$on('$routeChangeStart', function(event, next, current) {
@@ -40,9 +40,9 @@ var devfest = angular.module('devfest.main', []).run(['$rootScope', '$window', f
 /*
 * Controler
 */
-devfest.controller('DevFestCtrl',	['$rootScope', '$scope', '$http', '$location', function($rootScope, $scope, $http, $location) {
+devfest.controller('DevFestCtrl',	['$rootScope', '$scope', '$http', /*'$location', */function($rootScope, $scope, $http/*, $location*/) {
 
-  var contentLoad = 0;
+  /*var contentLoad = 0;
   $scope.$on('$includeContentLoaded', function(evtName, args){
     contentLoad++;
     if (contentLoad === 6 ){

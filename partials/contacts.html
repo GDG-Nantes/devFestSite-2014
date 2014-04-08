@@ -1,12 +1,36 @@
-<div class="title-right"><h1>Suivez-nous...</h1></div>
+<polymer-element name="devfest-contacts"  attributes="">
 
-<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
+  <template>
+	<div class="title-right"><h1>Suivez-nous...</h1></div>
 
-<div class="row padded">
-	<div class="col-md-6 col-md-offset-4">
-		<p class="lead">
-			Google plus, twitter, Youtube gdg France, site edition 2013...<br>
-			Adresse du bureau
-		</p>
+	<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
+
+	<div class="row padded">
+		<div class="col-md-6 col-md-offset-4">
+			<p class="lead">
+				Google plus, twitter, Youtube gdg France, site edition 2013...<br>
+				Adresse du bureau
+			</p>
+		</div>
 	</div>
-</div>
+</template>
+<script>
+
+    Polymer('devfest-contacts', {
+
+      //applyAuthorStyles: true,
+
+      //resetStyleInheritance: true,
+
+      created: function() { },
+
+      enteredView: function() { },
+
+      leftView: function() { },
+
+      attributeChanged: function(attrName, oldVal, newVal) { }
+
+    });
+
+  </script>
+</polymer-element>

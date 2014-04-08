@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" ng-app="devfest">
+<html lang="fr" >
 <!--<html lang="fr" manifest="./devfest_appcache_2014.manifest">-->
 <head>
 	<meta charset="utf-8" />
@@ -21,28 +21,46 @@
 	<link rel="stylesheet" href="./css/devfest.css" />
 	<!-- endbuild -->
 
+	<script src="./bower_components/platform/platform.js"></script>
+	<script src="./bower_components/polymer/polymer.js"></script>
 			
+	<!-- my components -->
+  	<link rel="import" href="partials/contacts.html">
+  	<link rel="import" href="partials/content.html">
+  	<link rel="import" href="partials/home.html">
+  	<link rel="import" href="partials/sponsoring.html">
+  	<link rel="import" href="partials/what_is_devfest.html">
+  	<link rel="import" href="partials/when_where_how.html">
 </head>
 <!--
 <body>
 -->
 <body ng-controller="DevFestCtrl">	
 
-	<!--<div ng-view></div>-->
 	<!--Slide "Home" -->
-	<div class="section" ng-include=" 'partials/home.html' "></div>
+	<div class="section" >
+		<devfest-home></devfest-home>
+	</div>
 
 	<!--Slide "Qu'est ce que le DevFest ?"-->
-	<div class="section" ng-include=" 'partials/what_is_devfest.html' "></div>
+	<div class="section" >
+		<devfest-what-is-devfest></devfest-what-is-devfest>
+	</div>
 
 	<!--Slide "Quand ? Ou ? Combien ?"-->
-	<div class="section" ng-include=" 'partials/when_where_how.html' "></div>
+	<div class="section" >
+		<devfest-when-where-how></devfest-when-where-how>
+	</div>
 
 	<!--Slide "Contenu"-->
-	<div class="section" ng-include=" 'partials/content.html' "></div>
+	<div class="section" >
+		<devfest-content></devfest-content>
+	</div>
 
 	<!--Slide "Sponsoring"-->
-	<div class="section" ng-include=" 'partials/sponsoring.html' "></div>
+	<div class="section" >
+		<devfest-sponsoring></devfest-sponsoring>
+	</div>
 
 	<!--Slide "Le GDG Nantes"-->
 	<div class="section">
@@ -50,16 +68,14 @@
 	</div>
 
 	<!--Slide "Contacts"-->
-	<div class="section" ng-include=" 'partials/contacts.html' "></div>
+	<div class="section" >
+		<devfest-contacts></devfest-contacts>
+	</div>
 
 	<!-- build:js ./javascript/app.js -->
 	<script src="./bower_components/fastclick/lib/fastclick.js"></script>
 	<script src="./bower_components/prefix-free/prefixfree.min.js"></script>
     <script src="./bower_components/lodash/dist/lodash.js"></script>
-    <script src="./bower_components/angular/angular.js"></script>
-	<script src="./bower_components/angular-route/angular-route.js"></script>
-	<script src="./bower_components/angular-animate/angular-animate.js"></script>
-
 
 	<script src="./bower_components/jquery/dist/jquery.js"></script>
 	<script src="./bower_components/jquery-ui/ui/jquery-ui.js"></script>
@@ -68,14 +84,13 @@
 	<script src="./bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
 	<script src="./bower_components/fullpage.js/jquery.fullPage.js"></script>
 
-	<script src="./javascript/app.js"></script>
 	<!-- Directives -->
 
 	<!-- endbuild -->
 	<script type="text/javascript">
-		$(document).ready(function() {
+		jQuery(document).ready(function() {
 		setTimeout(function() {
-			$.fn.fullpage({
+			jQuery.fn.fullpage({
 				verticalCentered: true,
 		        resize : false,
 		        slidesColor: ['#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2'],

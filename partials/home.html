@@ -1,10 +1,34 @@
-<div class="row" style="background-color:#DDD;opacity:0.7;padding-left:50px">
- 	<div class="col-md-12 lead padded">
-		<h1>DevFest Nantes 2014</h1>
-		<h3>Le 7 novembre 2014, Nantes, France</h3>
-		<h4>Organisé par le GDG Nantes</h4>
+<polymer-element name="devfest-home"  attributes="">
+
+  <template>
+	<div class="row" style="background-color:#DDD;opacity:0.7;padding-left:50px">
+	 	<div class="col-md-12 lead padded">
+			<h1>DevFest Nantes 2014</h1>
+			<h3>Le 7 novembre 2014, Nantes, France</h3>
+			<h4>Organisé par le GDG Nantes</h4>
+		</div>
 	</div>
-</div>
-<div class="more-info text-center">
-	<a href="#slide02"><i class="fa fa-chevron-down fa-4x"></i></a>
-</div>
+	<div class="more-info text-center">
+		<a href="#slide02"><i class="fa fa-chevron-down fa-4x"></i></a>
+	</div>
+</template>
+<script>
+
+    Polymer('devfest-home', {
+
+      //applyAuthorStyles: true,
+
+      //resetStyleInheritance: true,
+
+      created: function() { },
+
+      enteredView: function() { },
+
+      leftView: function() { },
+
+      attributeChanged: function(attrName, oldVal, newVal) { }
+
+    });
+
+  </script>
+</polymer-element>

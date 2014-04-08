@@ -1,34 +1,58 @@
-<div class="title-right"><h1>Contenu</h1></div>
+<polymer-element name="devfest-content"  attributes="">
 
-<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
+  <template>
+	<div class="title-right"><h1>Contenu</h1></div>
 
-<div class="row padded  padded-left">
-	<div class="col-md-1 col-md-offset-4 text-center">
-		<div class="circular-img img-sessions"></div>
+	<img src="../assets/images/chevron-left.png" class="chevron-left hidden-xs"/>
+
+	<div class="row padded  padded-left">
+		<div class="col-md-1 col-md-offset-4 text-center">
+			<div class="circular-img img-sessions"></div>
+		</div>
+		<div class="col-md-6">
+			<p class="lead">
+				<strong class="text-danger">Plus de 25 Conférences (1h)</strong> présentés par des speakers renommés, des Googlers évoquant leurs technologies favorites. Des sessions sont également animées par les sponsors Platiniums.
+			</p>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<p class="lead">
-			<strong class="text-danger">Plus de 25 Conférences (1h)</strong> présentés par des speakers renommés, des Googlers évoquant leurs technologies favorites. Des sessions sont également animées par les sponsors Platiniums.
-		</p>
+	<div class="row padded  padded-left">
+		<div class="col-md-1 col-md-offset-4 text-center">
+			<div class="circular-img img-codelabs"></div>
+		</div>
+		<div class="col-md-6">
+			<p class="lead">
+				<strong class="text-success">Des codes labs (2h)</strong> seront une occasion concrète de s'essayer à une technologie en compagnie d'un expert.
+			</p>
+		</div>
 	</div>
-</div>
-<div class="row padded  padded-left">
-	<div class="col-md-1 col-md-offset-4 text-center">
-		<div class="circular-img img-codelabs"></div>
+	<div class="row padded  padded-left">
+		<div class="col-md-1 col-md-offset-4 text-center">
+			<div class="circular-img img-demos "></div>
+		</div>
+		<div class="col-md-6">
+			<p class="lead">
+				<strong class="text-primary">Des stands de démonstrations technologiques et innovations</strong> (Google Glass, Oculus Rift...), proposés au sponsors (niveau Gold et plus) mais également aux start-ups ou simples développeurs souhaitant partager et présenter leur produit.
+			</p>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<p class="lead">
-			<strong class="text-success">Des codes labs (2h)</strong> seront une occasion concrète de s'essayer à une technologie en compagnie d'un expert.
-		</p>
-	</div>
-</div>
-<div class="row padded  padded-left">
-	<div class="col-md-1 col-md-offset-4 text-center">
-		<div class="circular-img img-demos "></div>
-	</div>
-	<div class="col-md-6">
-		<p class="lead">
-			<strong class="text-primary">Des stands de démonstrations technologiques et innovations</strong> (Google Glass, Oculus Rift...), proposés au sponsors (niveau Gold et plus) mais également aux start-ups ou simples développeurs souhaitant partager et présenter leur produit.
-		</p>
-	</div>
-</div>
+</template>
+<script>
+
+    Polymer('devfest-content', {
+
+      //applyAuthorStyles: true,
+
+      //resetStyleInheritance: true,
+
+      created: function() { },
+
+      enteredView: function() { },
+
+      leftView: function() { },
+
+      attributeChanged: function(attrName, oldVal, newVal) { }
+
+    });
+
+  </script>
+</polymer-element>

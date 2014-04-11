@@ -1,4 +1,110 @@
-/* line 1, ../scss/devfest.scss */
+/* line 6, ../scss/load.scss */
+#contain {
+  width: 300px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0;
+  animation: fadeIn 1s 1;
+  animation-fill-mode: forwards;
+}
+
+/* line 17, ../scss/load.scss */
+.wrap {
+  animation: translate 1000ms infinite ease-in-out alternate, zindex 2000ms infinite ease-in-out;
+  position: absolute;
+}
+
+/* line 22, ../scss/load.scss */
+.part {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
+  background-color: #E3746B;
+  border-radius: 50%;
+  animation: scale 1000ms infinite ease-in-out alternate;
+  animation-delay: -500ms;
+  transform: scale(0.5);
+}
+
+/* line 34, ../scss/load.scss */
+.part:after {
+  content: '';
+  width: 100px;
+  height: 10px;
+  background: #eee;
+  position: absolute;
+  top: 130px;
+  border-radius: 50%;
+}
+
+/* line 44, ../scss/load.scss */
+#wrap2 {
+  animation-delay: -1000ms;
+}
+
+/* line 48, ../scss/load.scss */
+#part2 {
+  background-color: #397BF9;
+  animation-delay: -1500ms;
+}
+
+/* line 53, ../scss/load.scss */
+#wrap3 {
+  animation-delay: -1500ms;
+}
+
+/* line 57, ../scss/load.scss */
+#part3 {
+  background-color: #F4B400;
+  animation-delay: -2000ms;
+}
+
+/* line 62, ../scss/load.scss */
+#wrap4 {
+  animation-delay: -2500ms;
+}
+
+/* line 66, ../scss/load.scss */
+#part4 {
+  background-color: #0F9D58;
+  animation-delay: -3000ms;
+}
+
+@keyframes translate {
+  /* line 72, ../scss/load.scss */
+  100% {
+    transform: translateX(200px);
+  }
+}
+@keyframes scale {
+  /* line 76, ../scss/load.scss */
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zindex {
+  /* line 80, ../scss/load.scss */
+  25% {
+    z-index: 1;
+  }
+
+  /* line 81, ../scss/load.scss */
+  75% {
+    z-index: -1;
+  }
+}
+@keyframes fadeIn {
+  /* line 84, ../scss/load.scss */
+  100% {
+    opacity: 1;
+  }
+}
+/* line 3, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
@@ -6,27 +112,27 @@ h1 {
   white-space: nowrap;
 }
 
-/* line 8, ../scss/devfest.scss */
+/* line 10, ../scss/devfest.scss */
 .white {
   color: white;
 }
 
-/* line 12, ../scss/devfest.scss */
+/* line 14, ../scss/devfest.scss */
 .padded {
   padding: 10px;
 }
 
-/* line 16, ../scss/devfest.scss */
+/* line 18, ../scss/devfest.scss */
 .padded-left {
   padding-left: 30px;
 }
 
-/* line 20, ../scss/devfest.scss */
+/* line 22, ../scss/devfest.scss */
 .table {
   margin-bottom: 0px !important;
 }
 
-/* line 26, ../scss/devfest.scss */
+/* line 28, ../scss/devfest.scss */
 .circular-img {
   width: 100px;
   height: 100px;
@@ -35,23 +141,23 @@ h1 {
   -moz-border-radius: 50px;
 }
 
-/* line 34, ../scss/devfest.scss */
+/* line 36, ../scss/devfest.scss */
 .img-sessions {
   background: url(../assets/images/2013/glasses_100.png) no-repeat;
 }
 
-/* line 38, ../scss/devfest.scss */
+/* line 40, ../scss/devfest.scss */
 .img-codelabs {
   background: url(../assets/images/2013/codelabs_100.png) no-repeat;
 }
 
-/* line 42, ../scss/devfest.scss */
+/* line 44, ../scss/devfest.scss */
 .img-demos {
   background: url(../assets/images/2013/glass_100.png) no-repeat;
 }
 
 /* Titles */
-/* line 48, ../scss/devfest.scss */
+/* line 50, ../scss/devfest.scss */
 .title-right {
   position: absolute;
   top: 0;
@@ -59,7 +165,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 55, ../scss/devfest.scss */
+/* line 57, ../scss/devfest.scss */
 .title-left {
   position: absolute;
   top: 0;
@@ -67,7 +173,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 62, ../scss/devfest.scss */
+/* line 64, ../scss/devfest.scss */
 .title-center {
   position: absolute;
   top: 0;
@@ -75,7 +181,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 69, ../scss/devfest.scss */
+/* line 71, ../scss/devfest.scss */
 .chevron-left {
   height: 100%;
   position: absolute;
@@ -83,7 +189,7 @@ h1 {
   left: 0;
 }
 
-/* line 76, ../scss/devfest.scss */
+/* line 78, ../scss/devfest.scss */
 .chevron-right {
   height: 100%;
   position: absolute;
@@ -92,7 +198,7 @@ h1 {
 }
 
 /* Slides */
-/* line 84, ../scss/devfest.scss */
+/* line 86, ../scss/devfest.scss */
 .slide1 {
   width: 100%;
   height: 100%;
@@ -101,7 +207,7 @@ h1 {
   background-image: url(../assets/images/logo.png);
 }
 
-/* line 92, ../scss/devfest.scss */
+/* line 94, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -109,7 +215,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 99, ../scss/devfest.scss */
+/* line 101, ../scss/devfest.scss */
 .slide2 {
   width: 100%;
   height: 100%;
@@ -118,7 +224,7 @@ h1 {
   background-image: url(../assets/images/2013/banniere.jpg);
 }
 
-/* line 107, ../scss/devfest.scss */
+/* line 109, ../scss/devfest.scss */
 .slide3 {
   width: 100%;
   height: 100%;
@@ -127,7 +233,7 @@ h1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 115, ../scss/devfest.scss */
+/* line 117, ../scss/devfest.scss */
 .slideGDG {
   width: 100%;
   height: 100%;
@@ -136,7 +242,7 @@ h1 {
   background-image: url(../assets/images/gdg_stats.png);
 }
 
-/* line 123, ../scss/devfest.scss */
+/* line 125, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -146,7 +252,7 @@ h1 {
   background-image: url(../assets/images/logo.png);
 }
 
-/* line 132, ../scss/devfest.scss */
+/* line 134, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;

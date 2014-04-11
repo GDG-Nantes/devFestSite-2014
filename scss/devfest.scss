@@ -119,3 +119,17 @@ h1 {
 	background-size:contain;
 	background-image:url(../assets/images/gdg_stats.png);
 }
+
+#unsupport-div{
+	padding: 20px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background:transparent right no-repeat;
+	background-image:url(../assets/images/logo.png);  
+}
+
+#unsupport-div p{
+	margin-left: 20px;
+	font-weight: 600;
+}

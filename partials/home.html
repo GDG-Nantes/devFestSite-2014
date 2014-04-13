@@ -1,33 +1,88 @@
 <polymer-element name="devfest-home"  attributes="">
 
   <template>
-	<div class="row" style="background-color:#DDD;opacity:0.7;padding-left:50px">
-	 	<div class="col-md-12 lead padded">
-			<h1>DevFest Nantes 2014</h1>
-			<h3>Le 7 novembre 2014, Nantes, France</h3>
-			<h4>Organisé par le GDG Nantes</h4>
-		</div>
-	</div>
-	<div class="more-info text-center">
-		<a href="#slide02"><i class="fa fa-chevron-down fa-4x"></i></a>
-	</div>
-</template>
+
+    <!-- DevFest Title -->
+  	<div class="row" style="background-color:#DDD;opacity:0.7;padding-left:50px">
+
+  	 	<div class="col-md-12 lead padded">
+  			<h1><strong>DevFest</strong> Nantes 2014</h1>
+  			<h4>Organisé par le GDG Nantes</h4>
+        <a href="http://gplus.gdgnantes.com/" target="_NEW"><i class="fa fa-google-plus-square fa-2x"></i></a>
+        <a href="http://twitter.com/gdgnantes" target="_NEW"><i class="fa fa-twitter-square fa-2x"></i></a>
+        <a href="http://www.facebook.com/gdgnantes" target="_NEW"><i class="fa fa-facebook-square fa-2x"></i></a>
+        <a href="http://youtube.com/francegdg" target="_NEW"><i class="fa fa-youtube-square fa-2x"></i></a>
+  		</div>
+
+  	</div>
+
+    <!-- When / Where / How -->
+    <div class="row">
+      <div class="col-xs-12">
+
+        <table cellpadding="30px"> 
+
+          <tr class="text-danger">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-calendar fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Vendredi 7 novembre 2014<br>
+              8h30 à 18h
+            </td>
+          </tr>
+          
+          <tr class="text-primary">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-map-marker fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Nantes, France<br>
+              A la cité des congrès de Nantes
+            </td>
+          </tr>
+
+          <tr class="text-warning">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-group fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Pass standard : 30€ (éligible DIF)<br>
+              Pass académique : 10€
+            </td>
+          </tr>
+
+        </table>
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-xs-12 text-center">
+
+        <!-- Bouton +1. -->
+        <div class="g-plusone" data-size="medium"></div>
+        <!-- Placez cette ballise après la dernière balise Bouton +1. -->
+        <script type="text/javascript">
+          window.___gcfg = {lang: 'fr'};
+
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+
+      </div>
+    </div>
+
+    <div class="more-info text-center">
+      <a href="../../#what-is-devfest" class="text-success"><i class="fa fa-chevron-down fa-4x"></i></a>
+    </div>
+
+  </template>
 <script>
 
     Polymer('devfest-home', {
 
-      //applyAuthorStyles: true,
-
-      //resetStyleInheritance: true,
-
-      created: function() { 
-      	
-      },
-
+      created: function() { },
       enteredView: function() { },
-
       leftView: function() { },
-
       attributeChanged: function(attrName, oldVal, newVal) { }
 
     });

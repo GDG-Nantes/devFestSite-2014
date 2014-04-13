@@ -19,6 +19,7 @@ var DevFest = DevFest || function(){
       loadComponent("partials/sponsoring.html");
       loadComponent("partials/sponsors.html");
       loadComponent("partials/what_is_devfest.html");
+     loadComponent("partials/img-transition.html");
 
       window.addEventListener('WebComponentsReady', function() {
         
@@ -26,15 +27,14 @@ var DevFest = DevFest || function(){
         document.getElementById('contain').style['display'] = 'none';
           jQuery.fn.fullpage({
             verticalCentered: false,
-            resize : true,
+            resize : false,
             slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#444'],
-            anchors: ['#home', '#what-is-devfest', 't1', '#devfest-content', 't2', '#sponsoring', '#sponsors', 't3', '#contacts'],
+            anchors: ['#slide1', '#slide2', 'slide3', '#slide4', 'slide5', '#slide5', '#slide6', 'slide7', '#slide8'],
             autoScrolling: false,
             scrollOverflow: false,
             css3: true,
             animateAnchor: true,
             keyboardScrolling: true,
-            touchSensitivity: 15,
             animateAnchor: false
         });
 
@@ -44,6 +44,7 @@ var DevFest = DevFest || function(){
         
         var myOptions = {
           zoom:15,
+          draggable: false,
           center:new google.maps.LatLng(47.2139677,-1.5430134000000635),
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };

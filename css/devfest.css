@@ -214,63 +214,68 @@ h1 {
 /* line 97, ../scss/devfest.scss */
 #sponsors {
   height: auto !important;
+  padding-top: 10px;
 }
 
-/* line 101, ../scss/devfest.scss */
+/* line 102, ../scss/devfest.scss */
 #contacts {
   height: auto !important;
   padding-top: 10px;
   background-color: #444;
 }
 
-/* line 107, ../scss/devfest.scss */
+/* line 108, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 112, ../scss/devfest.scss */
+/* line 113, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 118, ../scss/devfest.scss */
+/* line 119, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 123, ../scss/devfest.scss */
+/* line 124, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
 /* Section transition image */
-/* line 129, ../scss/devfest.scss */
-.section-img {
+/* line 130, ../scss/devfest.scss */
+.section-transition {
   height: 400px !important;
+}
+
+/* line 134, ../scss/devfest.scss */
+.section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 135, ../scss/devfest.scss */
+/* line 139, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 139, ../scss/devfest.scss */
+/* line 143, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 143, ../scss/devfest.scss */
+/* line 147, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 149, ../scss/devfest.scss */
+/* line 153, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -278,7 +283,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 156, ../scss/devfest.scss */
+/* line 160, ../scss/devfest.scss */
 .img-sponsor {
   display: block;
   height: auto;
@@ -286,7 +291,7 @@ h1 {
   margin: auto;
 }
 
-/* line 163, ../scss/devfest.scss */
+/* line 167, ../scss/devfest.scss */
 .empty-sponsor {
   background-color: #CCC;
   margin: auto;
@@ -298,17 +303,15 @@ h1 {
   -moz-border-radius: 50px;
 }
 
-/* line 174, ../scss/devfest.scss */
+/* line 178, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
   width: 100%;
   height: 100%;
-  background: transparent right no-repeat;
-  background-image: url(../assets/images/logo.png);
 }
 
-/* line 183, ../scss/devfest.scss */
+/* line 185, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;

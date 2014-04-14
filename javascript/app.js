@@ -1,16 +1,11 @@
 /* exported app */
 //'use strict';
 
-var DevFest = DevFest || function(){
+var DevFestApp = DevFestApp || function(){
 
   function init(){
 
-    if (window['Polymer']  === undefined){
-
-      document.getElementById('unsupport-div').style['display'] = 'block';
-      document.getElementById('content').style['display'] = 'none';
-
-    } else {
+    if (window['Polymer']  != undefined){
 
       // Chargement asynchrone des composants le temps de l'animation de chargement
       loadComponent("partials/contacts.html");
@@ -19,13 +14,13 @@ var DevFest = DevFest || function(){
       loadComponent("partials/sponsoring.html");
       loadComponent("partials/sponsors.html");
       loadComponent("partials/what_is_devfest.html");
-     loadComponent("partials/img-transition.html");
+      loadComponent("partials/img-transition.html");
 
       window.addEventListener('WebComponentsReady', function() {
         
         // Load FullPage
         document.getElementById('contain').style['display'] = 'none';
-          jQuery.fn.fullpage({
+        jQuery.fn.fullpage({
             verticalCentered: false,
             resize : false,
             slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#444'],
@@ -37,7 +32,7 @@ var DevFest = DevFest || function(){
             keyboardScrolling: true,
             animateAnchor: false
         });
-
+        
 
         // Load Maps
         var map_canvas = document.getElementById('map_canvas');

@@ -23,7 +23,7 @@
 .part {
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle at 0 0, transparent, transparent 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
+  background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
   background-color: #E3746B;
   border-radius: 50%;
   animation: scale 1000ms infinite ease-in-out alternate;
@@ -81,14 +81,12 @@
     transform: translateX(200px);
   }
 }
-
 @keyframes scale {
   /* line 76, ../scss/load.scss */
   100% {
     transform: scale(1);
   }
 }
-
 @keyframes zindex {
   /* line 80, ../scss/load.scss */
   25% {
@@ -100,14 +98,12 @@
     z-index: -1;
   }
 }
-
 @keyframes fadeIn {
   /* line 84, ../scss/load.scss */
   100% {
     opacity: 1;
   }
 }
-
 /* Default */
 /* line 5, ../scss/devfest.scss */
 h1 {

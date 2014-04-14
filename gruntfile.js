@@ -112,6 +112,8 @@ module.exports = function (grunt) {
           { src: '<%= src.comp.bower %>/platform/platform.js/map', dest: '<%= dest.comp.bower %>/platform/platform.js.map' },
           { src: '<%= src.comp.bower %>/polymer/polymer.js', dest: '<%= dest.comp.bower %>/polymer/polymer.js' },
           { src: '<%= src.comp.bower %>/polymer/polymer.js.map', dest: '<%= dest.comp.bower %>/polymer/polymer.js.map' },
+          { src: '<%= src.comp.bower %>/polymer/polymer-body.html', dest: '<%= dest.comp.bower %>/polymer/polymer-body.html' },
+          { src: '<%= src.comp.bower %>/polymer/polymer.html', dest: '<%= dest.comp.bower %>/polymer/polymer.html' },
           { src: '<%= src.assets.manifest %>', dest: '<%= dest.assets.manifest %>' },
           { src: '<%= src.assets.sitemap %>', dest: '<%= dest.assets.sitemap %>' },
           { src: '<%= src.assets.robots %>', dest: '<%= dest.assets.robots %>' },

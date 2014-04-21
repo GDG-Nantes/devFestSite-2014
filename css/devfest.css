@@ -23,7 +23,7 @@
 .part {
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
+  background: radial-gradient(circle at 0 0, transparent, transparent 65%, rgba(0, 0, 0, 0.1) 65%, rgba(0, 0, 0, 0.1));
   background-color: #E3746B;
   border-radius: 50%;
   animation: scale 1000ms infinite ease-in-out alternate;
@@ -81,12 +81,14 @@
     transform: translateX(200px);
   }
 }
+
 @keyframes scale {
   /* line 76, ../scss/load.scss */
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes zindex {
   /* line 80, ../scss/load.scss */
   25% {
@@ -98,57 +100,64 @@
     z-index: -1;
   }
 }
+
 @keyframes fadeIn {
   /* line 84, ../scss/load.scss */
   100% {
     opacity: 1;
   }
 }
+
 /* Default */
 /* line 5, ../scss/devfest.scss */
+body {
+  overflow: hidden !important;
+}
+
+/* line 9, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
 }
 
 /* Utils */
-/* line 12, ../scss/devfest.scss */
+/* line 16, ../scss/devfest.scss */
 .white {
   color: white;
 }
 
-/* line 16, ../scss/devfest.scss */
+/* line 20, ../scss/devfest.scss */
 .padded {
   padding: 10px;
 }
 
-/* line 20, ../scss/devfest.scss */
+/* line 24, ../scss/devfest.scss */
 .padded-md {
   padding: 20px;
 }
 
-/* line 24, ../scss/devfest.scss */
+/* line 28, ../scss/devfest.scss */
 .padded-lg {
   padding: 30px;
 }
 
-/* line 28, ../scss/devfest.scss */
+/* line 32, ../scss/devfest.scss */
 .padded-left {
   padding-left: 30px;
 }
 
-/* line 32, ../scss/devfest.scss */
+/* line 36, ../scss/devfest.scss */
 .table {
   margin-bottom: 0px !important;
 }
 
-/* line 36, ../scss/devfest.scss */
+/* line 40, ../scss/devfest.scss */
 .text-justify {
   text-align: justify;
 }
 
 /* Circular Images */
-/* line 42, ../scss/devfest.scss */
+/* line 46, ../scss/devfest.scss */
 .circular-img {
   width: 200px;
   height: 200px;
@@ -157,21 +166,21 @@ h1 {
   -moz-border-radius: 100px;
 }
 
-/* line 50, ../scss/devfest.scss */
+/* line 54, ../scss/devfest.scss */
 .img-sessions {
   background: url(../assets/images/2013/glass_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 56, ../scss/devfest.scss */
+/* line 60, ../scss/devfest.scss */
 .img-codelabs {
   background: url(../assets/images/2013/hall_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 62, ../scss/devfest.scss */
+/* line 66, ../scss/devfest.scss */
 .img-demos {
   background: url(../assets/images/2013/oculus_200.png) no-repeat;
   background-size: contain;
@@ -180,7 +189,7 @@ h1 {
 
 /* Sections */
 @media only screen and (min-width: 768px) {
-  /* line 73, ../scss/devfest.scss */
+  /* line 77, ../scss/devfest.scss */
   #home {
     width: 100%;
     height: 100%;
@@ -189,89 +198,105 @@ h1 {
     background-image: url(../assets/images/logo.png);
   }
 }
-/* line 82, ../scss/devfest.scss */
+/* line 86, ../scss/devfest.scss */
 #what-is-devfest {
   height: auto !important;
 }
 
-/* line 86, ../scss/devfest.scss */
+/* line 90, ../scss/devfest.scss */
 #devfest-content {
   height: auto !important;
   padding-bottom: 50px;
   padding-top: 80px;
 }
 
-/* line 92, ../scss/devfest.scss */
+/* line 96, ../scss/devfest.scss */
 #sponsoring {
   height: auto !important;
   padding-top: 20px;
 }
 
-/* line 97, ../scss/devfest.scss */
+/* line 101, ../scss/devfest.scss */
 #sponsors {
   height: auto !important;
   padding-top: 10px;
+  padding-bottom: 40px;
 }
 
-/* line 102, ../scss/devfest.scss */
+/* line 107, ../scss/devfest.scss */
+#caroussel {
+  height: auto !important;
+}
+
+/* line 111, ../scss/devfest.scss */
 #contacts {
   height: auto !important;
-  padding-top: 10px;
   background-color: #444;
+  padding-top: 10px;
 }
 
-/* line 108, ../scss/devfest.scss */
+/* line 117, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 113, ../scss/devfest.scss */
+/* line 122, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 119, ../scss/devfest.scss */
+/* line 128, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 124, ../scss/devfest.scss */
+/* line 133, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
+/* line 137, ../scss/devfest.scss */
+.controlArrow.prev {
+  border-color: transparent #444 transparent transparent;
+}
+
+/* line 141, ../scss/devfest.scss */
+.controlArrow.next {
+  border-color: transparent transparent transparent #444;
+}
+
 /* Section transition image */
-/* line 130, ../scss/devfest.scss */
+/* line 147, ../scss/devfest.scss */
 .section-transition {
   height: 400px !important;
 }
 
-/* line 134, ../scss/devfest.scss */
+/* line 151, ../scss/devfest.scss */
 .section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 139, ../scss/devfest.scss */
+/* line 156, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 143, ../scss/devfest.scss */
+/* line 160, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 147, ../scss/devfest.scss */
+/* line 164, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 153, ../scss/devfest.scss */
+/* line 170, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -279,7 +304,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 160, ../scss/devfest.scss */
+/* line 177, ../scss/devfest.scss */
 .img-sponsor {
   display: block;
   height: auto;
@@ -287,7 +312,7 @@ h1 {
   margin: auto;
 }
 
-/* line 167, ../scss/devfest.scss */
+/* line 184, ../scss/devfest.scss */
 .empty-sponsor {
   background-color: #CCC;
   margin: auto;
@@ -299,7 +324,7 @@ h1 {
   -moz-border-radius: 50px;
 }
 
-/* line 178, ../scss/devfest.scss */
+/* line 195, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -307,7 +332,7 @@ h1 {
   height: 100%;
 }
 
-/* line 185, ../scss/devfest.scss */
+/* line 202, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;

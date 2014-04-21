@@ -23,12 +23,10 @@ var DevFestApp = DevFestApp || function(){
         jQuery.fn.fullpage({
             verticalCentered: false,
             resize : false,
-            slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#444'],
-            anchors: ['#slide1', '#slide2', 'slide3', '#slide4', 'slide5', '#slide5', '#slide6', 'slide7', '#slide8'],
+            slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#444'],
             autoScrolling: false,
             scrollOverflow: false,
             css3: true,
-            animateAnchor: true,
             keyboardScrolling: true,
             animateAnchor: false
         });

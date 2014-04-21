@@ -2,6 +2,10 @@
 
 /* Default */
 
+body {
+	overflow: hidden !important;
+}
+
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
@@ -97,12 +101,17 @@ h1 {
 #sponsors {
 	height: auto !important;
 	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+#caroussel {
+	height: auto !important;
 }
 
 #contacts {
 	height: auto !important;
-	padding-top: 10px;
 	background-color: #444;
+	padding-top: 10px;
 }
 
 .footer {
@@ -123,6 +132,14 @@ h1 {
 
 .footer hr {
 	border-color: #AAA;
+}
+
+.controlArrow.prev {
+	border-color: transparent #444 transparent transparent;
+}
+
+.controlArrow.next {
+	border-color: transparent transparent transparent #444;
 }
 
 /* Section transition image */

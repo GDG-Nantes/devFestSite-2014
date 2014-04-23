@@ -193,7 +193,8 @@
 
 		var DevFestCompat = DevFestCompat || function(){
 
-		  	if (window['Polymer']  === undefined){
+		  	if (window['Platform']  === undefined
+		  		|| window['Polymer']  === undefined){
 
 		      document.getElementById('unsupport-div').style['display'] = 'block';
 		      document.getElementById('content').style['display'] = 'none';

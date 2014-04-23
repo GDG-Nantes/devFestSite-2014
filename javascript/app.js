@@ -5,7 +5,8 @@ var DevFestApp = DevFestApp || function(){
 
   function init(){
 
-    if (window['Polymer']  != undefined){
+    if (window['Platform']  != undefined
+      && window['Polymer']  != undefined){
 
       // Chargement asynchrone des composants le temps de l'animation de chargement
       loadComponent("partials/contacts.html");

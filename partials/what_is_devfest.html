@@ -1,49 +1,23 @@
-<polymer-element name="devfest-what-is-devfest" >
+<div class="row">
 
-  <template>
+  <!-- Google Map -->
+  <div class="col-md-4" style="text-align:right">
+    <div id="map_canvas" style="height:500px;width:100%"></div>
+  </div>
 
-  	<div class="row">
-
-      <!-- Google Map -->
-      <div class="col-md-4" style="text-align:right">
-        <div id="map_canvas" style="height:500px;width:100%"></div>
-      </div>
-
-      <!-- Qu'est-ce que le DevFest ? -->
-  		<div class="col-md-8 padded-lg">
-        <div class="hidden-xs"><h1>Qu'est-ce que le DevFest ?</h1></div>
-        <br>
-        <p class="lead text-justify">
-  				Le <strong class="text-danger">Devfest Nantes 2014</strong> est la troisième édition d'un événement international qui a réuni plus de 250 participants en 2012 et 350 en 2013 à Nantes. 
-        </p>
-        <p class="lead text-justify">
-          Il s’agit d’une journée complète de conférences sur Android, Dart, AppEngine, Angular JS, Chrome, HTML5, Google Drive, Go, GWT... Une occasion unique de partager et d’échanger autour des technologies du Web et du Cloud.
-  			</p>
-        <p class="lead text-justify">
-          Cette année l'évènement regroupera plus de <strong class="text-primary">500 participants</strong> et se déroulera à la <strong class="text-success">Cité des congrés de Nantes</strong>
-        </p>
-  		</div>
-      
-  	</div>
-
-  </template>
-<script>
-
-    Polymer('devfest-what-is-devfest', {
-
-      //applyAuthorStyles: true,
-
-      //resetStyleInheritance: true,
-
-      created: function() { },
-
-      enteredView: function() { },
-
-      leftView: function() { },
-
-      attributeChanged: function(attrName, oldVal, newVal) { }
-
-    });
-
-  </script>
-</polymer-element>
+  <!-- Qu'est-ce que le DevFest ? -->
+	<div class="col-md-8 padded-lg">
+    <div class="hidden-xs"><h1>Qu'est-ce que le DevFest ?</h1></div>
+    <br>
+    <p class="lead text-justify">
+			Le <strong class="text-danger">Devfest Nantes 2014</strong> est la troisième édition d'un événement international qui a réuni plus de 250 participants en 2012 et 350 en 2013 à Nantes. 
+    </p>
+    <p class="lead text-justify">
+      Il s’agit d’une journée complète de conférences sur Android, Dart, AppEngine, Angular JS, Chrome, HTML5, Google Drive, Go, GWT... Une occasion unique de partager et d’échanger autour des technologies du Web et du Cloud.
+		</p>
+    <p class="lead text-justify">
+      Cette année l'évènement regroupera plus de <strong class="text-primary">500 participants</strong> et se déroulera à la <strong class="text-success">Cité des congrés de Nantes</strong>
+    </p>
+	</div>
+  
+</div>

@@ -2,7 +2,7 @@
   "name": "DevFestNanteSite2014",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "1.10.2",
+    "jquery": "2.1.0",
     "jquery-ui": "1.10.4",
     "fastclick": "latest",
     "prefix-free": "gh-pages",
@@ -13,7 +13,7 @@
     "font-awesome": "4.0.3"
   },
   "resolutions": {
-    "jquery": "1.10.2",
+    "jquery": "2.1.0",
     "platform": "0.2.3"
   }
 }

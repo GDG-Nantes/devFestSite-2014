@@ -13,7 +13,6 @@
     "font-awesome": "4.0.3"
   },
   "resolutions": {
-    "jquery": "2.1.0",
-    "platform": "0.2.3"
+    "jquery": "2.1.0"
   }
 }

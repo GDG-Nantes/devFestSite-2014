@@ -1,0 +1,45 @@
+/* Utils */
+/* line 3, ../scss/utils.scss */
+.white {
+  color: white;
+}
+
+/* line 7, ../scss/utils.scss */
+.padded {
+  padding: 10px;
+}
+
+/* line 11, ../scss/utils.scss */
+.padded-md {
+  padding: 20px;
+}
+
+/* line 15, ../scss/utils.scss */
+.padded-lg {
+  padding: 30px;
+}
+
+/* line 19, ../scss/utils.scss */
+.padded-left {
+  padding-left: 30px;
+}
+
+/* line 23, ../scss/utils.scss */
+.table {
+  margin-bottom: 0px !important;
+}
+
+/* line 27, ../scss/utils.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* Circular Images */
+/* line 32, ../scss/utils.scss */
+.circular-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+}

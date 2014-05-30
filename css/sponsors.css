@@ -1,0 +1,51 @@
+/* line 1, ../scss/sponsors.scss */
+#sponsors {
+  height: auto !important;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+/* line 7, ../scss/sponsors.scss */
+.img-sponsor {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+/* line 15, ../scss/sponsors.scss */
+.img-sponsor.platinium {
+  max-width: 300px;
+  max-height: 150px;
+}
+
+/* line 20, ../scss/sponsors.scss */
+.img-sponsor.gold {
+  max-width: 250px;
+  max-height: 130px;
+}
+
+/* line 25, ../scss/sponsors.scss */
+.img-sponsor.silver {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+/* line 30, ../scss/sponsors.scss */
+.img-sponsor.partner {
+  max-width: 200px;
+  max-height: 100px;
+}
+
+/* line 35, ../scss/sponsors.scss */
+.empty-sponsor {
+  background-color: #CCC;
+  margin: auto;
+  padding-top: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}

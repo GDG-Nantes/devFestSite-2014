@@ -1,0 +1,44 @@
+#sponsors {
+	height: auto !important;
+	padding-top: 10px;
+	padding-bottom: 40px;
+}
+
+.img-sponsor {
+	display: block;
+	height: auto;
+	max-width: 100%;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+.img-sponsor.platinium {
+	max-width:300px;
+	max-height: 150px;
+}
+
+.img-sponsor.gold {
+	max-width:250px;
+	max-height: 130px;
+}
+
+.img-sponsor.silver {
+	max-width:200px;
+	max-height: 100px;
+}
+
+.img-sponsor.partner {
+	max-width:200px;
+	max-height: 100px;
+}
+
+.empty-sponsor {
+	background-color: #CCC;
+	margin:auto;
+	padding-top : 40px;
+	width: 100px;
+	height: 100px;
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+}

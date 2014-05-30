@@ -5,35 +5,70 @@ var DevFestApp = DevFestApp || function(){
 
   var nbComponentLoads = 0;
 
+  function initImages(){
+    return $.when($.ajax("assets/images/logo.png"),
+      $.ajax("assets/images/gdg_stats.png"),
+      $.ajax("assets/images/chevron_small.png"),
+      $.ajax("assets/images/sponsors/google.png"),
+      $.ajax("assets/images/sponsors/logo-asi.png"),
+      $.ajax("assets/images/sponsors/logo-restlet.png"),
+      $.ajax("assets/images/sponsors/mozilla.png"),
+      $.ajax("assets/images/sponsors/sii.png"),
+      $.ajax("assets/images/sponsors/sqli.png"),
+      $.ajax("assets/images/sponsors/zenika.png"),
+      $.ajax("assets/images/2013/angular.png"),
+      $.ajax("assets/images/2013/cyril.png"),
+      $.ajax("assets/images/2013/glass_200.png"),
+      $.ajax("assets/images/2013/hall_200.png"),
+      $.ajax("assets/images/2013/oculus_200.png"),
+      $.ajax("assets/images/2013/team.png")
+      );
+  }
+
+  function initPartials(){
+    return $.when($.ajax("partials/contacts.html"),
+        $.ajax("partials/content.html"),
+        $.ajax("partials/home.html"),
+        $.ajax("partials/sponsoring.html"),
+        $.ajax("partials/sponsors.html"),
+        $.ajax("partials/what_is_devfest.html"),
+        $.ajax("partials/pratique.html")
+      );
+  }
+
   function init(){
 
     // Chargement asynchrone des composants le temps de l'animation de chargement
-    loadComponent("contacts", "partials/contacts.html");
-    loadComponent("devfest-content", "partials/content.html");
-    loadComponent("home", "partials/home.html");
-    loadComponent("sponsoring", "partials/sponsoring.html");
-    loadComponent("sponsors", "partials/sponsors.html");
-    loadComponent("what-is-devfest", "partials/what_is_devfest.html");
-
-  }
-
-  function loadComponent(id, filename){
-    $('#'+id).load(filename, function(){
-      nbComponentLoads++;
-      if (nbComponentLoads == 6){
-        finishLoad();
-      }
-    });
+    initImages()
+    .then(function(){
+      return initPartials();
+    })
+    .then(function(contacts, content, home, sponsoring, sponsors, what_is_devfest, pratique){
+      //console.info(result);
+      console.info('retrieve ajaxCalls');
+      $('#contacts').html(contacts[0]);
+      $('#devfest-content').html(content[0]);
+      $('#home').html(home[0]);
+      $('#sponsoring').html(sponsoring[0]);
+      $('#sponsors').html(sponsors[0]);
+      $('#what-is-devfest').html(what_is_devfest[0]);
+      $('#pratique').html(pratique[0]);
+      finishLoad();
+    })
+    .fail(function(error){
+      console.error(error);
+    });    
   }
 
   function finishLoad() {
         
     // Load FullPage
     document.getElementById('contain').style['display'] = 'none';
+    document.getElementById('main-content').style['display'] = '';
     jQuery.fn.fullpage({
         verticalCentered: false,
         resize : false,
-        slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#444'],
+        slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#444'],
         autoScrolling: false,
         scrollOverflow: false,
         css3: true,

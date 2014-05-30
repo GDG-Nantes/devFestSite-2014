@@ -1,0 +1,38 @@
+/* Utils */
+
+.white {
+	color: white;
+}
+
+.padded {
+	padding : 10px;
+}
+
+.padded-md {
+	padding : 20px;
+}
+
+.padded-lg {
+	padding : 30px;
+}
+
+.padded-left {
+	padding-left : 30px;
+}
+
+.table {
+	margin-bottom: 0px !important;
+}
+
+.text-justify {
+	text-align:justify;
+}
+
+/* Circular Images */
+.circular-img {
+	width: 200px;
+	height: 200px;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+}

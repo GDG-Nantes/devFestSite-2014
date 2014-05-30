@@ -1,0 +1,27 @@
+/* line 2, ../scss/devfest_content.scss */
+#devfest-content {
+  height: auto !important;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+/* line 9, ../scss/devfest_content.scss */
+.img-sessions {
+  background: url(../assets/images/2013/glass_200.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 15, ../scss/devfest_content.scss */
+.img-codelabs {
+  background: url(../assets/images/2013/hall_200.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 21, ../scss/devfest_content.scss */
+.img-demos {
+  background: url(../assets/images/2013/oculus_200.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}

@@ -285,6 +285,11 @@
   #home table td {
     padding: 20px;
   }
+
+  /* line 11, ../scss/devfest_phone.scss */
+  #video-phone {
+    height: auto !important;
+  }
 }
 /* Default */
 /* line 15, ../scss/devfest.scss */

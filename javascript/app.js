@@ -32,6 +32,7 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/sponsoring.html"),
         $.ajax("partials/sponsors.html"),
         $.ajax("partials/what_is_devfest.html"),
+        $.ajax("partials/video_phone.html"),
         $.ajax("partials/pratique.html")
       );
   }
@@ -43,7 +44,7 @@ var DevFestApp = DevFestApp || function(){
     .then(function(){
       return initPartials();
     })
-    .then(function(contacts, content, home, sponsoring, sponsors, what_is_devfest, pratique){
+    .then(function(contacts, content, home, sponsoring, sponsors, what_is_devfest, video_phone, pratique){
       //console.info(result);
       console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
@@ -52,6 +53,7 @@ var DevFestApp = DevFestApp || function(){
       $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);
       $('#what-is-devfest').html(what_is_devfest[0]);
+      $('#video-phone').html(video_phone[0]);
       $('#pratique').html(pratique[0]);
       finishLoad();
     })
@@ -68,7 +70,7 @@ var DevFestApp = DevFestApp || function(){
     jQuery.fn.fullpage({
         verticalCentered: false,
         resize : false,
-        slidesColor: ['#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#444'],
+        slidesColor: ['#444', '#444', '#DDD', '#f2f2f2', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#444'],
         autoScrolling: false,
         scrollOverflow: false,
         css3: true,

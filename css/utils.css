@@ -43,3 +43,13 @@
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
 }
+
+/* Circular Images */
+/* line 41, ../scss/utils.scss */
+.circular-img-sm {
+  width: 150px;
+  height: 150px;
+  border-radius: 75px;
+  -webkit-border-radius: 75px;
+  -moz-border-radius: 75px;
+}

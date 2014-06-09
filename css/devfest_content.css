@@ -1,27 +1,60 @@
 /* line 2, ../scss/devfest_content.scss */
 #devfest-content {
   height: auto !important;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   padding-top: 80px;
 }
 
-/* line 9, ../scss/devfest_content.scss */
+/* line 8, ../scss/devfest_content.scss */
+#speakers {
+  height: auto !important;
+}
+
+/* line 13, ../scss/devfest_content.scss */
 .img-sessions {
   background: url(../assets/images/2013/glass_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 15, ../scss/devfest_content.scss */
+/* line 19, ../scss/devfest_content.scss */
 .img-codelabs {
   background: url(../assets/images/2013/hall_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 21, ../scss/devfest_content.scss */
+/* line 25, ../scss/devfest_content.scss */
 .img-demos {
   background: url(../assets/images/2013/oculus_200.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 31, ../scss/devfest_content.scss */
+.img-cmottier {
+  background: url(../assets/images/speakers/cmottier.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 37, ../scss/devfest_content.scss */
+.img-jmouton {
+  background: url(../assets/images/speakers/jmouton.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 43, ../scss/devfest_content.scss */
+.img-mgorner {
+  background: url(../assets/images/speakers/mgorner.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 50, ../scss/devfest_content.scss */
+.img-dgageot {
+  background: url(../assets/images/speakers/dgageot.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }

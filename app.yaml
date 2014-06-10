@@ -11,13 +11,13 @@ handlers:
 - url: /
   static_files: index.html
   upload: index.html
-  expiration: "5m"
+  expiration: "0d 5m"
   
 # re-direct to index.html
 - url: /index.html(.*)
   static_files: index.html
   upload: index.html(.*)
-  expiration: "5m"
+  expiration: "0d 5m"
 
 # access the static resources in the root director
 

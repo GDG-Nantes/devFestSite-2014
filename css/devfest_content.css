@@ -58,3 +58,10 @@
   background-size: contain;
   margin: auto;
 }
+
+/* line 57, ../scss/devfest_content.scss */
+.img-fharper {
+  background: url(../assets/images/speakers/fharper.jpeg) no-repeat;
+  background-size: contain;
+  margin: auto;
+}

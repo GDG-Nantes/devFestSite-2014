@@ -331,6 +331,25 @@
   padding-top: 20px;
 }
 
+/* line 1, ../scss/cfp.scss */
+#cfp {
+  height: auto !important;
+  color: #999;
+}
+/* line 6, ../scss/cfp.scss */
+#cfp h1 {
+  color: white;
+}
+
+/* line 13, ../scss/cfp.scss */
+.cfp-speaker {
+  background-image: url(../assets/images/2013/photo_cfp_ludovic.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}
+
 @media only screen and (max-width: 768px) {
   /* line 3, ../scss/devfest_phone.scss */
   #home h1 {
@@ -348,81 +367,81 @@
   }
 }
 /* Default */
-/* line 16, ../scss/devfest.scss */
+/* line 17, ../scss/devfest.scss */
 body {
   overflow: hidden !important;
   background-color: #f2f2f2;
 }
 
-/* line 21, ../scss/devfest.scss */
+/* line 22, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
 }
 
 /* Sections */
-/* line 29, ../scss/devfest.scss */
+/* line 30, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 34, ../scss/devfest.scss */
+/* line 35, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 40, ../scss/devfest.scss */
+/* line 41, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 45, ../scss/devfest.scss */
+/* line 46, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
-/* line 49, ../scss/devfest.scss */
+/* line 50, ../scss/devfest.scss */
 .controlArrow.prev {
   border-color: transparent #444 transparent transparent;
 }
 
-/* line 53, ../scss/devfest.scss */
+/* line 54, ../scss/devfest.scss */
 .controlArrow.next {
   border-color: transparent transparent transparent #444;
 }
 
 /* Section transition image */
-/* line 59, ../scss/devfest.scss */
+/* line 60, ../scss/devfest.scss */
 .section-transition {
   height: 400px !important;
 }
 
-/* line 63, ../scss/devfest.scss */
+/* line 64, ../scss/devfest.scss */
 .section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 68, ../scss/devfest.scss */
+/* line 69, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 72, ../scss/devfest.scss */
+/* line 73, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 76, ../scss/devfest.scss */
+/* line 77, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 82, ../scss/devfest.scss */
+/* line 83, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -430,7 +449,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 91, ../scss/devfest.scss */
+/* line 92, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -438,7 +457,7 @@ h1 {
   height: 100%;
 }
 
-/* line 98, ../scss/devfest.scss */
+/* line 99, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;

@@ -1,0 +1,18 @@
+/* line 1, ../scss/cfp.scss */
+#cfp {
+  height: auto !important;
+  color: #999;
+}
+/* line 6, ../scss/cfp.scss */
+#cfp h1 {
+  color: white;
+}
+
+/* line 13, ../scss/cfp.scss */
+.cfp-speaker {
+  background-image: url(../assets/images/2013/photo_cfp_ludovic.jpg);
+  background-repeat: no-repeat;
+  overflow: hidden;
+  width: 100%;
+  height: 600px;
+}

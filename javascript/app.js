@@ -21,6 +21,7 @@ var DevFestApp = DevFestApp || function(){
       $.ajax("assets/images/2013/glass_200.png"),
       $.ajax("assets/images/2013/hall_200.png"),
       $.ajax("assets/images/2013/oculus_200.png"),
+      $.ajax("assets/images/2013/photo_cfp_ludovic.jpg"),
       $.ajax("assets/images/speakers/cmottier.png"),
       $.ajax("assets/images/speakers/mgorner.png"),
       $.ajax("assets/images/speakers/jmouton.png"),
@@ -30,17 +31,17 @@ var DevFestApp = DevFestApp || function(){
   }
 
   function initPartials(){
-    return $.when($.ajax("partials/contacts.html"),
-        $.ajax("partials/content.html"),
-        $.ajax("partials/speakers.html"),
-        $.ajax("partials/cfp.html"),
-        $.ajax("partials/home.html"),
-        $.ajax("partials/sponsoring.html"),
-        $.ajax("partials/sponsors.html"),
-        $.ajax("partials/presse.html"),
-        $.ajax("partials/what_is_devfest.html"),
-        $.ajax("partials/video_phone.html"),
-        $.ajax("partials/pratique.html")
+    return $.when($.ajax("partials/contacts.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/content.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/speakers.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/cfp.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/home.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/sponsoring.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/sponsors.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/presse.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/what_is_devfest.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/video_phone.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/pratique.html?ver="+DevFestSiteVersion)
       );
   }
 

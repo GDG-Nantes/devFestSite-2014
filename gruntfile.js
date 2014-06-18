@@ -18,6 +18,10 @@ module.exports = function (grunt) {
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
 
+    config:{
+      timestamp : '<%= new Date().getTime() %>'  
+    },
+
     /*
     * SOURCE
     **/
@@ -133,6 +137,37 @@ module.exports = function (grunt) {
       html:['<%= dest.html.index %>']
     },
 
+    'string-replace': {          
+          app: {
+              files: {
+                  'dist/index.html': 'dist/index.html'
+              },
+              options: {
+                replacements: [{
+                    pattern: 'css/app.css',
+                    replacement: 'css/app.css?ver=<%= config.timestamp %>'
+                },{
+                    pattern: 'javascript/app.js',
+                    replacement: 'javascript/app.js?ver=<%= config.timestamp %>'
+                },{
+                    pattern: 'var DevFestSiteVersion = "dev";',
+                    replacement: 'var DevFestSiteVersion = "<%= config.timestamp %>";'
+                }]
+              }
+          }/*,
+          manifest: {
+              files: {
+                  'prod/devfest_appcache.manifest': 'prod/devfest_appcache.manifest'
+              },
+              options: {
+                replacements: [{
+                    pattern: /{timestamp}/g,
+                    replacement: '<%= config.timestamp %>'
+                }]
+              }
+          }*/
+    },
+
 
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
@@ -245,7 +280,7 @@ module.exports = function (grunt) {
   grunt.registerTask('lint',        ['jshint:dev', 'compass', 'csslint:dev']);
   grunt.registerTask('test',        ['lint', 'karma:unit', 'karma:e2e']);
   grunt.registerTask('ic',          ['jshint:ic', 'compass', 'csslint:ic', 'karma:ic_unit', 'karma:ic_e2e']);
-  grunt.registerTask('release',     [/*'ic', */'compass', 'clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'clean:tmp']);
+  grunt.registerTask('release',     [/*'ic', */'compass', 'clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'string-replace', 'clean:tmp']);
   grunt.registerTask('default',     ['test', 'release']);
 
 };

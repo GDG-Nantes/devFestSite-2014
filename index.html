@@ -175,7 +175,9 @@
 
 	</div>
 
-	
+	<script>
+		var DevFestSiteVersion = "dev";		
+	</script>
 	
 	<!-- build:js ./javascript/app.js -->
 	<script src="./bower_components/fastclick/lib/fastclick.js"></script>
@@ -201,8 +203,9 @@
 		ga('create', 'UA-35116426-1', 'gdgnantes.com');
 		ga('send', 'pageview');
 
-
 		var DevFestCompat = DevFestCompat || function(){
+
+			var version = "0";
 
 		  	if (window['jQuery']  === undefined){
 
@@ -211,8 +214,9 @@
 
 		    }	  
 
-	    return{	    
-	  	};
+		    return{	    
+		    	version : version
+		  	};
 		}();
 	</script>
 </body>

@@ -1,0 +1,46 @@
+/* line 1, ../scss/speakers.scss */
+#speakers {
+  height: auto !important;
+}
+
+/* line 5, ../scss/speakers.scss */
+.img-cmottier {
+  background: url(../assets/images/speakers/cmottier.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 11, ../scss/speakers.scss */
+.img-jmouton {
+  background: url(../assets/images/speakers/jmouton.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 17, ../scss/speakers.scss */
+.img-mgorner {
+  background: url(../assets/images/speakers/mgorner.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 24, ../scss/speakers.scss */
+.img-dgageot {
+  background: url(../assets/images/speakers/dgageot.jpg) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 31, ../scss/speakers.scss */
+.img-fharper {
+  background: url(../assets/images/speakers/fharper.jpeg) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 37, ../scss/speakers.scss */
+.img-ngarnier {
+  background: url(../assets/images/speakers/ngarnier.jpeg) no-repeat;
+  background-size: contain;
+  margin: auto;
+}

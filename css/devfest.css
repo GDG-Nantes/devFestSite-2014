@@ -182,63 +182,70 @@
   padding-top: 80px;
 }
 
-/* line 8, ../scss/devfest_content.scss */
-#speakers {
-  height: auto !important;
-}
-
-/* line 13, ../scss/devfest_content.scss */
+/* line 11, ../scss/devfest_content.scss */
 .img-sessions {
   background: url(../assets/images/2013/glass_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 19, ../scss/devfest_content.scss */
+/* line 17, ../scss/devfest_content.scss */
 .img-codelabs {
   background: url(../assets/images/2013/hall_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 25, ../scss/devfest_content.scss */
+/* line 23, ../scss/devfest_content.scss */
 .img-demos {
   background: url(../assets/images/2013/oculus_200.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 31, ../scss/devfest_content.scss */
+/* line 1, ../scss/speakers.scss */
+#speakers {
+  height: auto !important;
+}
+
+/* line 5, ../scss/speakers.scss */
 .img-cmottier {
   background: url(../assets/images/speakers/cmottier.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 37, ../scss/devfest_content.scss */
+/* line 11, ../scss/speakers.scss */
 .img-jmouton {
   background: url(../assets/images/speakers/jmouton.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 43, ../scss/devfest_content.scss */
+/* line 17, ../scss/speakers.scss */
 .img-mgorner {
   background: url(../assets/images/speakers/mgorner.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 50, ../scss/devfest_content.scss */
+/* line 24, ../scss/speakers.scss */
 .img-dgageot {
   background: url(../assets/images/speakers/dgageot.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 57, ../scss/devfest_content.scss */
+/* line 31, ../scss/speakers.scss */
 .img-fharper {
   background: url(../assets/images/speakers/fharper.jpeg) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
+/* line 37, ../scss/speakers.scss */
+.img-ngarnier {
+  background: url(../assets/images/speakers/ngarnier.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -367,81 +374,81 @@
   }
 }
 /* Default */
-/* line 17, ../scss/devfest.scss */
+/* line 18, ../scss/devfest.scss */
 body {
   overflow: hidden !important;
   background-color: #f2f2f2;
 }
 
-/* line 22, ../scss/devfest.scss */
+/* line 23, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
 }
 
 /* Sections */
-/* line 30, ../scss/devfest.scss */
+/* line 31, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 35, ../scss/devfest.scss */
+/* line 36, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 41, ../scss/devfest.scss */
+/* line 42, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 46, ../scss/devfest.scss */
+/* line 47, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
-/* line 50, ../scss/devfest.scss */
+/* line 51, ../scss/devfest.scss */
 .controlArrow.prev {
   border-color: transparent #444 transparent transparent;
 }
 
-/* line 54, ../scss/devfest.scss */
+/* line 55, ../scss/devfest.scss */
 .controlArrow.next {
   border-color: transparent transparent transparent #444;
 }
 
 /* Section transition image */
-/* line 60, ../scss/devfest.scss */
+/* line 61, ../scss/devfest.scss */
 .section-transition {
   height: 400px !important;
 }
 
-/* line 64, ../scss/devfest.scss */
+/* line 65, ../scss/devfest.scss */
 .section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 69, ../scss/devfest.scss */
+/* line 70, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 73, ../scss/devfest.scss */
+/* line 74, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 77, ../scss/devfest.scss */
+/* line 78, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 83, ../scss/devfest.scss */
+/* line 84, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -449,7 +456,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 92, ../scss/devfest.scss */
+/* line 93, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -457,7 +464,7 @@ h1 {
   height: 100%;
 }
 
-/* line 99, ../scss/devfest.scss */
+/* line 100, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;

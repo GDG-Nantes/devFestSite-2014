@@ -22,10 +22,24 @@ var DevFestApp = DevFestApp || function(){
       $.ajax("assets/images/2013/hall_200.png"),
       $.ajax("assets/images/2013/oculus_200.png"),
       $.ajax("assets/images/2013/photo_cfp_ludovic.jpg"),
+      $.ajax("assets/images/speakers/dgageot.jpg"),
+      $.ajax("assets/images/speakers/fharper.jpeg"),
       $.ajax("assets/images/speakers/cmottier.png"),
       $.ajax("assets/images/speakers/mgorner.png"),
       $.ajax("assets/images/speakers/jmouton.png"),
       $.ajax("assets/images/2013/team.png")
+      
+      );
+  }
+    
+  function initCDN(){
+    return $.when($.ajax("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"),
+      $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"),
+      $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"),
+      $.ajax("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"),
+      $.ajax("//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"),
+      $.ajax("//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"),
+      $.ajax("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js")
       
       );
   }
@@ -50,6 +64,9 @@ var DevFestApp = DevFestApp || function(){
     // Chargement asynchrone des composants le temps de l'animation de chargement
     initImages()
     .then(function(){
+      return initCDN();
+    })
+    .then(function(){
       return initPartials();
     })
     .then(function(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
@@ -69,6 +86,8 @@ var DevFestApp = DevFestApp || function(){
       finishLoad();
     })
     .fail(function(error){
+      document.getElementById('contain').style['display'] = 'none';
+      document.getElementById('error-div').style['display'] = '';
       console.error(error);
     });    
   }

@@ -75,6 +75,44 @@
 		<br>
 		<p><i>L'équipe du <a href="mailto:bureau@gdgnantes.com">GDG Nantes</a></i></p>
 	</div>
+    
+    <!-- Div for errors -->
+	<div id="error-div" style="display:none;">
+		<h1>Désolé</h1>
+		<br>
+		<p>Une erreur c'est produite pendant le chargement du site.</p>
+		<p>Merci de rafraichir la page. Si le problème persiste, utilisez un navigateur compatible : I10+ / Safari / Chrome / Firefox</p>
+		<br>
+		<strong>Mais sachez que le DevFest Nantes 2014 c'est :</strong>
+		<table cellpadding="30px"> 
+
+          <tr class="text-danger">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-calendar fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Vendredi 7 novembre 2014<br>
+              8h30 à 18h
+            </td>
+          </tr>
+          
+          <tr class="text-primary">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-map-marker fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Nantes, France<br>
+              A la cité des congrès de Nantes
+            </td>
+          </tr>
+
+          <tr class="text-warning">
+            <td style="text-align:center;vertical-align:middle"><i class="fa fa-group fa-4x"></i></td>
+            <td style="vertical-align:middle" class="lead">
+              Pass standard : 30€ (éligible DIF)<br>
+              Pass académique : 10€
+            </td>
+          </tr>
+        </table>
+		<br>
+		<p><i>L'équipe du <a href="mailto:bureau@gdgnantes.com">GDG Nantes</a></i></p>
+	</div>
 	
 	<!-- Div for content for navigators that love Polymer ! -->
 	<div id="content">
@@ -182,18 +220,7 @@
 		var DevFestSiteVersion = "dev";		
 	</script>
 	
-	<!-- CDN Load -->
-	<!--<script src="./bower_components/jquery/dist/jquery.js"></script>
-	<script src="./bower_components/jquery-ui/ui/jquery-ui.js"></script>
-	<script src="./bower_components/prefix-free/prefixfree.min.js"></script>
-    <script src="./bower_components/lodash/dist/lodash.js"></script>
-	<script src="./bower_components/fastclick/lib/fastclick.js"></script>-->
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
-    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 
 	<!-- build:js ./javascript/app.js -->
 	<script src="./bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
@@ -203,6 +230,18 @@
 	<script src="./javascript/app.js"></script>
 	<!-- endbuild -->
 
+    
+	<!-- CDN Load -->
+	<!--<script src="./bower_components/jquery/dist/jquery.js"></script>
+	<script src="./bower_components/jquery-ui/ui/jquery-ui.js"></script>
+	<script src="./bower_components/prefix-free/prefixfree.min.js"></script>
+    <script src="./bower_components/lodash/dist/lodash.js"></script>
+	<script src="./bower_components/fastclick/lib/fastclick.js"></script>-->
+	<script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+    
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

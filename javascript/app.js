@@ -5,7 +5,7 @@ var DevFestApp = DevFestApp || function(){
 
   var nbComponentLoads = 0;
 
-  function initImages(){
+  /*function initImages(){
     return $.when($.ajax("assets/images/logo.png"),
       $.ajax("assets/images/gdg_stats.png"),
       $.ajax("assets/images/chevron_small.png"),
@@ -42,7 +42,7 @@ var DevFestApp = DevFestApp || function(){
       $.ajax("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js")
       
       );
-  }
+  }*/
 
   function initPartials(){
     return $.when($.ajax("partials/contacts.html?ver="+DevFestSiteVersion),
@@ -68,9 +68,9 @@ var DevFestApp = DevFestApp || function(){
     // })
     // .then(function(){
       // return initPartials();
-    // })
-	initPartials()
-    .then(function(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
+    // })  
+  initPartials()
+  .then(function callBackPartials(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
       //console.info(result);
       console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
@@ -132,7 +132,7 @@ var DevFestApp = DevFestApp || function(){
 
   }  
 
-  init();
+  $(document).ready(init);
 
   return{
     

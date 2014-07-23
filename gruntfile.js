@@ -51,7 +51,7 @@ module.exports = function (grunt) {
       },
       assets:{
         dir:            'assets',
-        manifest:   'devfest_appcache.manifest',
+        manifest:   'devfest_appcache_2014.manifest',
         sitemap:        'sitemap.xml',
         robots:         'robots.txt',
         yaml:           'app.yaml'
@@ -78,7 +78,7 @@ module.exports = function (grunt) {
         js:         'dist/javascript',
         assets:{
           dir:            'dist/assets',
-          manifest:   'dist/devfest_appcache.manifest',
+          manifest:   'dist/devfest_appcache_2014.manifest',
           sitemap:        'dist/sitemap.xml',
           robots:         'dist/robots.txt',
           yaml:           'dist/app.yaml'
@@ -137,6 +137,31 @@ module.exports = function (grunt) {
       html:['<%= dest.html.index %>']
     },
 
+    imagemin: {                          // Task
+      /*static: {                          // Target
+        options: {                       // Target options
+          optimizationLevel: 3,
+          use: [mozjpeg()]
+        },
+        files: {                         // Dictionary of files
+          'dist/img.png': 'src/img.png', // 'destination': 'source'
+          'dist/img.jpg': 'src/img.jpg',
+          'dist/img.gif': 'src/img.gif'
+        }
+      },*/
+      dynamic: {    
+        options: {                       // Target options
+          optimizationLevel: 4
+        },                     // Another target
+        files: [{
+          expand: true,                  // Enable dynamic expansion
+          cwd: 'assets/images',                   // Src matches are relative to this path
+          src: ['**/*.{png,jpg,jpeg,gif}'],   // Actual patterns to match
+          dest: 'dist/assets/images'                  // Destination path prefix
+        }]
+      }
+    },
+
     'string-replace': {          
           app: {
               files: {
@@ -154,10 +179,10 @@ module.exports = function (grunt) {
                     replacement: 'var DevFestSiteVersion = "<%= config.timestamp %>";'
                 }]
               }
-          }/*,
+          },
           manifest: {
               files: {
-                  'prod/devfest_appcache.manifest': 'prod/devfest_appcache.manifest'
+                  'dist/devfest_appcache_2014.manifest': 'dist/devfest_appcache_2014.manifest'
               },
               options: {
                 replacements: [{
@@ -165,7 +190,7 @@ module.exports = function (grunt) {
                     replacement: '<%= config.timestamp %>'
                 }]
               }
-          }*/
+          }
     },
 
 
@@ -174,6 +199,27 @@ module.exports = function (grunt) {
     //// DEVELOPMENT TASKS
     //////////////////////////////////////////////////
     //////////////////////////////////////////////////
+
+    'http-server': {
+      'dev': {
+
+            // the server root directory
+            root: "./",
+
+            port: 8080,
+
+            host: "127.0.0.1",
+
+            cache: 0,
+            showDir : true,
+            autoIndex: true,
+            defaultExt: "html",
+
+            // run in parallel with other tasks
+            runInBackground: true
+
+        }
+    },
 
     /*
     * Compass Task
@@ -277,10 +323,11 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Déclaration des taches
+  grunt.registerTask('serve',        ['http-server:dev', 'watch']);
   grunt.registerTask('lint',        ['jshint:dev', 'compass', 'csslint:dev']);
   grunt.registerTask('test',        ['lint', 'karma:unit', 'karma:e2e']);
   grunt.registerTask('ic',          ['jshint:ic', 'compass', 'csslint:ic', 'karma:ic_unit', 'karma:ic_e2e']);
-  grunt.registerTask('release',     [/*'ic', */'compass', 'clean', 'copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'string-replace', 'clean:tmp']);
+  grunt.registerTask('release',     [/*'ic', */'compass', 'clean', 'copy', 'imagemin', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'string-replace', 'clean:tmp']);
   grunt.registerTask('default',     ['test', 'release']);
 
 };

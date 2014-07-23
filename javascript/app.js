@@ -23,7 +23,7 @@ var DevFestApp = DevFestApp || function(){
       $.ajax("assets/images/2013/oculus_200.png"),
       $.ajax("assets/images/2013/photo_cfp_ludovic.jpg"),
       $.ajax("assets/images/speakers/dgageot.jpg"),
-      $.ajax("assets/images/speakers/fharper.jpeg"),
+      $.ajax("assets/images/speakers/fharper.jpg"),
       $.ajax("assets/images/speakers/cmottier.png"),
       $.ajax("assets/images/speakers/mgorner.png"),
       $.ajax("assets/images/speakers/jmouton.png"),

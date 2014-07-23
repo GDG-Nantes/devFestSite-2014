@@ -62,14 +62,13 @@ var DevFestApp = DevFestApp || function(){
   function init(){
 
     // Chargement asynchrone des composants le temps de l'animation de chargement
-    // initImages()
-    // .then(function(){
-    //   return initCDN();
-    // })
-    // .then(function(){
-    //   return initPartials();
-    // })
-	initPartials()
+    initImages()
+    .then(function(){
+      return initCDN();
+    })
+    .then(function(){
+      return initPartials();
+    })
     .then(function(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
       //console.info(result);
       console.info('retrieve ajaxCalls');

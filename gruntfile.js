@@ -177,6 +177,9 @@ module.exports = function (grunt) {
                 },{
                     pattern: 'var DevFestSiteVersion = "dev";',
                     replacement: 'var DevFestSiteVersion = "<%= config.timestamp %>";'
+                },{
+                    pattern: '<html lang="fr" >',
+                    replacement: '<html lang="fr" manifest="./devfest_appcache_2014.manifest">'
                 }]
               }
           },

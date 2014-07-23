@@ -3,7 +3,7 @@ CACHE MANIFEST
 
 CACHE:
 
-#CSS Librairies
+#CSS Librairies 
 //maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css
 //maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css
 //maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css
@@ -31,7 +31,6 @@ CACHE:
 
 #javascript files
 #js/app.js
-
 
 NETWORK:
 *

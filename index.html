@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--<html lang="fr" >-->
-<html lang="fr" manifest="./devfest_appcache_2014.manifest">
+<html lang="fr" >
+<!--<html lang="fr" manifest="./devfest_appcache_2014.manifest">-->
 <head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -30,9 +30,6 @@
   	<!--devfest-->
 	<link rel="stylesheet" href="./css/devfest.css" />
 	<!-- endbuild -->
-
-	<!-- Google Maps -->
-	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 
 	
 </head>
@@ -209,7 +206,7 @@
 			<div id="pratique" class="section ">
 			</div>
 
-			<!--Slide "Contacts"-->
+			<!--Slide "Contacts"--> 
 			<div id="contacts" class="section footer" >
 			</div>
 		</div>
@@ -218,6 +215,25 @@
 
 	<script>
 		var DevFestSiteVersion = "dev";		
+		
+		console.log("1");
+		var version = "0";		  	
+
+		document.addEventListener('DOMContentLoaded', function(){
+
+	    	if (window['jQuery']  === undefined){ 
+
+		      document.getElementById('unsupport-div').style['display'] = 'block';
+		      document.getElementById('content').style['display'] = 'none';
+
+		    }else{
+	    		DevFestApp.init();
+		    	
+		    }	  
+
+		});
+
+
 	</script>
 	
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
@@ -242,6 +258,12 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
     
+
+	<!-- Google Maps -->
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+
+
+	<!-- Google Analytics -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -249,23 +271,7 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-35116426-1', 'gdgnantes.com');
-		ga('send', 'pageview');
-
-		var DevFestCompat = DevFestCompat || function(){
-
-			var version = "0";
-
-		  	if (window['jQuery']  === undefined){
-
-		      document.getElementById('unsupport-div').style['display'] = 'block';
-		      document.getElementById('content').style['display'] = 'none';
-
-		    }	  
-
-		    return{	    
-		    	version : version
-		  	};
-		}();
+		ga('send', 'pageview');		
 	</script>
 </body>
 </html>

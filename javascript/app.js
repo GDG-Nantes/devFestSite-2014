@@ -132,9 +132,9 @@ var DevFestApp = DevFestApp || function(){
 
   }  
 
-  $(document).ready(init);
+  //$(document).ready(init);
 
   return{
-    
+    init:init
   };
 }();

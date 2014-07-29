@@ -102,11 +102,20 @@ var DevFestApp = DevFestApp || function(){
         verticalCentered: false,
         resize : false,
         slidesColor: ['#444', '#444', '#DDD', '#DDD', '#f2f2f2', '#444', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2',  '#444'],
-        autoScrolling: false,
+        autoScrolling: false, // A passer à true eventuellement
         scrollOverflow: false,
         css3: true,
         keyboardScrolling: true,
-        animateAnchor: false
+        animateAnchor: false/*,
+        menu:'#menu',
+        afterLoad: function(anchorLink, index){
+          console.log("AfterLoad : "+anchorLink+" | "+index);
+          if (index>2){
+            document.getElementById('menu').style.display = '';
+          }else{
+            document.getElementById('menu').style.display = 'none';
+          }
+        }*/
     });
     
 

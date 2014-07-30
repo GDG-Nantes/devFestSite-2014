@@ -94,29 +94,81 @@ var DevFestApp = DevFestApp || function(){
   }
 
   function finishLoad() {
+
+    var isMobile = document.querySelector('.navbar-toggle').getBoundingClientRect().width > 0;
         
     // Load FullPage
     document.getElementById('contain').style['display'] = 'none';
     document.getElementById('main-content').style['display'] = '';
-    jQuery.fn.fullpage({
+    //jQuery.fn.fullpage({
+    jQuery('#main-content').fullpage({
         verticalCentered: false,
         resize : false,
-        slidesColor: ['#444', '#444', '#DDD', '#DDD', '#f2f2f2', '#444', '#f2f2f2', '#444', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2', '#f2f2f2',  '#444'],
+        anchors: ['nav-home' // Slide Home
+          ,'nav-home' // Slide Video Phone
+          , 'nav-what-is-devfest' // Slide What is devfest
+          ,'nav-what-is-devfest' // Slide Transition
+          ,'nav-devfest-content' // Slide content
+          , 'nav-cfp' // Slide CFP
+          , 'nav-speakers' // Slide Speakers
+          , 'nav-speakers' // Slide Transition
+          , 'nav-sponsoring' // Slide Dossier
+          , 'nav-sponsors' // Slide Sponsor
+          , 'nav-sponsors' // Slide Transition
+          , 'nav-sponsors' // Slide Caroussel
+          , 'nav-pratique' // Slide Pratique
+          , 'nav-contacts' // Slide Contacts
+          ],
+        slidesColor: ['#444' // Slide Home
+          , '#444' // Slide Video Phone
+          , '#DDD' // Slide What is devfest
+          , '#DDD' // Slide Transition
+          , '#f2f2f2' // Slide Content
+          , '#444' // Slide CFP
+          , '#f2f2f2' // Slide Speakers
+          , '#444' // Slide Transition
+          , '#f2f2f2' // Slide Dossier
+          , '#f2f2f2' // Slide Sponsors
+          , '#f2f2f2' // Slide Transition
+          , '#f2f2f2' // Slide Caroussel
+          , '#f2f2f2' // Slide Pratique
+          ,  '#444' // Slide Contacts
+          ],
         autoScrolling: false, // A passer à true eventuellement
         scrollOverflow: false,
         css3: true,
         keyboardScrolling: true,
-        animateAnchor: false/*,
+        animateAnchor: true,
         menu:'#menu',
         afterLoad: function(anchorLink, index){
-          console.log("AfterLoad : "+anchorLink+" | "+index);
+          if (isMobile)
+            return;
+
+          console.debug("AfterLoad : "+anchorLink+" | "+index);
+          // On affiche le menu que si on est au slide a propos
           if (index>2){
-            document.getElementById('menu').style.display = '';
+            jQuery('#menu').addClass('show');            
           }else{
-            document.getElementById('menu').style.display = 'none';
+            jQuery('#menu').removeClass('show');
           }
-        }*/
+        }
     });
+
+    // Gestion corrective de l'affichage du menu pour les mobiles
+    if (isMobile){
+      window.onscroll = function scrollCallBack(){
+        if (document.getElementById('video-phone').getBoundingClientRect().bottom < 0){
+          jQuery('#menu').addClass('show');            
+        }else{
+          jQuery('#menu').removeClass('show');
+        }
+      }
+
+      // Fermeture automatique du menu sur clic (pour la version mobile)
+      jQuery('.navbar-collapse a').click(function(){
+        jQuery(".navbar-collapse").collapse('hide');
+      });
+    }
     
 
     // Load Maps

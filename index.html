@@ -138,87 +138,87 @@
 
 		
 			
+		<!-- Menu -->
+		<nav id="menu" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#nav-home"><img src="../assets/images/chevron_small.png" height="30px"> DevFest Nantes</a>
+		    </div>
 
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li data-menuanchor="nav-what-is-devfest" class="active"><a href="#nav-what-is-devfest">A propos ?</a></li>
+		        <li data-menuanchor="nav-devfest-content"><a href="#nav-devfest-content">Description</a></li>			        
+		        <li data-menuanchor="nav-cfp"><a href="#nav-cfp">CFP</a></li>			        
+		        <li data-menuanchor="nav-speakers"><a href="#nav-speakers">Speakers</a></li>			        
+		        <li data-menuanchor="nav-sponsoring"><a href="#nav-sponsoring">Dossiers</a></li>			        
+		        <li data-menuanchor="nav-sponsors"><a href="#nav-sponsors">Partenaires</a></li>			        
+		        <li data-menuanchor="nav-pratique"><a href="#nav-pratique">Pratique</a></li>			        
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li data-menuanchor="nav-contacts" ><a href="#nav-contacts">Contacts</a></li>			        			        
+		      </ul>
+		    </div><!-- /.navbar-collapse -->
+		  </div><!-- /.container-fluid -->
+		</nav>
 
 		<!-- Main Content-->
 		<div id="main-content" style="display:none;">
 
-			<!--<nav id="menu" class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="display:none;">
-			  <div class="container-fluid">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-			        <span class="sr-only">Toggle navigation</span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span>
-			      </button>
-			      <a class="navbar-brand" href="#home">DevFest</a>
-			    </div>
-
-			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			      <ul class="nav navbar-nav">
-			        <li class="active"><a href="#what-is-devfest">A propos ?</a></li>
-			        <li><a href="#devfest-content">Description</a></li>			        
-			        <li><a href="#cfp">Call For Paper</a></li>			        
-			        <li><a href="#speakers">Speakers</a></li>			        
-			        <li><a href="#sponsoring">Dossiers</a></li>			        
-			        <li><a href="#sponsors">Partenaires</a></li>			        
-			        <li><a href="#pratique">Pratique</a></li>			        
-			      </ul>
-			      <ul class="nav navbar-nav navbar-right">
-			        <li><a href="#contacts">Contacts</a></li>			        			        
-			      </ul>
-			    </div><!-- /.navbar-collapse ->
-			  </div><!-- /.container-fluid ->
-			</nav>-->
 
 
 			<!--Slide "Home" -->
-			<div id="home" class="section" >
+			<div id="home" data-anchor="nav-home" class="section" >
 			</div>
 
 			<!--Slide "Video Phone" -->
-			<div id="video-phone" class="section  visible-xs visible-sm" >
+			<div id="video-phone" data-anchor="nav-home"  class="section  visible-xs visible-sm" >
 			</div>
 
 			<!--Slide "Qu'est ce que le DevFest ?"-->
-			<div id="what-is-devfest" class="section" >
+			<div id="what-is-devfest" data-anchor="nav-what-is-devfest" class="section section-menu" >
 			</div>
 
 			<!--Slide "transition image"-->
-			<div class="section section-transition">		
+			<div data-anchor="nav-what-is-devfest"  class="section section-transition">		
 				<div class="section-img bg-t1" style="height:100%"></div>
 			</div>
 
 			<!--Slide "Contenu"-->
-			<div id="devfest-content" class="section" >
+			<div id="devfest-content" data-anchor="nav-devfest-content" class="section section-menu" >
 			</div>
 
 			<!--Slide "cfp"-->
-			<div id="cfp" class="section" >
+			<div id="cfp"  data-anchor="nav-cfp" class="section section-menu" >
 			</div>
 
 			
 			<!--Slide "speakers"-->
-			<div id="speakers" class="section" >
+			<div id="speakers" data-anchor="nav-speakers" class="section section-menu" >
 			</div>
 
 
 			<!--Slide "transition image"-->
-			<div class="section section-transition">	
+			<div  data-anchor="nav-speakers" class="section section-transition">	
 				<div class="section-img bg-t2" style="height:100%"></div>
 			</div>
 
 			<!--Slide "Sponsoring"-->
-			<div id="sponsoring" class="section" >
+			<div id="sponsoring"  data-anchor="nav-sponsoring" class="section section-menu" >
 			</div>
 
 			<!--Slide "Sponsors"-->
-			<div id="sponsors" class="section">
+			<div id="sponsors" data-anchor="nav-sponsors" class="section section-menu">
 			</div>
 
 			<!--Slide "transition image"-->
-			<div class="section section-transition visible-md visible-lg">
+			<div data-anchor="nav-sponsors" class="section section-transition visible-md visible-lg">
 				<div class="section-img bg-t3" style="height:100%"></div>
 			</div>
 
@@ -227,17 +227,17 @@
 			</div>-->
 
 			<!--Slide "caroussel"-->
-			<div id="caroussel" class="section visible-md visible-lg" style="text-align:center">
+			<div id="caroussel" data-anchor="nav-sponsors" class="section visible-md visible-lg" style="text-align:center">
 			    <img src="../assets/images/gdg_stats.png" class="img-responsive" height="500px" alt="GDG Statistics">
 			</div>
 
 
 			<!--Slide "transition image"-->
-			<div id="pratique" class="section ">
+			<div id="pratique" data-anchor="nav-pratique" class="section  section-menu">
 			</div>
 
 			<!--Slide "Contacts"--> 
-			<div id="contacts" class="section footer" >
+			<div id="contacts" data-anchor="nav-contacts" class="section footer" >
 			</div>
 		</div>
 
@@ -287,6 +287,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script> 
     
 
 	<!-- Google Maps -->

@@ -12,6 +12,7 @@
 @import "presse"; 
 @import "cfp";
 @import "devfest_phone";
+@import "compass/css3";
 
 /* Default */
 
@@ -27,6 +28,7 @@ h1 {
 
 
 /* Sections */
+$heightMenu : 60px;
 
 .footer {
 	font-size: 0.9em;
@@ -67,6 +69,10 @@ h1 {
 	background-size:cover;
 }
 
+.section-menu{
+	padding-top: $heightMenu;
+}
+
 .bg-t1 {
 	background-image:url(../assets/images/2013/angular.png);
 }
@@ -100,4 +106,55 @@ h1 {
 #unsupport-div p{
 	margin-left: 20px;
 	font-weight: 600;
+}
+
+/* Menu */
+
+#menu{
+	@include transition-property(opacity);
+	@include transition-timing-function(ease-in);
+	@include transition-duration(500ms);
+	opacity: 0;
+}
+
+#menu.show{
+	opacity: 1;	
+}
+
+
+#menu.navbar-default .navbar-nav>.active>a{
+	background-color: inherit;
+	background-image: inherit;
+	background-repeat: inherit;
+	box-shadow: inherit;
+	-webkit-box-shadow: inherit; 
+	-o-box-shadow: inherit; 
+	-moz-box-shadow: inherit; 
+}
+
+@media only screen and (min-width: 769px) {
+	#menu li[data-menuanchor='nav-contacts']{
+		padding-right: 30px;
+	}
+
+
+	#menu.navbar-default .navbar-nav>.active>a:after{
+		content: '';
+		height: 3px;
+		background-color: #a94442;
+		width: 90%;	
+		position: absolute;
+		bottom: -5px;
+		left: 50%;
+		margin-left: -45%;
+	}
+
+	#menu ul, #menu ul li{
+		height: $heightMenu;
+		line-height: $heightMenu;
+	}
+
+	#menu ul li a {
+		padding-top: 20px;
+	}
 }

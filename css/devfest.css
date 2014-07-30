@@ -160,8 +160,13 @@
   -moz-border-radius: 75px;
 }
 
+/* line 1, ../scss/home.scss */
+#home table {
+  margin-left: 40px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 2, ../scss/home.scss */
+  /* line 6, ../scss/home.scss */
   #home {
     width: 100%;
     height: 100%;
@@ -170,9 +175,21 @@
     background-image: url(../assets/images/logo.png);
   }
 
-  /* line 10, ../scss/home.scss */
+  /* line 14, ../scss/home.scss */
   #home table td {
     padding: 30px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-height: 768px) {
+  /* line 22, ../scss/home.scss */
+  #home table td {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  /* line 28, ../scss/home.scss */
+  #home table {
+    margin-left: 100px;
   }
 }
 /* line 2, ../scss/devfest_content.scss */
@@ -265,11 +282,10 @@
 /* line 1, ../scss/sponsors.scss */
 #sponsors {
   height: auto !important;
-  padding-top: 10px;
   padding-bottom: 40px;
 }
 
-/* line 7, ../scss/sponsors.scss */
+/* line 6, ../scss/sponsors.scss */
 .img-sponsor {
   display: block;
   height: auto;
@@ -278,31 +294,31 @@
   padding-bottom: 20px;
 }
 
-/* line 15, ../scss/sponsors.scss */
+/* line 14, ../scss/sponsors.scss */
 .img-sponsor.platinium {
   max-width: 300px;
   max-height: 150px;
 }
 
-/* line 20, ../scss/sponsors.scss */
+/* line 19, ../scss/sponsors.scss */
 .img-sponsor.gold {
   max-width: 250px;
   max-height: 130px;
 }
 
-/* line 25, ../scss/sponsors.scss */
+/* line 24, ../scss/sponsors.scss */
 .img-sponsor.silver {
   max-width: 200px;
   max-height: 100px;
 }
 
-/* line 30, ../scss/sponsors.scss */
+/* line 29, ../scss/sponsors.scss */
 .img-sponsor.partner {
   max-width: 200px;
   max-height: 100px;
 }
 
-/* line 35, ../scss/sponsors.scss */
+/* line 34, ../scss/sponsors.scss */
 .empty-sponsor {
   background-color: #CCC;
   margin: auto;
@@ -317,7 +333,6 @@
 /* line 1, ../scss/sponsoring.scss */
 #sponsoring {
   height: auto !important;
-  padding-top: 20px;
 }
 
 /* line 1, ../scss/carousel.scss */
@@ -328,7 +343,6 @@
 /* line 1, ../scss/pratique.scss */
 #pratique {
   height: auto !important;
-  padding-top: 10px;
   padding-bottom: 40px;
 }
 
@@ -336,13 +350,11 @@
 #contacts {
   height: auto !important;
   background-color: #444;
-  padding-top: 10px;
 }
 
 /* line 1, ../scss/presse.scss */
 #presse {
   height: auto !important;
-  padding-top: 20px;
 }
 
 /* line 1, ../scss/cfp.scss */
@@ -381,81 +393,86 @@
   }
 }
 /* Default */
-/* line 18, ../scss/devfest.scss */
+/* line 19, ../scss/devfest.scss */
 body {
   overflow: hidden !important;
   background-color: #f2f2f2;
 }
 
-/* line 23, ../scss/devfest.scss */
+/* line 24, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
 }
 
 /* Sections */
-/* line 31, ../scss/devfest.scss */
+/* line 33, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 36, ../scss/devfest.scss */
+/* line 38, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 42, ../scss/devfest.scss */
+/* line 44, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 47, ../scss/devfest.scss */
+/* line 49, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
-/* line 51, ../scss/devfest.scss */
+/* line 53, ../scss/devfest.scss */
 .controlArrow.prev {
   border-color: transparent #444 transparent transparent;
 }
 
-/* line 55, ../scss/devfest.scss */
+/* line 57, ../scss/devfest.scss */
 .controlArrow.next {
   border-color: transparent transparent transparent #444;
 }
 
 /* Section transition image */
-/* line 61, ../scss/devfest.scss */
+/* line 63, ../scss/devfest.scss */
 .section-transition {
   height: 400px !important;
 }
 
-/* line 65, ../scss/devfest.scss */
+/* line 67, ../scss/devfest.scss */
 .section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 70, ../scss/devfest.scss */
+/* line 72, ../scss/devfest.scss */
+.section-menu {
+  padding-top: 60px;
+}
+
+/* line 76, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 74, ../scss/devfest.scss */
+/* line 80, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 78, ../scss/devfest.scss */
+/* line 84, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 84, ../scss/devfest.scss */
+/* line 90, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -463,7 +480,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 93, ../scss/devfest.scss */
+/* line 99, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -471,8 +488,72 @@ h1 {
   height: 100%;
 }
 
-/* line 100, ../scss/devfest.scss */
+/* line 106, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;
+}
+
+/* Menu */
+/* line 113, ../scss/devfest.scss */
+#menu {
+  -moz-transition-property: opacity;
+  -o-transition-property: opacity;
+  -webkit-transition-property: opacity;
+  transition-property: opacity;
+  -moz-transition-timing-function: ease-in;
+  -o-transition-timing-function: ease-in;
+  -webkit-transition-timing-function: ease-in;
+  transition-timing-function: ease-in;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+  opacity: 0;
+}
+
+/* line 120, ../scss/devfest.scss */
+#menu.show {
+  opacity: 1;
+}
+
+/* line 125, ../scss/devfest.scss */
+#menu.navbar-default .navbar-nav > .active > a {
+  background-color: inherit;
+  background-image: inherit;
+  background-repeat: inherit;
+  box-shadow: inherit;
+  -webkit-box-shadow: inherit;
+  -o-box-shadow: inherit;
+  -moz-box-shadow: inherit;
+}
+
+@media only screen and (min-width: 769px) {
+  /* line 136, ../scss/devfest.scss */
+  #menu li[data-menuanchor='nav-contacts'] {
+    padding-right: 30px;
+  }
+
+  /* line 141, ../scss/devfest.scss */
+  #menu.navbar-default .navbar-nav > .active > a:after {
+    content: '';
+    height: 3px;
+    background-color: #a94442;
+    width: 90%;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    margin-left: -45%;
+  }
+
+  /* line 152, ../scss/devfest.scss */
+  #menu ul, #menu ul li {
+    height: 60px;
+    line-height: 60px;
+  }
+
+  /* line 157, ../scss/devfest.scss */
+  #menu ul li a {
+    padding-top: 20px;
+  }
 }

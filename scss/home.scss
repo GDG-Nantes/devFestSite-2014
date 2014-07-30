@@ -1,3 +1,7 @@
+#home table{
+	margin-left: 40px;
+}
+
 @media only screen and (min-width: 768px) {
 	#home {
 		width:100%;
@@ -12,3 +16,16 @@
 	}
 }
 
+
+
+@media only screen and (min-width: 768px) and (max-height: 768px){
+	#home table td{
+		padding: 20px;
+	}
+}
+
+@media only screen and (min-width: 1280px){
+	#home table{
+		margin-left: 100px;
+	}
+}

@@ -144,7 +144,7 @@ var DevFestApp = DevFestApp || function(){
           if (isMobile)
             return;
 
-          console.debug("AfterLoad : "+anchorLink+" | "+index);
+          //console.debug("AfterLoad : "+anchorLink+" | "+index);
           // On affiche le menu que si on est au slide a propos
           if (index>2){
             jQuery('#menu').addClass('show');            

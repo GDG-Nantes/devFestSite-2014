@@ -72,7 +72,7 @@ var DevFestApp = DevFestApp || function(){
   initPartials()
   .then(function callBackPartials(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
       //console.info(result);
-      console.info('retrieve ajaxCalls');
+      //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);

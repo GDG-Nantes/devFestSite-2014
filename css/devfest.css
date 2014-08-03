@@ -523,18 +523,19 @@ h1 {
   background-image: inherit;
   background-repeat: inherit;
   box-shadow: inherit;
+  -ms-box-shadow: inherit;
   -webkit-box-shadow: inherit;
   -o-box-shadow: inherit;
   -moz-box-shadow: inherit;
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 136, ../scss/devfest.scss */
+  /* line 137, ../scss/devfest.scss */
   #menu li[data-menuanchor='nav-contacts'] {
     padding-right: 30px;
   }
 
-  /* line 141, ../scss/devfest.scss */
+  /* line 142, ../scss/devfest.scss */
   #menu.navbar-default .navbar-nav > .active > a:after {
     content: '';
     height: 3px;
@@ -546,13 +547,13 @@ h1 {
     margin-left: -45%;
   }
 
-  /* line 152, ../scss/devfest.scss */
+  /* line 153, ../scss/devfest.scss */
   #menu ul, #menu ul li {
     height: 60px;
     line-height: 60px;
   }
 
-  /* line 157, ../scss/devfest.scss */
+  /* line 158, ../scss/devfest.scss */
   #menu ul li a {
     padding-top: 20px;
   }

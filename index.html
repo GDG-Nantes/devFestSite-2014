@@ -2,6 +2,7 @@
 <html lang="fr" >
 <!--<html lang="fr" manifest="./devfest_appcache_2014.manifest">-->
 <head>
+
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
@@ -31,7 +32,7 @@
 	<link rel="stylesheet" href="./css/devfest.css" />
 	<!-- endbuild -->
 
-	
+
 </head>
 <body id="mainbody">	
 
@@ -244,13 +245,15 @@
 	</div>
 
 	<script>
+	
+		var eventToListen = document.addEventListener ? "DOMContentLoaded" : "onreadystatechange";
+		document.addEventListener = document.addEventListener || document.attachEvent; 
+		
+
 		var DevFestSiteVersion = "dev";		
 		
-		console.log("1");
-		var version = "0";		  	
-
-		document.addEventListener('DOMContentLoaded', function(){
-
+		var version = "0";
+		document.addEventListener(eventToListen, function(){
 	    	if (window['jQuery']  === undefined){ 
 
 		      document.getElementById('unsupport-div').style['display'] = 'block';

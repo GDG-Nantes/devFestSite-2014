@@ -2,18 +2,7 @@
   "name": "DevFestNanteSite2014",
   "version": "1.0.0",
   "dependencies": {
-    "jquery": "2.1.0",
-    "jquery-ui": "1.10.4",
-    "fastclick": "latest",
-    "prefix-free": "gh-pages",
-    "lodash": "2.4.1",
-    "bootstrap": "3.0.2",
-    "skrollr": "0.6.21",
     "fullpage.js": "1.7.6",
-    "font-awesome": "4.0.3",
-     "q":"1.0.1"
-  },
-  "resolutions": {
-    "jquery": "2.1.0"
+    "rivets": "0.6.9"
   }
 }

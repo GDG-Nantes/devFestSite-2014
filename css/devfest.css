@@ -392,87 +392,117 @@
     height: auto !important;
   }
 }
+/* line 1, ../scss/agenda.scss */
+#agenda {
+  height: auto !important;
+  color: #999;
+}
+/* line 6, ../scss/agenda.scss */
+#agenda h1 {
+  color: white;
+}
+/* line 10, ../scss/agenda.scss */
+#agenda .text-hour {
+  font-size: 25pt;
+}
+/* line 14, ../scss/agenda.scss */
+#agenda .text-thin, #agenda .text-hour {
+  font-family: 'RobotoThin', Arial, sans-serif;
+}
+/* line 23, ../scss/agenda.scss */
+#agenda .row .border, #agenda .row .border-row {
+  border-width: 2px;
+  border-color: #f2f2f2;
+  border-style: solid;
+  border-left-width: 0;
+  border-bottom-width: 0;
+}
+/* line 31, ../scss/agenda.scss */
+#agenda .row .border:first-child, #agenda .row .border-row:first-child {
+  border-left-width: 2px;
+}
+
 /* Default */
-/* line 19, ../scss/devfest.scss */
+/* line 20, ../scss/devfest.scss */
 body {
   overflow: hidden !important;
   background-color: #f2f2f2;
 }
 
-/* line 24, ../scss/devfest.scss */
+/* line 25, ../scss/devfest.scss */
 h1 {
   font-family: 'RobotoThin', Arial, sans-serif;
   font-size: 3.5em;
 }
 
 /* Sections */
-/* line 33, ../scss/devfest.scss */
+/* line 34, ../scss/devfest.scss */
 .footer {
   font-size: 0.9em;
   color: #999;
 }
 
-/* line 38, ../scss/devfest.scss */
+/* line 39, ../scss/devfest.scss */
 .footer h4 {
   color: white;
   font-weight: normal;
   font-size: 1.2em;
 }
 
-/* line 44, ../scss/devfest.scss */
+/* line 45, ../scss/devfest.scss */
 .footer a {
   color: #AAA;
 }
 
-/* line 49, ../scss/devfest.scss */
+/* line 50, ../scss/devfest.scss */
 .footer hr {
   border-color: #AAA;
 }
 
-/* line 53, ../scss/devfest.scss */
+/* line 54, ../scss/devfest.scss */
 .controlArrow.prev {
   border-color: transparent #444 transparent transparent;
 }
 
-/* line 57, ../scss/devfest.scss */
+/* line 58, ../scss/devfest.scss */
 .controlArrow.next {
   border-color: transparent transparent transparent #444;
 }
 
 /* Section transition image */
-/* line 63, ../scss/devfest.scss */
+/* line 64, ../scss/devfest.scss */
 .section-transition {
   height: 400px !important;
 }
 
-/* line 67, ../scss/devfest.scss */
+/* line 68, ../scss/devfest.scss */
 .section-img {
   background: transparent center no-repeat;
   background-size: cover;
 }
 
-/* line 72, ../scss/devfest.scss */
+/* line 73, ../scss/devfest.scss */
 .section-menu {
   padding-top: 60px;
 }
 
-/* line 76, ../scss/devfest.scss */
+/* line 77, ../scss/devfest.scss */
 .bg-t1 {
   background-image: url(../assets/images/2013/angular.png);
 }
 
-/* line 80, ../scss/devfest.scss */
+/* line 81, ../scss/devfest.scss */
 .bg-t2 {
   background-image: url(../assets/images/2013/cyril.png);
 }
 
-/* line 84, ../scss/devfest.scss */
+/* line 85, ../scss/devfest.scss */
 .bg-t3 {
   background-image: url(../assets/images/2013/team.png);
 }
 
 /* Misc */
-/* line 90, ../scss/devfest.scss */
+/* line 91, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -480,7 +510,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 99, ../scss/devfest.scss */
+/* line 100, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -488,14 +518,14 @@ h1 {
   height: 100%;
 }
 
-/* line 106, ../scss/devfest.scss */
+/* line 107, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;
 }
 
 /* Menu */
-/* line 113, ../scss/devfest.scss */
+/* line 114, ../scss/devfest.scss */
 #menu {
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -512,12 +542,12 @@ h1 {
   opacity: 0;
 }
 
-/* line 120, ../scss/devfest.scss */
+/* line 121, ../scss/devfest.scss */
 #menu.show {
   opacity: 1;
 }
 
-/* line 125, ../scss/devfest.scss */
+/* line 126, ../scss/devfest.scss */
 #menu.navbar-default .navbar-nav > .active > a {
   background-color: inherit;
   background-image: inherit;
@@ -530,12 +560,12 @@ h1 {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 137, ../scss/devfest.scss */
+  /* line 138, ../scss/devfest.scss */
   #menu li[data-menuanchor='nav-contacts'] {
     padding-right: 30px;
   }
 
-  /* line 142, ../scss/devfest.scss */
+  /* line 143, ../scss/devfest.scss */
   #menu.navbar-default .navbar-nav > .active > a:after {
     content: '';
     height: 3px;
@@ -547,13 +577,13 @@ h1 {
     margin-left: -45%;
   }
 
-  /* line 153, ../scss/devfest.scss */
+  /* line 154, ../scss/devfest.scss */
   #menu ul, #menu ul li {
     height: 60px;
     line-height: 60px;
   }
 
-  /* line 158, ../scss/devfest.scss */
+  /* line 159, ../scss/devfest.scss */
   #menu ul li a {
     padding-top: 20px;
   }

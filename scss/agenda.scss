@@ -1,0 +1,36 @@
+#agenda {
+	height: auto !important;
+
+	color : #999;
+
+	h1{
+		color: white;
+	}
+
+	.text-hour{
+		font-size: 25pt;
+	}
+
+	.text-thin, .text-hour{
+		font-family: 'RobotoThin', Arial, sans-serif;
+	}
+
+	$border-width : 2px; 
+
+	
+
+
+	.row .border, .row .border-row{
+		border-width: $border-width;
+		border-color: #f2f2f2;
+		border-style: solid;
+		border-left-width: 0;		
+		border-bottom-width:0;
+	}
+
+	.row .border:first-child, .row .border-row:first-child{
+		border-left-width: $border-width;
+	}
+
+	
+}

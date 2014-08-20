@@ -16,21 +16,23 @@
 	}
 
 	$border-width : 2px; 
+	$border-width-thin : 1px; 
 
 	
 
+	.row.header-agenda{
+		margin-bottom: 5px;
+	}
 
-	.row .border, .row .border-row{
+	.row .border{
 		border-width: $border-width;
-		border-color: #f2f2f2;
+		border-color: #f2f2f2; 
 		border-style: solid;
 		border-left-width: 0;		
-		border-bottom-width:0;
 	}
 
-	.row .border:first-child, .row .border-row:first-child{
-		border-left-width: $border-width;
+	.row .border:first-child {
+		border-left-width:$border-width;	
 	}
 
-	
 }

@@ -16,14 +16,17 @@
   font-family: 'RobotoThin', Arial, sans-serif;
 }
 /* line 23, ../scss/agenda.scss */
-#agenda .row .border, #agenda .row .border-row {
+#agenda .row.header-agenda {
+  margin-bottom: 5px;
+}
+/* line 27, ../scss/agenda.scss */
+#agenda .row .border {
   border-width: 2px;
   border-color: #f2f2f2;
   border-style: solid;
   border-left-width: 0;
-  border-bottom-width: 0;
 }
-/* line 31, ../scss/agenda.scss */
-#agenda .row .border:first-child, #agenda .row .border-row:first-child {
+/* line 34, ../scss/agenda.scss */
+#agenda .row .border:first-child {
   border-left-width: 2px;
 }

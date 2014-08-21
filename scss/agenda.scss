@@ -1,11 +1,30 @@
-#agenda {
+@import "const";
+@import "compass";
+
+$color-text:#999;
+$color-border:#f2f2f2;
+$border-width : thin; 
+$border-width-thin : 1px; 
+
+#agenda{
 	height: auto !important;
-
-	color : #999;
-
+	
 	h1{
 		color: white;
 	}
+}
+
+#header-agenda-to-copy{
+	background: #444;
+	position: fixed;
+	top: $heightMenu;
+	width: 100%;
+}
+
+#agenda, #header-agenda-to-copy{
+	
+	color : $color-text;
+
 
 	.text-hour{
 		font-size: 25pt;
@@ -15,10 +34,25 @@
 		font-family: 'RobotoThin', Arial, sans-serif;
 	}
 
-	$border-width : 2px; 
-	$border-width-thin : 1px; 
+	.row{
+		margin-bottom: 10px;
+	}
 
-	
+	.row:after{
+		content: '';
+		position: relative;
+		top: 5px;
+		left: 50%;
+		margin-left: -30%;
+		width: 60%;
+		height: 1px;
+		@include background-image(linear-gradient(to right, rgba(0,0,0,0), $color-border 50%, rgba(0,0,0,0)));
+		//background: $color-border;
+	}
+
+	.row:first-child:after,.row:last-child:after{
+		height: 0;
+	}
 
 	.row.header-agenda{
 		margin-bottom: 5px;
@@ -26,7 +60,7 @@
 
 	.row .border{
 		border-width: $border-width;
-		border-color: #f2f2f2; 
+		border-color: $color-border; 
 		border-style: solid;
 		border-left-width: 0;		
 	}
@@ -35,4 +69,23 @@
 		border-left-width:$border-width;	
 	}
 
+	.row .border-hour{
+		border-right: thin solid $color-border;
+	}
+
+	/*.row  .animated-expand{
+		@include transition-property(width);
+		@include transition-timing-function(ease-in);
+		@include transition-duration(200ms);
+	}*/
+
+	.row .animated-expand:hover{
+		cursor: pointer;
+	}
+
+	.row .animated-expand.to-hide{
+		display: none !important;
+	}
+
 }
+

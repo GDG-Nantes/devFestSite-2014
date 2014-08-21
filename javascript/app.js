@@ -159,20 +159,16 @@ var DevFestApp = DevFestApp || function(){
     });
 
     // Gestion corrective de l'affichage du menu pour les mobiles
-    if (isMobile){
-      window.onscroll = function scrollCallBack(){
-        if (document.getElementById('video-phone').getBoundingClientRect().bottom < 0){
-          jQuery('#menu').addClass('show');            
-        }else{
-          jQuery('#menu').removeClass('show');
-        }
-      }
-
+    if (isMobile){      
       // Fermeture automatique du menu sur clic (pour la version mobile)
       jQuery('.navbar-collapse a').click(function(){
         jQuery(".navbar-collapse").collapse('hide');
       });
     }
+
+
+    manageAgendaHeader(isMobile);
+    scrollManagement(isMobile);
     
 
     // Load Maps
@@ -195,7 +191,52 @@ var DevFestApp = DevFestApp || function(){
     google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
     infowindow.open(map,marker);
 
+  }
+
+  function manageAgendaHeader(isMobile){
+      jQuery('#header-agenda-to-copy').appendTo('body'); 
+      jQuery('#header-agenda-to-copy').hide(); 
+
+      if (!isMobile){        
+        jQuery('.animated-expand').on('click',function animateConfClick(){
+          var parent = $(this).parent();
+          if ($(this).hasClass('col-lg-9')){
+            $(this).removeClass('col-lg-9');
+            $(this).addClass('col-lg-3');
+            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+            $(this).removeClass('expand');
+            $(this).children('.resume').addClass('hidden-lg');
+          }else{            
+            $(this).addClass('expand');
+            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+            $(this).removeClass('col-lg-3');
+            $(this).addClass('col-lg-9');
+            $(this).children('.resume').removeClass('hidden-lg');
+          }
+        });
+      }
   }  
+
+  function scrollManagement(isMobile){
+    var agendaContainer = document.getElementById('agenda-container');
+    window.onscroll = function scrollCallBack(){
+      if (isMobile){        
+        if (document.getElementById('video-phone').getBoundingClientRect().bottom < 0){
+          jQuery('#menu').addClass('show');            
+        }else{
+          jQuery('#menu').removeClass('show');
+        }
+      }
+
+      // Gestion du menu fixed pour l'agenda
+      jQuery('#header-agenda').css({'opacity': agendaContainer.getBoundingClientRect().top < 60 ? 0 : 1});
+      if (agendaContainer.getBoundingClientRect().bottom > 60 && agendaContainer.getBoundingClientRect().top < 60){
+        jQuery('#header-agenda-to-copy').show();
+      }else{
+        jQuery('#header-agenda-to-copy').hide();
+      }
+    }
+  }
 
   //$(document).ready(init);
 

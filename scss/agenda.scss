@@ -1,5 +1,6 @@
 @import "const";
 @import "compass";
+@import "compass/css3";
 
 $color-text:#999;
 $color-border:#f2f2f2;
@@ -14,14 +15,20 @@ $border-width-thin : 1px;
 	}
 }
 
-#header-agenda-to-copy{
+#header-agenda-copy{
 	background: #444;
 	position: fixed;
 	top: $heightMenu;
 	width: 100%;
+
+	.header-agenda .border{
+  		@include box-shadow(#000 0px 2px 10px);
+	}
+
+
 }
 
-#agenda, #header-agenda-to-copy{
+#agenda, #header-agenda-to-copy, #header-agenda-copy{
 	
 	color : $color-text;
 
@@ -58,16 +65,26 @@ $border-width-thin : 1px;
 		margin-bottom: 5px;
 	}
 
-	.row .border{
-		border-width: $border-width;
-		border-color: $color-border; 
-		border-style: solid;
-		border-left-width: 0;		
+	.header-agenda .border:not(.col-lg-offset-1){
+		margin-left: 10px;
 	}
 
-	.row .border:first-child {
-		border-left-width:$border-width;	
+	.row .border{
+		/*border-width: $border-width;
+		border-color: $color-border; 
+		border-style: solid;
+		border-left-width: 0;		*/
+		background: $color-border;
+
+		.lead{
+			padding-top: 10px;
+			margin-bottom: 10px;
+		}
 	}
+
+	/*.row .border:first-child {
+		border-left-width:$border-width;	
+	}*/
 
 	.row .border-hour{
 		border-right: thin solid $color-border;
@@ -78,6 +95,10 @@ $border-width-thin : 1px;
 		@include transition-timing-function(ease-in);
 		@include transition-duration(200ms);
 	}*/
+
+	.col-xs-8.col-lg-2.padded.animated-expand{
+		margin-left: 10px;
+	}
 
 	.row .animated-expand:hover{
 		cursor: pointer;

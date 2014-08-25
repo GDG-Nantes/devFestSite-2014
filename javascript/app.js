@@ -194,23 +194,23 @@ var DevFestApp = DevFestApp || function(){
   }
 
   function manageAgendaHeader(isMobile){
-      jQuery('#header-agenda-to-copy').appendTo('body'); 
-      jQuery('#header-agenda-to-copy').hide(); 
+      jQuery('#header-agenda-to-copy').clone().attr('id','header-agenda-copy').appendTo('body'); 
+      jQuery('#header-agenda-copy').hide(); 
 
       if (!isMobile){        
         jQuery('.animated-expand').on('click',function animateConfClick(){
           var parent = $(this).parent();
-          if ($(this).hasClass('col-lg-9')){
-            $(this).removeClass('col-lg-9');
-            $(this).addClass('col-lg-3');
+          if ($(this).hasClass('col-lg-8')){
+            $(this).removeClass('col-lg-8');
+            $(this).addClass('col-lg-2');
             parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
             $(this).removeClass('expand');
             $(this).children('.resume').addClass('hidden-lg');
           }else{            
             $(this).addClass('expand');
             parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            $(this).removeClass('col-lg-3');
-            $(this).addClass('col-lg-9');
+            $(this).removeClass('col-lg-2');
+            $(this).addClass('col-lg-8');
             $(this).children('.resume').removeClass('hidden-lg');
           }
         });
@@ -229,11 +229,11 @@ var DevFestApp = DevFestApp || function(){
       }
 
       // Gestion du menu fixed pour l'agenda
-      jQuery('#header-agenda').css({'opacity': agendaContainer.getBoundingClientRect().top < 60 ? 0 : 1});
+      jQuery('#header-agenda-to-copy').css({'opacity': agendaContainer.getBoundingClientRect().top < 60 ? 0 : 1});
       if (agendaContainer.getBoundingClientRect().bottom > 60 && agendaContainer.getBoundingClientRect().top < 60){
-        jQuery('#header-agenda-to-copy').show();
+        jQuery('#header-agenda-copy').show();
       }else{
-        jQuery('#header-agenda-to-copy').hide();
+        jQuery('#header-agenda-copy').hide();
       }
     }
   }

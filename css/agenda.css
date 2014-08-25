@@ -1,43 +1,52 @@
-/* line 9, ../scss/agenda.scss */
+/* line 10, ../scss/agenda.scss */
 #agenda {
   height: auto !important;
 }
-/* line 12, ../scss/agenda.scss */
+/* line 13, ../scss/agenda.scss */
 #agenda h1 {
   color: white;
 }
 
-/* line 17, ../scss/agenda.scss */
-#header-agenda-to-copy {
+/* line 18, ../scss/agenda.scss */
+#header-agenda-copy {
   background: #444;
   position: fixed;
   top: 60px;
   width: 100%;
 }
-
 /* line 24, ../scss/agenda.scss */
-#agenda, #header-agenda-to-copy {
+#header-agenda-copy .header-agenda .border {
+  -moz-box-shadow: black 0px 2px 10px;
+  -webkit-box-shadow: black 0px 2px 10px;
+  box-shadow: black 0px 2px 10px;
+}
+
+/* line 31, ../scss/agenda.scss */
+#agenda, #header-agenda-to-copy, #header-agenda-copy {
   color: #999999;
+  /*.row .border:first-child {
+  	border-left-width:$border-width;	
+  }*/
   /*.row  .animated-expand{
   	@include transition-property(width);
   	@include transition-timing-function(ease-in);
   	@include transition-duration(200ms);
   }*/
 }
-/* line 29, ../scss/agenda.scss */
-#agenda .text-hour, #header-agenda-to-copy .text-hour {
+/* line 36, ../scss/agenda.scss */
+#agenda .text-hour, #header-agenda-to-copy .text-hour, #header-agenda-copy .text-hour {
   font-size: 25pt;
 }
-/* line 33, ../scss/agenda.scss */
-#agenda .text-thin, #agenda .text-hour, #header-agenda-to-copy .text-thin, #header-agenda-to-copy .text-hour {
+/* line 40, ../scss/agenda.scss */
+#agenda .text-thin, #agenda .text-hour, #header-agenda-to-copy .text-thin, #header-agenda-to-copy .text-hour, #header-agenda-copy .text-thin, #header-agenda-copy .text-hour {
   font-family: 'RobotoThin', Arial, sans-serif;
 }
-/* line 37, ../scss/agenda.scss */
-#agenda .row, #header-agenda-to-copy .row {
+/* line 44, ../scss/agenda.scss */
+#agenda .row, #header-agenda-to-copy .row, #header-agenda-copy .row {
   margin-bottom: 10px;
 }
-/* line 41, ../scss/agenda.scss */
-#agenda .row:after, #header-agenda-to-copy .row:after {
+/* line 48, ../scss/agenda.scss */
+#agenda .row:after, #header-agenda-to-copy .row:after, #header-agenda-copy .row:after {
   content: '';
   position: relative;
   top: 5px;
@@ -46,38 +55,47 @@
   width: 60%;
   height: 1px;
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #f2f2f2 50%, rgba(0, 0, 0, 0));
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #f2f2f2 50%, rgba(0, 0, 0, 0));
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #f2f2f2 50%, rgba(0, 0, 0, 0));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #f2f2f2 50%, rgba(0, 0, 0, 0));
 }
-/* line 53, ../scss/agenda.scss */
-#agenda .row:first-child:after, #agenda .row:last-child:after, #header-agenda-to-copy .row:first-child:after, #header-agenda-to-copy .row:last-child:after {
+/* line 60, ../scss/agenda.scss */
+#agenda .row:first-child:after, #agenda .row:last-child:after, #header-agenda-to-copy .row:first-child:after, #header-agenda-to-copy .row:last-child:after, #header-agenda-copy .row:first-child:after, #header-agenda-copy .row:last-child:after {
   height: 0;
 }
-/* line 57, ../scss/agenda.scss */
-#agenda .row.header-agenda, #header-agenda-to-copy .row.header-agenda {
+/* line 64, ../scss/agenda.scss */
+#agenda .row.header-agenda, #header-agenda-to-copy .row.header-agenda, #header-agenda-copy .row.header-agenda {
   margin-bottom: 5px;
 }
-/* line 61, ../scss/agenda.scss */
-#agenda .row .border, #header-agenda-to-copy .row .border {
-  border-width: thin;
-  border-color: #f2f2f2;
-  border-style: solid;
-  border-left-width: 0;
-}
 /* line 68, ../scss/agenda.scss */
-#agenda .row .border:first-child, #header-agenda-to-copy .row .border:first-child {
-  border-left-width: thin;
+#agenda .header-agenda .border:not(.col-lg-offset-1), #header-agenda-to-copy .header-agenda .border:not(.col-lg-offset-1), #header-agenda-copy .header-agenda .border:not(.col-lg-offset-1) {
+  margin-left: 10px;
 }
 /* line 72, ../scss/agenda.scss */
-#agenda .row .border-hour, #header-agenda-to-copy .row .border-hour {
+#agenda .row .border, #header-agenda-to-copy .row .border, #header-agenda-copy .row .border {
+  /*border-width: $border-width;
+  border-color: $color-border; 
+  border-style: solid;
+  border-left-width: 0;		*/
+  background: #f2f2f2;
+}
+/* line 79, ../scss/agenda.scss */
+#agenda .row .border .lead, #header-agenda-to-copy .row .border .lead, #header-agenda-copy .row .border .lead {
+  padding-top: 10px;
+  margin-bottom: 10px;
+}
+/* line 89, ../scss/agenda.scss */
+#agenda .row .border-hour, #header-agenda-to-copy .row .border-hour, #header-agenda-copy .row .border-hour {
   border-right: thin solid #f2f2f2;
 }
-/* line 82, ../scss/agenda.scss */
-#agenda .row .animated-expand:hover, #header-agenda-to-copy .row .animated-expand:hover {
+/* line 99, ../scss/agenda.scss */
+#agenda .col-xs-8.col-lg-2.padded.animated-expand, #header-agenda-to-copy .col-xs-8.col-lg-2.padded.animated-expand, #header-agenda-copy .col-xs-8.col-lg-2.padded.animated-expand {
+  margin-left: 10px;
+}
+/* line 103, ../scss/agenda.scss */
+#agenda .row .animated-expand:hover, #header-agenda-to-copy .row .animated-expand:hover, #header-agenda-copy .row .animated-expand:hover {
   cursor: pointer;
 }
-/* line 86, ../scss/agenda.scss */
-#agenda .row .animated-expand.to-hide, #header-agenda-to-copy .row .animated-expand.to-hide {
+/* line 107, ../scss/agenda.scss */
+#agenda .row .animated-expand.to-hide, #header-agenda-to-copy .row .animated-expand.to-hide, #header-agenda-copy .row .animated-expand.to-hide {
   display: none !important;
 }

@@ -214,6 +214,13 @@ var DevFestApp = DevFestApp || function(){
             $(this).children('.resume').removeClass('hidden-lg');
           }
         });
+      }else{
+        jQuery('.header-agenda .border').on('click',function animateConfClick(){
+          var parent = $(this).parent();
+          parent.children('.header-agenda .border').removeClass('select');
+          $(this).addClass('select');
+          
+        });
       }
   }  
 

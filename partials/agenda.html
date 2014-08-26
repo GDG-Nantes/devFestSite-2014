@@ -1,6 +1,7 @@
 <div class="text-center"><h1>Programme</h1></div>
 <!-- s'inspirer de http://demo.themecube.net/?theme=Evential -->
-
+<!-- Test de mapping rivets -->
+<!-- {test.data1} | {test2}-->
 <div id="header-agenda-to-copy">
 	<div class="container padded">
 		<div class="row header-agenda">
@@ -9,7 +10,7 @@
 					<strong class="text-thin">Horaires</strong>
 				</p>
 			</div>
-			<div class="col-xs-3 col-lg-2 padded  border green-gdg select">
+			<div class="col-xs-3 col-lg-2 padded border green-gdg select">
 				<p class="lead text-left">
 					<strong class="text-thin">Mobile</strong>
 				</p>
@@ -24,7 +25,7 @@
 					<strong class="text-thin">Cloud</strong>
 				</p>
 			</div>
-			<div class="col-xs-3 col-lg-2 padded  border red-gdg">
+			<div class="col-xs-3 col-lg-2 padded border red-gdg">
 				<p class="lead text-left">
 					<strong class="text-thin">Découverte</strong>
 				</p>
@@ -44,12 +45,14 @@
 			</p>
 		</div>
 		<div class="col-xs-9 col-lg-8 padded border-row grey-gdg">
-			<p class="lead text-justify conf-title">
+			<p class="lead text-justify">
 				Accueil
 			</p>
+			<div class="conf-room">
+				Pas de Salle
+			</div>
 			<p class="conf-content text-justify">
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Ceci est le texte de l'accueil.
 			</p>
 		</div>	
 	</div>
@@ -66,9 +69,11 @@
 			<p class="lead text-justify">
 				Keynote
 			</p>
+			<div class="conf-room">
+				Salle <i>Titan</i>
+			</div>
 			<p class="conf-content text-justify">
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			Conférence de présentation
 			</p>
 		</div>	
 	</div>
@@ -81,33 +86,81 @@
 			</p>
 		</div>
 		<div class="col-xs-9 col-lg-2 padded animated-expand green-gdg">
-			<p class="title-conf">
+			<div class="title-conf-parent">
+				<div class="title-conf">
 				Un nom de conférence 1
-			</p>
+				</div>
+			</div>
+			<div class="conf-room">
+				Salle <i>Bellem</i>
+			</div>
+			<div class="conf-speakers">
+				<div class="speaker">
+					<div class="circular-img-xs img-fharper"></div>
+					<div class="speaker-name">Frédéric Harper</div>
+				</div>
+				<div class="speaker">
+					<div class="circular-img-xs img-mgorner"></div>
+					<div class="speaker-name">Martin Görner</div>
+				</div>
+			</div>
 			<p class="hidden-lg resume">
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>	
 		<div class="col-xs-9 hidden-xs col-lg-2 padded animated-expand yellow-gdg">
-			<p class="title-conf">
-				Un nom de conférence qui est un peu plus long
-			</p>
+			<div class="title-conf-parent">
+				<div class="title-conf to-long">
+					Un nom de conférence qui est un peu plus long
+				</div>
+			</div>
+			<div class="conf-room">
+				Salle <i>Bellem</i>
+			</div>
+			<div class="conf-speakers">
+				<div class="speaker">
+					<div class="circular-img-xs img-dgageot"></div>
+					<div class="speaker-name">David Gageot</div>
+				</div>
+			</div>
 			<p class="hidden-lg resume">
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>	
 		<div class="col-xs-9 hidden-xs col-lg-2 padded animated-expand blue-gdg">
-			<div class="title-conf to-long">
-				Un de conf qui est vraiment très long et qui porte sur le cloud car c'est un sujet vachement complexe
+			<div class="title-conf-parent">
+				<div class="title-conf to-long">
+					Un de conf qui est vraiment très long et qui porte sur le cloud car c'est un sujet vachement complexe
+				</div>
+			</div>
+			<div class="conf-room">
+				Salle <i>Bellem</i>
+			</div>
+			<div class="conf-speakers">
+				<div class="speaker">
+					<div class="circular-img-xs img-ngarnier"></div>
+					<div class="speaker-name">Nicolas Garnier</div>
+				</div>
 			</div>
 			<p class="hidden-lg resume">
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 		</div>	
 		<div class="col-xs-9 hidden-xs col-lg-2 padded animated-expand red-gdg">
-			<p class="title-conf">
-				Une conf de type découverte
-			</p>
+			<div class="title-conf-parent">
+				<div class="title-conf">
+					Une conf de type découverte
+				</div>
+			</div>
+			<div class="conf-room">
+				Salle <i>Bellem</i>
+			</div>
+			<div class="conf-speakers">
+				<div class="speaker">
+					<div class="circular-img-xs img-cmottier"></div>
+					<div class="speaker-name">Jean-François Garreau</div>
+				</div>
+			</div>
 			<p class="hidden-lg resume">
 			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
@@ -122,14 +175,18 @@
 			</p>
 		</div>
 		<div class="col-xs-9 col-lg-2 padded animated-expand  green-gdg">
-			<p class="lead text-justify">
-				Conf1
-			</p>
+			<div class="title-conf-parent">
+				<div class="title-conf">
+				Conf 1
+				</div>
+			</div>
 		</div>	
 		<div class="col-xs-9 col-lg-2 hidden-xs padded animated-expand yellow-gdg">
-			<p class="lead text-justify">
-				Conf2
-			</p>
+			<div class="title-conf-parent">
+				<div class="title-conf">
+				Conf 2
+				</div>
+			</div>
 		</div>	
 		<div class="col-xs-9 col-lg-2 hidden-xs padded animated-expand blue-gdg">
 			<p class="lead text-justify">

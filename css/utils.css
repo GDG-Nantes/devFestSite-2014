@@ -53,3 +53,12 @@
   -webkit-border-radius: 75px;
   -moz-border-radius: 75px;
 }
+
+/* line 51, ../scss/utils.scss */
+.circular-img-xs {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+}

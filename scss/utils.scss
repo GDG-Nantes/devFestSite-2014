@@ -45,3 +45,13 @@
 	-webkit-border-radius: 75px;
 	-moz-border-radius: 75px;
 }
+
+$size-cirular-xs : 50px;
+
+.circular-img-xs {
+	width: $size-cirular-xs;
+	height: $size-cirular-xs;
+	border-radius: $size-cirular-xs / 2;
+	-webkit-border-radius: $size-cirular-xs / 2;
+	-moz-border-radius: $size-cirular-xs / 2;
+}

@@ -245,7 +245,16 @@ $size-border-hover : 8px;
 
 	.row .conf-room{
 		text-align: left;
+		display: inline-block;
 		margin-bottom: 10px;
+	}
+
+	.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+		display: none;
+	}
+
+	.row  .col-lg-8 .conf-dificulty, .row  .col-lg-8 .conf-lang{
+		display: inline-block;
 	}
 	
 
@@ -276,7 +285,7 @@ $size-border-hover : 8px;
 
 		.header-agenda .border.select{
 			z-index: 100;
-			@include box-shadow(#000 0px 2px 10px);
+			@include box-shadow(#000 0px 2px 10px inset);
 		}
 
 		
@@ -291,6 +300,10 @@ $size-border-hover : 8px;
 			max-height: 15em;
 			text-overflow: none;
 			overflow: none;
+		}
+
+		.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+			display: inline-block;
 		}
 
 

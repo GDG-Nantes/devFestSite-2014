@@ -1,0 +1,78 @@
+#menu, #unsupport-div, #error-div, #contain, #video-phone,
+#what-is-devfest, #devfest-content, #cfp, #speakers, #sponsoring, 
+#caroussel, #pratique, #contacts, #header-agenda-copy, #home, #sponsors{
+	display: none !important;
+}
+
+
+#agenda{
+	padding-top: 0px !important;
+
+	.conf-content, .conf-dificulty, .conf-speakers, .resume {
+		display: none !important;
+	}
+
+	.row .col-lg-2 .title-conf-parent{
+		height: 2.7em;
+	}
+
+	.row .title-conf{
+		font-size: 0.9em;
+		line-height: 0.9em;
+	}
+
+	.row .col-lg-2 .title-conf{
+		font-size: 0.9em;
+		line-height: 0.9em;
+		height: 2.7em;
+	}
+
+	.row .col-lg-2 .title-conf.to-long{
+		max-height: 1.8em;		
+	}
+	.row .col-lg-2 .title-conf.to-long:after{
+		width: 2.4em;
+		height: 0.9em;
+		bottom: -5px;
+		left: 0px;
+	}
+
+	.row .conf-room{
+		font-size: 0.8em;
+	}
+
+	.padded{
+		padding:5px;
+	}
+
+	#header-agenda-to-copy{
+		display: none;
+
+	}
+
+	.hidden-xs{
+		display: block !important;
+	}
+
+	.col-xs-3, .col-xs-9:not(.grey-gdg){
+		width: 18%;
+	}
+
+	.row .white-gdg{
+		border-top-width: 0px;
+	}
+	
+	.row{
+		margin-bottom: 0px; 
+	}
+
+	.lead{
+		font-size: 10pt;
+	}
+
+	.text-hour{
+		font-size: 14pt;
+	}
+
+
+}

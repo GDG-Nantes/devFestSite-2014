@@ -177,6 +177,7 @@ var DevFestApp = DevFestApp || function(){
     var myOptions = {
       zoom:15,
       draggable: false,
+      scrollwheel : false,
       center:new google.maps.LatLng(47.2139677,-1.5430134000000635),
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };

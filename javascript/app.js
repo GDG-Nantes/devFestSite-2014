@@ -83,7 +83,7 @@ var DevFestApp = DevFestApp || function(){
       $('#what-is-devfest').html(what_is_devfest[0]);
       $('#video-phone').html(video_phone[0]);
       $('#pratique').html(pratique[0]);
-      //$('#presse').html(presse[0]);
+      $('#presse').html(presse[0]);
       finishLoad();
     })
     .fail(function(error){
@@ -114,8 +114,9 @@ var DevFestApp = DevFestApp || function(){
           , 'nav-speakers' // Slide Transition
           , 'nav-sponsoring' // Slide Dossier
           , 'nav-sponsors' // Slide Sponsor
-          , 'nav-sponsors' // Slide Transition
-          , 'nav-sponsors' // Slide Caroussel
+          , 'nav-sponsors' // Slide  Transition
+          , 'nav-presse' // Slide Presse
+          //, 'nav-presse' // Slide Caroussel
           , 'nav-pratique' // Slide Pratique
           , 'nav-contacts' // Slide Contacts
           ],
@@ -130,7 +131,8 @@ var DevFestApp = DevFestApp || function(){
           , '#f2f2f2' // Slide Dossier
           , '#f2f2f2' // Slide Sponsors
           , '#f2f2f2' // Slide Transition
-          , '#f2f2f2' // Slide Caroussel
+          , '#444' // Slide Presse
+          //, '#f2f2f2' // Slide Caroussel
           , '#f2f2f2' // Slide Pratique
           ,  '#444' // Slide Contacts
           ],

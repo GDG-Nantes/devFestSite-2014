@@ -1,4 +1,9 @@
 /* line 1, ../scss/presse.scss */
 #presse {
   height: auto !important;
+  color: #999;
+}
+/* line 6, ../scss/presse.scss */
+#presse h1 {
+  color: white;
 }

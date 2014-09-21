@@ -112,8 +112,8 @@ var DevFestApp = DevFestApp || function(){
           ,'nav-what-is-devfest' // Slide Transition
           ,'nav-devfest-content' // Slide content
           //, 'nav-cfp' // Slide CFP
-          , 'nav-speakers' // Slide Speakers
           , 'nav-speakers' // Slide Transition
+          , 'nav-speakers' // Slide Speakers
           , 'nav-agenda' // Slide Agenda
           , 'nav-sponsoring' // Slide Dossier
           , 'nav-sponsors' // Slide Sponsor
@@ -129,8 +129,8 @@ var DevFestApp = DevFestApp || function(){
           , '#DDD' // Slide Transition
           , '#f2f2f2' // Slide Content
           //, '#444' // Slide CFP
-          , '#f2f2f2' // Slide Speakers
           , '#444' // Slide Transition
+          , '#f2f2f2' // Slide Speakers
           , '#444' // Slide Agenda
           , '#f2f2f2' // Slide Dossier
           , '#f2f2f2' // Slide Sponsors

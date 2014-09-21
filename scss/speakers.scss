@@ -2,6 +2,80 @@
 	height: auto !important;
 }
 
+#speakers{
+
+	.circular-img-sm:hover:after{
+		content:'';
+		top: 0;
+		position: absolute;
+		left: 0;
+		width: 150px;
+		height: 150px;
+		background: rgba(0,0,0,0.4);
+		border-radius: 75px;
+
+	}
+
+	.circular-img-sm:hover{		
+		a{
+			position: absolute;
+			width: 75px;
+			height: 75px;
+			display: block;
+			z-index: 2;
+			color: #DDD;
+
+			i{
+				line-height: 75px;
+				width: 75px;
+				text-align: center;
+			}
+		}
+
+		a.social_1_1, a.social_1_2, a.social_2_2,
+		a.social_1_3, a.social_2_3, a.social_3_3, 
+		a.social_1_4, a.social_2_4, a.social_3_4, a.social_4_4
+		{
+			margin-top: -37.5px;
+			margin-left: -37.5px;
+		}
+
+		a.social_1_1, a.social_1_2, a.social_2_2{
+			top: 50%;
+		}
+
+		a.social_1_1, a.social_3_3{
+			left:50%;
+		}
+
+		a.social_1_3, a.social_2_3, 
+		a.social_1_4, a.social_2_4{
+			top: 25%;
+		}
+
+		a.social_3_3, 
+		a.social_3_4, a.social_4_4{
+			top: 75%;	
+		}
+
+
+		a.social_1_2, a.social_1_3, a.social_1_4, a.social_3_4{
+			left: 25%;	
+		}
+
+		a.social_2_2, a.social_2_3, a.social_2_4, a.social_4_4{
+			left: 75%;
+		}
+	}
+
+
+	.circular-img-sm{
+		a{
+			display: none;
+		}
+	}
+}
+
 .img-cmottier {
 	background: url(../assets/images/speakers/cmottier.jpeg) no-repeat;
 	background-size:contain;
@@ -42,6 +116,66 @@
 
 .img-swalter {
 	background: url(../assets/images/speakers/swalter.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-alopez {
+	background: url(../assets/images/speakers/alopez.png) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-arichard {
+	background: url(../assets/images/speakers/arichard.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-elezmy {
+	background: url(../assets/images/speakers/elezmy.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-hgonzalez {
+	background: url(../assets/images/speakers/hgonzalez.png) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-jdubois {
+	background: url(../assets/images/speakers/jdubois.jpeg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-jferraioli {
+	background: url(../assets/images/speakers/jferraioli.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-jpalies {
+	background: url(../assets/images/speakers/jpalies.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-lchampenois {
+	background: url(../assets/images/speakers/lchampenois.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-mbelmokhtar {
+	background: url(../assets/images/speakers/mbelmokhtar.jpg) no-repeat;
+	background-size:contain;
+	margin: auto;
+}
+
+.img-rmenetrier {
+	background: url(../assets/images/speakers/rmenetrier.jpg) no-repeat;
 	background-size:contain;
 	margin: auto;
 }

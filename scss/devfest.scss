@@ -1,3 +1,4 @@
+@import "const";
 @import "load";
 @import "utils";
 @import "home";
@@ -12,6 +13,7 @@
 @import "presse"; 
 @import "cfp";
 @import "devfest_phone";
+@import "agenda";
 @import "compass/css3";
 
 /* Default */
@@ -28,7 +30,6 @@ h1 {
 
 
 /* Sections */
-$heightMenu : 60px;
 
 .footer {
 	font-size: 0.9em;

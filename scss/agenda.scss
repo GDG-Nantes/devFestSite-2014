@@ -1,0 +1,312 @@
+@import "const";
+@import "compass";
+@import "compass/css3";
+
+$color-text:#999;
+$color-border:#f2f2f2;
+$border-width : thin; 
+$border-width-thin : 1px; 
+
+$red-gdg-color : #da483c;
+$blue-gdg-color : #6388c5;
+$green-gdg-color : #0c9a54;
+$yellow-gdg-color : #f7c63d;
+
+$size-border-top : 3px;
+$size-border-hover : 8px;
+
+#agenda{
+	height: auto !important;
+	
+	h1{
+		color: white;
+	}
+}
+
+#header-agenda-copy{
+	background: #444;
+	position: fixed;
+	top: $heightMenu;
+	width: 100%;
+
+	.header-agenda .border{
+  		@include box-shadow(#000 0px 2px 10px);
+	}
+
+
+}
+
+#agenda, #header-agenda-to-copy, #header-agenda-copy{
+	
+	color : $color-text;
+
+
+	.text-hour{
+		font-size: 25pt;
+	}
+
+	.text-thin, .text-hour{
+		font-family: 'RobotoThin', Arial, sans-serif;
+	}
+
+	.row{
+		margin-bottom: 10px;
+	}
+
+	.row:after{
+		content: '';
+		position: relative;
+		top: 5px;
+		left: 50%;
+		margin-left: -30%;
+		width: 60%;
+		height: 1px;
+		//@include background-image(linear-gradient(to right, rgba(0,0,0,0), $color-border 50%, rgba(0,0,0,0)));
+	}
+
+	.row:first-child:after,.row:last-child:after{
+		height: 0;
+	}
+
+	.row.header-agenda{
+		margin-bottom: 5px;
+	}
+
+	.header-agenda .border:not(.col-lg-offset-1){
+		margin-left: 10px;
+	}
+
+	.row .border{
+		background: $color-border;
+
+		.lead{
+			padding-top: 10px;
+			margin-bottom: 10px;
+		}
+	}
+
+	.row .border.red-gdg{
+		color :white;
+		background: $red-gdg-color;
+	}
+	.row .border.green-gdg{
+		color :white;
+		background: $green-gdg-color;
+	}
+	.row .border.yellow-gdg{
+		color :white;
+		background: $yellow-gdg-color;
+	}
+	.row .border.blue-gdg{
+		color :white;
+		background: $blue-gdg-color;
+	}
+
+	.row .border-hour{		
+		/*border-right: thin solid $color-border;
+		border-left-width: 0px;
+		-webkit-border-image: -webkit-gradient(linear, left top, left bottom, stop(0%, rgba(0,0,0,0)), stop(50%, $color-border) , stop(100%, rgba(0,0,0,0))) 1 100%;
+        -moz-border-image:   -moz-linear-gradient(top ,rgba(0,0,0,0) 0%, $color-border 50%, rgba(0,0,0,0) 100%) 1 100%;    
+        -o-border-image:   -o-linear-gradient(top ,rgba(0,0,0,0) 0%, $color-border 50%, rgba(0,0,0,0) 100%) 1 100%;
+        -ms-border-image:   -ms-linear-gradient(top ,rgba(0,0,0,0) 0%, $color-border 50%, rgba(0,0,0,0) 100%) 1 100%;
+        border-image:   linear-gradient(to bottom, rgba(0,0,0,0) 0%, $color-border 50%, rgba(0,0,0,0) 100%) 1 100%;*/
+	}
+
+	.col-xs-9.col-lg-2.padded.animated-expand{
+		margin-left: 10px;
+	}
+
+	.row .animated-expand:not(.expand):hover{
+		cursor: pointer;
+		@include transition-property(border-top-width);
+		@include transition-duration(100ms);
+		@include transition-timing-function(ease-in);
+		border-top-width: $size-border-hover !important;
+	}
+
+	.row .white-gdg{		
+		border-top: $size-border-top $color-border solid;
+	}
+	.row .grey-gdg{		
+		margin-left: 10px;
+		border-top: $size-border-top $color-text solid;
+	}
+	.row .grey-gdg:after{		
+		content: '';
+		width: 30px;
+		top: -$size-border-top;
+		right: -30px;
+		position: absolute;
+		border-top: $size-border-top $color-text solid;
+	}
+
+	.row .animated-expand.green-gdg{
+		border-top: $size-border-top $green-gdg-color solid;
+	}
+	.row .animated-expand.yellow-gdg{
+		border-top: $size-border-top $yellow-gdg-color solid;
+	}
+	.row .animated-expand.blue-gdg{
+		border-top: $size-border-top $blue-gdg-color solid;
+	}
+	.row .animated-expand.red-gdg{
+		border-top: $size-border-top $red-gdg-color solid;
+	}
+
+
+	.row .col-lg-2 .title-conf-parent{
+		height: 3.6em;
+		margin-bottom: 10px;
+		position: relative;
+	}
+
+	.row .title-conf{
+		font-size: 1.2em;
+		line-height: 1.2em;
+	}
+
+	.row .col-lg-2 .title-conf{
+		font-size: 1.2em;
+		line-height: 1.2em;
+		height: 3.6em;
+	}
+
+	.row .col-lg-2 .title-conf.to-long{
+		max-height: 2.4em;
+		text-overflow: ellipsis; 
+		overflow: hidden;
+	}
+
+	/*.row .col-lg-2 .title-conf.to-long:after{
+		content: ' ';
+		position: absolute;
+		display: block;
+		width: 100%;
+		height: 1.2em;
+		bottom: 0;
+		left: 0;
+	}*/
+	.row .col-lg-2 .title-conf.to-long:after{
+		content: '...';
+		text-align: left;
+		position: absolute;
+		display: block;
+		width: 2.4em;
+		height: 1.2em;
+		bottom: -5px;
+		left: 0px;
+	}
+
+	.row .animated-expand.to-hide{
+		display: none !important;
+	}
+
+	.row .animated-expand.expand{
+		margin-left: 10px;
+		border-top-width: $size-border-top;
+	}
+
+	.row .animated-expand.expand:after{		
+		content: '';
+		width: 30px;
+		top: -$size-border-top;
+		right: -30px;
+		position: absolute;
+		border-top: $size-border-top $color-text solid;
+	}
+
+	.row .animated-expand.green-gdg:after{
+		border-top-color: $green-gdg-color;
+	}
+	.row .animated-expand.yellow-gdg:after{
+		border-top-color: $yellow-gdg-color;
+	}
+	.row .animated-expand.blue-gdg:after{
+		border-top-color: $blue-gdg-color;
+	}
+	.row .animated-expand.red-gdg:after{
+		border-top-color: $red-gdg-color;
+	}
+
+	.row .conf-speakers .speaker{
+		margin: 5px;
+		display: inline-block;
+	}
+
+	.row .conf-speakers{
+		margin-bottom: 10px;
+	}
+
+	.row .conf-speakers .speaker-name{
+		text-align: center;
+		text-overflow : ellipsis;
+	}
+
+
+	.row .conf-room{
+		text-align: left;
+		display: inline-block;
+		margin-bottom: 10px;
+	}
+
+	.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+		display: none;
+	}
+
+	.row  .col-lg-8 .conf-dificulty, .row  .col-lg-8 .conf-lang{
+		display: inline-block;
+	}
+	
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+
+	#header-agenda-copy{
+		
+		.header-agenda .border{
+	  		@include box-shadow(#000 0px 0px 0px);
+		}
+
+
+	}
+
+	#agenda, #header-agenda-to-copy, #header-agenda-copy{
+		.row .lead{
+			font-size: 1em;
+		}
+
+		.header-agenda .border:not(.col-lg-offset-1){
+			margin-left: 0px;
+			cursor: hand;
+		}
+
+		.header-agenda .border.select{
+			z-index: 100;
+			@include box-shadow(#000 0px 2px 10px inset);
+		}
+
+		
+		.row .col-lg-2 .title-conf.to-long:after, .row .col-lg-2 .title-conf.to-long:before{
+			content : none;
+			width: 0;
+			height: 0;
+		}		
+
+		
+		.row .col-lg-2 .title-conf.to-long{			
+			max-height: 15em;
+			text-overflow: none;
+			overflow: none;
+		}
+
+		.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+			display: inline-block;
+		}
+
+
+	}
+
+}

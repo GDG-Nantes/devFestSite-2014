@@ -36,7 +36,7 @@ var DevFestApp = DevFestApp || function(){
     return $.when($.ajax("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"),
       $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"),
       $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"),
-      $.ajax("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"),
+      $.ajax("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/$-ui.min.js"),
       $.ajax("//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"),
       $.ajax("//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"),
       $.ajax("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js")
@@ -49,6 +49,7 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/content.html?ver="+DevFestSiteVersion),
         $.ajax("partials/speakers.html?ver="+DevFestSiteVersion),
         $.ajax("partials/cfp.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
         $.ajax("partials/home.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsoring.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsors.html?ver="+DevFestSiteVersion),
@@ -70,13 +71,14 @@ var DevFestApp = DevFestApp || function(){
       // return initPartials();
     // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, cfp, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
+    .then(function callBackPartials(contacts, content, speakers, cfp, agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
       //console.info(result);
       //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);
       $('#cfp').html(cfp[0]);
+      $('#agenda').html(agenda[0]);
       $('#home').html(home[0]);
       $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);
@@ -100,8 +102,8 @@ var DevFestApp = DevFestApp || function(){
     // Load FullPage
     document.getElementById('contain').style['display'] = 'none';
     document.getElementById('main-content').style['display'] = '';
-    //jQuery.fn.fullpage({
-    jQuery('#main-content').fullpage({
+    //$.fn.fullpage({
+    $('#main-content').fullpage({
         verticalCentered: false,
         resize : false,
         anchors: ['nav-home' // Slide Home
@@ -112,6 +114,7 @@ var DevFestApp = DevFestApp || function(){
           , 'nav-cfp' // Slide CFP
           , 'nav-speakers' // Slide Speakers
           , 'nav-speakers' // Slide Transition
+          , 'nav-agenda' // Slide Agenda
           , 'nav-sponsoring' // Slide Dossier
           , 'nav-sponsors' // Slide Sponsor
           , 'nav-sponsors' // Slide  Transition
@@ -128,6 +131,7 @@ var DevFestApp = DevFestApp || function(){
           , '#444' // Slide CFP
           , '#f2f2f2' // Slide Speakers
           , '#444' // Slide Transition
+          , '#444' // Slide Agenda
           , '#f2f2f2' // Slide Dossier
           , '#f2f2f2' // Slide Sponsors
           , '#f2f2f2' // Slide Transition
@@ -149,28 +153,24 @@ var DevFestApp = DevFestApp || function(){
           //console.debug("AfterLoad : "+anchorLink+" | "+index);
           // On affiche le menu que si on est au slide a propos
           if (index>2){
-            jQuery('#menu').addClass('show');            
+            $('#menu').addClass('show');            
           }else{
-            jQuery('#menu').removeClass('show');
+            $('#menu').removeClass('show');
           }
         }
     });
 
     // Gestion corrective de l'affichage du menu pour les mobiles
-    if (isMobile){
-      window.onscroll = function scrollCallBack(){
-        if (document.getElementById('video-phone').getBoundingClientRect().bottom < 0){
-          jQuery('#menu').addClass('show');            
-        }else{
-          jQuery('#menu').removeClass('show');
-        }
-      }
-
+    if (isMobile){      
       // Fermeture automatique du menu sur clic (pour la version mobile)
-      jQuery('.navbar-collapse a').click(function(){
-        jQuery(".navbar-collapse").collapse('hide');
+      $('.navbar-collapse a').click(function(){
+        $(".navbar-collapse").collapse('hide');
       });
     }
+
+
+    manageAgenda(isMobile);
+    scrollManagement(isMobile);
     
 
     // Load Maps
@@ -194,7 +194,73 @@ var DevFestApp = DevFestApp || function(){
     google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
     infowindow.open(map,marker);
 
+  }
+
+  function manageAgenda(isMobile){
+      $('#header-agenda-to-copy').clone().attr('id','header-agenda-copy').appendTo('body'); 
+      $('#header-agenda-copy').hide(); 
+
+      if (!isMobile){        
+        $('.animated-expand').on('click',function animateConfClick(){
+          var parent = $(this).parent();
+          if ($(this).hasClass('col-lg-8')){
+            $(this).removeClass('col-lg-8');
+            $(this).addClass('col-lg-2');
+            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+            $(this).removeClass('expand');
+            $(this).children('.resume').addClass('hidden-lg');
+          }else{            
+            $(this).addClass('expand');
+            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+            $(this).removeClass('col-lg-2');
+            $(this).addClass('col-lg-8');
+            $(this).children('.resume').removeClass('hidden-lg');
+          }
+        });
+      }else{
+        $('.header-agenda .border').on('click',function animateConfClick(){
+          // On sélectionne le même item sur les 2 menus (le flottant et le principal)
+          var sameInMenu = $('.'+$(this).attr('class').split(' ').join('.'));
+          var parent = sameInMenu.parent();
+          parent.children('.header-agenda .border').removeClass('select');
+          sameInMenu.addClass('select');
+
+          // On recherche le track sélectionné pour avoir un affichage cohérent dans le site
+          var regExp = /(\w*-gdg)/;
+          var trackSelected = regExp.exec($(this).attr('class'))[1];
+          $('.animated-expand').addClass('hidden-xs');
+          $('.animated-expand.'+trackSelected).removeClass('hidden-xs');
+          
+        });
+      }
+
+      // Mapping de Rivet.js
+      /*rivets.bind($('#agenda'), {
+        test : {data1 : 'data1Value', data2 : 'data2Value'},
+        test2 : 'test2Value'
+      });*/
   }  
+
+  function scrollManagement(isMobile){
+    var agendaContainer = document.getElementById('agenda-container');
+    window.onscroll = function scrollCallBack(){
+      if (isMobile){        
+        if (document.getElementById('video-phone').getBoundingClientRect().bottom < 0){
+          $('#menu').addClass('show');            
+        }else{
+          $('#menu').removeClass('show');
+        }
+      }
+
+      // Gestion du menu fixed pour l'agenda
+      $('#header-agenda-to-copy').css({'opacity': agendaContainer.getBoundingClientRect().top < 60 ? 0 : 1});
+      if (agendaContainer.getBoundingClientRect().bottom > 60 && agendaContainer.getBoundingClientRect().top < 60){
+        $('#header-agenda-copy').show();
+      }else{
+        $('#header-agenda-copy').hide();
+      }
+    }
+  }
 
   //$(document).ready(init);
 

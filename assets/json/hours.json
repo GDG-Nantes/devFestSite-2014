@@ -1,62 +1,62 @@
 {  
   "h1":{
-    "hour-start":"08",
-    "min-start":"00",
-    "hour-end":"08",
-    "min-end":"30"
+    "hourStart":"08",
+    "minStart":"00",
+    "hourEnd":"08",
+    "minEnd":"30"
   },
   "h2":{
-    "hour-start":"08",
-    "min-start":"30",
-    "hour-end":"10",
-    "min-end":"00"
+    "hourStart":"08",
+    "minStart":"30",
+    "hourEnd":"10",
+    "minEnd":"00"
   },
   "h3":{
-    "hour-start":"10",
-    "min-start":"10",
-    "hour-end":"11",
-    "min-end":"00"
+    "hourStart":"10",
+    "minStart":"10",
+    "hourEnd":"11",
+    "minEnd":"00"
   },
   "h4":{
-    "hour-start":"11",
-    "min-start":"10",
-    "hour-end":"12",
-    "min-end":"00"
+    "hourStart":"11",
+    "minStart":"10",
+    "hourEnd":"12",
+    "minEnd":"00"
   },
   "h5":{
-    "hour-start":"12",
-    "min-start":"00",
-    "hour-end":"13",
-    "min-end":"30"
+    "hourStart":"12",
+    "minStart":"00",
+    "hourEnd":"13",
+    "minEnd":"30"
   },
   "h6":{
-    "hour-start":"13",
-    "min-start":"30",
-    "hour-end":"14",
-    "min-end":"20"
+    "hourStart":"13",
+    "minStart":"30",
+    "hourEnd":"14",
+    "minEnd":"20"
   },
   "h7":{
-    "hour-start":"14",
-    "min-start":"30",
-    "hour-end":"15",
-    "min-end":"20"
+    "hourStart":"14",
+    "minStart":"30",
+    "hourEnd":"15",
+    "minEnd":"20"
   },
   "h8":{
-    "hour-start":"15",
-    "min-start":"20",
-    "hour-end":"16",
-    "min-end":"00"
+    "hourStart":"15",
+    "minStart":"20",
+    "hourEnd":"16",
+    "minEnd":"00"
   },
   "h9":{
-    "hour-start":"16",
-    "min-start":"00",
-    "hour-end":"16",
-    "min-end":"50"
+    "hourStart":"16",
+    "minStart":"00",
+    "hourEnd":"16",
+    "minEnd":"50"
   },
   "h10":{
-    "hour-start":"17",
-    "min-start":"00",
-    "hour-end":"17",
-    "min-end":"50"
+    "hourStart":"17",
+    "minStart":"00",
+    "hourEnd":"17",
+    "minEnd":"50"
   }
 }

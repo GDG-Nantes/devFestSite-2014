@@ -3,7 +3,11 @@
 
 var DevFestApp = DevFestApp || function(){
 
-  var nbComponentLoads = 0;
+  var nbComponentLoads = 0,
+    hoursJson = {},
+    speakersJson ={},
+    sessionsJson = {},
+    modelJson = {};
 
   /*function initImages(){
     return $.when($.ajax("assets/images/logo.png"),
@@ -56,7 +60,10 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/presse.html?ver="+DevFestSiteVersion),
         $.ajax("partials/what_is_devfest.html?ver="+DevFestSiteVersion),
         $.ajax("partials/video_phone.html?ver="+DevFestSiteVersion),
-        $.ajax("partials/pratique.html?ver="+DevFestSiteVersion)
+        $.ajax("partials/pratique.html?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/hours.json?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/sessions.json?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/speakers.json?ver="+DevFestSiteVersion)
       );
   }
 
@@ -71,7 +78,7 @@ var DevFestApp = DevFestApp || function(){
       // return initPartials();
     // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, /*cfp, */agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
+    .then(function callBackPartials(contacts, content, speakers, /*cfp, */agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
       //console.info(result);
       //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
@@ -86,6 +93,9 @@ var DevFestApp = DevFestApp || function(){
       $('#video-phone').html(video_phone[0]);
       $('#pratique').html(pratique[0]);
       $('#presse').html(presse[0]);
+      hoursJson = hoursData[0];
+      sessionsJson = sessionsData[0];
+      speakersJson = speakersData[0];
       finishLoad();
     })
     .fail(function(error){
@@ -168,7 +178,8 @@ var DevFestApp = DevFestApp || function(){
       });
     }
 
-
+    constructModel();
+    manageSpeakers();
     manageAgenda(isMobile);
     scrollManagement(isMobile);
     
@@ -194,6 +205,40 @@ var DevFestApp = DevFestApp || function(){
     google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
     infowindow.open(map,marker);
 
+  }
+
+  function constructModel(){
+    // On s'occupe d'abord des speakers
+    var newSpeakerArray = [];
+    var keys = Object.keys(speakersJson);
+    var modulo = 0;
+    var rowSpeaker = null;
+    for (var indexSpeaker = 0; indexSpeaker < keys.length; indexSpeaker++){
+      var speaker = speakersJson[keys[indexSpeaker]];
+      if (speaker.show){
+        if (modulo === 0){
+          rowSpeaker = {'speakers':[]};
+          newSpeakerArray.push(rowSpeaker);
+        }
+        speaker.id = "speaker_"+keys[indexSpeaker]; 
+        speaker.img = "img-"+keys[indexSpeaker]+" circular-img-sm"; 
+        if (speaker.socials){
+          for (var indexSocials = 0; indexSocials < speaker.socials.length; indexSocials++){
+            var socialLink = speaker.socials[indexSocials];
+            socialLink.classSocial = "social_"+(indexSocials+1)+"_"+speaker.socials.length;
+            socialLink.classImg = "fa fa-2x fa-"+socialLink.type;
+          }
+        }
+        rowSpeaker['speakers'].push(speaker);
+        modulo = (modulo + 1) % 3;
+      }
+    }
+
+    modelJson['speakerRow'] = newSpeakerArray;
+  }
+
+  function manageSpeakers(){
+    rivets.bind($('#bindSpeakers'), modelJson);
   }
 
   function manageAgenda(isMobile){
@@ -245,6 +290,8 @@ var DevFestApp = DevFestApp || function(){
         test2 : 'test2Value'
       });*/
   }  
+
+  
 
   function scrollManagement(isMobile){
     var agendaContainer = document.getElementById('agenda-container');

@@ -1,0 +1,359 @@
+{
+  "alopez":{
+    "show":false,
+    "name":"Alberto Lopez Martin",
+    "title":"EMEA Developer Evanglist",
+    "bio":"Passionate of innovation and mobility, Alberto enjoys working as Developer Evangelist because it allows him to show that the crazy ideas that everybody could have in mind can be turned into handy solutions. For this purpose, Alberto capitalizes on the experience acquired working as  Sales Engineer at PayPal, helping small and large companies to integrate PayPal. ",
+    "type":"mobile",
+    "socials":[
+      {"type":"google-plus","url":"https://plus.google.com/u/0/104618765477390958506/"}
+      ]
+  },
+  "arichard":{
+    "show":false,
+    "name":"Antoine Richard",
+    "title":"Consultant en architecture Web",
+    "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité. <br>Antoine intervient régulièrement en tant que speaker sur l'écosystème Javascript et notamment sur AngularJS.",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/richard_antoine"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+AntoineRichard"},
+      {"type":"github-alt","url":"https://github.com/antoine-richard"}
+      ]
+  },
+  "bdorsey":{
+    "show":false,
+    "name":"Brian Dorsey",
+    "title":"Developer Advocate <br> Cloud",
+    "bio":"BRIAN DORSEY is an engineer on the Google Developer Relations team. He helps you build cool stuff with Google Cloud Platform. Brian focuses on Compute Engine and Cloud Storage. He loves Python and he’s taught Python at the University of Washington & spoken at both PyCon & PyCon Japan. Brian is currently learning Go and enjoying it.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/briandorsey"},
+      {"type":"google-plus","url":"https://plus.google.com/+BrianDorsey"}
+      ]
+  },
+  "cmottier":{
+    "show":true,
+    "name":"Cyril Mottier",
+    "title":"Developer Expert<br>Android",
+    "bio":"Passionné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/cyrilmottier"},
+      {"type":"google-plus","url":"https://plus.google.com/+CyrilMottier"},
+      {"type":"github-alt","url":"https://github.com/cyrilmottier"},
+      {"type":"globe","url":"http://www.cyrilmottier.com/"}
+      ]
+  },
+  "cquilici":{
+    "show":false,
+    "name":"",
+    "title":"",
+    "bio":"",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "dgageot":{
+    "show":true,
+    "name":"David Gageot",
+    "title":"Developer Expert<br>Cloud",
+    "bio":"David Gageot est développeur indépendant. Sa passion ? L'écriture de logiciels pointus mais simples. Il participe à des projets Java depuis 1998, comme responsable R&D chez l'éditeur Adesoft, comme expert Java et Scrum Master. Depuis 2010, il a pris le leadership sur le projet open-source Infinitest.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/dgageot"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+DavidGageot"},
+      {"type":"github-alt","url":"https://github.com/dgageot"},
+      {"type":"globe","url":"http://blog.javabien.net/"}
+      ]
+  },
+  "dlecan":{
+    "show":false,
+    "name":"Damien Lecan",
+    "title":"",
+    "bio":"",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "elezmy":{
+    "show":true,
+    "name":"Eyal Lezmy",
+    "title":"Developer Expert<br>Android",
+    "bio":"Working with Android since 2009. After several R&D projects at french internet providers, Samsung in the Android B2B team, and then as Android set-top box developer for an hotel chain, I'm currently working on Genymotion, a fast Android emulator. I'm also treasurer at the Paris Android User Group.",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/Eyal_Lezmy"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+EyalLEZMY"},
+      {"type":"globe","url":"http://eyal.fr"}
+      ]
+  },
+  "fharper":{
+    "show":true,
+    "name":"Frédéric Harper",
+    "title":"Technical Evangelist<br>Firefox OS ",
+    "bio":"Frédéric est dans le monde de l'IT depuis plus de 10 ans. Un jour il a eu une révélation et il a voulu utiliser ses compétences sociales au service de l'évangélisation. Après quelques années passées chez Microsoft pour parler de l'opensource, il est maintenant Senior Technical Evangelist chez Mozilla. Il travaille sur des projets comme Firefox OS.",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/fharper"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+fredericharper"},
+      {"type":"github-alt","url":"https://github.com/fharper"},
+      {"type":"globe","url":"http://outofcomfortzone.net/"}
+      ]
+  },
+  "fherrou":{
+    "show":false,
+    "name":"Florrence Herrou",
+    "title":"Ingénieur Java <br> Nouvelles technologies",
+    "bio":"D'une formation initiale sur le comportement animal, je suis passée en devenant informaticienne au comportement bien plus étrange et déroutant des clients et parfois des utilisateurs. Consultante pour la société Ippon technologies à Nantes depuis 2007, j'ai pendant ces années effectué de nombreuses (et variées) missions de développement - comprenant souvent des conseils et de l'accompagnement du client pour créer une application utilisable.",
+    "type":"discovery",
+    "socials":[      
+      {"type":"globe","url":"http://blog.ippon.fr/author/Florence_HERROU"}
+      ]
+  },
+  "ftrichet":{
+    "show":false,
+    "name":"Francky Trichet",
+    "title":"",
+    "bio":"",
+    "type":"keynote",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "hgonzalez":{
+    "show":true,
+    "name":"Horacio Gonzalez",
+    "title":"Developper<br>Web & Cloud",
+    "bio":"Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek. Horacio works at Cityzen Data, a start-up providing  provides a scalable, secure, ethical and open platform for sensor data. He is the co-founder and leader of the FinistJUG (the French JUG the nearest to the Silicon Valley!), GDG Finistère and BreizhBeans.",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/LostInBrittany"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+LostInBrittany"},
+      {"type":"github-alt","url":"https://github.com/lostinbrittany"},
+      {"type":"globe","url":"http://lostinbrittany.org"}
+      ]
+  },
+  "jdramaix":{
+    "show":false,
+    "name":"Julien Dramaix",
+    "title":"",
+    "bio":"",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "jdubois":{
+    "show":false,
+    "name":"Julien Dubois",
+    "title":"",
+    "bio":"",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "jferraioli":{
+    "show":false,
+    "name":"Julia Ferraioli",
+    "title":"Senior Developer Advocate",
+    "bio":"Julia Ferraioli is a Developer Advocate working on Google Cloud Platform. She helps developers harness the power of Google’s infrastructure to develop quickly, intelligently, and at scale. She comes from an industrial background in software engineering, and an academic background in machine learning and assistive technology.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/juliaferraioli"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+JuliaFerraioli"},
+      {"type":"github-alt","url":"https://github.com/juliaferraioli"},
+      {"type":"globe","url":"http://blog.juliaferraioli"}
+      ]
+  },
+  "jmouton":{
+    "show":true,
+    "name":"Jérôme Mouton",
+    "title":"Developer Expert<br>Cloud",
+    "bio":"Jérôme est le co-fondateur et CTO de SnapEngage, une solution de relation client sur le web hébergée sur Google App Engine. GDE App Engine, il participe à de nombreuses conférences dans le monde et gère également le GDG Berlin.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/jlmouton/"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+JeromeMouton"},
+      {"type":"globe","url":"http://snapengage.com/"}
+      ]
+  },
+  "jpalies":{
+    "show":false,
+    "name":"Jean Paliès",
+    "title":"Expert technique en développement",
+    "bio":"Je suis un développeur, à Nantes. Je suis aussi cofondateur des WIT et des Coding Goûters à Nantes. Je participe dès que je le peux aux Devoxx4Kids.",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/jpalies"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/106552014287288043542/"},
+      {"type":"github-alt","url":"https://github.com/JeanPalies"},
+      {"type":"globe","url":"http://javagile.wordpress.com"}
+      ]
+  },
+  "lchampenois":{
+    "show":false,
+    "name":"Ludovic Champenois",
+    "title":"Tech Lead Manager<br>Google Cloud Platform",
+    "bio":"Ludo is a Tech Lead and Manager in the Google Cloud platform, leading the runtimes (Java, Python, GO, PHP, Node.js) and the Developer SDK.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/ludoch"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+LudovicChampenois"},
+      {"type":"github-alt","url":"https://github.com/ludoch"}
+      ]
+  },
+  "mbelmokhtar":{
+    "show":false,
+    "name":"Medy Belmkhtar",
+    "title":"Ingénieur Etudes & Développement",
+    "bio":"Passionné des technos JS, il réalise chez NETAPSYS l'évangélisation et l'intégration de projets autour du framework ANGULARJS",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/medyBelmokhtar"},
+      {"type":"github-alt","url":"https://github.com/bmedy"}
+      ]
+  },
+  "mboillod":{
+    "show":false,
+    "name":"Manuel Boillod",
+    "title":"",
+    "bio":"",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "mgorner":{
+    "show":false,
+    "name":"Martin Gorner",
+    "title":"Google Developer Relation",
+    "bio":"Martin se passionne pour la science, la technologie, l'informatique, les algorihmes et tout ce qui s'en rapproche. Martin a développé pour la plupart des plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web. Il est actuellement Google Developer Relation et conférencier sur Google AppEngine, Compute Engine et HTML5.",
+    "type":"cloud",
+    "socials":[
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+MartinGorner"},
+      {"type":"github-alt","url":"https://github.com/martin-gorner"}
+      ]
+  },
+  "pcans":{
+    "show":false,
+    "name":"Pascal Cans",
+    "title":"",
+    "bio":"",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "preliquet":{
+    "show":false,
+    "name":"Pierre Reliquet",
+    "title":"",
+    "bio":"",
+    "type":"globe",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "rchardonneau":{
+    "show":true,
+    "name":"Ronan Chardonneau",
+    "title":"Digital Marketer<br>Web",
+    "bio":"Currently working as an international digital marketer at Jymeo, a company specialized in buying guides and statistical analysis. Also associate professor at the university of Angers in digital marketing. Individual consultant and author of Google Analytics at Edition Eni. Currently writing a book about Google Tag Manager.",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/ChardonneauR"}
+      ]
+  },
+  "rguilloux":{
+    "show":false,
+    "name":"Ronan Guilloux",
+    "title":"Enthusiastic learner <br> passionate developer",
+    "bio":"Développeur web depuis 1998, Ronan Guilloux est responsable technique dans une agence web à Nantes. Ses contributions sont visibles sur github.com/ronanguilloux.",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/arno_u_loginlux"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/112396766918557589511/"},
+      {"type":"github-alt","url":"https://github.com/ronanguilloux"},
+      {"type":"globe","url":"http://arnolog.net"}
+      ]
+  },
+  "rmenetrier":{
+    "show":false,
+    "name":"Romain Menetrier",
+    "title":"Mobile Solutions Architect",
+    "bio":"Romain Menetrier, devops passionné de plateformes web et mobiles, membre du Paris Android User Group, organisateur de Droidcon Paris, architecte solutions sans contact chez Orange Vallée.",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/romemore"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+RomainMenetrier"}
+      ]
+  },
+  "roddet":{
+    "show":false,
+    "name":"Rossi Oddet",
+    "title":"",
+    "bio":"",
+    "type":"keynote",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  },
+  "swalter":{
+    "show":true,
+    "name":"Stéphanie Walter",
+    "title":"Designer<br>Web & Mobile",
+    "bio":"Designer spécialisée dans les interfaces web et mobile depuis quelques années, Stéphanie dompte ces fourbes de petits pixels pour les faire entrer dans toutes les tailles d'écran. Elle porte une attention toute particulière à l'expérience utilisateur et fait partie de ces illuminés qui voient le CSS comme un outil de design. ",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/WalterStephanie"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+StéphanieWalter"},
+      {"type":"github-alt","url":"https://github.com/inpixelitrust"},
+      {"type":"globe","url":"http://inpixelitrust.fr/blog"}
+      ]
+  },
+  "tgrall":{
+    "show":false,
+    "name":"Tugdual Grall",
+    "title":"",
+    "bio":"",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":""},
+      {"type":"google-plus","url":""},
+      {"type":"github-alt","url":""},
+      {"type":"globe","url":""}
+      ]
+  }
+
+}

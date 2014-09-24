@@ -1,5 +1,22 @@
 <div class="text-center"><h1>Top Speakers</h1></div>
 
+<div id="bindSpeakers">	
+	<div rv-each-row="speakerRow" class="row padded padded-left">
+		<div rv-each-speaker="row.speakers" rv-id="speaker.id" class="col-md-4  padded-lg">
+			<div class="circular-img-sm " rv-class="speaker.img">
+				<a rv-each-social="speaker.socials" rv-href="social.url" target="_blank" rv-class="social.classSocial"><i rv-class="social.classImg"></i></a>
+			</div>
+			<p class="lead text-center">
+				<strong class="text-success">{speaker.name}</strong><br>
+				<font rv-html="speaker.title"></font>
+			</p>			
+			<p class="text-justify">
+				{speaker.bio}
+			</p>
+		</div>
+	</div>
+</div>
+
 <div class="row padded padded-left">
 	<div id="speaker_cmottier" class="col-md-4  padded-lg">
 		<div class="circular-img-sm img-cmottier">

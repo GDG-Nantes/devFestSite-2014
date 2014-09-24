@@ -143,8 +143,11 @@ END TO REMOVE !!!
 		margin-left: 10px;
 	}
 
-	.row .animated-expand:not(.expand):hover{
+	.row .animated-expand .title-conf:hover{
 		cursor: pointer;
+	}
+
+	.row .animated-expand:not(.expand) .title-conf:hover{
 		@include transition-property(border-top-width);
 		@include transition-duration(100ms);
 		@include transition-timing-function(ease-in);

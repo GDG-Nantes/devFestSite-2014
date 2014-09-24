@@ -201,21 +201,26 @@ var DevFestApp = DevFestApp || function(){
       $('#header-agenda-copy').hide(); 
 
       if (!isMobile){        
-        $('.animated-expand').on('click',function animateConfClick(){
-          var parent = $(this).parent();
-          if ($(this).hasClass('col-lg-8')){
-            $(this).removeClass('col-lg-8');
-            $(this).addClass('col-lg-2');
+        $('.animated-expand .title-conf').on('click',function animateConfClick(){
+          var element = $(this).parent().parent();
+          var parent = $(this).parent().parent().parent();
+          if (element.hasClass('col-lg-8')){
+            element.removeClass('col-lg-8');
+            element.addClass('col-lg-2');
             parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            $(this).removeClass('expand');
-            $(this).children('.resume').addClass('hidden-lg');
+            element.removeClass('expand');
+            element.children('.resume').addClass('hidden-lg');
           }else{            
-            $(this).addClass('expand');
+            element.addClass('expand');
             parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            $(this).removeClass('col-lg-2');
-            $(this).addClass('col-lg-8');
-            $(this).children('.resume').removeClass('hidden-lg');
+            element.removeClass('col-lg-2');
+            element.addClass('col-lg-8');
+            element.children('.resume').removeClass('hidden-lg');
           }
+        });
+
+        $('#agenda a').on('click', function linkCancel(event){
+          //event.preventDefault();
         });
       }else{
         $('.header-agenda .border').on('click',function animateConfClick(){

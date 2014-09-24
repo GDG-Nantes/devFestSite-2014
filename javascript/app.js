@@ -78,7 +78,7 @@ var DevFestApp = DevFestApp || function(){
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);
       //$('#cfp').html(cfp[0]);
-      //$('#agenda').html(agenda[0]);
+      $('#agenda').html(agenda[0]);
       $('#home').html(home[0]);
       $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);

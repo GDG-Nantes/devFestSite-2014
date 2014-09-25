@@ -336,9 +336,9 @@ var DevFestApp = DevFestApp || function(){
 
       if (!isMobile){        
         modelJson.onClickTitle = function(event){
-          var jQueryElement = $(event.target);
-          var element = jQueryElement.parent().parent();
-          var parent = jQueryElement.parent().parent().parent();
+          var jQueryElement = $(event.currentTarget);
+          var element = jQueryElement;//.parent().parent();
+          var parent = element.parent();
           if(element.hasClass('grey-gdg')){
             return;
           }
@@ -357,23 +357,17 @@ var DevFestApp = DevFestApp || function(){
             element.children('.resume').removeClass('hidden-lg');
           }
         };
-        $('.animated-expand .title-conf').on('click',function animateConfClick(){
-          var element = $(this).parent().parent();
-          var parent = $(this).parent().parent().parent();
-          if (element.hasClass('col-lg-8')){
-            element.removeClass('col-lg-8');
-            element.addClass('col-lg-2');
-            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            element.removeClass('expand');
-            element.children('.resume').addClass('hidden-lg');
-          }else{            
-            element.addClass('expand');
-            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            element.removeClass('col-lg-2');
-            element.addClass('col-lg-8');
-            element.children('.resume').removeClass('hidden-lg');
-          }
-        });
+        modelJson.onMouseEnter = function(event, scope){
+          var jQueryElement = $(event.currentTarget);
+          scope.row.desc = scope.session.desc;
+          scope.row.title = scope.session.title;
+          jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
+        }
+        modelJson.onMouseLeave = function(event, scope){
+          var jQueryElement = $(event.currentTarget);
+          jQueryElement.parent().children('.popup-resume').addClass('to-hide');
+        }
+       
 
         $('#agenda a').on('click', function linkCancel(event){
           //event.preventDefault();

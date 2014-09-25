@@ -49,11 +49,11 @@
 				<font class="text-hour text-thin">{row.hour.hourEnd}</font>{row.hour.minEnd}
 			</p>
 		</div>		
-		<div rv-each-session="row.sessions" rv-class="session.classCol">
+		<div rv-each-session="row.sessions" rv-class="session.classCol" rv-on-click='onClickTitle' rv-on-mouseenter='onMouseEnter' rv-on-mouseleave='onMouseLeave'>
 			<div class="title-conf-parent">
-				<div rv-class="session.classTitle" rv-on-click='onClickTitle'>
+				<div rv-class="session.classTitle" >
 					{session.title}
-				</div>
+				</div> 
 			</div>
 			<div rv-if="session.confRoom" rv-html="session.confRoom" class="conf-room">
 			</div>
@@ -64,14 +64,15 @@
 			</div>
 			<div rv-if="session.speakers" class="conf-speakers">
 				<div rv-each-speaker="session.speakers" class="speaker">
-					<a rv-href="speaker.href">
-						<div rv-class="speaker.imgXs"></div>
-						<div class="speaker-name">{speaker.name}</div>
-					</a>
+					<div rv-class="speaker.imgXs"></div>
+					<div class="speaker-name">{speaker.name}</div>
 				</div>				
 			</div>
-			<p class="hidden-lg resume" rv-html="session.desc">
-			</p>
+			<p class="hidden-lg resume" rv-html="session.desc"></p>
 		</div>	
+		<div class="to-hide popup-resume" >
+			<p rv-html="row.title"></p>
+			<p rv-html="row.desc"></p>
+		</div>
 	</div>
 </div>

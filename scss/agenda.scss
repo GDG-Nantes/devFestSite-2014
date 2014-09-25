@@ -147,7 +147,7 @@ END TO REMOVE !!!
 		cursor: pointer;
 	}
 
-	.row .animated-expand:not(.expand) .title-conf:hover{
+	.row .animated-expand:not(.expand):hover{
 		@include transition-property(border-top-width);
 		@include transition-duration(100ms);
 		@include transition-timing-function(ease-in);

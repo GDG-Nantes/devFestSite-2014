@@ -266,7 +266,7 @@
   "preliquet":{
     "show":true,
     "name":"Pierre Reliquet",
-    "title":"Softaware Developer",
+    "title":"Developer<br>Angular & Dart",
     "bio":"Pierre Reliquet is a consultant and AngularJS trainer within Zenika. He is particularly interested in the web stack because it always offers opportunity to learn new things and to develop awesome reactive applications.  <br>After discovering Dart during a Dart Flight School organized by the Google Developpers Group in Nantes, he found that new language brilliant and decided to use and promote it because it focuses on modern web and enhance the developer experience by providing many assets such as static typing, annotations, first-class functions, static code analysis and so on…",
     "type":"web",
     "socials":[

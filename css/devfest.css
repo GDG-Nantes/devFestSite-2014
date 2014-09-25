@@ -779,7 +779,7 @@ END TO REMOVE !!!
   cursor: pointer;
 }
 /* line 150, ../scss/agenda.scss */
-#agenda .row .animated-expand:not(.expand) .title-conf:hover, #header-agenda-to-copy .row .animated-expand:not(.expand) .title-conf:hover, #header-agenda-copy .row .animated-expand:not(.expand) .title-conf:hover {
+#agenda .row .animated-expand:not(.expand):hover, #header-agenda-to-copy .row .animated-expand:not(.expand):hover, #header-agenda-copy .row .animated-expand:not(.expand):hover {
   -moz-transition-property: border-top-width;
   -o-transition-property: border-top-width;
   -webkit-transition-property: border-top-width;

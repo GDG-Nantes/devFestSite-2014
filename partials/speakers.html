@@ -1,131 +1,18 @@
-<div class="text-center"><h1>Speakers</h1></div>
+<div class="text-center"><h1>Top Speakers</h1></div>
 
-<div class="row padded padded-left">
-	<div id="speaker_cmottier" class="col-md-4  padded-lg">
-		<div class="circular-img-sm img-cmottier">
-			<a href="https://twitter.com/cyrilmottier" target="_blank" class="social_1_4"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/+CyrilMottier" target="_blank" class="social_2_4"><i class="fa fa-2x fa-google-plus"></i></a>
-			<a href="https://github.com/cyrilmottier" target="_blank" class="social_3_4"><i class="fa fa-2x fa-github-alt"></i></a>
-			<a href="http://www.cyrilmottier.com/" target="_blank"  class="social_4_4"><i class="fa fa-2x fa-globe"></i></a>
+<div rv-each-row="speakerRow" class="row padded padded-left">
+	<div rv-each-speaker="row.speakers" rv-id="speaker.id" class="col-md-4  padded-lg">
+		<div class="circular-img-sm " rv-class="speaker.img">
+			<a rv-each-social="speaker.socials" rv-href="social.url" target="_blank" rv-class="social.classSocial"><i rv-class="social.classImg"></i></a>
 		</div>
 		<p class="lead text-center">
-			<strong class="text-success">Cyril Mottier</strong><br>
-			Developer Expert<br>Android
+			<strong rv-class="speaker.colorText" >{speaker.name}</strong><br>
+			<font rv-html="speaker.title"></font>
 		</p>			
 		<p class="text-justify">
-			Passionné de technologies et de design, Cyril est un amoureux d'android et un développeur aux multiples talents. Il est aussi très actif dans la communauté android où il anime régulièrement des sessions et publie des articles sur son blog.
+			{speaker.bio}
 		</p>
 	</div>
-	<div id="speaker_jmouton" class="col-md-4  padded-lg">
-		<div class="circular-img-sm img-jmouton">
-			<a href="https://twitter.com/jlmouton/" target="_blank" class="social_1_3"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+JeromeMouton" target="_blank" class="social_2_3"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="http://snapengage.com/" target="_blank"  class="social_3_3"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-primary">Jérôme Mouton</strong><br>
-			Developer Expert<br>Cloud
-		</p>			
-		<p class="text-justify">
-			Jérôme est le co-fondateur et CTO de SnapEngage, une solution de relation client sur le web hébergée sur Google App Engine. GDE App Engine, il participe à de nombreuses conférences dans le monde et gère également le GDG Berlin.
-		</p>
-	</div>
-	<div id="speaker_fharper" class="col-md-4 padded-lg">
-		<div class="circular-img-sm img-fharper">
-			<a href="https://twitter.com/fharper" target="_blank" class="social_1_4"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+fredericharper" target="_blank" class="social_2_4"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="https://github.com/fharper" target="_blank" class="social_3_4"><i class="fa fa-2x fa-github-alt"></i></a>
-			<a href="http://outofcomfortzone.net/" target="_blank"  class="social_4_4"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-success">Frédéric Harper</strong><br>
-			Technical Evangelist<br>Firefox OS 
-		</p>			
-		<p class="text-justify">
-			Frédéric est dans le monde de l'IT depuis plus de 10 ans. Un jour il a eu une révélation et il a voulu utiliser ses compétences sociales au service de l'évangélisation. Après quelques années passées chez Microsoft pour parler de l'opensource, il est maintenant Senior Technical Evangelist chez Mozilla. Il travaille sur des projets comme Firefox OS.
-		</p>
-	</div>	
-</div>
-<div class="row padded padded-left">	
-	<div id="speaker_dgageot" class="col-md-4  padded-lg">
-		<div class="circular-img-sm img-dgageot">
-			<a href="http://twitter.com/dgageot" target="_blank" class="social_1_4"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+DavidGageot" target="_blank" class="social_2_4"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="https://github.com/dgageot" target="_blank" class="social_3_4"><i class="fa fa-2x fa-github-alt"></i></a>
-			<a href="http://blog.javabien.net/" target="_blank"  class="social_4_4"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-primary">David Gageot</strong><br>
-			Developer Expert<br>Cloud
-		</p>			
-		<p class="text-justify">
-			David Gageot est développeur indépendant. Sa passion ? L'écriture de logiciels pointus mais simples. Il participe à des projets Java depuis 1998, comme responsable R&D chez l'éditeur Adesoft, comme expert Java et Scrum Master. Depuis 2010, il a pris le leadership sur le projet open-source Infinitest.
-		</p>
-	</div>
-	<div id="speaker_swalter" class="col-md-4 padded-lg">
-		<div class="circular-img-sm img-swalter">
-			<a href="https://twitter.com/WalterStephanie" target="_blank" class="social_1_4"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+StéphanieWalter" target="_blank" class="social_2_4"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="https://github.com/inpixelitrust" target="_blank" class="social_3_4"><i class="fa fa-2x fa-github-alt"></i></a>
-			<a href="http://inpixelitrust.fr/blog" target="_blank"  class="social_4_4"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-danger">Stéphanie Walter</strong><br>
-			Designer<br>Web & Mobile
-		</p>			
-		<p class="text-justify">
-			Designer spécialisée dans les interfaces web et mobile depuis quelques années, Stéphanie dompte ces fourbes de petits pixels pour les faire entrer dans toutes les tailles d'écran. Elle porte une attention toute particulière à l'expérience utilisateur et fait partie de ces illuminés qui voient le CSS comme un outil de design. 
-		</p>
-	</div>
-	<div id="speaker_hgonzalez" class="col-md-4  padded-lg">
-		<div class="circular-img-sm img-hgonzalez">
-			<a href="https://twitter.com/LostInBrittany" target="_blank" class="social_1_4"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+LostInBrittany" target="_blank" class="social_2_4"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="https://github.com/lostinbrittany" target="_blank" class="social_3_4"><i class="fa fa-2x fa-github-alt"></i></a>
-			<a href="http://lostinbrittany.org" target="_blank"  class="social_4_4"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-warning">Horacio Conzalez</strong><br>
-			Developer<br>Web & Cloud
-		</p>			
-		<p class="text-justify">
-			Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek. Horacio works at Cityzen Data, a start-up providing  provides a scalable, secure, ethical and open platform for sensor data. He is the co-founder and leader of the FinistJUG (the French JUG the nearest to the Silicon Valley!), GDG Finistère and BreizhBeans.
-		</p>		
-	</div>	
-</div>
-
-<div class="row padded padded-left">
-	<div id="speaker_elzemy" class="col-md-4 padded-lg">
-		<div class="circular-img-sm img-elezmy">
-			<a href="http://twitter.com/Eyal_Lezmy" target="_blank" class="social_1_3"><i class="fa fa-2x fa-twitter"></i></a>
-			<a href="https://plus.google.com/u/0/+EyalLEZMY" target="_blank" class="social_2_3"><i class="fa fa-2x fa-google-plus"></i></a>			
-			<a href="http://eyal.fr" target="_blank"  class="social_3_3"><i class="fa fa-2x fa-globe"></i></a>
-		</div>
-		<p class="lead text-center">
-			<strong class="text-success">Eyal Lezmy</strong><br> 
-			Developer Expert<br>Android
-		</p>			
-		<p class="text-justify">
-			Working with Android since 2009. After several R&D projects at french internet providers, Samsung in the Android B2B team, and then as Android set-top box developer for an hotel chain, I'm currently working on Genymotion, a fast Android emulator. I'm also treasurer at the Paris Android User Group.
-
-		</p>
-	</div>
-	<div id="speaker_rchardonneau" class="col-md-4 padded-lg">
-		<div class="circular-img-sm img-rchardonneau">
-			<a href="http://twitter.com/ChardonneauR" target="_blank" class="social_1_1"><i class="fa fa-2x fa-twitter"></i></a>			
-		</div>
-		<p class="lead text-center">
-			<strong class="text-danger">Ronan Chardonneau</strong><br>
-			Digital Marketer<br>Web 
-		</p>			
-		<p class="text-justify">
-			Currently working as an international digital marketer at Jymeo, a company specialized in buying guides and statistical analysis. Also associate professor at the university of Angers in digital marketing. Individual consultant and author of Google Analytics at Edition Eni. Currently writing a book about Google Tag Manager.
-
-		</p>
-	</div>
-	<div class="col-md-4 padded-lg">
-	</div>
-	
 </div>
 
 <div class="lead text-center"><strong>Bientôt plus de speakers...</strong></div>

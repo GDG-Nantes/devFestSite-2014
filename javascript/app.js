@@ -3,7 +3,11 @@
 
 var DevFestApp = DevFestApp || function(){
 
-  var nbComponentLoads = 0;
+  var nbComponentLoads = 0,
+    hoursJson = {},
+    speakersJson ={},
+    sessionsJson = {},
+    modelJson = {};
 
   /*function initImages(){
     return $.when($.ajax("assets/images/logo.png"),
@@ -56,7 +60,10 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/presse.html?ver="+DevFestSiteVersion),
         $.ajax("partials/what_is_devfest.html?ver="+DevFestSiteVersion),
         $.ajax("partials/video_phone.html?ver="+DevFestSiteVersion),
-        $.ajax("partials/pratique.html?ver="+DevFestSiteVersion)
+        $.ajax("partials/pratique.html?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/hours.json?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/sessions.json?ver="+DevFestSiteVersion),
+        $.ajax("assets/json/speakers.json?ver="+DevFestSiteVersion)
       );
   }
 
@@ -71,7 +78,7 @@ var DevFestApp = DevFestApp || function(){
       // return initPartials();
     // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, /*cfp, agenda, */home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique){
+    .then(function callBackPartials(contacts, content, speakers, /*cfp, agenda, */home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
       //console.info(result);
       //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
@@ -86,6 +93,9 @@ var DevFestApp = DevFestApp || function(){
       $('#video-phone').html(video_phone[0]);
       $('#pratique').html(pratique[0]);
       $('#presse').html(presse[0]);
+      hoursJson = hoursData[0];
+      sessionsJson = sessionsData[0];
+      speakersJson = speakersData[0];
       finishLoad();
     })
     .fail(function(error){
@@ -168,7 +178,8 @@ var DevFestApp = DevFestApp || function(){
       });
     }
 
-
+    constructModel();
+    manageSpeakers();
     manageAgenda(isMobile);
     scrollManagement(isMobile);
     
@@ -196,26 +207,176 @@ var DevFestApp = DevFestApp || function(){
 
   }
 
+  function constructModel(){
+    // On s'occupe d'abord des speakers
+    var newSpeakerArray = [];
+    var keysSpeakers = Object.keys(speakersJson);
+    var modulo = 0;
+    var rowSpeaker = null;
+    for (var indexSpeaker = 0; indexSpeaker < keysSpeakers.length; indexSpeaker++){
+      var speaker = speakersJson[keysSpeakers[indexSpeaker]];
+      if (speaker.show){
+        if (modulo === 0){
+          rowSpeaker = {'speakers':[]};
+          newSpeakerArray.push(rowSpeaker);
+        }
+        speaker.id = "speaker_"+keysSpeakers[indexSpeaker]; 
+        speaker.href = "#speaker_"+keysSpeakers[indexSpeaker]; 
+        speaker.img = "img-"+keysSpeakers[indexSpeaker]+" circular-img-sm"; 
+        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs"; 
+        speaker.colorText = speaker.type === 'mobile' ? 'text-success' : 
+              (speaker.type === 'cloud' ? 'text-primary' :
+                 (speaker.type === 'web' ? 'text-warning' : 'text-danger'));
+        if (speaker.socials){
+          for (var indexSocials = 0; indexSocials < speaker.socials.length; indexSocials++){
+            var socialLink = speaker.socials[indexSocials];
+            socialLink.classSocial = "social_"+(indexSocials+1)+"_"+speaker.socials.length;
+            socialLink.classImg = "fa fa-2x fa-"+socialLink.type;
+          }
+        }
+        rowSpeaker['speakers'].push(speaker);
+        modulo = (modulo + 1) % 3;
+      }
+    }
+
+    // On s'occupe ensuite de l'agenda
+    var keysHours = Object.keys(hoursJson);    
+    var newAgendaArray = [];
+    var rowAgenda = null;
+    for (var indexHours = 0; indexHours < keysHours.length; indexHours++){
+      var hourJson = hoursJson[keysHours[indexHours]];
+      var sessionsArray = getSessionsHour(keysHours[indexHours]);
+      rowAgenda = {'hour' : hourJson,
+              'sessions' : [],
+              'show' : true};
+      newAgendaArray.push(rowAgenda);
+      for (var indexSession = 0; indexSession < sessionsArray.length; indexSession++){
+        var session = sessionsArray[indexSession];
+        rowAgenda.show = rowAgenda.show && !session.hide;
+        rowAgenda.classRow = rowAgenda.show ? 'row' : 'row hide';
+        rowAgenda.sessions.push(session);
+        session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
+        if (session.difficulty){          
+          session.difficulty = ' - Difficulté : <i>'+
+              (session.difficulty === 101 ?  'Débutants' : session.difficulty === 202 ? 'Moyens' : 'Avancés')+
+              '</i>';
+        }        
+        if (session.lang){
+          session.lang = 'assets/images/lang/'+session.lang+'.png';
+        }
+        if (session.all){
+          session.classCol = 'col-xs-9 col-lg-8 padded border-row grey-gdg';
+        }else {
+          if (indexSession === 0){
+            session.classCol = 'col-xs-9 col-lg-2 padded animated-expand ';
+          }else{
+            session.classCol = 'col-xs-9 hidden-xs col-lg-2 padded animated-expand ';
+          }
+          session.classCol += session.type === 'mobile' ? 'green-gdg' : session.type === 'cloud' ? 'blue-gdg' : session.type === 'web' ? 'yellow-gdg' : 'red-gdg';
+        }
+
+        
+        
+        if (session.speakers && session.speakers.length > 0){
+          var newSpeakersSessions = [];
+          for (var indexSpeaker = 0; indexSpeaker < session.speakers.length; indexSpeaker++){
+            newSpeakersSessions.push(speakersJson[session.speakers[indexSpeaker]]);
+          }
+          session.speakers = newSpeakersSessions;
+        }else{
+          session.speakers = false;
+        }
+      }
+    }
+
+    modelJson['speakerRow'] = newSpeakerArray;
+    modelJson['agendaRow'] = newAgendaArray;
+  }
+
+  function getSessionsHour(hourId){
+    var sessionsArray = [];
+    var sessionWeb = null;
+    var sessionMobile = null;
+    var sessionCloud = null;
+    var sessionDiscovery = null;
+    for(var indexSession = 0 ; indexSession < sessionsJson.sessions.length; indexSession++){
+      var session = sessionsJson.sessions[indexSession];      
+      if (session.hour === hourId){
+        if (session.type === 'mobile'){
+          sessionMobile = session;
+        }else if (session.type === 'web'){
+          sessionWeb = session;
+        }else if (session.type === 'cloud'){
+          sessionCloud = session;
+        }else if (session.type === 'discovery'){
+          sessionDiscovery = session;
+        }
+        sessionsArray.push(session);
+      }
+    }
+
+    // Dans le cas classique, on pense à trier les sessions
+    if (sessionsArray.length === 4){
+      sessionsArray[0] = sessionMobile;
+      sessionsArray[1] = sessionWeb;
+      sessionsArray[2] = sessionCloud;
+      sessionsArray[3] = sessionDiscovery;
+    }
+
+    return sessionsArray;
+  }
+
+  function manageSpeakers(){
+    rivets.bind($('#speakers'), modelJson);
+  }
+
   function manageAgenda(isMobile){
       $('#header-agenda-to-copy').clone().attr('id','header-agenda-copy').appendTo('body'); 
       $('#header-agenda-copy').hide(); 
 
       if (!isMobile){        
-        $('.animated-expand').on('click',function animateConfClick(){
-          var parent = $(this).parent();
-          if ($(this).hasClass('col-lg-8')){
-            $(this).removeClass('col-lg-8');
-            $(this).addClass('col-lg-2');
-            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            $(this).removeClass('expand');
-            $(this).children('.resume').addClass('hidden-lg');
-          }else{            
-            $(this).addClass('expand');
-            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            $(this).removeClass('col-lg-2');
-            $(this).addClass('col-lg-8');
-            $(this).children('.resume').removeClass('hidden-lg');
+        modelJson.onClickTitle = function(event){
+          var jQueryElement = $(event.target);
+          var element = jQueryElement.parent().parent();
+          var parent = jQueryElement.parent().parent().parent();
+          if(element.hasClass('grey-gdg')){
+            return;
           }
+
+          if (element.hasClass('col-lg-8')){
+            element.removeClass('col-lg-8');
+            element.addClass('col-lg-2');
+            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+            element.removeClass('expand');
+            element.children('.resume').addClass('hidden-lg');
+          }else {            
+            element.addClass('expand');
+            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+            element.removeClass('col-lg-2');
+            element.addClass('col-lg-8');
+            element.children('.resume').removeClass('hidden-lg');
+          }
+        };
+        $('.animated-expand .title-conf').on('click',function animateConfClick(){
+          var element = $(this).parent().parent();
+          var parent = $(this).parent().parent().parent();
+          if (element.hasClass('col-lg-8')){
+            element.removeClass('col-lg-8');
+            element.addClass('col-lg-2');
+            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+            element.removeClass('expand');
+            element.children('.resume').addClass('hidden-lg');
+          }else{            
+            element.addClass('expand');
+            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+            element.removeClass('col-lg-2');
+            element.addClass('col-lg-8');
+            element.children('.resume').removeClass('hidden-lg');
+          }
+        });
+
+        $('#agenda a').on('click', function linkCancel(event){
+          //event.preventDefault();
         });
       }else{
         $('.header-agenda .border').on('click',function animateConfClick(){
@@ -234,12 +395,15 @@ var DevFestApp = DevFestApp || function(){
         });
       }
 
+      rivets.bind($('#agenda'), modelJson);
       // Mapping de Rivet.js
       /*rivets.bind($('#agenda'), {
         test : {data1 : 'data1Value', data2 : 'data2Value'},
         test2 : 'test2Value'
       });*/
   }  
+
+  
 
   function scrollManagement(isMobile){
     var agendaContainer = document.getElementById('agenda-container');

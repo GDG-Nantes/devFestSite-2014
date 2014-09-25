@@ -295,12 +295,34 @@ var DevFestApp = DevFestApp || function(){
 
   function getSessionsHour(hourId){
     var sessionsArray = [];
+    var sessionWeb = null;
+    var sessionMobile = null;
+    var sessionCloud = null;
+    var sessionDiscovery = null;
     for(var indexSession = 0 ; indexSession < sessionsJson.sessions.length; indexSession++){
-      var session = sessionsJson.sessions[indexSession];
+      var session = sessionsJson.sessions[indexSession];      
       if (session.hour === hourId){
+        if (session.type === 'mobile'){
+          sessionMobile = session;
+        }else if (session.type === 'web'){
+          sessionWeb = session;
+        }else if (session.type === 'cloud'){
+          sessionCloud = session;
+        }else if (session.type === 'discovery'){
+          sessionDiscovery = session;
+        }
         sessionsArray.push(session);
       }
     }
+
+    // Dans le cas classique, on pense à trier les sessions
+    if (sessionsArray.length === 4){
+      sessionsArray[0] = sessionMobile;
+      sessionsArray[1] = sessionWeb;
+      sessionsArray[2] = sessionCloud;
+      sessionsArray[3] = sessionDiscovery;
+    }
+
     return sessionsArray;
   }
 

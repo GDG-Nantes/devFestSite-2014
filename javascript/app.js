@@ -210,18 +210,23 @@ var DevFestApp = DevFestApp || function(){
   function constructModel(){
     // On s'occupe d'abord des speakers
     var newSpeakerArray = [];
-    var keys = Object.keys(speakersJson);
+    var keysSpeakers = Object.keys(speakersJson);
     var modulo = 0;
     var rowSpeaker = null;
-    for (var indexSpeaker = 0; indexSpeaker < keys.length; indexSpeaker++){
-      var speaker = speakersJson[keys[indexSpeaker]];
+    for (var indexSpeaker = 0; indexSpeaker < keysSpeakers.length; indexSpeaker++){
+      var speaker = speakersJson[keysSpeakers[indexSpeaker]];
       if (speaker.show){
         if (modulo === 0){
           rowSpeaker = {'speakers':[]};
           newSpeakerArray.push(rowSpeaker);
         }
-        speaker.id = "speaker_"+keys[indexSpeaker]; 
-        speaker.img = "img-"+keys[indexSpeaker]+" circular-img-sm"; 
+        speaker.id = "speaker_"+keysSpeakers[indexSpeaker]; 
+        speaker.href = "#speaker_"+keysSpeakers[indexSpeaker]; 
+        speaker.img = "img-"+keysSpeakers[indexSpeaker]+" circular-img-sm"; 
+        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs"; 
+        speaker.colorText = speaker.type === 'mobile' ? 'text-success' : 
+              (speaker.type === 'cloud' ? 'text-primary' :
+                 (speaker.type === 'web' ? 'text-warning' : 'text-danger'));
         if (speaker.socials){
           for (var indexSocials = 0; indexSocials < speaker.socials.length; indexSocials++){
             var socialLink = speaker.socials[indexSocials];
@@ -234,11 +239,73 @@ var DevFestApp = DevFestApp || function(){
       }
     }
 
+    // On s'occupe ensuite de l'agenda
+    var keysHours = Object.keys(hoursJson);    
+    var newAgendaArray = [];
+    var rowAgenda = null;
+    for (var indexHours = 0; indexHours < keysHours.length; indexHours++){
+      var hourJson = hoursJson[keysHours[indexHours]];
+      var sessionsArray = getSessionsHour(keysHours[indexHours]);
+      rowAgenda = {'hour' : hourJson,
+              'sessions' : [],
+              'show' : true};
+      newAgendaArray.push(rowAgenda);
+      for (var indexSession = 0; indexSession < sessionsArray.length; indexSession++){
+        var session = sessionsArray[indexSession];
+        rowAgenda.show = rowAgenda.show && !session.hide;
+        rowAgenda.classRow = rowAgenda.show ? 'row' : 'row hide';
+        rowAgenda.sessions.push(session);
+        session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
+        if (session.difficulty){          
+          session.difficulty = ' - Difficulté : <i>'+
+              (session.difficulty === 101 ?  'Débutants' : session.difficulty === 202 ? 'Moyens' : 'Avancés')+
+              '</i>';
+        }        
+        if (session.lang){
+          session.lang = 'assets/images/lang/'+session.lang+'.png';
+        }
+        if (session.all){
+          session.classCol = 'col-xs-9 col-lg-8 padded border-row grey-gdg';
+        }else {
+          if (indexSession === 0){
+            session.classCol = 'col-xs-9 col-lg-2 padded animated-expand ';
+          }else{
+            session.classCol = 'col-xs-9 hidden-xs col-lg-2 padded animated-expand ';
+          }
+          session.classCol += session.type === 'mobile' ? 'green-gdg' : session.type === 'cloud' ? 'blue-gdg' : session.type === 'web' ? 'yellow-gdg' : 'red-gdg';
+        }
+
+        
+        
+        if (session.speakers && session.speakers.length > 0){
+          var newSpeakersSessions = [];
+          for (var indexSpeaker = 0; indexSpeaker < session.speakers.length; indexSpeaker++){
+            newSpeakersSessions.push(speakersJson[session.speakers[indexSpeaker]]);
+          }
+          session.speakers = newSpeakersSessions;
+        }else{
+          session.speakers = false;
+        }
+      }
+    }
+
     modelJson['speakerRow'] = newSpeakerArray;
+    modelJson['agendaRow'] = newAgendaArray;
+  }
+
+  function getSessionsHour(hourId){
+    var sessionsArray = [];
+    for(var indexSession = 0 ; indexSession < sessionsJson.sessions.length; indexSession++){
+      var session = sessionsJson.sessions[indexSession];
+      if (session.hour === hourId){
+        sessionsArray.push(session);
+      }
+    }
+    return sessionsArray;
   }
 
   function manageSpeakers(){
-    rivets.bind($('#bindSpeakers'), modelJson);
+    rivets.bind($('#speakers'), modelJson);
   }
 
   function manageAgenda(isMobile){
@@ -246,6 +313,28 @@ var DevFestApp = DevFestApp || function(){
       $('#header-agenda-copy').hide(); 
 
       if (!isMobile){        
+        modelJson.onClickTitle = function(event){
+          var jQueryElement = $(event.target);
+          var element = jQueryElement.parent().parent();
+          var parent = jQueryElement.parent().parent().parent();
+          if(element.hasClass('grey-gdg')){
+            return;
+          }
+
+          if (element.hasClass('col-lg-8')){
+            element.removeClass('col-lg-8');
+            element.addClass('col-lg-2');
+            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+            element.removeClass('expand');
+            element.children('.resume').addClass('hidden-lg');
+          }else {            
+            element.addClass('expand');
+            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+            element.removeClass('col-lg-2');
+            element.addClass('col-lg-8');
+            element.children('.resume').removeClass('hidden-lg');
+          }
+        };
         $('.animated-expand .title-conf').on('click',function animateConfClick(){
           var element = $(this).parent().parent();
           var parent = $(this).parent().parent().parent();
@@ -284,6 +373,7 @@ var DevFestApp = DevFestApp || function(){
         });
       }
 
+      rivets.bind($('#agenda'), modelJson);
       // Mapping de Rivet.js
       /*rivets.bind($('#agenda'), {
         test : {data1 : 'data1Value', data2 : 'data2Value'},

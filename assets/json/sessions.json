@@ -201,15 +201,15 @@
     "hour":"h9",
     "speakers":["alopez"]
   },{
-    "title":"",
+    "title":"Dart, it's Angular too!",
     "confRoom":"",
-    "desc":"",
+    "desc":"AngularJS is now very well known and should not be presented anymore in a Google related conference. However, a front-end developer's life does not necessarily mean JavaScript! New languages are coming and Dart is very promising amongst them! Dart is awesome : developed and backed by Google, open source, with a class based inheritance, client and server ... It allows front-end developers to structure their code (like they could do in Java) and on top of that front-end developers can become familiar with it in just a few hours. However Dart has recently undergone a major change porting Angular in its ecosystem.  <br>You will see that with AngularDart powerful features such as 2-way binding, formatters (filters), decorators and components (directives) have landed in the Dart ecosystem to develop single page applications with a unique language from server to browser. <br> During this talk, you'll come to love Dart + Angular and all the great things it means for developers.",
     "type":"web",
-    "difficulty":101,
+    "difficulty":202,
     "all" : false,
-    "lang":"",
+    "lang":"fr",
     "hour":"h9",
-    "speakers":[]
+    "speakers":["preliquet"]
   },{
     "title":"Lucy in the sky with docker",
     "confRoom":"",

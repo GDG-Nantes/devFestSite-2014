@@ -251,7 +251,7 @@
       ]
   },
   "pcans":{
-    "show":true,
+    "show":false,
     "name":"Pascal Cans",
     "title":"",
     "bio":"",

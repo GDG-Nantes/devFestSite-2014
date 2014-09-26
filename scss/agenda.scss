@@ -152,7 +152,7 @@ END TO REMOVE !!!
 		position: relative;
 	}
 
-	.row .to-hide.popup-resume{
+	/*.row .to-hide.popup-resume{
 		opacity: 0;
 		@include transition-delay(0ms);
 		@include transition-duration(0ms);
@@ -187,7 +187,18 @@ END TO REMOVE !!!
 		@include transition-duration(100ms);
 		@include transition-timing-function(ease-in);
 		border-top-width: $size-border-hover !important;
+	}*/
+
+	.row .animated-expand{
+		.anchor-session{
+			position: relative;
+			visibility: hidden;
+			display: block;
+			height: 160px;
+			margin-top: -160px;
+		}
 	}
+
 
 	.row .white-gdg{		
 		border-top: $size-border-top $color-border solid;
@@ -225,6 +236,16 @@ END TO REMOVE !!!
 		position: relative;
 	}
 
+	
+	.row .animated-expand.col-lg-2 .resume{
+		line-height: 1em;
+		height: 1em;
+		white-space: nowrap;
+		text-overflow: ellipsis; 
+		overflow: hidden;
+	}
+
+
 	.row .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
@@ -237,31 +258,6 @@ END TO REMOVE !!!
 		height: 6.0em;
 	}
 
-	/*.row .col-lg-2 .title-conf.to-long{
-		max-height: 2.4em;
-		text-overflow: ellipsis; 
-		overflow: hidden;
-	}
-
-	/*.row .col-lg-2 .title-conf.to-long:after{
-		content: ' ';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 1.2em;
-		bottom: 0;
-		left: 0;
-	}
-	.row .col-lg-2 .title-conf.to-long:after{
-		content: '...';
-		text-align: left;
-		position: absolute;
-		display: block;
-		width: 2.4em;
-		height: 1.2em;
-		bottom: -5px;
-		left: 0px;
-	}*/
 
 	.row .animated-expand.to-hide{
 		display: none !important;
@@ -308,11 +304,25 @@ END TO REMOVE !!!
 
 	.row .conf-speakers{
 		margin-bottom: 10px;
+
+		.speaker{
+			position: relative;
+			width: 100%;
+		}
+
+		.speaker-img{
+			margin: 0;
+		}
 	}
+
+
 
 	.row .conf-speakers .speaker-name{
 		text-align: center;
 		text-overflow : ellipsis;
+		position: absolute;
+		left: 55px;
+		top: 15px;
 	}
 
 
@@ -336,6 +346,13 @@ END TO REMOVE !!!
 
 @media only screen and (max-width: 768px) {
 
+	#agenda .row .animated-expand.col-lg-2 .resume{
+		line-height: inherit;
+		height: inherit;
+		white-space: inherit;
+		text-overflow: inherit; 
+		overflow: none;
+	}
 
 	#header-agenda-copy{
 		

@@ -223,7 +223,7 @@ var DevFestApp = DevFestApp || function(){
         speaker.id = "speaker_"+keysSpeakers[indexSpeaker]; 
         speaker.href = "#speaker_"+keysSpeakers[indexSpeaker]; 
         speaker.img = "img-"+keysSpeakers[indexSpeaker]+" circular-img-sm"; 
-        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs"; 
+        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs speaker-img"; 
         speaker.colorText = speaker.type === 'mobile' ? 'text-success' : 
               (speaker.type === 'cloud' ? 'text-primary' :
                  (speaker.type === 'web' ? 'text-warning' : 'text-danger'));
@@ -257,8 +257,8 @@ var DevFestApp = DevFestApp || function(){
         rowAgenda.sessions.push(session);
         session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
         if (session.difficulty){          
-          session.difficulty = ' - Difficulté : <i>'+
-              (session.difficulty === 101 ?  'Débutants' : session.difficulty === 202 ? 'Moyens' : 'Avancés')+
+          session.difficulty = ' Difficulté : <i>'+
+              (session.difficulty === 101 ?  'Débutant' : session.difficulty === 202 ? 'Intermédiaire' : 'Avancé')+
               '</i>';
         }        
         if (session.lang){
@@ -283,6 +283,7 @@ var DevFestApp = DevFestApp || function(){
             var speaker = speakersJson[session.speakers[indexSpeaker]];
             speaker.titleConf = session.title;
             speaker.refSession = '#'+session.id;
+            speaker.session = session;
             newSpeakersSessions.push(speaker);
           }
           session.speakers = newSpeakersSessions;
@@ -329,7 +330,33 @@ var DevFestApp = DevFestApp || function(){
     return sessionsArray;
   }
 
+  function expandSession(element, force){
+    var parent = element.parent();
+    if(element.hasClass('grey-gdg')){
+      return;
+    }
+
+    if (!force && element.hasClass('col-lg-8')){
+      element.removeClass('col-lg-8');
+      element.addClass('col-lg-2');
+      parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+      element.removeClass('expand');
+      //element.children('.resume').addClass('hidden-lg');
+    }else {            
+      element.addClass('expand');
+      parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+      element.removeClass('col-lg-2');
+      element.addClass('col-lg-8');
+      //element.children('.resume').removeClass('hidden-lg');
+    }
+  }
+
   function manageSpeakers(){
+    modelJson.onSessionSpeakerClick = function(event, scope){
+        var jQueryElement = $(document.querySelector('#'+scope.speaker.session.id));
+        var element = jQueryElement.parent();
+        expandSession(element, true);
+      }
     rivets.bind($('#speakers'), modelJson);
   }
 
@@ -341,24 +368,7 @@ var DevFestApp = DevFestApp || function(){
         modelJson.onClickTitle = function(event){
           var jQueryElement = $(event.currentTarget);
           var element = jQueryElement;//.parent().parent();
-          var parent = element.parent();
-          if(element.hasClass('grey-gdg')){
-            return;
-          }
-
-          if (element.hasClass('col-lg-8')){
-            element.removeClass('col-lg-8');
-            element.addClass('col-lg-2');
-            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            element.removeClass('expand');
-            element.children('.resume').addClass('hidden-lg');
-          }else {            
-            element.addClass('expand');
-            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            element.removeClass('col-lg-2');
-            element.addClass('col-lg-8');
-            element.children('.resume').removeClass('hidden-lg');
-          }
+          expandSession(element);
         };
         modelJson.onMouseEnter = function(event, scope){
           var jQueryElement = $(event.currentTarget);
@@ -370,6 +380,9 @@ var DevFestApp = DevFestApp || function(){
           var jQueryElement = $(event.currentTarget);
           jQueryElement.parent().children('.popup-resume').addClass('to-hide');
         }
+       
+
+        
        
 
         $('#agenda a').on('click', function linkCancel(event){

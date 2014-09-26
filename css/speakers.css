@@ -14,7 +14,12 @@
   background: rgba(0, 0, 0, 0.4);
   border-radius: 75px;
 }
-/* line 20, ../scss/speakers.scss */
+/* line 19, ../scss/speakers.scss */
+#speakers .speaker-title {
+  line-height: 21px;
+  height: 42px;
+}
+/* line 25, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a {
   position: absolute;
   width: 75px;
@@ -23,254 +28,254 @@
   z-index: 2;
   color: #DDD;
 }
-/* line 28, ../scss/speakers.scss */
+/* line 33, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a i {
   line-height: 75px;
   width: 75px;
   text-align: center;
 }
-/* line 35, ../scss/speakers.scss */
+/* line 40, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_1_1, #speakers .circular-img-sm:hover a.social_1_2, #speakers .circular-img-sm:hover a.social_2_2,
 #speakers .circular-img-sm:hover a.social_1_3, #speakers .circular-img-sm:hover a.social_2_3, #speakers .circular-img-sm:hover a.social_3_3,
 #speakers .circular-img-sm:hover a.social_1_4, #speakers .circular-img-sm:hover a.social_2_4, #speakers .circular-img-sm:hover a.social_3_4, #speakers .circular-img-sm:hover a.social_4_4 {
   margin-top: -37.5px;
   margin-left: -37.5px;
 }
-/* line 43, ../scss/speakers.scss */
+/* line 48, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_1_1, #speakers .circular-img-sm:hover a.social_1_2, #speakers .circular-img-sm:hover a.social_2_2 {
   top: 50%;
 }
-/* line 47, ../scss/speakers.scss */
+/* line 52, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_1_1, #speakers .circular-img-sm:hover a.social_3_3 {
   left: 50%;
 }
-/* line 51, ../scss/speakers.scss */
+/* line 56, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_1_3, #speakers .circular-img-sm:hover a.social_2_3,
 #speakers .circular-img-sm:hover a.social_1_4, #speakers .circular-img-sm:hover a.social_2_4 {
   top: 25%;
 }
-/* line 56, ../scss/speakers.scss */
+/* line 61, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_3_3,
 #speakers .circular-img-sm:hover a.social_3_4, #speakers .circular-img-sm:hover a.social_4_4 {
   top: 75%;
 }
-/* line 62, ../scss/speakers.scss */
+/* line 67, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_1_2, #speakers .circular-img-sm:hover a.social_1_3, #speakers .circular-img-sm:hover a.social_1_4, #speakers .circular-img-sm:hover a.social_3_4 {
   left: 25%;
 }
-/* line 66, ../scss/speakers.scss */
+/* line 71, ../scss/speakers.scss */
 #speakers .circular-img-sm:hover a.social_2_2, #speakers .circular-img-sm:hover a.social_2_3, #speakers .circular-img-sm:hover a.social_2_4, #speakers .circular-img-sm:hover a.social_4_4 {
   left: 75%;
 }
-/* line 73, ../scss/speakers.scss */
+/* line 78, ../scss/speakers.scss */
 #speakers .circular-img-sm a {
   display: none;
 }
 
-/* line 79, ../scss/speakers.scss */
+/* line 84, ../scss/speakers.scss */
 .img-alopez {
   background: url(../assets/images/speakers/alopez.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 85, ../scss/speakers.scss */
+/* line 90, ../scss/speakers.scss */
 .img-arichard {
   background: url(../assets/images/speakers/arichard.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 91, ../scss/speakers.scss */
+/* line 96, ../scss/speakers.scss */
 .img-bdorsey {
   background: url(../assets/images/speakers/bdorsey.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 97, ../scss/speakers.scss */
+/* line 102, ../scss/speakers.scss */
 .img-cmottier {
   background: url(../assets/images/speakers/cmottier.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 103, ../scss/speakers.scss */
+/* line 108, ../scss/speakers.scss */
 .img-cquilici {
   background: url(../assets/images/speakers/cquilici.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 111, ../scss/speakers.scss */
+/* line 116, ../scss/speakers.scss */
 .img-dgageot {
   background: url(../assets/images/speakers/dgageot.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 117, ../scss/speakers.scss */
+/* line 122, ../scss/speakers.scss */
 .img-dlecan {
   background: url(../assets/images/speakers/dlecan.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 123, ../scss/speakers.scss */
+/* line 128, ../scss/speakers.scss */
 .img-elezmy {
   background: url(../assets/images/speakers/elezmy.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 129, ../scss/speakers.scss */
+/* line 134, ../scss/speakers.scss */
 .img-fharper {
   background: url(../assets/images/speakers/fharper.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 135, ../scss/speakers.scss */
+/* line 140, ../scss/speakers.scss */
 .img-fherrou {
   background: url(../assets/images/speakers/fherrou.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 141, ../scss/speakers.scss */
+/* line 146, ../scss/speakers.scss */
 .img-ftrichet {
   background: url(../assets/images/speakers/ftrichet.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 147, ../scss/speakers.scss */
+/* line 152, ../scss/speakers.scss */
 .img-hgonzalez {
   background: url(../assets/images/speakers/hgonzalez.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 153, ../scss/speakers.scss */
+/* line 158, ../scss/speakers.scss */
 .img-jdramaix {
   background: url(../assets/images/speakers/jdramaix.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 159, ../scss/speakers.scss */
+/* line 164, ../scss/speakers.scss */
 .img-jdubois {
   background: url(../assets/images/speakers/jdubois.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 165, ../scss/speakers.scss */
+/* line 170, ../scss/speakers.scss */
 .img-jferraioli {
   background: url(../assets/images/speakers/jferraioli.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 171, ../scss/speakers.scss */
+/* line 176, ../scss/speakers.scss */
 .img-jmouton {
   background: url(../assets/images/speakers/jmouton.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 177, ../scss/speakers.scss */
+/* line 182, ../scss/speakers.scss */
 .img-jpalies {
   background: url(../assets/images/speakers/jpalies.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 183, ../scss/speakers.scss */
+/* line 188, ../scss/speakers.scss */
 .img-lchampenois {
   background: url(../assets/images/speakers/lchampenois.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 189, ../scss/speakers.scss */
+/* line 194, ../scss/speakers.scss */
 .img-mbelmokhtar {
   background: url(../assets/images/speakers/mbelmokhtar.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 195, ../scss/speakers.scss */
+/* line 200, ../scss/speakers.scss */
 .img-mboillod {
   background: url(../assets/images/speakers/mboillod.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 201, ../scss/speakers.scss */
+/* line 206, ../scss/speakers.scss */
 .img-mgorner {
   background: url(../assets/images/speakers/mgorner.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 207, ../scss/speakers.scss */
+/* line 212, ../scss/speakers.scss */
 .img-ngarnier {
   background: url(../assets/images/speakers/ngarnier.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 213, ../scss/speakers.scss */
+/* line 218, ../scss/speakers.scss */
 .img-pcans {
   background: url(../assets/images/speakers/pcans.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 219, ../scss/speakers.scss */
+/* line 224, ../scss/speakers.scss */
 .img-preliquet {
   background: url(../assets/images/speakers/preliquet.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 225, ../scss/speakers.scss */
+/* line 230, ../scss/speakers.scss */
 .img-rchardonneau {
   background: url(../assets/images/speakers/rchardonneau.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 231, ../scss/speakers.scss */
+/* line 236, ../scss/speakers.scss */
 .img-rguilloux {
   background: url(../assets/images/speakers/rguilloux.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 237, ../scss/speakers.scss */
+/* line 242, ../scss/speakers.scss */
 .img-rmenetrier {
   background: url(../assets/images/speakers/rmenetrier.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 243, ../scss/speakers.scss */
+/* line 248, ../scss/speakers.scss */
 .img-roddet {
   background: url(../assets/images/speakers/roddet.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 249, ../scss/speakers.scss */
+/* line 254, ../scss/speakers.scss */
 .img-swalter {
   background: url(../assets/images/speakers/swalter.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 255, ../scss/speakers.scss */
+/* line 260, ../scss/speakers.scss */
 .img-tgrall {
   background: url(../assets/images/speakers/tgrall.png) no-repeat;
   background-size: contain;

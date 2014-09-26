@@ -12,8 +12,8 @@
   "arichard":{
     "show":true,
     "name":"Antoine Richard",
-    "title":"Consultant en architecture Web",
-    "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité. <br>Antoine intervient régulièrement en tant que speaker sur l'écosystème Javascript et notamment sur AngularJS.",
+    "title":"Web architect",
+    "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité.",
     "type":"globe",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/richard_antoine"},

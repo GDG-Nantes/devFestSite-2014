@@ -53,7 +53,7 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/content.html?ver="+DevFestSiteVersion),
         $.ajax("partials/speakers.html?ver="+DevFestSiteVersion),
         //$.ajax("partials/cfp.html?ver="+DevFestSiteVersion),
-        $.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
+        //$.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
         $.ajax("partials/home.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsoring.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsors.html?ver="+DevFestSiteVersion),
@@ -78,14 +78,14 @@ var DevFestApp = DevFestApp || function(){
       // return initPartials();
     // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, /*cfp, */agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
+    .then(function callBackPartials(contacts, content, speakers, /*cfp, agenda, */home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
       //console.info(result);
       //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);
       //$('#cfp').html(cfp[0]);
-      $('#agenda').html(agenda[0]);
+      //$('#agenda').html(agenda[0]);
       $('#home').html(home[0]);
       $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);
@@ -124,7 +124,7 @@ var DevFestApp = DevFestApp || function(){
           //, 'nav-cfp' // Slide CFP
           , 'nav-speakers' // Slide Transition
           , 'nav-speakers' // Slide Speakers
-          , 'nav-agenda' // Slide Agenda
+          //, 'nav-agenda' // Slide Agenda
           , 'nav-sponsoring' // Slide Dossier
           , 'nav-sponsors' // Slide Sponsor
           , 'nav-sponsors' // Slide  Transition
@@ -141,7 +141,7 @@ var DevFestApp = DevFestApp || function(){
           //, '#444' // Slide CFP
           , '#444' // Slide Transition
           , '#f2f2f2' // Slide Speakers
-          , '#444' // Slide Agenda
+          //, '#444' // Slide Agenda
           , '#f2f2f2' // Slide Dossier
           , '#f2f2f2' // Slide Sponsors
           , '#f2f2f2' // Slide Transition

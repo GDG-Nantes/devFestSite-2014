@@ -12,9 +12,9 @@
   "arichard":{
     "show":true,
     "name":"Antoine Richard",
-    "title":"Web architect",
+    "title":"Web Architect",
     "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité.",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/richard_antoine"},
       {"type":"google-plus","url":"https://plus.google.com/u/0/+AntoineRichard"},
@@ -137,7 +137,7 @@
     "name":"Horacio Gonzalez",
     "title":"Developper<br>Web & Cloud",
     "bio":"Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek. Horacio works at Cityzen Data, a start-up providing  provides a scalable, secure, ethical and open platform for sensor data. He is the co-founder and leader of the FinistJUG (the French JUG the nearest to the Silicon Valley!), GDG Finistère and BreizhBeans.",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/LostInBrittany"},
       {"type":"google-plus","url":"https://plus.google.com/u/0/+LostInBrittany"},
@@ -150,7 +150,7 @@
     "name":"Julien Dramaix",
     "title":"",
     "bio":"",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":""},
       {"type":"google-plus","url":""},
@@ -163,7 +163,7 @@
     "name":"Julien Dubois",
     "title":"Chief Innovation Officer",
     "bio":"Julien Dubois is a developer, speaker and author specialized in the Java technology. In the last 15 years, he has worked for many clients in the banking, retail and telco industries, launched SpringSource in France, and participated in many Open Source projects. Last year, he launched JHipster has a pet project, to make cool JavaScript technologies work with older Java middleware.",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/juliendubois"}
       ]
@@ -223,7 +223,7 @@
     "name":"Medy Belmkhtar",
     "title":"Ingénieur Etudes & Développement",
     "bio":"Passionné des technos JS, il réalise chez NETAPSYS l'évangélisation et l'intégration de projets autour du framework ANGULARJS",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/medyBelmokhtar"},
       {"type":"github-alt","url":"https://github.com/bmedy"}

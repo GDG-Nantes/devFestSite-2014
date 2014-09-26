@@ -237,12 +237,12 @@ END TO REMOVE !!!
 	}
 
 	
+	.row .animated-expand.col-lg-2.expand .resume-light{
+		display: none;
+	}
+
 	.row .animated-expand.col-lg-2 .resume{
-		line-height: 1em;
-		height: 1em;
-		white-space: nowrap;
-		text-overflow: ellipsis; 
-		overflow: hidden;
+		display: none;
 	}
 
 
@@ -346,13 +346,14 @@ END TO REMOVE !!!
 
 @media only screen and (max-width: 768px) {
 
-	#agenda .row .animated-expand.col-lg-2 .resume{
-		line-height: inherit;
-		height: inherit;
-		white-space: inherit;
-		text-overflow: inherit; 
-		overflow: none;
+	#agenda .row .animated-expand.col-lg-2 .resume-light{
+		display: none;
 	}
+
+	#agenda .row .animated-expand.col-lg-2 .resume{
+		display: block;
+	}
+
 
 	#header-agenda-copy{
 		

@@ -299,215 +299,219 @@
 #speakers .circular-img-sm:hover a.social_2_2, #speakers .circular-img-sm:hover a.social_2_3, #speakers .circular-img-sm:hover a.social_2_4, #speakers .circular-img-sm:hover a.social_4_4 {
   left: 75%;
 }
-/* line 78, ../scss/speakers.scss */
+/* line 77, ../scss/speakers.scss */
+#speakers .circular-img-sm {
+  margin-bottom: 10px;
+}
+/* line 80, ../scss/speakers.scss */
 #speakers .circular-img-sm a {
   display: none;
 }
 
-/* line 84, ../scss/speakers.scss */
+/* line 86, ../scss/speakers.scss */
 .img-alopez {
   background: url(../assets/images/speakers/alopez.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 90, ../scss/speakers.scss */
+/* line 92, ../scss/speakers.scss */
 .img-arichard {
   background: url(../assets/images/speakers/arichard.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 96, ../scss/speakers.scss */
+/* line 98, ../scss/speakers.scss */
 .img-bdorsey {
   background: url(../assets/images/speakers/bdorsey.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 102, ../scss/speakers.scss */
+/* line 104, ../scss/speakers.scss */
 .img-cmottier {
   background: url(../assets/images/speakers/cmottier.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 108, ../scss/speakers.scss */
+/* line 110, ../scss/speakers.scss */
 .img-cquilici {
   background: url(../assets/images/speakers/cquilici.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 116, ../scss/speakers.scss */
+/* line 118, ../scss/speakers.scss */
 .img-dgageot {
   background: url(../assets/images/speakers/dgageot.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 122, ../scss/speakers.scss */
+/* line 124, ../scss/speakers.scss */
 .img-dlecan {
   background: url(../assets/images/speakers/dlecan.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 128, ../scss/speakers.scss */
+/* line 130, ../scss/speakers.scss */
 .img-elezmy {
   background: url(../assets/images/speakers/elezmy.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 134, ../scss/speakers.scss */
+/* line 136, ../scss/speakers.scss */
 .img-fharper {
   background: url(../assets/images/speakers/fharper.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 140, ../scss/speakers.scss */
+/* line 142, ../scss/speakers.scss */
 .img-fherrou {
   background: url(../assets/images/speakers/fherrou.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 146, ../scss/speakers.scss */
+/* line 148, ../scss/speakers.scss */
 .img-ftrichet {
   background: url(../assets/images/speakers/ftrichet.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 152, ../scss/speakers.scss */
+/* line 154, ../scss/speakers.scss */
 .img-hgonzalez {
   background: url(../assets/images/speakers/hgonzalez.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 158, ../scss/speakers.scss */
+/* line 160, ../scss/speakers.scss */
 .img-jdramaix {
   background: url(../assets/images/speakers/jdramaix.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 164, ../scss/speakers.scss */
+/* line 166, ../scss/speakers.scss */
 .img-jdubois {
   background: url(../assets/images/speakers/jdubois.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 170, ../scss/speakers.scss */
+/* line 172, ../scss/speakers.scss */
 .img-jferraioli {
   background: url(../assets/images/speakers/jferraioli.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 176, ../scss/speakers.scss */
+/* line 178, ../scss/speakers.scss */
 .img-jmouton {
   background: url(../assets/images/speakers/jmouton.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 182, ../scss/speakers.scss */
+/* line 184, ../scss/speakers.scss */
 .img-jpalies {
   background: url(../assets/images/speakers/jpalies.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 188, ../scss/speakers.scss */
+/* line 190, ../scss/speakers.scss */
 .img-lchampenois {
   background: url(../assets/images/speakers/lchampenois.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 194, ../scss/speakers.scss */
+/* line 196, ../scss/speakers.scss */
 .img-mbelmokhtar {
   background: url(../assets/images/speakers/mbelmokhtar.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 200, ../scss/speakers.scss */
+/* line 202, ../scss/speakers.scss */
 .img-mboillod {
   background: url(../assets/images/speakers/mboillod.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 206, ../scss/speakers.scss */
+/* line 208, ../scss/speakers.scss */
 .img-mgorner {
   background: url(../assets/images/speakers/mgorner.png) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 212, ../scss/speakers.scss */
+/* line 214, ../scss/speakers.scss */
 .img-ngarnier {
   background: url(../assets/images/speakers/ngarnier.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 218, ../scss/speakers.scss */
+/* line 220, ../scss/speakers.scss */
 .img-pcans {
   background: url(../assets/images/speakers/pcans.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 224, ../scss/speakers.scss */
+/* line 226, ../scss/speakers.scss */
 .img-preliquet {
   background: url(../assets/images/speakers/preliquet.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 230, ../scss/speakers.scss */
+/* line 232, ../scss/speakers.scss */
 .img-rchardonneau {
   background: url(../assets/images/speakers/rchardonneau.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 236, ../scss/speakers.scss */
+/* line 238, ../scss/speakers.scss */
 .img-rguilloux {
   background: url(../assets/images/speakers/rguilloux.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 242, ../scss/speakers.scss */
+/* line 244, ../scss/speakers.scss */
 .img-rmenetrier {
   background: url(../assets/images/speakers/rmenetrier.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 248, ../scss/speakers.scss */
+/* line 250, ../scss/speakers.scss */
 .img-roddet {
   background: url(../assets/images/speakers/roddet.jpeg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 254, ../scss/speakers.scss */
+/* line 256, ../scss/speakers.scss */
 .img-swalter {
   background: url(../assets/images/speakers/swalter.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
-/* line 260, ../scss/speakers.scss */
+/* line 262, ../scss/speakers.scss */
 .img-tgrall {
   background: url(../assets/images/speakers/tgrall.png) no-repeat;
   background-size: contain;
@@ -863,12 +867,12 @@ END TO REMOVE !!!
   position: relative;
 }
 /* line 240, ../scss/agenda.scss */
+#agenda .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-to-copy .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-copy .row .animated-expand.col-lg-2.expand .resume-light {
+  display: none;
+}
+/* line 244, ../scss/agenda.scss */
 #agenda .row .animated-expand.col-lg-2 .resume, #header-agenda-to-copy .row .animated-expand.col-lg-2 .resume, #header-agenda-copy .row .animated-expand.col-lg-2 .resume {
-  line-height: 1em;
-  height: 1em;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  display: none;
 }
 /* line 249, ../scss/agenda.scss */
 #agenda .row .title-conf, #header-agenda-to-copy .row .title-conf, #header-agenda-copy .row .title-conf {
@@ -967,50 +971,51 @@ END TO REMOVE !!!
 
 @media only screen and (max-width: 768px) {
   /* line 349, ../scss/agenda.scss */
-  #agenda .row .animated-expand.col-lg-2 .resume {
-    line-height: inherit;
-    height: inherit;
-    white-space: inherit;
-    text-overflow: inherit;
-    overflow: none;
+  #agenda .row .animated-expand.col-lg-2 .resume-light {
+    display: none;
   }
 
-  /* line 359, ../scss/agenda.scss */
+  /* line 353, ../scss/agenda.scss */
+  #agenda .row .animated-expand.col-lg-2 .resume {
+    display: block;
+  }
+
+  /* line 360, ../scss/agenda.scss */
   #header-agenda-copy .header-agenda .border {
     -moz-box-shadow: black 0px 0px 0px;
     -webkit-box-shadow: black 0px 0px 0px;
     box-shadow: black 0px 0px 0px;
   }
 
-  /* line 367, ../scss/agenda.scss */
+  /* line 368, ../scss/agenda.scss */
   #agenda .row .lead, #header-agenda-to-copy .row .lead, #header-agenda-copy .row .lead {
     font-size: 1em;
   }
-  /* line 371, ../scss/agenda.scss */
+  /* line 372, ../scss/agenda.scss */
   #agenda .header-agenda .border:not(.col-lg-offset-1), #header-agenda-to-copy .header-agenda .border:not(.col-lg-offset-1), #header-agenda-copy .header-agenda .border:not(.col-lg-offset-1) {
     margin-left: 0px;
     cursor: hand;
   }
-  /* line 376, ../scss/agenda.scss */
+  /* line 377, ../scss/agenda.scss */
   #agenda .header-agenda .border.select, #header-agenda-to-copy .header-agenda .border.select, #header-agenda-copy .header-agenda .border.select {
     z-index: 100;
     -moz-box-shadow: black 0px 2px 10px inset;
     -webkit-box-shadow: black 0px 2px 10px inset;
     box-shadow: black 0px 2px 10px inset;
   }
-  /* line 382, ../scss/agenda.scss */
+  /* line 383, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long:after, #agenda .row .col-lg-2 .title-conf.to-long:before, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:before, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:before {
     content: none;
     width: 0;
     height: 0;
   }
-  /* line 389, ../scss/agenda.scss */
+  /* line 390, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long, #header-agenda-copy .row .col-lg-2 .title-conf.to-long {
     max-height: 15em;
     text-overflow: none;
     overflow: none;
   }
-  /* line 395, ../scss/agenda.scss */
+  /* line 396, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .conf-dificulty, #agenda .row .col-lg-2 .conf-lang, #header-agenda-to-copy .row .col-lg-2 .conf-dificulty, #header-agenda-to-copy .row .col-lg-2 .conf-lang, #header-agenda-copy .row .col-lg-2 .conf-dificulty, #header-agenda-copy .row .col-lg-2 .conf-lang {
     display: inline-block;
   }

@@ -256,6 +256,9 @@ var DevFestApp = DevFestApp || function(){
         rowAgenda.classRow = rowAgenda.show ? 'row' : 'row hide';
         rowAgenda.sessions.push(session);
         session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
+        if (session.desc){
+          session.descLight = truncateDesc(session.desc);
+        }
         if (session.difficulty){          
           session.difficulty = ' Difficulté : <i>'+
               (session.difficulty === 101 ?  'Débutant' : session.difficulty === 202 ? 'Intermédiaire' : 'Avancé')+
@@ -295,6 +298,20 @@ var DevFestApp = DevFestApp || function(){
 
     modelJson['speakerRow'] = newSpeakerArray;
     modelJson['agendaRow'] = newAgendaArray;
+  }
+
+  function truncateDesc(desc){
+    var changeDesc = desc;
+    var limit = 100;
+    if (desc.length > limit){
+      if(desc[limit] === ' '){
+        changeDesc = desc.substring(0,limit)+'...';
+      }else{
+        var lastPos = desc.indexOf(' ',limit);
+        changeDesc = desc.substring(0,lastPos)+'...';
+      }
+    }
+    return changeDesc;
   }
 
   function getSessionsHour(hourId){
@@ -379,15 +396,8 @@ var DevFestApp = DevFestApp || function(){
         modelJson.onMouseLeave = function(event, scope){
           var jQueryElement = $(event.currentTarget);
           jQueryElement.parent().children('.popup-resume').addClass('to-hide');
-        }
-       
+        }       
 
-        
-       
-
-        $('#agenda a').on('click', function linkCancel(event){
-          //event.preventDefault();
-        });
       }else{
         $('.header-agenda .border').on('click',function animateConfClick(){
           // On sélectionne le même item sur les 2 menus (le flottant et le principal)

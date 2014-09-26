@@ -143,8 +143,43 @@ END TO REMOVE !!!
 		margin-left: 10px;
 	}
 
-	.row .animated-expand .title-conf:hover{
+	
+	.row .animated-expand:hover{
 		cursor: pointer;
+	}
+
+	.row{
+		position: relative;
+	}
+
+	.row .to-hide.popup-resume{
+		opacity: 0;
+		@include transition-delay(0ms);
+		@include transition-duration(0ms);
+	}
+
+	.row .popup-resume{
+		position: absolute;		
+		opacity: 1;
+		left: 50%;
+		top:100px;
+		width: 800px;
+		margin-left: -300px;
+		color: #333;
+		background: rgba(220,220,220,0.95);
+		padding: 30px;
+		z-index: 100;
+		@include box-shadow(black 1px 1px 10px);
+		@include transition-property(opacity);
+		@include transition-delay(500ms);
+		@include transition-duration(100ms);
+		p:first-child{
+			font-weight:bold;
+		}
+	}
+
+	.row .animated-expand.expand ~ .popup-resume{
+		display: none;
 	}
 
 	.row .animated-expand:not(.expand):hover{
@@ -193,6 +228,7 @@ END TO REMOVE !!!
 	.row .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
+		font-weight:bold;
 	}
 
 	.row .col-lg-2 .title-conf{

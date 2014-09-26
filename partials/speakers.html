@@ -1,4 +1,4 @@
-<div class="text-center"><h1>Top Speakers</h1></div>
+<div class="text-center"><h1>Speakers</h1></div>
 
 <div rv-each-row="speakerRow" class="row padded padded-left">
 	<div rv-each-speaker="row.speakers" rv-id="speaker.id" class="col-md-4  padded-lg">
@@ -12,7 +12,7 @@
 		<p class="text-justify">
 			{speaker.bio}
 		</p>
+		<h4>Sa conférence : </h4>
+		<a rv-href="speaker.refSession" rv-html="speaker.titleConf"></a>
 	</div>
 </div>
-
-<div class="lead text-center"><strong>Bientôt plus de speakers...</strong></div>

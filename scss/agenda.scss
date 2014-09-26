@@ -220,7 +220,7 @@ END TO REMOVE !!!
 
 
 	.row .col-lg-2 .title-conf-parent{
-		height: 3.6em;
+		height: 6.0em;
 		margin-bottom: 10px;
 		position: relative;
 	}
@@ -234,10 +234,10 @@ END TO REMOVE !!!
 	.row .col-lg-2 .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
-		height: 3.6em;
+		height: 6.0em;
 	}
 
-	.row .col-lg-2 .title-conf.to-long{
+	/*.row .col-lg-2 .title-conf.to-long{
 		max-height: 2.4em;
 		text-overflow: ellipsis; 
 		overflow: hidden;
@@ -251,7 +251,7 @@ END TO REMOVE !!!
 		height: 1.2em;
 		bottom: 0;
 		left: 0;
-	}*/
+	}
 	.row .col-lg-2 .title-conf.to-long:after{
 		content: '...';
 		text-align: left;
@@ -261,7 +261,7 @@ END TO REMOVE !!!
 		height: 1.2em;
 		bottom: -5px;
 		left: 0px;
-	}
+	}*/
 
 	.row .animated-expand.to-hide{
 		display: none !important;

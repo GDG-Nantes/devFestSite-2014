@@ -5,6 +5,8 @@ Website for DevFest Nantes
 
 Url of website : http://devfest.gdgnantes.com
 
+[ ![Codeship Status for GDG-Nantes/devFestSite-2014](https://codeship.io/projects/5f92d4c0-2a36-0132-a72c-3a1c9f74327f/status)](https://codeship.io/projects/38208)
+
 ## Initialization
 
 ### From scratch

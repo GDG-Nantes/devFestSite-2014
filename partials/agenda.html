@@ -58,7 +58,7 @@
 					{session.title}
 				</div> 
 			</div>
-			<div class="favorites fa fa-star-o" rv-on-click='toggleFavorites'></div>
+			<div rv-class="session.classFav" rv-on-click='toggleFavorites'></div>
 			<div rv-if="session.confRoom" rv-html="session.confRoom" class="conf-room">
 			</div>
 			<div rv-if="session.difficulty" rv-html="session.difficulty" class="conf-dificulty">

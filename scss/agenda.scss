@@ -152,6 +152,29 @@ END TO REMOVE !!!
 		position: relative;
 	}
 
+	.row .favorites{
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 10px;
+	}
+
+	.row .green-gdg .favorites{
+		color: $green-gdg-color;
+	}
+
+	.row .yellow-gdg .favorites{
+		color: $yellow-gdg-color;
+	}
+
+	.row .red-gdg .favorites{
+		color: $red-gdg-color;
+	}
+
+	.row .blue-gdg .favorites{
+		color: $blue-gdg-color;
+	}
+
 	/*.row .to-hide.popup-resume{
 		opacity: 0;
 		@include transition-delay(0ms);
@@ -250,6 +273,7 @@ END TO REMOVE !!!
 		font-size: 1.2em;
 		line-height: 1.2em;
 		font-weight:bold;
+		padding-right: 10px;
 	}
 
 	.row .col-lg-2 .title-conf{

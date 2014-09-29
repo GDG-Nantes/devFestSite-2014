@@ -411,6 +411,7 @@ var DevFestApp = DevFestApp || function(){
         var element = jQueryElement;//.parent().parent();
         expandSession(element);
       };
+
       modelJson.onMouseEnter = function(event, scope){
         if (isMobile){
           return;
@@ -419,14 +420,29 @@ var DevFestApp = DevFestApp || function(){
         scope.row.desc = scope.session.desc.length > 200 ? scope.session.desc.substring(0,200)+'...' : scope.session.desc;
         scope.row.title = scope.session.title;
         jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
-      }
+      };
+
       modelJson.onMouseLeave = function(event, scope){
         if (isMobile){
           return;
         }
         var jQueryElement = $(event.currentTarget);
         jQueryElement.parent().children('.popup-resume').addClass('to-hide');
-      }       
+      };
+
+      modelJson.toggleFavorites = function(event, scope){
+        event.stopPropagation();
+        var jQueryElement = $(event.currentTarget);
+        if (jQueryElement.hasClass('fa-star')){
+          jQueryElement.removeClass('fa-star');
+          jQueryElement.addClass('fa-star-o');
+        }else{
+          jQueryElement.addClass('fa-star');
+          jQueryElement.removeClass('fa-star-o');
+        }
+      };
+
+
 
       if (isMobile){
         $('.header-agenda .border').on('click',function animateConfClick(){

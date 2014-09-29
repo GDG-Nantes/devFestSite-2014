@@ -240,7 +240,7 @@
     "type":"cloud",
     "difficulty":202,
     "all" : false,
-    "lang":"",
+    "lang":"fr",
     "hour":"h9",
     "speakers":["dgageot"]
   },{
@@ -251,7 +251,7 @@
     "type":"discovery",
     "difficulty":101,
     "all" : false,
-    "lang":"",
+    "lang":"fr",
     "hour":"h9",
     "speakers":["fherrou"]
   },{

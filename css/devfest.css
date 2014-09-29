@@ -980,42 +980,51 @@ END TO REMOVE !!!
     display: block;
   }
 
-  /* line 360, ../scss/agenda.scss */
+  /* line 357, ../scss/agenda.scss */
+  #agenda .row .anchor-session-mobile {
+    position: relative;
+    visibility: hidden;
+    display: block;
+    height: 145px;
+    margin-top: -145px;
+  }
+
+  /* line 368, ../scss/agenda.scss */
   #header-agenda-copy .header-agenda .border {
     -moz-box-shadow: black 0px 0px 0px;
     -webkit-box-shadow: black 0px 0px 0px;
     box-shadow: black 0px 0px 0px;
   }
 
-  /* line 368, ../scss/agenda.scss */
+  /* line 376, ../scss/agenda.scss */
   #agenda .row .lead, #header-agenda-to-copy .row .lead, #header-agenda-copy .row .lead {
     font-size: 1em;
   }
-  /* line 372, ../scss/agenda.scss */
+  /* line 380, ../scss/agenda.scss */
   #agenda .header-agenda .border:not(.col-lg-offset-1), #header-agenda-to-copy .header-agenda .border:not(.col-lg-offset-1), #header-agenda-copy .header-agenda .border:not(.col-lg-offset-1) {
     margin-left: 0px;
     cursor: hand;
   }
-  /* line 377, ../scss/agenda.scss */
+  /* line 385, ../scss/agenda.scss */
   #agenda .header-agenda .border.select, #header-agenda-to-copy .header-agenda .border.select, #header-agenda-copy .header-agenda .border.select {
     z-index: 100;
     -moz-box-shadow: black 0px 2px 10px inset;
     -webkit-box-shadow: black 0px 2px 10px inset;
     box-shadow: black 0px 2px 10px inset;
   }
-  /* line 383, ../scss/agenda.scss */
+  /* line 391, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long:after, #agenda .row .col-lg-2 .title-conf.to-long:before, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:before, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:before {
     content: none;
     width: 0;
     height: 0;
   }
-  /* line 390, ../scss/agenda.scss */
+  /* line 398, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long, #header-agenda-copy .row .col-lg-2 .title-conf.to-long {
     max-height: 15em;
     text-overflow: none;
     overflow: none;
   }
-  /* line 396, ../scss/agenda.scss */
+  /* line 404, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .conf-dificulty, #agenda .row .col-lg-2 .conf-lang, #header-agenda-to-copy .row .col-lg-2 .conf-dificulty, #header-agenda-to-copy .row .col-lg-2 .conf-lang, #header-agenda-copy .row .col-lg-2 .conf-dificulty, #header-agenda-copy .row .col-lg-2 .conf-lang {
     display: inline-block;
   }

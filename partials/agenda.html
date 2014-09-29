@@ -45,6 +45,7 @@
 
 	<div rv-each-row="agendaRow" rv-class="row.classRow">
 		<div class="col-xs-2 col-lg-1 col-lg-offset-2 padded border-hour  white-gdg">
+			<span rv-id="row.hour.id" class="anchor-session-mobile"></span>
 		 	<p class="lead text-center">
 				<font class="text-hour text-thin">{row.hour.hourStart}</font>{row.hour.minStart}<br>
 				<font class="text-hour text-thin">{row.hour.hourEnd}</font>{row.hour.minEnd}

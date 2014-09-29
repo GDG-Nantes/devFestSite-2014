@@ -179,7 +179,7 @@ var DevFestApp = DevFestApp || function(){
     }
 
     constructModel();
-    manageSpeakers();
+    manageSpeakers(isMobile);
     manageAgenda(isMobile);
     scrollManagement(isMobile);
     
@@ -285,8 +285,8 @@ var DevFestApp = DevFestApp || function(){
           for (var indexSpeaker = 0; indexSpeaker < session.speakers.length; indexSpeaker++){
             var speaker = speakersJson[session.speakers[indexSpeaker]];
             speaker.titleConf = session.title;
-            speaker.refSession = '#'+session.id;
             speaker.session = session;
+            speaker.refSession = '#'+session.hour;
             newSpeakersSessions.push(speaker);
           }
           session.speakers = newSpeakersSessions;
@@ -368,11 +368,32 @@ var DevFestApp = DevFestApp || function(){
     }
   }
 
-  function manageSpeakers(){
+  function changeTabAgenda(element){
+    // On sélectionne le même item sur les 2 menus (le flottant et le principal)
+    var sameInMenu = $('.'+$(element).attr('class').split(' ').join('.'));
+    var parent = sameInMenu.parent();
+    parent.children('.header-agenda .border').removeClass('select');
+    sameInMenu.addClass('select');
+
+    // On recherche le track sélectionné pour avoir un affichage cohérent dans le site
+    var regExp = /(\w*-gdg)/;
+    var trackSelected = regExp.exec($(element).attr('class'))[1];
+    $('.animated-expand').addClass('hidden-xs');
+    $('.animated-expand.'+trackSelected).removeClass('hidden-xs');
+  }
+
+  function manageSpeakers(isMobile){
     modelJson.onSessionSpeakerClick = function(event, scope){
-        var jQueryElement = $(document.querySelector('#'+scope.speaker.session.id));
-        var element = jQueryElement.parent();
-        expandSession(element, true);
+        if (!isMobile){          
+          var jQueryElement = $(document.querySelector('#'+scope.speaker.session.id));
+          var element = jQueryElement.parent();
+          expandSession(element, true);
+        }else{
+          var classSpeaker = scope.speaker.type === 'mobile' ? 'green-gdg' : 
+                scope.speaker.type === 'web' ? 'yellow-gdg' :
+                scope.speaker.type === 'cloud' ? 'blue-gdg' : 'red-gdg';
+          changeTabAgenda(document.querySelector('#header-agenda-to-copy .border.'+classSpeaker));
+        }
       }
     rivets.bind($('#speakers'), modelJson);
   }
@@ -381,24 +402,33 @@ var DevFestApp = DevFestApp || function(){
       $('#header-agenda-to-copy').clone().attr('id','header-agenda-copy').appendTo('body'); 
       $('#header-agenda-copy').hide(); 
 
-      if (!isMobile){        
-        modelJson.onClickTitle = function(event){
-          var jQueryElement = $(event.currentTarget);
-          var element = jQueryElement;//.parent().parent();
-          expandSession(element);
-        };
-        modelJson.onMouseEnter = function(event, scope){
-          var jQueryElement = $(event.currentTarget);
-          scope.row.desc = scope.session.desc.length > 200 ? scope.session.desc.substring(0,200)+'...' : scope.session.desc;
-          scope.row.title = scope.session.title;
-          jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
+             
+      modelJson.onClickTitle = function(event){
+        if (isMobile){
+          return;
         }
-        modelJson.onMouseLeave = function(event, scope){
-          var jQueryElement = $(event.currentTarget);
-          jQueryElement.parent().children('.popup-resume').addClass('to-hide');
-        }       
+        var jQueryElement = $(event.currentTarget);
+        var element = jQueryElement;//.parent().parent();
+        expandSession(element);
+      };
+      modelJson.onMouseEnter = function(event, scope){
+        if (isMobile){
+          return;
+        }
+        var jQueryElement = $(event.currentTarget);
+        scope.row.desc = scope.session.desc.length > 200 ? scope.session.desc.substring(0,200)+'...' : scope.session.desc;
+        scope.row.title = scope.session.title;
+        jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
+      }
+      modelJson.onMouseLeave = function(event, scope){
+        if (isMobile){
+          return;
+        }
+        var jQueryElement = $(event.currentTarget);
+        jQueryElement.parent().children('.popup-resume').addClass('to-hide');
+      }       
 
-      }else{
+      if (isMobile){
         $('.header-agenda .border').on('click',function animateConfClick(){
           // On sélectionne le même item sur les 2 menus (le flottant et le principal)
           var sameInMenu = $('.'+$(this).attr('class').split(' ').join('.'));

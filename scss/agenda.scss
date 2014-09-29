@@ -354,6 +354,14 @@ END TO REMOVE !!!
 		display: block;
 	}
 
+	#agenda .row .anchor-session-mobile{
+		position: relative;
+		visibility: hidden;
+		display: block;
+		height: 145px;
+		margin-top: -145px;
+	}
+
 
 	#header-agenda-copy{
 		

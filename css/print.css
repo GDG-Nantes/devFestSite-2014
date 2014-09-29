@@ -1,0 +1,77 @@
+/* line 1, ../scss/print.scss */
+#menu, #unsupport-div, #error-div, #contain, #video-phone,
+#what-is-devfest, #devfest-content, #cfp, #speakers, #sponsoring,
+#caroussel, #pratique, #contacts, #header-agenda-copy, #home, #sponsors, #presse {
+  display: none !important;
+}
+
+/* line 8, ../scss/print.scss */
+#agenda {
+  padding-top: 0px !important;
+}
+/* line 11, ../scss/print.scss */
+#agenda .conf-content, #agenda .conf-dificulty, #agenda .conf-speakers, #agenda .resume {
+  display: none !important;
+}
+/* line 15, ../scss/print.scss */
+#agenda .row .col-lg-2 .title-conf-parent {
+  height: 2.7em;
+}
+/* line 19, ../scss/print.scss */
+#agenda .row .title-conf {
+  font-size: 0.9em;
+  line-height: 0.9em;
+}
+/* line 24, ../scss/print.scss */
+#agenda .row .col-lg-2 .title-conf {
+  font-size: 0.9em;
+  line-height: 0.9em;
+  height: 2.7em;
+}
+/* line 30, ../scss/print.scss */
+#agenda .row .col-lg-2 .title-conf.to-long {
+  max-height: 1.8em;
+}
+/* line 33, ../scss/print.scss */
+#agenda .row .col-lg-2 .title-conf.to-long:after {
+  width: 2.4em;
+  height: 0.9em;
+  bottom: -5px;
+  left: 0px;
+}
+/* line 40, ../scss/print.scss */
+#agenda .row .conf-room {
+  font-size: 0.8em;
+}
+/* line 44, ../scss/print.scss */
+#agenda .padded {
+  padding: 5px;
+}
+/* line 48, ../scss/print.scss */
+#agenda #header-agenda-to-copy {
+  display: none;
+}
+/* line 53, ../scss/print.scss */
+#agenda .hidden-xs {
+  display: block !important;
+}
+/* line 57, ../scss/print.scss */
+#agenda .col-xs-3, #agenda .col-xs-9:not(.grey-gdg) {
+  width: 18%;
+}
+/* line 61, ../scss/print.scss */
+#agenda .row .white-gdg {
+  border-top-width: 0px;
+}
+/* line 65, ../scss/print.scss */
+#agenda .row {
+  margin-bottom: 0px;
+}
+/* line 69, ../scss/print.scss */
+#agenda .lead {
+  font-size: 10pt;
+}
+/* line 73, ../scss/print.scss */
+#agenda .text-hour {
+  font-size: 14pt;
+}

@@ -61,12 +61,5 @@
     "minStart":"00",
     "hourEnd":"16",
     "minEnd":"50"
-  },
-  "h10":{
-    "id":"h10",
-    "hourStart":"17",
-    "minStart":"00",
-    "hourEnd":"17",
-    "minEnd":"50"
   }
 }

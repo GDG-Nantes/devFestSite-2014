@@ -285,3 +285,10 @@
   background-size: contain;
   margin: auto;
 }
+
+/* line 268, ../scss/speakers.scss */
+.img-tbd {
+  background: url(../assets/images/speakers/unknown.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}

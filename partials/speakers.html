@@ -9,10 +9,8 @@
 			<strong rv-class="speaker.colorText" >{speaker.name}</strong><br>
 			<div rv-html="speaker.title" class="speaker-title lead text-center"></div>
 		</p>			
-		<p class="text-justify">
-			{speaker.bio}
-		</p>
-		<h4>Sa conférence : </h4>
+		<p class="text-justify" rv-html='speaker.bio'></p>
+		<br>		
 		<a rv-href="speaker.refSession" rv-html="speaker.titleConf" rv-on-click='onSessionSpeakerClick'></a>
 	</div>
 </div>

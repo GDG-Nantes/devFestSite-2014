@@ -518,6 +518,13 @@
   margin: auto;
 }
 
+/* line 268, ../scss/speakers.scss */
+.img-tbd {
+  background: url(../assets/images/speakers/unknown.png) no-repeat;
+  background-size: contain;
+  margin: auto;
+}
+
 /* line 1, ../scss/what_is_devfest.scss */
 #what-is-devfest {
   height: auto !important;
@@ -891,7 +898,7 @@ END TO REMOVE !!!
   position: relative;
 }
 /* line 264, ../scss/agenda.scss */
-#agenda .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-to-copy .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-copy .row .animated-expand.col-lg-2.expand .resume-light {
+#agenda .row .animated-expand.expand .resume-light, #header-agenda-to-copy .row .animated-expand.expand .resume-light, #header-agenda-copy .row .animated-expand.expand .resume-light {
   display: none;
 }
 /* line 268, ../scss/agenda.scss */

@@ -9,53 +9,12 @@ var DevFestApp = DevFestApp || function(){
     sessionsJson = {},
     modelJson = {};
 
-  /*function initImages(){
-    return $.when($.ajax("assets/images/logo.png"),
-      $.ajax("assets/images/gdg_stats.png"),
-      $.ajax("assets/images/chevron_small.png"),
-      $.ajax("assets/images/sponsors/google.png"),
-      $.ajax("assets/images/sponsors/logo-asi.png"),
-      $.ajax("assets/images/sponsors/logo-restlet.png"),
-      $.ajax("assets/images/sponsors/mozilla.png"),
-      $.ajax("assets/images/sponsors/sii.png"),
-      $.ajax("assets/images/sponsors/sqli.png"),
-      $.ajax("assets/images/sponsors/zenika.png"),
-      $.ajax("assets/images/2013/angular.png"),
-      $.ajax("assets/images/2013/cyril.png"),
-      $.ajax("assets/images/2013/glass_200.png"),
-      $.ajax("assets/images/2013/hall_200.png"),
-      $.ajax("assets/images/2013/oculus_200.png"),
-      $.ajax("assets/images/2013/photo_cfp_ludovic.jpg"),
-      $.ajax("assets/images/speakers/dgageot.jpg"),
-      $.ajax("assets/images/speakers/fharper.jpg"),
-      $.ajax("assets/images/speakers/cmottier.png"),
-      $.ajax("assets/images/speakers/mgorner.png"),
-      $.ajax("assets/images/speakers/jmouton.png"),
-      $.ajax("assets/images/2013/team.png")
-      
-      );
-  }
-    
-  function initCDN(){
-    return $.when($.ajax("//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"),
-      $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css"),
-      $.ajax("//maxcdn.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css"),
-      $.ajax("//ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/$-ui.min.js"),
-      $.ajax("//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"),
-      $.ajax("//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"),
-      $.ajax("//cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.2/fastclick.min.js")
-      
-      );
-  }*/
-
   function initPartials(){
     return $.when($.ajax("partials/contacts.html?ver="+DevFestSiteVersion),
         $.ajax("partials/content.html?ver="+DevFestSiteVersion),
         $.ajax("partials/speakers.html?ver="+DevFestSiteVersion),
-        //$.ajax("partials/cfp.html?ver="+DevFestSiteVersion),
         $.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
         $.ajax("partials/home.html?ver="+DevFestSiteVersion),
-        $.ajax("partials/sponsoring.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsors.html?ver="+DevFestSiteVersion),
         $.ajax("partials/presse.html?ver="+DevFestSiteVersion),
         $.ajax("partials/what_is_devfest.html?ver="+DevFestSiteVersion),
@@ -70,24 +29,13 @@ var DevFestApp = DevFestApp || function(){
   function init(){
 
     // Chargement asynchrone des composants le temps de l'animation de chargement
-    // initImages()
-    // .then(function(){
-      // return initCDN();
-    // })
-    // .then(function(){
-      // return initPartials();
-    // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, /*cfp, */agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
-      //console.info(result);
-      //console.info('retrieve ajaxCalls');
+    .then(function callBackPartials(contacts, content, speakers, agenda, home, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
       $('#contacts').html(contacts[0]);
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);
-      //$('#cfp').html(cfp[0]);
       $('#agenda').html(agenda[0]);
       $('#home').html(home[0]);
-      $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);
       $('#what-is-devfest').html(what_is_devfest[0]);
       $('#video-phone').html(video_phone[0]);
@@ -121,15 +69,12 @@ var DevFestApp = DevFestApp || function(){
           , 'nav-what-is-devfest' // Slide What is devfest
           ,'nav-what-is-devfest' // Slide Transition
           ,'nav-devfest-content' // Slide content
-          //, 'nav-cfp' // Slide CFP
-          , 'nav-speakers' // Slide Transition
-          , 'nav-speakers' // Slide Speakers
           , 'nav-agenda' // Slide Agenda
-          , 'nav-sponsoring' // Slide Dossier
+          , 'nav-speakers' // Slide Speakers
+          , 'nav-speakers' // Slide Transition
           , 'nav-sponsors' // Slide Sponsor
           , 'nav-sponsors' // Slide  Transition
           , 'nav-presse' // Slide Presse
-          //, 'nav-presse' // Slide Caroussel
           , 'nav-pratique' // Slide Pratique
           , 'nav-contacts' // Slide Contacts
           ],
@@ -138,15 +83,12 @@ var DevFestApp = DevFestApp || function(){
           , '#DDD' // Slide What is devfest
           , '#DDD' // Slide Transition
           , '#f2f2f2' // Slide Content
-          //, '#444' // Slide CFP
-          , '#444' // Slide Transition
-          , '#f2f2f2' // Slide Speakers
           , '#444' // Slide Agenda
-          , '#f2f2f2' // Slide Dossier
+          , '#f2f2f2' // Slide Speakers
+          , '#444' // Slide Transition
           , '#f2f2f2' // Slide Sponsors
           , '#f2f2f2' // Slide Transition
           , '#444' // Slide Presse
-          //, '#f2f2f2' // Slide Caroussel
           , '#f2f2f2' // Slide Pratique
           ,  '#444' // Slide Contacts
           ],
@@ -435,6 +377,7 @@ var DevFestApp = DevFestApp || function(){
       modelJson.toggleFavorites = function(event, scope){
         event.stopPropagation();
         var jQueryElement = $(event.currentTarget);
+        var value = '-1';
         if (jQueryElement.hasClass('fa-star')){
           localStorage[scope.session.id] = false;
           jQueryElement.parent().removeClass('favorites');
@@ -445,7 +388,9 @@ var DevFestApp = DevFestApp || function(){
           jQueryElement.parent().addClass('favorites');
           jQueryElement.addClass('fa-star');
           jQueryElement.removeClass('fa-star-o');
+          value = '+1';
         }
+        $.ajax('http://gdg.fouchault.net/fav.php?id_session='+scope.session.id+'&value='+value).fail(function(){});
       };
 
 

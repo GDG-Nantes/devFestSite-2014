@@ -17,7 +17,7 @@
     "type":"web",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/richard_antoine"},
-      {"type":"google-plus","url":"https://plus.google.com/u/0/+AntoineRichard"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+AntoineRichardPlus"},
       {"type":"github-alt","url":"https://github.com/antoine-richard"}
       ]
   },
@@ -178,7 +178,7 @@
       {"type":"twitter","url":"http://twitter.com/juliaferraioli"},
       {"type":"google-plus","url":"https://plus.google.com/u/0/+JuliaFerraioli"},
       {"type":"github-alt","url":"https://github.com/juliaferraioli"},
-      {"type":"globe","url":"http://blog.juliaferraioli"}
+      {"type":"globe","url":"http://blog.juliaferraioli.com"}
       ]
   },
   "jmouton":{
@@ -346,6 +346,14 @@
       {"type":"github-alt","url":""},
       {"type":"globe","url":""}
       ]
+  },
+  "tbd":{
+    "show":true,
+    "name":"Futur speaker",
+    "title":"",
+    "bio":"Futur speaker à venir",
+    "type":"cloud",
+    "socials":[]
   }
 
 }

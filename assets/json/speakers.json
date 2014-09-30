@@ -111,7 +111,7 @@
   },
   "fherrou":{
     "show":true,
-    "name":"Florrence Herrou",
+    "name":"Florence Herrou",
     "title":"Ingénieur Java<br>Nouvelles technologies",
     "bio":"D'une formation initiale sur le comportement animal, je suis passée en devenant informaticienne au comportement bien plus étrange et déroutant des clients et parfois des utilisateurs. Consultante pour la société Ippon technologies à Nantes depuis 2007, j'ai pendant ces années effectué de nombreuses (et variées) missions de développement - comprenant souvent des conseils et de l'accompagnement du client pour créer une application utilisable.",
     "type":"discovery",
@@ -241,7 +241,7 @@
   },
   "mgorner":{
     "show":true,
-    "name":"Martin Gorner",
+    "name":"Martin Görner",
     "title":"Developer Relation<br>Web & Cloud",
     "bio":"Martin se passionne pour la science, la technologie, l'informatique, les algorihmes et tout ce qui s'en rapproche. Martin a développé pour la plupart des plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web. Il est actuellement Google Developer Relation et conférencier sur Google AppEngine, Compute Engine et HTML5.",
     "type":"cloud",

@@ -152,6 +152,30 @@ END TO REMOVE !!!
 		position: relative;
 	}
 
+	.row .animated-expand .favorites{
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 10px;
+		margin-right: 0px;
+	}
+
+	.row  .animated-expand.green-gdg .favorites{
+		color: $green-gdg-color;
+	}
+
+	.row  .animated-expand.yellow-gdg .favorites{
+		color: $yellow-gdg-color;
+	}
+
+	.row  .animated-expand.red-gdg .favorites{
+		color: $red-gdg-color;
+	}
+
+	.row  .animated-expand.blue-gdg .favorites{
+		color: $blue-gdg-color;
+	}
+
 	/*.row .to-hide.popup-resume{
 		opacity: 0;
 		@include transition-delay(0ms);
@@ -250,6 +274,7 @@ END TO REMOVE !!!
 		font-size: 1.2em;
 		line-height: 1.2em;
 		font-weight:bold;
+		padding-right: 10px;
 	}
 
 	.row .col-lg-2 .title-conf{

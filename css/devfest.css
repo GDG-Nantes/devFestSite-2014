@@ -818,7 +818,31 @@ END TO REMOVE !!!
 #agenda .row, #header-agenda-to-copy .row, #header-agenda-copy .row {
   position: relative;
 }
-/* line 193, ../scss/agenda.scss */
+/* line 155, ../scss/agenda.scss */
+#agenda .row .animated-expand .favorites, #header-agenda-to-copy .row .animated-expand .favorites, #header-agenda-copy .row .animated-expand .favorites {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  margin-right: 0px;
+}
+/* line 163, ../scss/agenda.scss */
+#agenda .row .animated-expand.green-gdg .favorites, #header-agenda-to-copy .row .animated-expand.green-gdg .favorites, #header-agenda-copy .row .animated-expand.green-gdg .favorites {
+  color: #0c9a54;
+}
+/* line 167, ../scss/agenda.scss */
+#agenda .row .animated-expand.yellow-gdg .favorites, #header-agenda-to-copy .row .animated-expand.yellow-gdg .favorites, #header-agenda-copy .row .animated-expand.yellow-gdg .favorites {
+  color: #f7c63d;
+}
+/* line 171, ../scss/agenda.scss */
+#agenda .row .animated-expand.red-gdg .favorites, #header-agenda-to-copy .row .animated-expand.red-gdg .favorites, #header-agenda-copy .row .animated-expand.red-gdg .favorites {
+  color: #da483c;
+}
+/* line 175, ../scss/agenda.scss */
+#agenda .row .animated-expand.blue-gdg .favorites, #header-agenda-to-copy .row .animated-expand.blue-gdg .favorites, #header-agenda-copy .row .animated-expand.blue-gdg .favorites {
+  color: #6388c5;
+}
+/* line 217, ../scss/agenda.scss */
 #agenda .row .animated-expand .anchor-session, #header-agenda-to-copy .row .animated-expand .anchor-session, #header-agenda-copy .row .animated-expand .anchor-session {
   position: relative;
   visibility: hidden;
@@ -826,16 +850,16 @@ END TO REMOVE !!!
   height: 160px;
   margin-top: -160px;
 }
-/* line 203, ../scss/agenda.scss */
+/* line 227, ../scss/agenda.scss */
 #agenda .row .white-gdg, #header-agenda-to-copy .row .white-gdg, #header-agenda-copy .row .white-gdg {
   border-top: 3px #f2f2f2 solid;
 }
-/* line 206, ../scss/agenda.scss */
+/* line 230, ../scss/agenda.scss */
 #agenda .row .grey-gdg, #header-agenda-to-copy .row .grey-gdg, #header-agenda-copy .row .grey-gdg {
   margin-left: 10px;
   border-top: 3px #999999 solid;
 }
-/* line 210, ../scss/agenda.scss */
+/* line 234, ../scss/agenda.scss */
 #agenda .row .grey-gdg:after, #header-agenda-to-copy .row .grey-gdg:after, #header-agenda-copy .row .grey-gdg:after {
   content: '';
   width: 30px;
@@ -844,58 +868,59 @@ END TO REMOVE !!!
   position: absolute;
   border-top: 3px #999999 solid;
 }
-/* line 219, ../scss/agenda.scss */
+/* line 243, ../scss/agenda.scss */
 #agenda .row .animated-expand.green-gdg, #header-agenda-to-copy .row .animated-expand.green-gdg, #header-agenda-copy .row .animated-expand.green-gdg {
   border-top: 3px #0c9a54 solid;
 }
-/* line 222, ../scss/agenda.scss */
+/* line 246, ../scss/agenda.scss */
 #agenda .row .animated-expand.yellow-gdg, #header-agenda-to-copy .row .animated-expand.yellow-gdg, #header-agenda-copy .row .animated-expand.yellow-gdg {
   border-top: 3px #f7c63d solid;
 }
-/* line 225, ../scss/agenda.scss */
+/* line 249, ../scss/agenda.scss */
 #agenda .row .animated-expand.blue-gdg, #header-agenda-to-copy .row .animated-expand.blue-gdg, #header-agenda-copy .row .animated-expand.blue-gdg {
   border-top: 3px #6388c5 solid;
 }
-/* line 228, ../scss/agenda.scss */
+/* line 252, ../scss/agenda.scss */
 #agenda .row .animated-expand.red-gdg, #header-agenda-to-copy .row .animated-expand.red-gdg, #header-agenda-copy .row .animated-expand.red-gdg {
   border-top: 3px #da483c solid;
 }
-/* line 233, ../scss/agenda.scss */
+/* line 257, ../scss/agenda.scss */
 #agenda .row .col-lg-2 .title-conf-parent, #header-agenda-to-copy .row .col-lg-2 .title-conf-parent, #header-agenda-copy .row .col-lg-2 .title-conf-parent {
   height: 6.0em;
   margin-bottom: 10px;
   position: relative;
 }
-/* line 240, ../scss/agenda.scss */
+/* line 264, ../scss/agenda.scss */
 #agenda .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-to-copy .row .animated-expand.col-lg-2.expand .resume-light, #header-agenda-copy .row .animated-expand.col-lg-2.expand .resume-light {
   display: none;
 }
-/* line 244, ../scss/agenda.scss */
+/* line 268, ../scss/agenda.scss */
 #agenda .row .animated-expand.col-lg-2 .resume, #header-agenda-to-copy .row .animated-expand.col-lg-2 .resume, #header-agenda-copy .row .animated-expand.col-lg-2 .resume {
   display: none;
 }
-/* line 249, ../scss/agenda.scss */
+/* line 273, ../scss/agenda.scss */
 #agenda .row .title-conf, #header-agenda-to-copy .row .title-conf, #header-agenda-copy .row .title-conf {
   font-size: 1.2em;
   line-height: 1.2em;
   font-weight: bold;
+  padding-right: 10px;
 }
-/* line 255, ../scss/agenda.scss */
+/* line 280, ../scss/agenda.scss */
 #agenda .row .col-lg-2 .title-conf, #header-agenda-to-copy .row .col-lg-2 .title-conf, #header-agenda-copy .row .col-lg-2 .title-conf {
   font-size: 1.2em;
   line-height: 1.2em;
   height: 6.0em;
 }
-/* line 262, ../scss/agenda.scss */
+/* line 287, ../scss/agenda.scss */
 #agenda .row .animated-expand.to-hide, #header-agenda-to-copy .row .animated-expand.to-hide, #header-agenda-copy .row .animated-expand.to-hide {
   display: none !important;
 }
-/* line 266, ../scss/agenda.scss */
+/* line 291, ../scss/agenda.scss */
 #agenda .row .animated-expand.expand, #header-agenda-to-copy .row .animated-expand.expand, #header-agenda-copy .row .animated-expand.expand {
   margin-left: 10px;
   border-top-width: 3px;
 }
-/* line 271, ../scss/agenda.scss */
+/* line 296, ../scss/agenda.scss */
 #agenda .row .animated-expand.expand:after, #header-agenda-to-copy .row .animated-expand.expand:after, #header-agenda-copy .row .animated-expand.expand:after {
   content: '';
   width: 30px;
@@ -904,49 +929,49 @@ END TO REMOVE !!!
   position: absolute;
   border-top: 3px #999999 solid;
 }
-/* line 280, ../scss/agenda.scss */
+/* line 305, ../scss/agenda.scss */
 #agenda .row .animated-expand.green-gdg:after, #header-agenda-to-copy .row .animated-expand.green-gdg:after, #header-agenda-copy .row .animated-expand.green-gdg:after {
   border-top-color: #0c9a54;
 }
-/* line 283, ../scss/agenda.scss */
+/* line 308, ../scss/agenda.scss */
 #agenda .row .animated-expand.yellow-gdg:after, #header-agenda-to-copy .row .animated-expand.yellow-gdg:after, #header-agenda-copy .row .animated-expand.yellow-gdg:after {
   border-top-color: #f7c63d;
 }
-/* line 286, ../scss/agenda.scss */
+/* line 311, ../scss/agenda.scss */
 #agenda .row .animated-expand.blue-gdg:after, #header-agenda-to-copy .row .animated-expand.blue-gdg:after, #header-agenda-copy .row .animated-expand.blue-gdg:after {
   border-top-color: #6388c5;
 }
-/* line 289, ../scss/agenda.scss */
+/* line 314, ../scss/agenda.scss */
 #agenda .row .animated-expand.red-gdg:after, #header-agenda-to-copy .row .animated-expand.red-gdg:after, #header-agenda-copy .row .animated-expand.red-gdg:after {
   border-top-color: #da483c;
 }
-/* line 293, ../scss/agenda.scss */
+/* line 318, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker, #header-agenda-to-copy .row .conf-speakers .speaker, #header-agenda-copy .row .conf-speakers .speaker {
   margin: 5px;
   display: inline-block;
 }
-/* line 297, ../scss/agenda.scss */
+/* line 322, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker a, #header-agenda-to-copy .row .conf-speakers .speaker a, #header-agenda-copy .row .conf-speakers .speaker a {
   color: inherit;
 }
-/* line 300, ../scss/agenda.scss */
+/* line 325, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker a:link, #agenda .row .conf-speakers .speaker a:visited, #agenda .row .conf-speakers .speaker a:hover, #agenda .row .conf-speakers .speaker a:active, #header-agenda-to-copy .row .conf-speakers .speaker a:link, #header-agenda-to-copy .row .conf-speakers .speaker a:visited, #header-agenda-to-copy .row .conf-speakers .speaker a:hover, #header-agenda-to-copy .row .conf-speakers .speaker a:active, #header-agenda-copy .row .conf-speakers .speaker a:link, #header-agenda-copy .row .conf-speakers .speaker a:visited, #header-agenda-copy .row .conf-speakers .speaker a:hover, #header-agenda-copy .row .conf-speakers .speaker a:active {
   text-decoration: none;
 }
-/* line 305, ../scss/agenda.scss */
+/* line 330, ../scss/agenda.scss */
 #agenda .row .conf-speakers, #header-agenda-to-copy .row .conf-speakers, #header-agenda-copy .row .conf-speakers {
   margin-bottom: 10px;
 }
-/* line 308, ../scss/agenda.scss */
+/* line 333, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker, #header-agenda-to-copy .row .conf-speakers .speaker, #header-agenda-copy .row .conf-speakers .speaker {
   position: relative;
   width: 100%;
 }
-/* line 313, ../scss/agenda.scss */
+/* line 338, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker-img, #header-agenda-to-copy .row .conf-speakers .speaker-img, #header-agenda-copy .row .conf-speakers .speaker-img {
   margin: 0;
 }
-/* line 320, ../scss/agenda.scss */
+/* line 345, ../scss/agenda.scss */
 #agenda .row .conf-speakers .speaker-name, #header-agenda-to-copy .row .conf-speakers .speaker-name, #header-agenda-copy .row .conf-speakers .speaker-name {
   text-align: center;
   text-overflow: ellipsis;
@@ -954,33 +979,33 @@ END TO REMOVE !!!
   left: 55px;
   top: 15px;
 }
-/* line 329, ../scss/agenda.scss */
+/* line 354, ../scss/agenda.scss */
 #agenda .row .conf-room, #header-agenda-to-copy .row .conf-room, #header-agenda-copy .row .conf-room {
   text-align: left;
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 335, ../scss/agenda.scss */
+/* line 360, ../scss/agenda.scss */
 #agenda .row .col-lg-2 .conf-dificulty, #agenda .row .col-lg-2 .conf-lang, #header-agenda-to-copy .row .col-lg-2 .conf-dificulty, #header-agenda-to-copy .row .col-lg-2 .conf-lang, #header-agenda-copy .row .col-lg-2 .conf-dificulty, #header-agenda-copy .row .col-lg-2 .conf-lang {
   display: none;
 }
-/* line 339, ../scss/agenda.scss */
+/* line 364, ../scss/agenda.scss */
 #agenda .row .col-lg-8 .conf-dificulty, #agenda .row .col-lg-8 .conf-lang, #header-agenda-to-copy .row .col-lg-8 .conf-dificulty, #header-agenda-to-copy .row .col-lg-8 .conf-lang, #header-agenda-copy .row .col-lg-8 .conf-dificulty, #header-agenda-copy .row .col-lg-8 .conf-lang {
   display: inline-block;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 349, ../scss/agenda.scss */
+  /* line 374, ../scss/agenda.scss */
   #agenda .row .animated-expand.col-lg-2 .resume-light {
     display: none;
   }
 
-  /* line 353, ../scss/agenda.scss */
+  /* line 378, ../scss/agenda.scss */
   #agenda .row .animated-expand.col-lg-2 .resume {
     display: block;
   }
 
-  /* line 357, ../scss/agenda.scss */
+  /* line 382, ../scss/agenda.scss */
   #agenda .row .anchor-session-mobile {
     position: relative;
     visibility: hidden;
@@ -989,42 +1014,42 @@ END TO REMOVE !!!
     margin-top: -145px;
   }
 
-  /* line 368, ../scss/agenda.scss */
+  /* line 393, ../scss/agenda.scss */
   #header-agenda-copy .header-agenda .border {
     -moz-box-shadow: black 0px 0px 0px;
     -webkit-box-shadow: black 0px 0px 0px;
     box-shadow: black 0px 0px 0px;
   }
 
-  /* line 376, ../scss/agenda.scss */
+  /* line 401, ../scss/agenda.scss */
   #agenda .row .lead, #header-agenda-to-copy .row .lead, #header-agenda-copy .row .lead {
     font-size: 1em;
   }
-  /* line 380, ../scss/agenda.scss */
+  /* line 405, ../scss/agenda.scss */
   #agenda .header-agenda .border:not(.col-lg-offset-1), #header-agenda-to-copy .header-agenda .border:not(.col-lg-offset-1), #header-agenda-copy .header-agenda .border:not(.col-lg-offset-1) {
     margin-left: 0px;
     cursor: hand;
   }
-  /* line 385, ../scss/agenda.scss */
+  /* line 410, ../scss/agenda.scss */
   #agenda .header-agenda .border.select, #header-agenda-to-copy .header-agenda .border.select, #header-agenda-copy .header-agenda .border.select {
     z-index: 100;
     -moz-box-shadow: black 0px 2px 10px inset;
     -webkit-box-shadow: black 0px 2px 10px inset;
     box-shadow: black 0px 2px 10px inset;
   }
-  /* line 391, ../scss/agenda.scss */
+  /* line 416, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long:after, #agenda .row .col-lg-2 .title-conf.to-long:before, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long:before, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:after, #header-agenda-copy .row .col-lg-2 .title-conf.to-long:before {
     content: none;
     width: 0;
     height: 0;
   }
-  /* line 398, ../scss/agenda.scss */
+  /* line 423, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .title-conf.to-long, #header-agenda-to-copy .row .col-lg-2 .title-conf.to-long, #header-agenda-copy .row .col-lg-2 .title-conf.to-long {
     max-height: 15em;
     text-overflow: none;
     overflow: none;
   }
-  /* line 404, ../scss/agenda.scss */
+  /* line 429, ../scss/agenda.scss */
   #agenda .row .col-lg-2 .conf-dificulty, #agenda .row .col-lg-2 .conf-lang, #header-agenda-to-copy .row .col-lg-2 .conf-dificulty, #header-agenda-to-copy .row .col-lg-2 .conf-lang, #header-agenda-copy .row .col-lg-2 .conf-dificulty, #header-agenda-copy .row .col-lg-2 .conf-lang {
     display: inline-block;
   }

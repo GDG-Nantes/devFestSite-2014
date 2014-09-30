@@ -178,7 +178,7 @@ var DevFestApp = DevFestApp || function(){
       });
     }
 
-    constructModel();
+    constructModel(isMobile);
     manageSpeakers(isMobile);
     manageAgenda(isMobile);
     scrollManagement(isMobile);
@@ -207,7 +207,7 @@ var DevFestApp = DevFestApp || function(){
 
   }
 
-  function constructModel(){
+  function constructModel(isMobile){
     // On s'occupe d'abord des speakers
     var newSpeakerArray = [];
     var keysSpeakers = Object.keys(speakersJson);
@@ -277,6 +277,8 @@ var DevFestApp = DevFestApp || function(){
           }
           session.classCol += session.type === 'mobile' ? 'green-gdg' : session.type === 'cloud' ? 'blue-gdg' : session.type === 'web' ? 'yellow-gdg' : 'red-gdg';
         }
+        session.classCol += localStorage[session.id] === 'true' ?  ' favorites' : '';
+        session.classFav = localStorage[session.id] === 'true' ? 'favorites fa fa-star' : 'favorites fa fa-star-o';
 
         
         
@@ -286,7 +288,7 @@ var DevFestApp = DevFestApp || function(){
             var speaker = speakersJson[session.speakers[indexSpeaker]];
             speaker.titleConf = session.title;
             speaker.session = session;
-            speaker.refSession = '#'+session.hour;
+            speaker.refSession = '#'+ (isMobile ? session.hour : session.id);
             newSpeakersSessions.push(speaker);
           }
           session.speakers = newSpeakersSessions;
@@ -411,6 +413,7 @@ var DevFestApp = DevFestApp || function(){
         var element = jQueryElement;//.parent().parent();
         expandSession(element);
       };
+
       modelJson.onMouseEnter = function(event, scope){
         if (isMobile){
           return;
@@ -419,14 +422,33 @@ var DevFestApp = DevFestApp || function(){
         scope.row.desc = scope.session.desc.length > 200 ? scope.session.desc.substring(0,200)+'...' : scope.session.desc;
         scope.row.title = scope.session.title;
         jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
-      }
+      };
+
       modelJson.onMouseLeave = function(event, scope){
         if (isMobile){
           return;
         }
         var jQueryElement = $(event.currentTarget);
         jQueryElement.parent().children('.popup-resume').addClass('to-hide');
-      }       
+      };
+
+      modelJson.toggleFavorites = function(event, scope){
+        event.stopPropagation();
+        var jQueryElement = $(event.currentTarget);
+        if (jQueryElement.hasClass('fa-star')){
+          localStorage[scope.session.id] = false;
+          jQueryElement.parent().removeClass('favorites');
+          jQueryElement.removeClass('fa-star');
+          jQueryElement.addClass('fa-star-o');
+        }else{
+          localStorage[scope.session.id] = true;
+          jQueryElement.parent().addClass('favorites');
+          jQueryElement.addClass('fa-star');
+          jQueryElement.removeClass('fa-star-o');
+        }
+      };
+
+
 
       if (isMobile){
         $('.header-agenda .border').on('click',function animateConfClick(){

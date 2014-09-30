@@ -143,8 +143,67 @@ END TO REMOVE !!!
 		margin-left: 10px;
 	}
 
-	.row .animated-expand .title-conf:hover{
+	
+	.row .animated-expand:hover{
 		cursor: pointer;
+	}
+
+	.row{
+		position: relative;
+	}
+
+	.row .animated-expand .favorites{
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 10px;
+		margin-right: 0px;
+	}
+
+	.row  .animated-expand.green-gdg .favorites{
+		color: $green-gdg-color;
+	}
+
+	.row  .animated-expand.yellow-gdg .favorites{
+		color: $yellow-gdg-color;
+	}
+
+	.row  .animated-expand.red-gdg .favorites{
+		color: $red-gdg-color;
+	}
+
+	.row  .animated-expand.blue-gdg .favorites{
+		color: $blue-gdg-color;
+	}
+
+	/*.row .to-hide.popup-resume{
+		opacity: 0;
+		@include transition-delay(0ms);
+		@include transition-duration(0ms);
+	}
+
+	.row .popup-resume{
+		position: absolute;		
+		opacity: 1;
+		left: 50%;
+		top:100px;
+		width: 800px;
+		margin-left: -300px;
+		color: #333;
+		background: rgba(220,220,220,0.95);
+		padding: 30px;
+		z-index: 100;
+		@include box-shadow(black 1px 1px 10px);
+		@include transition-property(opacity);
+		@include transition-delay(500ms);
+		@include transition-duration(100ms);
+		p:first-child{
+			font-weight:bold;
+		}
+	}
+
+	.row .animated-expand.expand ~ .popup-resume{
+		display: none;
 	}
 
 	.row .animated-expand:not(.expand):hover{
@@ -152,7 +211,18 @@ END TO REMOVE !!!
 		@include transition-duration(100ms);
 		@include transition-timing-function(ease-in);
 		border-top-width: $size-border-hover !important;
+	}*/
+
+	.row .animated-expand{
+		.anchor-session{
+			position: relative;
+			visibility: hidden;
+			display: block;
+			height: 160px;
+			margin-top: -160px;
+		}
 	}
+
 
 	.row .white-gdg{		
 		border-top: $size-border-top $color-border solid;
@@ -185,47 +255,34 @@ END TO REMOVE !!!
 
 
 	.row .col-lg-2 .title-conf-parent{
-		height: 3.6em;
+		height: 6.0em;
 		margin-bottom: 10px;
 		position: relative;
 	}
 
+	
+	.row .animated-expand.col-lg-2.expand .resume-light{
+		display: none;
+	}
+
+	.row .animated-expand.col-lg-2 .resume{
+		display: none;
+	}
+
+
 	.row .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
+		font-weight:bold;
+		padding-right: 10px;
 	}
 
 	.row .col-lg-2 .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
-		height: 3.6em;
+		height: 6.0em;
 	}
 
-	.row .col-lg-2 .title-conf.to-long{
-		max-height: 2.4em;
-		text-overflow: ellipsis; 
-		overflow: hidden;
-	}
-
-	/*.row .col-lg-2 .title-conf.to-long:after{
-		content: ' ';
-		position: absolute;
-		display: block;
-		width: 100%;
-		height: 1.2em;
-		bottom: 0;
-		left: 0;
-	}*/
-	.row .col-lg-2 .title-conf.to-long:after{
-		content: '...';
-		text-align: left;
-		position: absolute;
-		display: block;
-		width: 2.4em;
-		height: 1.2em;
-		bottom: -5px;
-		left: 0px;
-	}
 
 	.row .animated-expand.to-hide{
 		display: none !important;
@@ -272,11 +329,25 @@ END TO REMOVE !!!
 
 	.row .conf-speakers{
 		margin-bottom: 10px;
+
+		.speaker{
+			position: relative;
+			width: 100%;
+		}
+
+		.speaker-img{
+			margin: 0;
+		}
 	}
+
+
 
 	.row .conf-speakers .speaker-name{
 		text-align: center;
 		text-overflow : ellipsis;
+		position: absolute;
+		left: 55px;
+		top: 15px;
 	}
 
 
@@ -299,6 +370,22 @@ END TO REMOVE !!!
 
 
 @media only screen and (max-width: 768px) {
+
+	#agenda .row .animated-expand.col-lg-2 .resume-light{
+		display: none;
+	}
+
+	#agenda .row .animated-expand.col-lg-2 .resume{
+		display: block;
+	}
+
+	#agenda .row .anchor-session-mobile{
+		position: relative;
+		visibility: hidden;
+		display: block;
+		height: 145px;
+		margin-top: -145px;
+	}
 
 
 	#header-agenda-copy{

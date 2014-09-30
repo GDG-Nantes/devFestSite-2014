@@ -16,6 +16,11 @@
 
 	}
 
+	.speaker-title{
+		line-height: 21px;
+		height: 42px;
+	}
+
 	.circular-img-sm:hover{		
 		a{
 			position: absolute;
@@ -70,6 +75,8 @@
 
 
 	.circular-img-sm{
+		margin-bottom: 10px;
+
 		a{
 			display: none;
 		}

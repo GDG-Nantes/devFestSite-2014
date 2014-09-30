@@ -32,6 +32,7 @@
   	<link rel="stylesheet" type="text/css" href="./bower_components/fullpage.js/jquery.fullPage.css" />  
   	<!--devfest-->
 	<link rel="stylesheet" href="./css/devfest.css" />
+	<link rel="stylesheet" href="./css/print.css"/>
 	<!-- endbuild -->
 
 
@@ -160,7 +161,7 @@
 		        <li data-menuanchor="nav-devfest-content"><a href="#nav-devfest-content">Conférences</a></li>			        
 		        <!--<li data-menuanchor="nav-cfp"><a href="#nav-cfp">CFP</a></li>			        -->
 		        <li data-menuanchor="nav-speakers"><a href="#nav-speakers">Speakers</a></li>			        
-		        <!--<li data-menuanchor="nav-agenda"><a href="#nav-agenda">Programme</a></li>-->			        
+		        <li data-menuanchor="nav-agenda"><a href="#nav-agenda">Programme</a></li>
 		        <li data-menuanchor="nav-sponsoring"><a href="#nav-sponsoring">Sponsoring</a></li>			        
 		        <li data-menuanchor="nav-sponsors"><a href="#nav-sponsors">Partenaires</a></li>
 		        <li data-menuanchor="nav-presse"><a href="#nav-presse">Presse</a></li>			        
@@ -191,7 +192,7 @@
 			</div>
 
 			<!--Slide "transition image"-->
-			<div class="section section-transition">		
+			<div class="section section-transition  hidden-print">		
 				<div class="section-img bg-t1" style="height:100%"></div>
 			</div>
 
@@ -204,7 +205,7 @@
 			</div>-->
 
 			<!--Slide "transition image"-->
-			<div  data-anchor="nav-speakers" class="section section-transition">	
+			<div  data-anchor="nav-speakers" class="section section-transition  hidden-print">	
 				<div class="section-img bg-t2" style="height:100%"></div>
 			</div>
 
@@ -216,8 +217,8 @@
 			
 			
 			<!--Slide "agenda"-->
-			<!--<div id="agenda"  data-anchor="nav-agenda" class="section section-menu" >
-			</div>-->
+			<div id="agenda"  data-anchor="nav-agenda" class="section section-menu" >
+			</div>
 
 			<!--Slide "Sponsoring"-->
 			<div id="sponsoring"  data-anchor="nav-sponsoring" class="section section-menu" >
@@ -228,7 +229,7 @@
 			</div>
 
 			<!--Slide "transition image"-->
-			<div data-anchor="nav-sponsors" class="section section-transition visible-md visible-lg">
+			<div data-anchor="nav-sponsors" class="section section-transition visible-md visible-lg  hidden-print">
 				<div class="section-img bg-t3" style="height:100%"></div>
 			</div>
 

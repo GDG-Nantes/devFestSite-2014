@@ -1,8 +1,8 @@
 {
   "alopez":{
-    "show":false,
+    "show":true,
     "name":"Alberto Lopez Martin",
-    "title":"EMEA Developer Evanglist",
+    "title":"Developer Evanglist<br>Mobile",
     "bio":"Passionate of innovation and mobility, Alberto enjoys working as Developer Evangelist because it allows him to show that the crazy ideas that everybody could have in mind can be turned into handy solutions. For this purpose, Alberto capitalizes on the experience acquired working as  Sales Engineer at PayPal, helping small and large companies to integrate PayPal. ",
     "type":"mobile",
     "socials":[
@@ -10,11 +10,11 @@
       ]
   },
   "arichard":{
-    "show":false,
+    "show":true,
     "name":"Antoine Richard",
-    "title":"Consultant en architecture Web",
-    "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité. <br>Antoine intervient régulièrement en tant que speaker sur l'écosystème Javascript et notamment sur AngularJS.",
-    "type":"globe",
+    "title":"Architect<br>Web",
+    "bio":"Antoine est consultant en architecture Web à SQLI Nantes. Il aime résoudre les problématiques de ses clients avec des solutions techniques modernes et une pincée d'agilité.",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/richard_antoine"},
       {"type":"google-plus","url":"https://plus.google.com/u/0/+AntoineRichard"},
@@ -22,9 +22,9 @@
       ]
   },
   "bdorsey":{
-    "show":false,
+    "show":true,
     "name":"Brian Dorsey",
-    "title":"Developer Advocate <br> Cloud",
+    "title":"Developer Advocate<br>Cloud",
     "bio":"BRIAN DORSEY is an engineer on the Google Developer Relations team. He helps you build cool stuff with Google Cloud Platform. Brian focuses on Compute Engine and Cloud Storage. He loves Python and he’s taught Python at the University of Washington & spoken at both PyCon & PyCon Japan. Brian is currently learning Go and enjoying it.",
     "type":"cloud",
     "socials":[
@@ -110,9 +110,9 @@
       ]
   },
   "fherrou":{
-    "show":false,
-    "name":"Florrence Herrou",
-    "title":"Ingénieur Java <br> Nouvelles technologies",
+    "show":true,
+    "name":"Florence Herrou",
+    "title":"Ingénieur Java<br>Nouvelles technologies",
     "bio":"D'une formation initiale sur le comportement animal, je suis passée en devenant informaticienne au comportement bien plus étrange et déroutant des clients et parfois des utilisateurs. Consultante pour la société Ippon technologies à Nantes depuis 2007, j'ai pendant ces années effectué de nombreuses (et variées) missions de développement - comprenant souvent des conseils et de l'accompagnement du client pour créer une application utilisable.",
     "type":"discovery",
     "socials":[      
@@ -135,9 +135,9 @@
   "hgonzalez":{
     "show":true,
     "name":"Horacio Gonzalez",
-    "title":"Developper<br>Web & Cloud",
+    "title":"Developer<br>Web & Cloud",
     "bio":"Spaniard lost in Brittany, unconformist coder, Java craftsman, dreamer and all-around geek. Horacio works at Cityzen Data, a start-up providing  provides a scalable, secure, ethical and open platform for sensor data. He is the co-founder and leader of the FinistJUG (the French JUG the nearest to the Silicon Valley!), GDG Finistère and BreizhBeans.",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/LostInBrittany"},
       {"type":"google-plus","url":"https://plus.google.com/u/0/+LostInBrittany"},
@@ -150,7 +150,7 @@
     "name":"Julien Dramaix",
     "title":"",
     "bio":"",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":""},
       {"type":"google-plus","url":""},
@@ -159,19 +159,19 @@
       ]
   },
   "jdubois":{
-    "show":false,
+    "show":true,
     "name":"Julien Dubois",
-    "title":"Chief Innovation Officer",
+    "title":"Chief Innovation Officer<br>Java & Web",
     "bio":"Julien Dubois is a developer, speaker and author specialized in the Java technology. In the last 15 years, he has worked for many clients in the banking, retail and telco industries, launched SpringSource in France, and participated in many Open Source projects. Last year, he launched JHipster has a pet project, to make cool JavaScript technologies work with older Java middleware.",
-    "type":"globe",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/juliendubois"}
       ]
   },
   "jferraioli":{
-    "show":false,
+    "show":true,
     "name":"Julia Ferraioli",
-    "title":"Senior Developer Advocate",
+    "title":"Senior Developer Advocate<br>Cloud",
     "bio":"Julia Ferraioli is a Developer Advocate working on Google Cloud Platform. She helps developers harness the power of Google’s infrastructure to develop quickly, intelligently, and at scale. She comes from an industrial background in software engineering, and an academic background in machine learning and assistive technology.",
     "type":"cloud",
     "socials":[
@@ -194,7 +194,7 @@
       ]
   },
   "jpalies":{
-    "show":false,
+    "show":true,
     "name":"Jean Paliès",
     "title":"Expert technique en développement",
     "bio":"Je suis un développeur, à Nantes. Je suis aussi cofondateur des WIT et des Coding Goûters à Nantes. Je participe dès que je le peux aux Devoxx4Kids.",
@@ -207,9 +207,9 @@
       ]
   },
   "lchampenois":{
-    "show":false,
+    "show":true,
     "name":"Ludovic Champenois",
-    "title":"Tech Lead Manager<br>Google Cloud Platform",
+    "title":"Tech Lead Manager<br>Cloud",
     "bio":"Ludo is a Tech Lead and Manager in the Google Cloud platform, leading the runtimes (Java, Python, GO, PHP, Node.js) and the Developer SDK.",
     "type":"cloud",
     "socials":[
@@ -219,11 +219,11 @@
       ]
   },
   "mbelmokhtar":{
-    "show":false,
+    "show":true,
     "name":"Medy Belmkhtar",
-    "title":"Ingénieur Etudes & Développement",
-    "bio":"Passionné des technos JS, il réalise chez NETAPSYS l'évangélisation et l'intégration de projets autour du framework ANGULARJS",
-    "type":"globe",
+    "title":"Ingénieur Etudes & Développement<br>Web",
+    "bio":"Passionné des technos JS, il réalise chez NETAPSYS l'évangélisation et l'intégration de projets autour du framework AngularJS",
+    "type":"web",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/medyBelmokhtar"},
       {"type":"github-alt","url":"https://github.com/bmedy"}
@@ -232,7 +232,7 @@
   "mboillod":{
     "show":false,
     "name":"Manuel Boillod",
-    "title":"Architecte Java Web",
+    "title":"Architecte<br>Java & Web",
     "bio":"Manuel Boillod est architecte et responsable de développements au sein des équipes R&D Restlet. Ses diverses expériences pour des grands comptes ou pour des startups et dans le service, lui ont permis d'appréhender de nombreuses technologies : Java, Javascript, Web, NoSQL…  Manuel est également leader du Nantes JUG (nantesjug.org) et aime échanger autour des projets et technologies innovantes.",
     "type":"discovery",
     "socials":[
@@ -240,9 +240,9 @@
       ]
   },
   "mgorner":{
-    "show":false,
-    "name":"Martin Gorner",
-    "title":"Google Developer Relation",
+    "show":true,
+    "name":"Martin Görner",
+    "title":"Developer Relation<br>Web & Cloud",
     "bio":"Martin se passionne pour la science, la technologie, l'informatique, les algorihmes et tout ce qui s'en rapproche. Martin a développé pour la plupart des plate-formes mobiles en existence depuis 2000, de même que pour PC, mac, linux et le web. Il est actuellement Google Developer Relation et conférencier sur Google AppEngine, Compute Engine et HTML5.",
     "type":"cloud",
     "socials":[
@@ -264,7 +264,7 @@
       ]
   },
   "preliquet":{
-    "show":false,
+    "show":true,
     "name":"Pierre Reliquet",
     "title":"Developer<br>Angular & Dart",
     "bio":"Pierre Reliquet is a consultant and AngularJS trainer within Zenika. He is particularly interested in the web stack because it always offers opportunity to learn new things and to develop awesome reactive applications.  <br>After discovering Dart during a Dart Flight School organized by the Google Developpers Group in Nantes, he found that new language brilliant and decided to use and promote it because it focuses on modern web and enhance the developer experience by providing many assets such as static typing, annotations, first-class functions, static code analysis and so on…",
@@ -285,9 +285,9 @@
       ]
   },
   "rguilloux":{
-    "show":false,
+    "show":true,
     "name":"Ronan Guilloux",
-    "title":"Enthusiastic learner <br> passionate developer",
+    "title":"Enthusiastic learner<br>Passionate developer",
     "bio":"Développeur web depuis 1998, Ronan Guilloux est responsable technique dans une agence web à Nantes. Ses contributions sont visibles sur github.com/ronanguilloux.",
     "type":"discovery",
     "socials":[
@@ -298,9 +298,9 @@
       ]
   },
   "rmenetrier":{
-    "show":false,
+    "show":true,
     "name":"Romain Menetrier",
-    "title":"Mobile Solutions Architect",
+    "title":"Solutions Architect<br>Mobile",
     "bio":"Romain Menetrier, devops passionné de plateformes web et mobiles, membre du Paris Android User Group, organisateur de Droidcon Paris, architecte solutions sans contact chez Orange Vallée.",
     "type":"mobile",
     "socials":[

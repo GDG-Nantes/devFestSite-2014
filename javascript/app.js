@@ -53,7 +53,7 @@ var DevFestApp = DevFestApp || function(){
         $.ajax("partials/content.html?ver="+DevFestSiteVersion),
         $.ajax("partials/speakers.html?ver="+DevFestSiteVersion),
         //$.ajax("partials/cfp.html?ver="+DevFestSiteVersion),
-        //$.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
+        $.ajax("partials/agenda.html?ver="+DevFestSiteVersion),
         $.ajax("partials/home.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsoring.html?ver="+DevFestSiteVersion),
         $.ajax("partials/sponsors.html?ver="+DevFestSiteVersion),
@@ -78,14 +78,14 @@ var DevFestApp = DevFestApp || function(){
       // return initPartials();
     // })  
     initPartials()
-    .then(function callBackPartials(contacts, content, speakers, /*cfp, agenda, */home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
+    .then(function callBackPartials(contacts, content, speakers, /*cfp, */agenda, home, sponsoring, sponsors, presse, what_is_devfest, video_phone, pratique, hoursData, sessionsData, speakersData){
       //console.info(result);
       //console.info('retrieve ajaxCalls');
       $('#contacts').html(contacts[0]);
       $('#devfest-content').html(content[0]);
       $('#speakers').html(speakers[0]);
       //$('#cfp').html(cfp[0]);
-      //$('#agenda').html(agenda[0]);
+      $('#agenda').html(agenda[0]);
       $('#home').html(home[0]);
       $('#sponsoring').html(sponsoring[0]);
       $('#sponsors').html(sponsors[0]);
@@ -124,7 +124,7 @@ var DevFestApp = DevFestApp || function(){
           //, 'nav-cfp' // Slide CFP
           , 'nav-speakers' // Slide Transition
           , 'nav-speakers' // Slide Speakers
-          //, 'nav-agenda' // Slide Agenda
+          , 'nav-agenda' // Slide Agenda
           , 'nav-sponsoring' // Slide Dossier
           , 'nav-sponsors' // Slide Sponsor
           , 'nav-sponsors' // Slide  Transition
@@ -141,7 +141,7 @@ var DevFestApp = DevFestApp || function(){
           //, '#444' // Slide CFP
           , '#444' // Slide Transition
           , '#f2f2f2' // Slide Speakers
-          //, '#444' // Slide Agenda
+          , '#444' // Slide Agenda
           , '#f2f2f2' // Slide Dossier
           , '#f2f2f2' // Slide Sponsors
           , '#f2f2f2' // Slide Transition
@@ -178,8 +178,8 @@ var DevFestApp = DevFestApp || function(){
       });
     }
 
-    constructModel();
-    manageSpeakers();
+    constructModel(isMobile);
+    manageSpeakers(isMobile);
     manageAgenda(isMobile);
     scrollManagement(isMobile);
     
@@ -207,7 +207,7 @@ var DevFestApp = DevFestApp || function(){
 
   }
 
-  function constructModel(){
+  function constructModel(isMobile){
     // On s'occupe d'abord des speakers
     var newSpeakerArray = [];
     var keysSpeakers = Object.keys(speakersJson);
@@ -223,7 +223,7 @@ var DevFestApp = DevFestApp || function(){
         speaker.id = "speaker_"+keysSpeakers[indexSpeaker]; 
         speaker.href = "#speaker_"+keysSpeakers[indexSpeaker]; 
         speaker.img = "img-"+keysSpeakers[indexSpeaker]+" circular-img-sm"; 
-        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs"; 
+        speaker.imgXs = "img-"+keysSpeakers[indexSpeaker]+" circular-img-xs speaker-img"; 
         speaker.colorText = speaker.type === 'mobile' ? 'text-success' : 
               (speaker.type === 'cloud' ? 'text-primary' :
                  (speaker.type === 'web' ? 'text-warning' : 'text-danger'));
@@ -256,9 +256,12 @@ var DevFestApp = DevFestApp || function(){
         rowAgenda.classRow = rowAgenda.show ? 'row' : 'row hide';
         rowAgenda.sessions.push(session);
         session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
+        if (session.desc){
+          session.descLight = truncateDesc(session.desc);
+        }
         if (session.difficulty){          
-          session.difficulty = ' - Difficulté : <i>'+
-              (session.difficulty === 101 ?  'Débutants' : session.difficulty === 202 ? 'Moyens' : 'Avancés')+
+          session.difficulty = ' Difficulté : <i>'+
+              (session.difficulty === 101 ?  'Débutant' : session.difficulty === 202 ? 'Intermédiaire' : 'Avancé')+
               '</i>';
         }        
         if (session.lang){
@@ -274,13 +277,19 @@ var DevFestApp = DevFestApp || function(){
           }
           session.classCol += session.type === 'mobile' ? 'green-gdg' : session.type === 'cloud' ? 'blue-gdg' : session.type === 'web' ? 'yellow-gdg' : 'red-gdg';
         }
+        session.classCol += localStorage[session.id] === 'true' ?  ' favorites' : '';
+        session.classFav = localStorage[session.id] === 'true' ? 'favorites fa fa-star' : 'favorites fa fa-star-o';
 
         
         
         if (session.speakers && session.speakers.length > 0){
           var newSpeakersSessions = [];
           for (var indexSpeaker = 0; indexSpeaker < session.speakers.length; indexSpeaker++){
-            newSpeakersSessions.push(speakersJson[session.speakers[indexSpeaker]]);
+            var speaker = speakersJson[session.speakers[indexSpeaker]];
+            speaker.titleConf = session.title;
+            speaker.session = session;
+            speaker.refSession = '#'+ (isMobile ? session.hour : session.id);
+            newSpeakersSessions.push(speaker);
           }
           session.speakers = newSpeakersSessions;
         }else{
@@ -291,6 +300,20 @@ var DevFestApp = DevFestApp || function(){
 
     modelJson['speakerRow'] = newSpeakerArray;
     modelJson['agendaRow'] = newAgendaArray;
+  }
+
+  function truncateDesc(desc){
+    var changeDesc = desc;
+    var limit = 100;
+    if (desc.length > limit){
+      if(desc[limit] === ' '){
+        changeDesc = desc.substring(0,limit)+'...';
+      }else{
+        var lastPos = desc.indexOf(' ',limit);
+        changeDesc = desc.substring(0,lastPos)+'...';
+      }
+    }
+    return changeDesc;
   }
 
   function getSessionsHour(hourId){
@@ -326,7 +349,54 @@ var DevFestApp = DevFestApp || function(){
     return sessionsArray;
   }
 
-  function manageSpeakers(){
+  function expandSession(element, force){
+    var parent = element.parent();
+    if(element.hasClass('grey-gdg')){
+      return;
+    }
+
+    if (!force && element.hasClass('col-lg-8')){
+      element.removeClass('col-lg-8');
+      element.addClass('col-lg-2');
+      parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
+      element.removeClass('expand');
+      //element.children('.resume').addClass('hidden-lg');
+    }else {            
+      element.addClass('expand');
+      parent.children('.animated-expand:not(.expand)').addClass('to-hide');
+      element.removeClass('col-lg-2');
+      element.addClass('col-lg-8');
+      //element.children('.resume').removeClass('hidden-lg');
+    }
+  }
+
+  function changeTabAgenda(element){
+    // On sélectionne le même item sur les 2 menus (le flottant et le principal)
+    var sameInMenu = $('.'+$(element).attr('class').split(' ').join('.'));
+    var parent = sameInMenu.parent();
+    parent.children('.header-agenda .border').removeClass('select');
+    sameInMenu.addClass('select');
+
+    // On recherche le track sélectionné pour avoir un affichage cohérent dans le site
+    var regExp = /(\w*-gdg)/;
+    var trackSelected = regExp.exec($(element).attr('class'))[1];
+    $('.animated-expand').addClass('hidden-xs');
+    $('.animated-expand.'+trackSelected).removeClass('hidden-xs');
+  }
+
+  function manageSpeakers(isMobile){
+    modelJson.onSessionSpeakerClick = function(event, scope){
+        if (!isMobile){          
+          var jQueryElement = $(document.querySelector('#'+scope.speaker.session.id));
+          var element = jQueryElement.parent();
+          expandSession(element, true);
+        }else{
+          var classSpeaker = scope.speaker.type === 'mobile' ? 'green-gdg' : 
+                scope.speaker.type === 'web' ? 'yellow-gdg' :
+                scope.speaker.type === 'cloud' ? 'blue-gdg' : 'red-gdg';
+          changeTabAgenda(document.querySelector('#header-agenda-to-copy .border.'+classSpeaker));
+        }
+      }
     rivets.bind($('#speakers'), modelJson);
   }
 
@@ -334,51 +404,53 @@ var DevFestApp = DevFestApp || function(){
       $('#header-agenda-to-copy').clone().attr('id','header-agenda-copy').appendTo('body'); 
       $('#header-agenda-copy').hide(); 
 
-      if (!isMobile){        
-        modelJson.onClickTitle = function(event){
-          var jQueryElement = $(event.target);
-          var element = jQueryElement.parent().parent();
-          var parent = jQueryElement.parent().parent().parent();
-          if(element.hasClass('grey-gdg')){
-            return;
-          }
+             
+      modelJson.onClickTitle = function(event){
+        if (isMobile){
+          return;
+        }
+        var jQueryElement = $(event.currentTarget);
+        var element = jQueryElement;//.parent().parent();
+        expandSession(element);
+      };
 
-          if (element.hasClass('col-lg-8')){
-            element.removeClass('col-lg-8');
-            element.addClass('col-lg-2');
-            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            element.removeClass('expand');
-            element.children('.resume').addClass('hidden-lg');
-          }else {            
-            element.addClass('expand');
-            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            element.removeClass('col-lg-2');
-            element.addClass('col-lg-8');
-            element.children('.resume').removeClass('hidden-lg');
-          }
-        };
-        $('.animated-expand .title-conf').on('click',function animateConfClick(){
-          var element = $(this).parent().parent();
-          var parent = $(this).parent().parent().parent();
-          if (element.hasClass('col-lg-8')){
-            element.removeClass('col-lg-8');
-            element.addClass('col-lg-2');
-            parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
-            element.removeClass('expand');
-            element.children('.resume').addClass('hidden-lg');
-          }else{            
-            element.addClass('expand');
-            parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-            element.removeClass('col-lg-2');
-            element.addClass('col-lg-8');
-            element.children('.resume').removeClass('hidden-lg');
-          }
-        });
+      modelJson.onMouseEnter = function(event, scope){
+        if (isMobile){
+          return;
+        }
+        var jQueryElement = $(event.currentTarget);
+        scope.row.desc = scope.session.desc.length > 200 ? scope.session.desc.substring(0,200)+'...' : scope.session.desc;
+        scope.row.title = scope.session.title;
+        jQueryElement.parent().children('.popup-resume').removeClass('to-hide');
+      };
 
-        $('#agenda a').on('click', function linkCancel(event){
-          //event.preventDefault();
-        });
-      }else{
+      modelJson.onMouseLeave = function(event, scope){
+        if (isMobile){
+          return;
+        }
+        var jQueryElement = $(event.currentTarget);
+        jQueryElement.parent().children('.popup-resume').addClass('to-hide');
+      };
+
+      modelJson.toggleFavorites = function(event, scope){
+        event.stopPropagation();
+        var jQueryElement = $(event.currentTarget);
+        if (jQueryElement.hasClass('fa-star')){
+          localStorage[scope.session.id] = false;
+          jQueryElement.parent().removeClass('favorites');
+          jQueryElement.removeClass('fa-star');
+          jQueryElement.addClass('fa-star-o');
+        }else{
+          localStorage[scope.session.id] = true;
+          jQueryElement.parent().addClass('favorites');
+          jQueryElement.addClass('fa-star');
+          jQueryElement.removeClass('fa-star-o');
+        }
+      };
+
+
+
+      if (isMobile){
         $('.header-agenda .border').on('click',function animateConfClick(){
           // On sélectionne le même item sur les 2 menus (le flottant et le principal)
           var sameInMenu = $('.'+$(this).attr('class').split(' ').join('.'));

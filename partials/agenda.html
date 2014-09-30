@@ -1,12 +1,14 @@
 <!-- Debutants / Moyens / Avancés-->
 
-<div class="text-center"><h1>Programme</h1></div>
+<div class="text-center  hidden-print"><h1>Sessions</h1>
+<h3>L'ordre et horaire des sessions reste à définir</h3></div>
 
-<div class="lead text-center"><strong>L'ordre affiché n'est pas définitif !</strong></div>
+
+
 <!-- s'inspirer de http://demo.themecube.net/?theme=Evential -->
 <!-- Test de mapping rivets -->
 <!-- {test.data1} | {test2}-->
-<div id="header-agenda-to-copy">
+<div id="header-agenda-to-copy" class=" hidden-print">
 	<div class="container padded">
 		<div class="row header-agenda">
 			<div class="hidden-xs col-xs-2  col-lg-2 col-lg-offset-1 padded border white-gdg">			
@@ -44,17 +46,20 @@
 
 	<div rv-each-row="agendaRow" rv-class="row.classRow">
 		<div class="col-xs-2 col-lg-1 col-lg-offset-2 padded border-hour  white-gdg">
+			<span rv-id="row.hour.id" class="anchor-session-mobile"></span>
 		 	<p class="lead text-center">
 				<font class="text-hour text-thin">{row.hour.hourStart}</font>{row.hour.minStart}<br>
 				<font class="text-hour text-thin">{row.hour.hourEnd}</font>{row.hour.minEnd}
 			</p>
 		</div>		
-		<div rv-each-session="row.sessions" rv-class="session.classCol">
+		<div rv-each-session="row.sessions" rv-class="session.classCol" rv-on-click='onClickTitle' rv-on-mouseenter='onMouseEnter' rv-on-mouseleave='onMouseLeave'>
+			<span rv-id="session.id" class="anchor-session"></span>
 			<div class="title-conf-parent">
-				<div rv-class="session.classTitle" rv-on-click='onClickTitle'>
+				<div rv-class="session.classTitle" >
 					{session.title}
-				</div>
+				</div> 
 			</div>
+			<div rv-class="session.classFav" rv-on-click='toggleFavorites'></div>
 			<div rv-if="session.confRoom" rv-html="session.confRoom" class="conf-room">
 			</div>
 			<div rv-if="session.difficulty" rv-html="session.difficulty" class="conf-dificulty">
@@ -64,14 +69,12 @@
 			</div>
 			<div rv-if="session.speakers" class="conf-speakers">
 				<div rv-each-speaker="session.speakers" class="speaker">
-					<a rv-href="speaker.href">
-						<div rv-class="speaker.imgXs"></div>
-						<div class="speaker-name">{speaker.name}</div>
-					</a>
+					<div rv-class="speaker.imgXs"></div>
+					<div class="speaker-name">{speaker.name}</div>
 				</div>				
 			</div>
-			<p class="hidden-lg resume" rv-html="session.desc">
-			</p>
-		</div>	
+			<p class="resume-light hidden-print" rv-html="session.descLight"></p>
+			<p class="resume" rv-html="session.desc"></p>
+		</div>			
 	</div>
 </div>

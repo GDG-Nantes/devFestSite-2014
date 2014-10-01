@@ -211,21 +211,21 @@
 
 /* line 11, ../scss/devfest_content.scss */
 .img-sessions {
-  background: url(../assets/images/2013/glass_200.png) no-repeat;
+  background: url(../assets/images/2013/glass_200.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
 /* line 17, ../scss/devfest_content.scss */
 .img-codelabs {
-  background: url(../assets/images/2013/hall_200.png) no-repeat;
+  background: url(../assets/images/2013/hall_200.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
 
 /* line 23, ../scss/devfest_content.scss */
 .img-demos {
-  background: url(../assets/images/2013/oculus_200.png) no-repeat;
+  background: url(../assets/images/2013/oculus_200.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -310,7 +310,7 @@
 
 /* line 86, ../scss/speakers.scss */
 .img-alopez {
-  background: url(../assets/images/speakers/alopez.png) no-repeat;
+  background: url(../assets/images/speakers/alopez.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -387,7 +387,7 @@
 
 /* line 154, ../scss/speakers.scss */
 .img-hgonzalez {
-  background: url(../assets/images/speakers/hgonzalez.png) no-repeat;
+  background: url(../assets/images/speakers/hgonzalez.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -450,7 +450,7 @@
 
 /* line 208, ../scss/speakers.scss */
 .img-mgorner {
-  background: url(../assets/images/speakers/mgorner.png) no-repeat;
+  background: url(../assets/images/speakers/mgorner.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -513,7 +513,7 @@
 
 /* line 262, ../scss/speakers.scss */
 .img-tgrall {
-  background: url(../assets/images/speakers/tgrall.png) no-repeat;
+  background: url(../assets/images/speakers/tgrall.jpg) no-repeat;
   background-size: contain;
   margin: auto;
 }
@@ -1162,17 +1162,17 @@ h1 {
 
 /* line 77, ../scss/devfest.scss */
 .bg-t1 {
-  background-image: url(../assets/images/2013/angular.png);
+  background-image: url(../assets/images/2013/angular.jpg);
 }
 
 /* line 81, ../scss/devfest.scss */
 .bg-t2 {
-  background-image: url(../assets/images/2013/cyril.png);
+  background-image: url(../assets/images/2013/cyril.jpg);
 }
 
 /* line 85, ../scss/devfest.scss */
 .bg-t3 {
-  background-image: url(../assets/images/2013/team.png);
+  background-image: url(../assets/images/2013/team.jpg);
 }
 
 /* Misc */

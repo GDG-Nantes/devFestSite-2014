@@ -174,7 +174,7 @@
     "id":"s17",
     "title":"Dans un monde où tout est composant",
     "confRoom":"",
-    "desc":"OSGI est une approche en composants. Polymer est une approche en composants. Je vais vous faire voir comment marier les deux. <br> Avec les conteneurs OSGI on peut facilement (re)déployer des bundles et avec des versions différentes, le tout à chaud. <br>Seul ombre au tableau, l’UI. Dans le cadre de SPA(Single page app), il faut systématiquement redéployer toute l’application Front. <br>C’est là que Polymer intervient…",
+    "desc":"OSGI est une approche en composants. Polymer est une approche en composants. Je vais vous faire voir comment marier les deux. <br> Avec les conteneurs OSGI on peut facilement (re)déployer des bundles et avec des versions différentes, le tout à chaud. <br>Seule ombre au tableau, l’UI. Dans le cadre de SPA (Single Page App), il faut systématiquement redéployer tout le front. <br>C’est là que Polymer intervient…",
     "type":"web",
     "difficulty":303,
     "all" : false,

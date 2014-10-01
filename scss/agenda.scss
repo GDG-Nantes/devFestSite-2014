@@ -99,7 +99,8 @@ END TO REMOVE !!!
 		margin-bottom: 5px;
 	}
 
-	.header-agenda .border:not(.col-lg-offset-1){
+	.header-agenda .border:not(.col-lg-offset-1),
+	.header-agenda .border:not(.col-sm-offset-1){
 		margin-left: 10px;
 	}
 
@@ -139,7 +140,8 @@ END TO REMOVE !!!
         border-image:   linear-gradient(to bottom, rgba(0,0,0,0) 0%, $color-border 50%, rgba(0,0,0,0) 100%) 1 100%;*/
 	}
 
-	.col-xs-9.col-lg-2.padded.animated-expand{
+	.col-xs-9.col-lg-2.padded.animated-expand,
+	.col-xs-9.col-sm-2.padded.animated-expand{
 		margin-left: 10px;
 	}
 
@@ -254,7 +256,8 @@ END TO REMOVE !!!
 	}
 
 
-	.row .col-lg-2 .title-conf-parent{
+	.row .col-lg-2 .title-conf-parent,
+	.row .col-sm-2 .title-conf-parent{
 		height: 6.0em;
 		margin-bottom: 10px;
 		position: relative;
@@ -265,7 +268,8 @@ END TO REMOVE !!!
 		display: none;
 	}
 
-	.row .animated-expand.col-lg-2 .resume{
+	.row .animated-expand.col-lg-2 .resume,
+	.row .animated-expand.col-sm-2 .resume{
 		display: none;
 	}
 
@@ -277,7 +281,8 @@ END TO REMOVE !!!
 		padding-right: 10px;
 	}
 
-	.row .col-lg-2 .title-conf{
+	.row .col-lg-2 .title-conf,
+	.row .col-sm-2 .title-conf{
 		font-size: 1.2em;
 		line-height: 1.2em;
 		height: 6.0em;
@@ -357,11 +362,13 @@ END TO REMOVE !!!
 		margin-bottom: 10px;
 	}
 
-	.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+	.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang,
+	.row  .col-sm-2 .conf-dificulty, .row  .col-sm-2 .conf-lang{
 		display: none;
 	}
 
-	.row  .col-lg-8 .conf-dificulty, .row  .col-lg-8 .conf-lang{
+	.row  .col-lg-8 .conf-dificulty, .row  .col-lg-8 .conf-lang,
+	.row  .col-sm-8 .conf-dificulty, .row  .col-sm-8 .conf-lang{
 		display: inline-block;
 	}
 	
@@ -371,11 +378,13 @@ END TO REMOVE !!!
 
 @media only screen and (max-width: 768px) {
 
-	#agenda .row .animated-expand.col-lg-2 .resume-light{
+	#agenda .row .animated-expand.col-lg-2 .resume-light,
+	#agenda .row .animated-expand.col-sm-2 .resume-light{
 		display: none;
 	}
 
-	#agenda .row .animated-expand.col-lg-2 .resume{
+	#agenda .row .animated-expand.col-lg-2 .resume,
+	#agenda .row .animated-expand.col-sm-2 .resume{
 		display: block;
 	}
 
@@ -402,7 +411,8 @@ END TO REMOVE !!!
 			font-size: 1em;
 		}
 
-		.header-agenda .border:not(.col-lg-offset-1){
+		.header-agenda .border:not(.col-lg-offset-1),
+		.header-agenda .border:not(.col-sm-offset-1){
 			margin-left: 0px;
 			cursor: hand;
 		}
@@ -413,20 +423,23 @@ END TO REMOVE !!!
 		}
 
 		
-		.row .col-lg-2 .title-conf.to-long:after, .row .col-lg-2 .title-conf.to-long:before{
+		.row .col-lg-2 .title-conf.to-long:after, .row .col-lg-2 .title-conf.to-long:before,
+		.row .col-sm-2 .title-conf.to-long:after, .row .col-sm-2 .title-conf.to-long:before{
 			content : none;
 			width: 0;
 			height: 0;
 		}		
 
 		
-		.row .col-lg-2 .title-conf.to-long{			
+		.row .col-lg-2 .title-conf.to-long,
+		.row .col-sm-2 .title-conf.to-long{			
 			max-height: 15em;
 			text-overflow: none;
 			overflow: none;
 		}
 
-		.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang{
+		.row  .col-lg-2 .conf-dificulty, .row  .col-lg-2 .conf-lang,
+		.row  .col-sm-2 .conf-dificulty, .row  .col-sm-2 .conf-lang{
 			display: inline-block;
 		}
 

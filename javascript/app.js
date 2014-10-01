@@ -210,12 +210,12 @@ var DevFestApp = DevFestApp || function(){
           session.lang = 'assets/images/lang/'+session.lang+'.png';
         }
         if (session.all){
-          session.classCol = 'col-xs-9 col-lg-8 padded border-row grey-gdg';
+          session.classCol = 'col-xs-9 col-sm-8 padded border-row grey-gdg';
         }else {
           if (indexSession === 0){
-            session.classCol = 'col-xs-9 col-lg-2 padded animated-expand ';
+            session.classCol = 'col-xs-9 col-sm-2 padded animated-expand ';
           }else{
-            session.classCol = 'col-xs-9 hidden-xs col-lg-2 padded animated-expand ';
+            session.classCol = 'col-xs-9 hidden-xs col-sm-2 padded animated-expand ';
           }
           session.classCol += session.type === 'mobile' ? 'green-gdg' : session.type === 'cloud' ? 'blue-gdg' : session.type === 'web' ? 'yellow-gdg' : 'red-gdg';
         }
@@ -297,17 +297,17 @@ var DevFestApp = DevFestApp || function(){
       return;
     }
 
-    if (!force && element.hasClass('col-lg-8')){
-      element.removeClass('col-lg-8');
-      element.addClass('col-lg-2');
+    if (!force && element.hasClass('col-sm-8')){
+      element.removeClass('col-sm-8');
+      element.addClass('col-sm-2');
       parent.children('.animated-expand:not(.expand)').removeClass('to-hide');
       element.removeClass('expand');
       //element.children('.resume').addClass('hidden-lg');
     }else {            
       element.addClass('expand');
       parent.children('.animated-expand:not(.expand)').addClass('to-hide');
-      element.removeClass('col-lg-2');
-      element.addClass('col-lg-8');
+      element.removeClass('col-sm-2');
+      element.addClass('col-sm-8');
       //element.children('.resume').removeClass('hidden-lg');
     }
   }

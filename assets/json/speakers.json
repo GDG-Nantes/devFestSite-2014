@@ -32,6 +32,18 @@
       {"type":"google-plus","url":"https://plus.google.com/+BrianDorsey"}
       ]
   },
+  "cbossard":{
+    "show":true,
+    "name":"Cécilia Bossard",
+    "title":"Développeuse<br>Agiliste",
+    "bio":"Cécilia a un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, elle les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. <br>Impliquée dans la communauté agile nantaise, elle participe également à l'organisation de l'Agile Tour de Nantes.<br>Femme développeuse, elle est également co-fondatrice du groupe Women In Technology à Nantes, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, elle participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les Devoxx4Kids ou les coding goûters.",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/CeciliaBossard"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/+CeciliaBossard"},
+      {"type":"globe","url":"http://javagile.wordpress.com/"}
+      ]
+  },
   "cmottier":{
     "show":true,
     "name":"Cyril Mottier",
@@ -117,6 +129,17 @@
     "type":"discovery",
     "socials":[      
       {"type":"globe","url":"http://blog.ippon.fr/author/Florence_HERROU"}
+      ]
+  },
+  "fnoel":{
+    "show":true,
+    "name":"Florent Noël",
+    "title":"Android enthusiast <br> pragmatic programmer",
+    "bio":"Android enthusiast and pragmatic programmer, Florent is software developer at Genymobile.<br>Passionate about his work he often finds himself submerged into a world of zeros and ones. ",
+    "type":"mobile",
+    "socials":[      
+      {"type":"twitter","url":"https://twitter.com/heb_dtc"},
+      {"type":"google-plus","url":"https://plus.google.com/u/0/105610682092905992183"}
       ]
   },
   "ftrichet":{
@@ -230,7 +253,7 @@
       ]
   },
   "mboillod":{
-    "show":false,
+    "show":true,
     "name":"Manuel Boillod",
     "title":"Architecte<br>Java & Web",
     "bio":"Manuel Boillod est architecte et responsable de développements au sein des équipes R&D Restlet. Ses diverses expériences pour des grands comptes ou pour des startups et dans le service, lui ont permis d'appréhender de nombreuses technologies : Java, Javascript, Web, NoSQL…  Manuel est également leader du Nantes JUG (nantesjug.org) et aime échanger autour des projets et technologies innovantes.",
@@ -335,16 +358,16 @@
       ]
   },
   "tgrall":{
-    "show":false,
+    "show":true,
     "name":"Tugdual Grall",
-    "title":"",
-    "bio":"",
+    "title":"Technical Evangelist <br> NoSQL",
+    "bio":"Technical Evangelist at MongoDB, passionate developer. Co-founder of the @nantesJUG, and founder of http://www.resultri.com",
     "type":"cloud",
     "socials":[
-      {"type":"twitter","url":""},
-      {"type":"google-plus","url":""},
-      {"type":"github-alt","url":""},
-      {"type":"globe","url":""}
+      {"type":"twitter","url":"https://twitter.com/tgrall"},
+      {"type":"google-plus","url":"https://plus.google.com/+TugdualGrall"},
+      {"type":"github-alt","url":"https://github.com/tgrall"},
+      {"type":"globe","url":"http://blog.grallandco.com"}
       ]
   },
   "tbd":{

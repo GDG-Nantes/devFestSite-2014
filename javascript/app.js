@@ -396,7 +396,7 @@ var DevFestApp = DevFestApp || function(){
 
 
       if (isMobile){
-        $('.header-agenda .border').on('click',function animateConfClick(){
+        $('.header-agenda .border').on('click touch',function animateConfClick(){
           // On sélectionne le même item sur les 2 menus (le flottant et le principal)
           var sameInMenu = $('.'+$(this).attr('class').split(' ').join('.'));
           var parent = sameInMenu.parent();

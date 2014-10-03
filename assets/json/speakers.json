@@ -192,7 +192,7 @@
       ]
   },
   "jferraioli":{
-    "show":true,
+    "show":false,
     "name":"Julia Ferraioli",
     "title":"Senior Developer Advocate<br>Cloud",
     "bio":"Julia Ferraioli is a Developer Advocate working on Google Cloud Platform. She helps developers harness the power of Google’s infrastructure to develop quickly, intelligently, and at scale. She comes from an industrial background in software engineering, and an academic background in machine learning and assistive technology.",

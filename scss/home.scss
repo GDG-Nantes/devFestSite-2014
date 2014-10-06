@@ -2,6 +2,11 @@
 	margin-left: 40px;
 }
 
+#home iframe{
+	width:560px;
+	height:315px;
+}
+
 @media only screen and (min-width: 768px) {
 	#home {
 		width:100%;
@@ -13,6 +18,11 @@
 
 	#home table td{
 		padding: 30px;
+	}
+
+	#home iframe{
+		width:800px;
+		height:450px;
 	}
 }
 

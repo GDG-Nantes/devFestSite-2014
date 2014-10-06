@@ -175,8 +175,14 @@
   margin-left: 40px;
 }
 
+/* line 5, ../scss/home.scss */
+#home iframe {
+  width: 560px;
+  height: 315px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 6, ../scss/home.scss */
+  /* line 11, ../scss/home.scss */
   #home {
     width: 100%;
     height: 100%;
@@ -185,19 +191,25 @@
     background-image: url(../assets/images/logo.png);
   }
 
-  /* line 14, ../scss/home.scss */
+  /* line 19, ../scss/home.scss */
   #home table td {
     padding: 30px;
   }
+
+  /* line 23, ../scss/home.scss */
+  #home iframe {
+    width: 800px;
+    height: 450px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-height: 768px) {
-  /* line 22, ../scss/home.scss */
+  /* line 32, ../scss/home.scss */
   #home table td {
     padding: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 28, ../scss/home.scss */
+  /* line 38, ../scss/home.scss */
   #home table {
     margin-left: 100px;
   }
@@ -1176,21 +1188,53 @@ h1 {
 
 /* line 77, ../scss/devfest.scss */
 .bg-t1 {
-  background-image: url(../assets/images/2013/angular.jpg);
+  background-image: url(../assets/images/2013/angular_highres.jpg);
 }
 
 /* line 81, ../scss/devfest.scss */
 .bg-t2 {
-  background-image: url(../assets/images/2013/cyril.jpg);
+  background-image: url(../assets/images/2013/cyril_highres.jpg);
 }
 
 /* line 85, ../scss/devfest.scss */
 .bg-t3 {
-  background-image: url(../assets/images/2013/team.jpg);
+  background-image: url(../assets/images/2013/team_highres.jpg);
 }
 
+@media only screen and (max-width: 768px) {
+  /* line 91, ../scss/devfest.scss */
+  .bg-t1 {
+    background-image: url(../assets/images/2013/angular.jpg);
+  }
+
+  /* line 95, ../scss/devfest.scss */
+  .bg-t2 {
+    background-image: url(../assets/images/2013/cyril.jpg);
+  }
+
+  /* line 99, ../scss/devfest.scss */
+  .bg-t3 {
+    background-image: url(../assets/images/2013/team.jpg);
+  }
+}
+@media only screen and (max-width: 1300px) {
+  /* line 107, ../scss/devfest.scss */
+  .bg-t1 {
+    background-image: url(../assets/images/2013/angular_midres.jpg);
+  }
+
+  /* line 111, ../scss/devfest.scss */
+  .bg-t2 {
+    background-image: url(../assets/images/2013/cyril_midres.jpg);
+  }
+
+  /* line 115, ../scss/devfest.scss */
+  .bg-t3 {
+    background-image: url(../assets/images/2013/team_midres.jpg);
+  }
+}
 /* Misc */
-/* line 91, ../scss/devfest.scss */
+/* line 123, ../scss/devfest.scss */
 .more-info {
   position: absolute;
   bottom: 0;
@@ -1198,7 +1242,7 @@ h1 {
   padding: 10px;
 }
 
-/* line 100, ../scss/devfest.scss */
+/* line 132, ../scss/devfest.scss */
 #unsupport-div {
   padding: 20px;
   position: absolute;
@@ -1206,14 +1250,14 @@ h1 {
   height: 100%;
 }
 
-/* line 107, ../scss/devfest.scss */
+/* line 139, ../scss/devfest.scss */
 #unsupport-div p {
   margin-left: 20px;
   font-weight: 600;
 }
 
 /* Menu */
-/* line 114, ../scss/devfest.scss */
+/* line 146, ../scss/devfest.scss */
 #menu {
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
@@ -1230,12 +1274,12 @@ h1 {
   opacity: 0;
 }
 
-/* line 121, ../scss/devfest.scss */
+/* line 153, ../scss/devfest.scss */
 #menu.show {
   opacity: 1;
 }
 
-/* line 126, ../scss/devfest.scss */
+/* line 158, ../scss/devfest.scss */
 #menu.navbar-default .navbar-nav > .active > a {
   background-color: inherit;
   background-image: inherit;
@@ -1248,12 +1292,12 @@ h1 {
 }
 
 @media only screen and (min-width: 769px) {
-  /* line 138, ../scss/devfest.scss */
+  /* line 170, ../scss/devfest.scss */
   #menu li[data-menuanchor='nav-contacts'] {
     padding-right: 30px;
   }
 
-  /* line 143, ../scss/devfest.scss */
+  /* line 175, ../scss/devfest.scss */
   #menu.navbar-default .navbar-nav > .active > a:after {
     content: '';
     height: 3px;
@@ -1265,13 +1309,13 @@ h1 {
     margin-left: -45%;
   }
 
-  /* line 154, ../scss/devfest.scss */
+  /* line 186, ../scss/devfest.scss */
   #menu ul, #menu ul li {
     height: 60px;
     line-height: 60px;
   }
 
-  /* line 159, ../scss/devfest.scss */
+  /* line 191, ../scss/devfest.scss */
   #menu ul li a {
     padding-top: 20px;
   }

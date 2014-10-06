@@ -75,15 +75,47 @@ h1 {
 }
 
 .bg-t1 {
-	background-image:url(../assets/images/2013/angular.jpg);
+	background-image:url(../assets/images/2013/angular_highres.jpg);
 }
 
 .bg-t2 {
-	background-image:url(../assets/images/2013/cyril.jpg);
+	background-image:url(../assets/images/2013/cyril_highres.jpg);
 }
 
 .bg-t3 {
-	background-image:url(../assets/images/2013/team.jpg);
+	background-image:url(../assets/images/2013/team_highres.jpg);
+}
+
+@media only screen and (max-width: 768px) {
+
+	.bg-t1 {
+		background-image:url(../assets/images/2013/angular.jpg);
+	}
+
+	.bg-t2 {
+		background-image:url(../assets/images/2013/cyril.jpg);
+	}
+
+	.bg-t3 {
+		background-image:url(../assets/images/2013/team.jpg);
+	}
+
+}
+
+@media only screen and (max-width: 1300px) {
+
+	.bg-t1 {
+		background-image:url(../assets/images/2013/angular_midres.jpg);
+	}
+
+	.bg-t2 {
+		background-image:url(../assets/images/2013/cyril_midres.jpg);
+	}
+
+	.bg-t3 {
+		background-image:url(../assets/images/2013/team_midres.jpg);
+	}
+
 }
 
 /* Misc */

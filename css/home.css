@@ -3,8 +3,14 @@
   margin-left: 40px;
 }
 
+/* line 5, ../scss/home.scss */
+#home iframe {
+  width: 560px;
+  height: 315px;
+}
+
 @media only screen and (min-width: 768px) {
-  /* line 6, ../scss/home.scss */
+  /* line 11, ../scss/home.scss */
   #home {
     width: 100%;
     height: 100%;
@@ -13,19 +19,25 @@
     background-image: url(../assets/images/logo.png);
   }
 
-  /* line 14, ../scss/home.scss */
+  /* line 19, ../scss/home.scss */
   #home table td {
     padding: 30px;
   }
+
+  /* line 23, ../scss/home.scss */
+  #home iframe {
+    width: 800px;
+    height: 450px;
+  }
 }
 @media only screen and (min-width: 768px) and (max-height: 768px) {
-  /* line 22, ../scss/home.scss */
+  /* line 32, ../scss/home.scss */
   #home table td {
     padding: 20px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  /* line 28, ../scss/home.scss */
+  /* line 38, ../scss/home.scss */
   #home table {
     margin-left: 100px;
   }

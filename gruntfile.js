@@ -326,7 +326,7 @@ module.exports = function (grunt) {
   require('load-grunt-tasks')(grunt);
 
   // Déclaration des taches
-  grunt.registerTask('serve',        ['http-server:dev', 'watch']);
+  grunt.registerTask('serve',       ['compass', 'http-server:dev', 'watch']);
   grunt.registerTask('lint',        ['jshint:dev', 'compass', 'csslint:dev']);
   grunt.registerTask('test',        ['lint', 'karma:unit', 'karma:e2e']);
   grunt.registerTask('ic',          ['jshint:ic', 'compass', 'csslint:ic', 'karma:ic_unit', 'karma:ic_e2e']);

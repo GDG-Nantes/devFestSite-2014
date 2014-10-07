@@ -253,7 +253,7 @@
       ]
   },
   "mboillod":{
-    "show":true,
+    "show":false,
     "name":"Manuel Boillod",
     "title":"Architecte<br>Java & Web",
     "bio":"Manuel Boillod est architecte et responsable de développements au sein des équipes R&D Restlet. Ses diverses expériences pour des grands comptes ou pour des startups et dans le service, lui ont permis d'appréhender de nombreuses technologies : Java, Javascript, Web, NoSQL…  Manuel est également leader du Nantes JUG (nantesjug.org) et aime échanger autour des projets et technologies innovantes.",
@@ -358,7 +358,7 @@
       ]
   },
   "tgrall":{
-    "show":true,
+    "show":false,
     "name":"Tugdual Grall",
     "title":"Technical Evangelist <br> NoSQL",
     "bio":"Technical Evangelist at MongoDB, passionate developer. Co-founder of the @nantesJUG, and founder of http://www.resultri.com",

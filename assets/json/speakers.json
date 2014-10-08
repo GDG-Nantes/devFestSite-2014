@@ -25,7 +25,7 @@
     "show":true,
     "name":"Brian Dorsey",
     "title":"Developer Advocate<br>Cloud",
-    "bio":"BRIAN DORSEY is an engineer on the Google Developer Relations team. He helps you build cool stuff with Google Cloud Platform. Brian focuses on Compute Engine and Cloud Storage. He loves Python and he’s taught Python at the University of Washington & spoken at both PyCon & PyCon Japan. Brian is currently learning Go and enjoying it.",
+    "bio":"Brian Dorsey is an engineer on the Google Developer Relations team. He helps you build cool stuff with Google Cloud Platform. Brian focuses on Compute Engine and Cloud Storage. He loves Python and he’s taught Python at the University of Washington & spoken at both PyCon & PyCon Japan. Brian is currently learning Go and enjoying it.",
     "type":"cloud",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/briandorsey"},

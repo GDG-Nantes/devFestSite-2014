@@ -35,7 +35,7 @@
   "cbossard":{
     "show":true,
     "name":"Cécilia Bossard",
-    "title":"Développeuse<br>Agiliste",
+    "title":"Developer<br>Agile",
     "bio":"Cécilia a un but : aider les équipes à produire des logiciels utiles aux utilisateurs finaux. Pour cela, elle les accompagne en intégrant les équipes de développement ou en les assistant dans leur transition agile. <br>Impliquée dans la communauté agile nantaise, elle participe également à l'organisation de l'Agile Tour de Nantes.<br>Femme développeuse, elle est également co-fondatrice du groupe Women In Technology à Nantes, dont le but est de promouvoir les femmes dans la technique. Dans ce cadre, elle participe également aux initiations à la programmation à destination des enfants avec des initiatives telles que les Devoxx4Kids ou les coding goûters.",
     "type":"discovery",
     "socials":[
@@ -134,7 +134,7 @@
   "fnoel":{
     "show":true,
     "name":"Florent Noël",
-    "title":"Android enthusiast <br> pragmatic programmer",
+    "title":"Pragmatic programmer<br>Android",
     "bio":"Android enthusiast and pragmatic programmer, Florent is software developer at Genymobile.<br>Passionate about his work he often finds himself submerged into a world of zeros and ones. ",
     "type":"mobile",
     "socials":[      

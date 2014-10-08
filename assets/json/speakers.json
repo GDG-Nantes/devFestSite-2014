@@ -134,7 +134,7 @@
   "fnoel":{
     "show":true,
     "name":"Florent Noël",
-    "title":"Pragmatic programmer<br>Android",
+    "title":"Pragmatic Programmer<br>Android",
     "bio":"Android enthusiast and pragmatic programmer, Florent is software developer at Genymobile.<br>Passionate about his work he often finds himself submerged into a world of zeros and ones. ",
     "type":"mobile",
     "socials":[      
@@ -219,7 +219,7 @@
   "jpalies":{
     "show":true,
     "name":"Jean Paliès",
-    "title":"Expert technique en développement",
+    "title":"Expert Technique<br>Java & MDE",
     "bio":"Je suis un développeur, à Nantes. Je suis aussi cofondateur des WIT et des Coding Goûters à Nantes. Je participe dès que je le peux aux Devoxx4Kids.",
     "type":"discovery",
     "socials":[
@@ -310,7 +310,7 @@
   "rguilloux":{
     "show":true,
     "name":"Ronan Guilloux",
-    "title":"Enthusiastic learner<br>Passionate developer",
+    "title":"Enthusiastic Learner<br>Passionate Developer",
     "bio":"Développeur web depuis 1998, Ronan Guilloux est responsable technique dans une agence web à Nantes. Ses contributions sont visibles sur github.com/ronanguilloux.",
     "type":"discovery",
     "socials":[

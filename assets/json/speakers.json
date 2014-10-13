@@ -168,7 +168,7 @@
       ]
   },
   "jdramaix":{
-    "show":true,
+    "show":true, 
     "name":"Julien Dramaix",
     "title":"GWT Contributor <br> Web",
     "bio":"Passionate software engineer and open source enthusiast.<br>I'm involved in a number of open source projects around Google Web Toolkit technology:<br> - GwtQuery : http://www.gwtquery.com <br>- GwtChosen : http://jdramaix.github.com/gwtchosen/<br>- Drag and drop GwtQuery plugin : http://code.google.com/p/gwtquery-plugins/wiki/DragAndDropPluginForGWTDeveloppers<br>- ...",

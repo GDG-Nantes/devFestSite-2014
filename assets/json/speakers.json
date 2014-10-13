@@ -84,16 +84,15 @@
       ]
   },
   "dlecan":{
-    "show":false,
+    "show":true,
     "name":"Damien Lecan",
-    "title":"",
-    "bio":"",
+    "title":"Architect<br>Web & Mobile",
+    "bio":"Damien Lecan est une personnes aux multiples casquettes : architecte et développeur avec plus de 10 années d'expérience dans des domaines techniques variés tels que l'industrie, la banque, ... et aussi consultant et formateur senior pour le compte de sa société, SQLI.<br>Avec un fort penchant pour les technologies open-source, il y contribue au travers de nombreux projets au gré de ses activités : Android, Scala, HTML5/JS (écosystème AngularJS)... Passionné par le partage de la connaissance, il s'intéresse dernièrement aux problématiques associées à l'Internet de Objets et aux solutions à y apporter en Entreprise.",
     "type":"mobile",
     "socials":[
-      {"type":"twitter","url":""},
-      {"type":"google-plus","url":""},
-      {"type":"github-alt","url":""},
-      {"type":"globe","url":""}
+      {"type":"twitter","url":"http://twitter.com/dlecan"},
+      {"type":"github-alt","url":"http://github.com/dlecan"},
+      {"type":"globe","url":"http://blog.dlecan.com"}
       ]
   },
   "elezmy":{
@@ -253,7 +252,7 @@
       ]
   },
   "mboillod":{
-    "show":false,
+    "show":true,
     "name":"Manuel Boillod",
     "title":"Architecte<br>Java & Web",
     "bio":"Manuel Boillod est architecte et responsable de développements au sein des équipes R&D Restlet. Ses diverses expériences pour des grands comptes ou pour des startups et dans le service, lui ont permis d'appréhender de nombreuses technologies : Java, Javascript, Web, NoSQL…  Manuel est également leader du Nantes JUG (nantesjug.org) et aime échanger autour des projets et technologies innovantes.",
@@ -358,7 +357,7 @@
       ]
   },
   "tgrall":{
-    "show":false,
+    "show":true,
     "name":"Tugdual Grall",
     "title":"Technical Evangelist <br> NoSQL",
     "bio":"Technical Evangelist at MongoDB, passionate developer. Co-founder of the @nantesJUG, and founder of http://www.resultri.com",

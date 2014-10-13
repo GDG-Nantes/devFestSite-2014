@@ -168,16 +168,15 @@
       ]
   },
   "jdramaix":{
-    "show":false,
+    "show":true,
     "name":"Julien Dramaix",
-    "title":"",
-    "bio":"",
+    "title":"GWT Contributor <br> Web",
+    "bio":"Passionate software engineer and open source enthusiast.<br>I'm involved in a number of open source projects around Google Web Toolkit technology:<br> - GwtQuery : http://www.gwtquery.com <br>- GwtChosen : http://jdramaix.github.com/gwtchosen/<br>- Drag and drop GwtQuery plugin : http://code.google.com/p/gwtquery-plugins/wiki/DragAndDropPluginForGWTDeveloppers<br>- ...",
     "type":"web",
     "socials":[
-      {"type":"twitter","url":""},
-      {"type":"google-plus","url":""},
-      {"type":"github-alt","url":""},
-      {"type":"globe","url":""}
+      {"type":"twitter","url":"http://twitter.com/jdramaix"},
+      {"type":"google-plus","url":"https://www.google.com/+JulienDramaix"},
+      {"type":"github-alt","url":"https://github.com/jDramaix"}
       ]
   },
   "jdubois":{
@@ -370,7 +369,7 @@
       ]
   },
   "tbd":{
-    "show":true,
+    "show":false,
     "name":"Futur speaker",
     "title":"",
     "bio":"Futur speaker à venir",

@@ -186,7 +186,7 @@
   margin-top: -160px;
 }
 /* line 229, ../scss/agenda.scss */
-#agenda .row .white-gdg, #header-agenda-to-copy .row .white-gdg, #header-agenda-copy .row .white-gdg {
+#agenda .row .border-hour .white-gdg, #header-agenda-to-copy .row .border-hour .white-gdg, #header-agenda-copy .row .border-hour .white-gdg {
   border-top: 3px #f2f2f2 solid;
 }
 /* line 232, ../scss/agenda.scss */

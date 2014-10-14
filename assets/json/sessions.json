@@ -109,7 +109,7 @@
     "id":"s10",
     "title":"Déjeuner",
     "type":"white",
-    "desc":"<i>Gratuit pour tous les participants</i><br>Profitez-en pour faire un tour des différents stands et démos.",
+    "desc":"Gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
     "all" : true,
     "hour":"h5"
   },{
@@ -205,8 +205,7 @@
     "title":"Pause",
     "type":"white",
     "all" : true,
-    "hour":"h8",
-    "hide":true
+    "hour":"h8"
   },{
     "id":"s21",
     "title":"v.zero SDK for android",

@@ -15,33 +15,6 @@ $yellow-gdg-color : #f7c63d;
 $size-border-top : 3px;
 $size-border-hover : 8px;
 
-/*
-TO REMOVE !!!
-*/
-
-#agenda #header-agenda-to-copy .row .white-gdg, 
-#header-agenda-copy .row .white-gdg,
-#agenda-container .row .white-gdg{
-	opacity: 0;
-}
-
-#agenda .row .conf-room{
-	display: none !important;
-}
-
-@media only screen and (min-width: 769px) {
-	#agenda{
-		margin-left: -100px;
-	}
-
-	#header-agenda-copy{
-		margin-left: -50px;
-	}
-}
-/*
-END TO REMOVE !!! 
-*/
-
 #agenda{
 	height: auto !important;
 	

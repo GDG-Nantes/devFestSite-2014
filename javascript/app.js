@@ -198,7 +198,7 @@ var DevFestApp = DevFestApp || function(){
         rowAgenda.classRow = rowAgenda.show ? 'row' : 'row hide';
         rowAgenda.sessions.push(session);
         session.classTitle = 'title-conf '+(session.title.length > 40 ? 'to-long' : '');
-        if (session.desc){
+        if (session.desc && !session.all){
           session.descLight = truncateDesc(session.desc);
         }
         if (session.difficulty){          

@@ -161,9 +161,9 @@
     "speakers":["rchardonneau"]
   },{
     "id":"s16",
-    "title":"Tests étendus pour contruire des applications Android robustes, avec Genymotion",
+    "title":"Tests étendus pour construire des applications Android robustes, avec Genymotion",
     "confRoom":"",
-    "desc":"Les application Android sont de plus en riches. Les tests qualités deviennent donc de plus en plus primordiaux et il est important de qu'ils soient les plus complets possibles. <br> Durant cette session nous vous présenterons comment il est facile d'utiliser Genymotion, ses APIs Java (pour les tests unitaires), et ses outils de contrôle scriptables (en ligne de commande et via Gradle) pour améliorer vos tests et votre système d'integration continue.",
+    "desc":"Les applications Android sont de plus en riches. Les tests qualités deviennent donc de plus en plus primordiaux et il est important qu'ils soient les plus complets possibles. <br> Durant cette session, nous vous présenterons comment il est facile d'utiliser Genymotion, ses APIs Java (pour les tests unitaires), et ses outils de contrôle scriptables (en ligne de commande et via Gradle) pour améliorer vos tests et votre système d'integration continue.",
     "type":"mobile",
     "difficulty":202,
     "all" : false,

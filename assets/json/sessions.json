@@ -3,23 +3,20 @@
   {
     "id":"s1",
     "title":"Accueil",
-    "confRoom":"Pas de Salle",
-    "desc":"Profitez de cet instant pour déguster une collation et un café avec nos GO et nos sponsors ;)",
+    "confRoom":"",
+    "desc":"Profitez de cet instant pour déguster une collation et un café avant d'enchaîner sur une journée bien remplie ! ;)",
     "type":"white",
     "all" : true,
     "hour":"h1",
-    "hide":true
   },
   {
     "id":"s2",
     "title":"Keynote",
-    "confRoom":"Salle <i>Titan</i>",
-    "desc":"Conférence d'ourverture du DevFest",
+    "confRoom":"",
+    "desc":"Conférence d'ouverture du DevFest",
     "type":"white",
     "all" : true,
-    "hour":"h2",
-    "hide":true,
-    "speakers":["roddet","ftrichet"]
+    "hour":"h2"
   },{
     "id":"s3",
     "title":"HTML pour le web mobile: Firefox OS",
@@ -112,9 +109,9 @@
     "id":"s10",
     "title":"Déjeuner",
     "type":"white",
+    "desc":"<i>Gratuit pour tous les participants</i><br>Profitez-en pour faire un tour des différents stands et démos.",
     "all" : true,
-    "hour":"h5",
-    "hide":true
+    "hour":"h5"
   },{
     "id":"s12",
     "title":"Introduction to Android Wear – A Glimpse Into the Future",
@@ -298,6 +295,13 @@
     "lang":"fr",
     "hour":"h3",
     "speakers":["mboillod"]
+  },{
+    "id":"s29",
+    "title":"Afterparty",
+    "type":"white",
+    "desc":"Un moment de networking convivial pour les plus motivés :)",
+    "all" : true,
+    "hour":"h11"
   }
    ]
 }

@@ -1,32 +1,4 @@
-/*
-TO REMOVE !!!
-*/
-/* line 22, ../scss/agenda.scss */
-#agenda #header-agenda-to-copy .row .white-gdg,
-#header-agenda-copy .row .white-gdg,
-#agenda-container .row .white-gdg {
-  opacity: 0;
-}
 
-/* line 28, ../scss/agenda.scss */
-#agenda .row .conf-room {
-  display: none !important;
-}
-
-@media only screen and (min-width: 769px) {
-  /* line 33, ../scss/agenda.scss */
-  #agenda {
-    margin-left: -100px;
-  }
-
-  /* line 37, ../scss/agenda.scss */
-  #header-agenda-copy {
-    margin-left: -50px;
-  }
-}
-/*
-END TO REMOVE !!! 
-*/
 /* line 45, ../scss/agenda.scss */
 #agenda {
   height: auto !important;

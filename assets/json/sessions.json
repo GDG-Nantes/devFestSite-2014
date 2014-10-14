@@ -7,7 +7,7 @@
     "desc":"Profitez de cet instant pour déguster une collation et un café avant d'enchaîner sur une journée bien remplie ! ;)",
     "type":"white",
     "all" : true,
-    "hour":"h1",
+    "hour":"h1"
   },
   {
     "id":"s2",

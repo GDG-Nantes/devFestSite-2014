@@ -59,7 +59,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h8",
     "speakers":["jpalies","cbossard"]
   },{
     "id":"s7",
@@ -81,7 +81,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h6",
+    "hour":"h7",
     "speakers":["arichard"]
   },{
     "id":"s9",
@@ -103,7 +103,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h6",
+    "hour":"h7",
     "speakers":["swalter"]
   },{
     "id":"s10",
@@ -111,7 +111,7 @@
     "type":"white",
     "desc":"Gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
     "all" : true,
-    "hour":"h5"
+    "hour":"h6"
   },{
     "id":"s12",
     "title":"Introduction to Android Wear – A Glimpse Into the Future",
@@ -121,7 +121,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h8",
     "speakers":["cmottier"]
   },{
     "id":"s13",
@@ -132,7 +132,7 @@
     "difficulty":303,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h8",
     "speakers":["jdubois"]
   },{
     "id":"s14",
@@ -143,7 +143,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h9",
+    "hour":"h10",
     "speakers":["mgorner"]
   },{
     "id":"s15",
@@ -154,7 +154,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h11",
     "speakers":["rchardonneau"]
   },{
     "id":"s16",
@@ -165,7 +165,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h9",
+    "hour":"h10",
     "speakers":["elezmy","fnoel"]
   },{
     "id":"s17",
@@ -176,7 +176,7 @@
     "difficulty":303,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h11",
     "speakers":["mbelmokhtar"]
   },{
     "id":"s18",
@@ -187,7 +187,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h6",
+    "hour":"h7",
     "speakers":["jmouton"]
   },{
     "id":"s19",
@@ -198,14 +198,14 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h9",
+    "hour":"h10",
     "speakers":["rguilloux"]
   },{
     "id":"s20",
     "title":"Pause",
     "type":"white",
     "all" : true,
-    "hour":"h8"
+    "hour":"h9"
   },{
     "id":"s21",
     "title":"v.zero SDK for android",
@@ -215,7 +215,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"en",
-    "hour":"h10",
+    "hour":"h11",
     "speakers":["alopez"]
   },{
     "id":"s22",
@@ -226,7 +226,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h9",
+    "hour":"h10",
     "speakers":["preliquet"]
   },{
     "id":"s23",
@@ -237,7 +237,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h11",
     "speakers":["dgageot"]
   },{
     "id":"s24",
@@ -259,7 +259,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h6",
+    "hour":"h7",
     "speakers":["dlecan"]
   },{
     "id":"s26",
@@ -281,7 +281,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h8",
     "speakers":["tgrall"]
   },{
     "id":"s28",
@@ -296,11 +296,55 @@
     "speakers":["mboillod"]
   },{
     "id":"s29",
+    "title":"This session might interest you: an introduction to recommendation engines",
+    "confRoom":"",
+    "desc":"Les moteurs de recommendation jouent un rôle de plus en plus important dans nos projets. Nous allons commencer avec une introduction aux principes, quelques exemples (parfois non-évident), et comment un moteur de recommandation peut aider (ou détruire) un projet.",
+    "type":"discovery",
+    "difficulty":202,
+    "all" : false,
+    "lang":"fr",
+    "hour":"h5",
+    "speakers":["jabrahamson"]
+  },{
+    "id":"s30",
+    "title":"The Dart side of the moon, la face cachée du cloud",
+    "confRoom":"",
+    "desc":"Dart est un nouveau langage, un runtime et un ensemble de bibliothèques et d’outils pour construire des applications web modernes et scalables. Dans un avenir proche, il sera possible de profiter de la puissance et de la productivité de Dart sur le Cloud Google. Dans cette session, vous découvrirez comment construire une application Dart du serveur jusqu’au navigateur et comment la déployer sur les Managed VMs de Google App Engine. Vous apprendrez comment structurer votre application pour une factorisation maximale du code et une meilleure maintenabilité.",
+    "type":"cloud",
+    "difficulty":202,
+    "all" : false,
+    "lang":"fr",
+    "hour":"h5",
+    "speakers":["ggirou","nfrancois"]
+  },{
+    "id":"s31",
+    "title":"NDK",
+    "confRoom":"",
+    "desc":"NDK",
+    "type":"mobile",
+    "difficulty":202,
+    "all" : false,
+    "lang":"fr",
+    "hour":"h5",
+    "speakers":["tbd"]
+  },{
+    "id":"s32",
+    "title":"XDK",
+    "confRoom":"",
+    "desc":"XDK",
+    "type":"web",
+    "difficulty":101,
+    "all" : false,
+    "lang":"fr",
+    "hour":"h5",
+    "speakers":["tbd"]
+  },{
+    "id":"s33",
     "title":"Afterparty",
     "type":"white",
     "desc":"Un moment de networking convivial pour les plus motivés :)",
     "all" : true,
-    "hour":"h11"
+    "hour":"h12"
   }
    ]
 }

@@ -154,6 +154,19 @@
       {"type":"globe","url":""}
       ]
   },
+  "ggirou":{
+    "show":true,
+    "name":"Guillaume Girou",
+    "title":"Technical Evangelist<br> Dart",
+    "bio":"Guillaume Girou est évangéliste Dart et est avant tout un développeur passioné ! Il change de langages comme de chemise, passant de .NET à Java, puis Scala et enfin Dart pour son plaisir ! Il co-anime la page Google+ Dartlang [FR] et a animé à plusieurs reprises des conférences et des workshops sur Dart.",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/GirouGuillaume"},
+      {"type":"google-plus","url":"https://plus.google.com/+GuillaumeGirou"},
+      {"type":"github-alt","url":"https://github.com/ggirou"},
+      {"type":"globe","url":"http://gplus.to/dartlangfr"}
+      ]
+  },
   "hgonzalez":{
     "show":true,
     "name":"Horacio Gonzalez",
@@ -165,6 +178,19 @@
       {"type":"google-plus","url":"https://plus.google.com/u/0/+LostInBrittany"},
       {"type":"github-alt","url":"https://github.com/lostinbrittany"},
       {"type":"globe","url":"http://lostinbrittany.org"}
+      ]
+  },
+  "jabrahamson":{
+    "show":true, 
+    "name":"Jeff Abrahamson",
+    "title":"Experiment developer <br> Web",
+    "bio":"Je passe mes journées à comprendre comment déroule la lecture et comment trouver de lecteurs pour des livres.",
+    "type":"discovery",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/Jeff_Abrahamson"},
+      {"type":"google-plus","url":"https://www.google.com/+JeffAbrahamson"},
+      {"type":"github-alt","url":"https://github.com/JeffAbrahamson"},
+      {"type":"globe","url":"http://jeff.purple.com/qr/"}
       ]
   },
   "jdramaix":{
@@ -271,6 +297,19 @@
       {"type":"github-alt","url":"https://github.com/martin-gorner"}
       ]
   },
+  "nfrancois":{
+    "show":true,
+    "name":"Nicolas Francois",
+    "title":"Technical Evangelist<br>Dart",
+    "bio":"Développeur Java pendant le jour, mais aussi Dart Night codeur Séduit par le langage, il évangélise depuis 2 ans les JUG et GDG avec Guillaume Girou.<br>Avec Vincent Bostoen, comme les 3 mousquetaires, ils animent une page Google+ en français à propos de l’actualité de Dart. ",
+    "type":"cloud",
+    "socials":[
+      {"type":"twitter","url":"http://twitter.com/nicofrancois"},
+      {"type":"google-plus","url":"http://plus.google.com/+NicolasFrancois"},
+      {"type":"github-alt","url":"http://github.com/nfrancois/"},
+      {"type":"globe","url":"http://gplus.to/dartlangfr"}
+      ]
+  },
   "pcans":{
     "show":false,
     "name":"Pascal Cans",
@@ -369,7 +408,7 @@
       ]
   },
   "tbd":{
-    "show":false,
+    "show":true,
     "name":"Futur speaker",
     "title":"",
     "bio":"Futur speaker à venir",

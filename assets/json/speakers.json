@@ -183,7 +183,7 @@
   "jabrahamson":{
     "show":true, 
     "name":"Jeff Abrahamson",
-    "title":"Experiment developer <br> Web",
+    "title":"Chief Scientist <br> Jellybooks",
     "bio":"Je passe mes journées à comprendre comment déroule la lecture et comment trouver de lecteurs pour des livres.",
     "type":"discovery",
     "socials":[
@@ -197,7 +197,7 @@
     "show":true, 
     "name":"Julien Dramaix",
     "title":"GWT Contributor <br> Web",
-    "bio":"Passionate software engineer and open source enthusiast.<br>I'm involved in a number of open source projects around Google Web Toolkit technology:<br> - GwtQuery : http://www.gwtquery.com <br>- GwtChosen : http://jdramaix.github.com/gwtchosen/<br>- Drag and drop GwtQuery plugin : http://code.google.com/p/gwtquery-plugins/wiki/DragAndDropPluginForGWTDeveloppers<br>- ...",
+    "bio":"Julien is a Software Architect with ArcBees, the company behind GWT-Platform. In his everyday job, he helps people around the world to use GWT (formerly known as Google Web Toolkit) to implement their web applications.<br>An open source enthusiast, he spends his nights contributing to GWT and in a number of related projects (GQuery, GwtChosen, GwtQuery Drag-and-drop plugin, etc).<br>He is an official GWT maintainer and represents ArcBees to the GWT steering committee.<br>He is from Belgium and as such, likes drinking beer!",
     "type":"web",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/jdramaix"},

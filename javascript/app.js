@@ -210,6 +210,7 @@ var DevFestApp = DevFestApp || function(){
           session.lang = 'assets/images/lang/'+session.lang+'.png';
         }
         if (session.all){
+          rowAgenda.classRow += ' min-print';
           session.classCol = 'col-xs-9 col-sm-8 padded border-row grey-gdg';
         }else {
           if (indexSession === 0){

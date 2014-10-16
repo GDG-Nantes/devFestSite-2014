@@ -16,23 +16,23 @@
   "h3":{
     "id":"h3",
     "hourStart":"09",
-    "minStart":"30",
+    "minStart":"40",
     "hourEnd":"10",
-    "minEnd":"20"
+    "minEnd":"30"
   },
   "h4":{
     "id":"h4",
     "hourStart":"10",
-    "minStart":"30",
+    "minStart":"40",
     "hourEnd":"11",
-    "minEnd":"20"
+    "minEnd":"30"
   },
   "h5":{
     "id":"h5",
     "hourStart":"11",
-    "minStart":"30",
+    "minStart":"40",
     "hourEnd":"12",
-    "minEnd":"20"
+    "minEnd":"30"
   },
   "h6":{
     "id":"h6",

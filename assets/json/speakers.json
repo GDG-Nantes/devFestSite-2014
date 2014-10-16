@@ -167,6 +167,16 @@
       {"type":"globe","url":"http://gplus.to/dartlangfr"}
       ]
   },
+  "gmenvielle":{
+    "show":true,
+    "name":"Gregory Menvielle",
+    "title":"Technical Evangelist<br> XDK",
+    "bio":"Gregory Menvielle  is the CEO and founder of Pyramedium, and is currently developing an HTML5 app called smartnotify (http://smartnotify.us/). Greg kindly consented to sitting down and giving us some information about his background, his current work, and his thoughts on HTML5.",
+    "type":"web",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/pyramedium"}
+      ]
+  },
   "hgonzalez":{
     "show":true,
     "name":"Horacio Gonzalez",
@@ -184,7 +194,7 @@
     "show":true, 
     "name":"Jeff Abrahamson",
     "title":"Chief Scientist <br> Jellybooks",
-    "bio":"Je passe mes journées à comprendre comment déroule la lecture et comment trouver de lecteurs pour des livres.",
+    "bio":"Jeff est développeur et passionné de l'apprentissage automatique et des données. Après avoir travaillé comme SRE chez Google, Jeff a plusieurs projets de création de startup, dont le plus important, Jellybooks, est destiné à révolutionner la vente en ligne du livre.",
     "type":"discovery",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/Jeff_Abrahamson"},
@@ -281,7 +291,7 @@
     "name":"Manuel Boillod",
     "title":"Architecte<br>Java & Web",
     "bio":"Manuel Boillod est architecte et responsable de développements au sein des équipes R&D Restlet. Ses diverses expériences pour des grands comptes ou pour des startups et dans le service, lui ont permis d'appréhender de nombreuses technologies : Java, Javascript, Web, NoSQL…  Manuel est également leader du Nantes JUG (nantesjug.org) et aime échanger autour des projets et technologies innovantes.",
-    "type":"discovery",
+    "type":"cloud",
     "socials":[
       {"type":"twitter","url":"http://twitter.com/mboillod"}
       ]
@@ -399,7 +409,7 @@
     "name":"Tugdual Grall",
     "title":"Technical Evangelist <br> NoSQL",
     "bio":"Technical Evangelist at MongoDB, passionate developer. Co-founder of the @nantesJUG, and founder of http://www.resultri.com",
-    "type":"cloud",
+    "type":"discovery",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/tgrall"},
       {"type":"google-plus","url":"https://plus.google.com/+TugdualGrall"},
@@ -407,8 +417,20 @@
       {"type":"globe","url":"http://blog.grallandco.com"}
       ]
   },
-  "tbd":{
+  "xhallade":{
     "show":true,
+    "name":"Xavier Hallade",
+    "title":"Developer Evangelist <br> Intel",
+    "bio":"Xavier is Developer Evangelist in Intel Software and Service Group in Paris, France. He is helping developers to improve their support for new hardware and technologies backed by Intel, with a focus on the Android NDK, 64-bit and dual-displays.",
+    "type":"mobile",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/ph0b"},
+      {"type":"google-plus","url":"https://plus.google.com/+XavierHallade"},
+      {"type":"github-alt","url":"https://github.com/ph0b"}
+      ]
+  },
+  "tbd":{
+    "show":false,
     "name":"Futur speaker",
     "title":"",
     "bio":"Futur speaker à venir",

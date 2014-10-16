@@ -37,7 +37,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h3",
+    "hour":"h11",
     "speakers":["hgonzalez"]
   },{
     "id":"s5",
@@ -59,7 +59,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h8",
+    "hour":"h5",
     "speakers":["jpalies","cbossard"]
   },{
     "id":"s7",
@@ -70,7 +70,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h4",
+    "hour":"h10",
     "speakers":["rmenetrier"]
   },{
     "id":"s8",
@@ -92,7 +92,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h3",
+    "hour":"h5",
     "speakers":["lchampenois"]
   },{
     "id":"s10",
@@ -103,10 +103,10 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h10",
     "speakers":["swalter"]
   },{
-    "id":"s10",
+    "id":"s11",
     "title":"Déjeuner",
     "type":"white",
     "desc":"Gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
@@ -121,7 +121,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h8",
+    "hour":"h5",
     "speakers":["cmottier"]
   },{
     "id":"s13",
@@ -132,7 +132,7 @@
     "difficulty":303,
     "all" : false,
     "lang":"fr",
-    "hour":"h8",
+    "hour":"h10",
     "speakers":["jdubois"]
   },{
     "id":"s14",
@@ -143,7 +143,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h8",
     "speakers":["mgorner"]
   },{
     "id":"s15",
@@ -165,7 +165,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h8",
     "speakers":["elezmy","fnoel"]
   },{
     "id":"s17",
@@ -176,7 +176,7 @@
     "difficulty":303,
     "all" : false,
     "lang":"fr",
-    "hour":"h11",
+    "hour":"h5",
     "speakers":["mbelmokhtar"]
   },{
     "id":"s18",
@@ -198,7 +198,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h7",
     "speakers":["rguilloux"]
   },{
     "id":"s20",
@@ -226,7 +226,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h10",
+    "hour":"h8",
     "speakers":["preliquet"]
   },{
     "id":"s23",
@@ -237,7 +237,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h11",
+    "hour":"h3",
     "speakers":["dgageot"]
   },{
     "id":"s24",
@@ -248,7 +248,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h4",
+    "hour":"h3",
     "speakers":["fherrou"]
   },{
     "id":"s25",
@@ -259,7 +259,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h4",
     "speakers":["dlecan"]
   },{
     "id":"s26",
@@ -270,29 +270,29 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h4",
+    "hour":"h3",
     "speakers":["jdramaix"]
   },{
     "id":"s27",
     "title":"Fier d'etre polyglotte!",
     "confRoom":"",
     "desc":"C'est un fait! Les nouvelles applications, et les nouveaux développeurs sont polyglottes!  Ils utilisent de différents langages, différentes solution de persistence...<br>Au cours de cette présentation vous verrez pourquoi il est intéressant, et important d'utiliser plusieurs technologies, langages et datastore, dans vos applications. Vous verrez comment mélanger des programmes Java/Java EE, des langages fonctionnels et langages de scripts mais aussi pourquoi utiliser plusieurs solution de persistence telles que des bases de données relationnelles, des bases NoSQL comme MongoDB mais aussi Hadoop pour répondre aux nouveaux besoin 'Big Data/Big Users'<br>En résumé : le bon outil pour le bon usage",
-    "type":"cloud",
+    "type":"discovery",
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h8",
+    "hour":"h4",
     "speakers":["tgrall"]
   },{
     "id":"s28",
     "title":"Transformez vos Google Spread Sheets en API Web",
     "confRoom":"",
     "desc":"Découvrez comment tirer pleinement parti de vos Google Spread Sheet en les exposant via une API web. <br>A partir d'un Google Spread Sheet existant, nous verrons comment ajouter une API REST en quelques minutes pour des opérations courantes : partager ou soumettre des données, récupérer un résultat calculé. Par ailleurs, nous verrons comment consommer facilement cette API depuis un large nombre de clients (Angular, Androïd...), et comment ajoutez de la valeur avec des fonctionnalités telles que des “analytics”, “quotas”, “sécurité”, ...<br>Illustration au travers d'exemples concrets : tenir une ardoise entre amis, mettre en place une campagne marketing (WhereIsSparky ?).",
-    "type":"discovery",
+    "type":"cloud",
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h3",
+    "hour":"h10",
     "speakers":["mboillod"]
   },{
     "id":"s29",
@@ -303,7 +303,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h8",
     "speakers":["jabrahamson"]
   },{
     "id":"s30",
@@ -314,30 +314,30 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h11",
     "speakers":["ggirou","nfrancois"]
   },{
     "id":"s31",
-    "title":"NDK",
+    "title":"The Android NDK",
     "confRoom":"",
-    "desc":"NDK",
+    "desc":"The Android NDK is used to integrate asm/C/C++ code into Android applications and libraries.<br>Learn how to use it as well as NDK-based libraries with Eclipse and Android Studio. Discover what changes from the new Android Runtime (ART) may break your integration, and what you need to do in order to take advantage of 64-bit architectures.",
     "type":"mobile",
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
-    "speakers":["tbd"]
+    "hour":"h7",
+    "speakers":["xhallade"]
   },{
     "id":"s32",
-    "title":"XDK",
+    "title":"The Intel XDK - Tips and Tricks",
     "confRoom":"",
-    "desc":"XDK",
+    "desc":"L'outil de développement XDK d'Intel® est une solution HTML5 qui permet aux développeurs d'écrire des applications Web et hybrides une seule fois et de les déployer vers de nombreux stores d'applications et appareils de formats différents.",
     "type":"web",
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
-    "speakers":["tbd"]
+    "hour":"h4",
+    "speakers":["gmenvielle"]
   },{
     "id":"s33",
     "title":"Afterparty",

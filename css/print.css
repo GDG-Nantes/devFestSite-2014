@@ -15,26 +15,26 @@
     display: none !important;
   }
   /* line 17, ../scss/print.scss */
-  #agenda .row .col-lg-2 .title-conf-parent {
+  #agenda .row .col-sm-2 .title-conf-parent {
     height: 2.7em;
   }
   /* line 21, ../scss/print.scss */
   #agenda .row .title-conf {
-    font-size: 0.9em;
+    font-size: 0.8em;
     line-height: 0.9em;
   }
   /* line 26, ../scss/print.scss */
-  #agenda .row .col-lg-2 .title-conf {
-    font-size: 0.9em;
+  #agenda .row .col-sm-2 .title-conf {
+    font-size: 0.8em;
     line-height: 0.9em;
     height: 2.7em;
   }
   /* line 32, ../scss/print.scss */
-  #agenda .row .col-lg-2 .title-conf.to-long {
+  #agenda .row .col-sm-2 .title-conf.to-long {
     max-height: 1.8em;
   }
   /* line 35, ../scss/print.scss */
-  #agenda .row .col-lg-2 .title-conf.to-long:after {
+  #agenda .row .col-sm-2 .title-conf.to-long:after {
     width: 2.4em;
     height: 0.9em;
     bottom: -5px;
@@ -57,47 +57,60 @@
     display: block !important;
   }
   /* line 59, ../scss/print.scss */
+  #agenda .col-xs-2.white-gdg {
+    height: 6em;
+  }
+  /* line 63, ../scss/print.scss */
+  #agenda .row.min-print .col-xs-2.white-gdg {
+    font-size: 0.8em;
+    height: 4em;
+  }
+  /* line 68, ../scss/print.scss */
   #agenda .col-xs-3, #agenda .col-xs-9:not(.grey-gdg) {
     width: 18%;
   }
-  /* line 63, ../scss/print.scss */
+  /* line 72, ../scss/print.scss */
   #agenda .row .white-gdg {
     border-top-width: 0px;
   }
-  /* line 67, ../scss/print.scss */
+  /* line 76, ../scss/print.scss */
   #agenda .row {
     margin-bottom: 0px;
   }
-  /* line 71, ../scss/print.scss */
+  /* line 80, ../scss/print.scss */
   #agenda .lead {
     font-size: 10pt;
   }
-  /* line 75, ../scss/print.scss */
+  /* line 84, ../scss/print.scss */
   #agenda .text-hour {
     font-size: 14pt;
   }
-  /* line 84, ../scss/print.scss */
+  /* line 93, ../scss/print.scss */
+  #agenda .row .animated-expand.favorites {
+    height: 6em;
+  }
+  /* line 97, ../scss/print.scss */
   #agenda .row .animated-expand.green-gdg.favorites {
     background: #1eee87 !important;
     -webkit-print-color-adjust: exact;
   }
-  /* line 88, ../scss/print.scss */
+  /* line 101, ../scss/print.scss */
   #agenda .row .animated-expand.blue-gdg.favorites {
     background: #adc1e1 !important;
     -webkit-print-color-adjust: exact;
   }
-  /* line 92, ../scss/print.scss */
+  /* line 105, ../scss/print.scss */
   #agenda .row .animated-expand.red-gdg.favorites {
     background: #ea9892 !important;
     -webkit-print-color-adjust: exact;
   }
-  /* line 96, ../scss/print.scss */
+  /* line 109, ../scss/print.scss */
   #agenda .row .animated-expand.yellow-gdg.favorites {
     background: #fbe39f !important;
     -webkit-print-color-adjust: exact;
   }
-  /* line 101, ../scss/print.scss */
-  #agenda .row .animated-expand .favorites {
+  /* line 114, ../scss/print.scss */
+  #agenda .row .fa.fa-star, #agenda .row .fa.fa-star-o {
     display: none;
   }
 }

@@ -3,7 +3,7 @@
   {
     "id":"s1",
     "title":"Accueil",
-    "confRoom":"",
+    "confRoom":"Espace Les Machines",
     "desc":"Profitez de cet instant pour déguster une collation et un café avant d'enchaîner sur une journée bien remplie ! ;)",
     "type":"white",
     "all" : true,
@@ -12,7 +12,7 @@
   {
     "id":"s2",
     "title":"Keynote",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"Conférence d'ouverture du DevFest",
     "type":"white",
     "all" : true,
@@ -20,7 +20,7 @@
   },{
     "id":"s3",
     "title":"HTML pour le web mobile: Firefox OS",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"HTML5 est un pas de géant dans la bonne direction: il apporte plusieurs fonctionnalités dont les développeurs avaient besoin pour créer plus facilement de meilleures expériences web. Il a aussi fait naitre un débat sans fin: applications natives ou applications web! Lors de cette présentation, Frédéric Harper vous montrera comment le web ouvert peut vous aider à créer des applications mobiles de qualités. Vous en apprendrez plus sur des technologies telles que les WebAPIs, ainsi que les outils qui vous permettront de viser un nouveau marché avec Firefox OS et le web d’aujourd'hui.",
     "type":"mobile",
     "difficulty":101,
@@ -31,7 +31,7 @@
   },{
     "id":"s4",
     "title":"Introduction aux Web Components avec Polymer",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"Des concepts comme encapsulation, réutilisation de composants, data-binding ou templating sont maintenant monnaie courante dans la plupart de frameworks web… mais chacun le fait à ça façon ! <br>Et c’est là que les Web Components débarquent. Un nouveau standard en cours d’élaboration au W3C, qui va permettre d’avoir une approche par composants au développement web. <br>Dans cette présentation nous parlerons de ce standard en construction, de concepts comme ShadowDOM, Mutation Observers, custom elements, Model-Driven-View, Object.observe()… Nous parlerons aussi des implémentations actuelles, du projet Polymer de Google, des X-Tags de Mozilla et de comment avec AngularJS on peut déjà avoir un bon aperçu de ce que nous attend. <br>Et ensuite on rentrera dans le détail de comment on peut dès aujourd'hui utiliser des web components﻿ avec Polymer, et on illustrera l'approche en utilisant les composants Polymer Paper pour implémenter le look Material Design d'Android L dans des applications web.",
     "type":"web",
     "difficulty":101,
@@ -42,7 +42,7 @@
   },{
     "id":"s5",
     "title":"Scaling clusters declaratively with Kubernetes and Docker",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"We’ve all written an application from scratch before. You start with some code on your laptop and tell a server to run it. You make tweaks, update manually, and realize that you’ve committed yourself to a very imperative process. It’s manual. Inefficient. What’s worse, it’s completely unreproducible. <br> So then you might turn to Docker, which solves the process-level reproducibility by packaging up a full execution environment. But once we get beyond a single machine, we need to coordinate the work across a cluster of machines -- trying to do it imperatively can quickly turn into a tangled mess! You want to declare to your cluster what you expect it to do, and have the cluster assign the resources to get it done, recover from failures, and scale easily.  <br> Kubernetes is a recently open sourced cluster manager and scheduler that simplifies the complex tasks of deploying and managing your application. You simply declare the desired state, and Kubernetes does the work to keep it that way. In this talk, we’ll do a hands-on demonstration of how you can move from a single Docker container to many containers running across a cluster of machines by using Kubernetes.",
     "type":"cloud",
     "difficulty":202,
@@ -53,7 +53,7 @@
   },{
     "id":"s6",
     "title":"Et la diversité dans tout ça ?",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"On entend beaucoup parler en ce moment du besoin d’avoir plus de femmes dans les métiers du numérique. Mais la diversité ne s’arrête pas là.<br> Qu'est ce qu’on entend par diversité ?<br> Qu'est ce que ça peut apporter à mon équipe ?<br> Quelles sont les bonnes pratiques ?<br> Nous tenterons de répondre à ces questions lors de cette présentation qui ne se veut pas moralisatrice, mais souhaite juste proposer des pistes de réflexions sur ce débat.",
     "type":"discovery",
     "difficulty":101,
@@ -64,7 +64,7 @@
   },{
     "id":"s7",
     "title":"Always fresh data with continuous queries",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"Learn how to combine the best tools on cloud and mobile to propagate data changes at light speed.<br>We will use Eventbus, cloud functions and push notifications.",
     "type":"mobile",
     "difficulty":202,
@@ -75,7 +75,7 @@
   },{
     "id":"s8",
     "title":"Modulariser son application AngularJS avec Browserify",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"Ces deux dernières années, la plateforme Node.js a connu une adoption considérable. Son approche asynchrone, simple et performante a fait ses preuves. Le système de modules de Node.js s’est lui aussi révélé particulièrement efficace.<br>Nous, développeurs front-end, sommes toujours à la recherche d’une solution de modularisation convaincante. Et si l‘inspiration était à chercher du côté de Node ?<br>Browserify nous propose d’adopter les standards de modularisation de Node.js pour structurer nos clients web. Il nous offre également l’opportunité de gérer nos dépendances avec npm et de bénéficier ainsi de ce formidable écosystème.<br>Après une présentation de Browserify et de son intérêt, cette session détaillera la modularisation “façon Node.js” d’une application AngularJS.",
     "type":"web",
     "difficulty":202,
@@ -86,7 +86,7 @@
   },{
     "id":"s9",
     "title":"Google Cloud Platform: Managed VMs unification",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"You are a developer and dream about scaling your application like Snapchat? You need latest support for Java 8, Servlet 3.1, WebSockets, optimized annotation processing, Gradle, Maven, Jenkins pipeline and Android clients? Well, we have it all with Managed VMs. The session will introduce you to the latest Cloud SDK, a multi language environment (Java, Node.js, Dart, yours…), all sharing the same APIs and Services for developing Docker images and containers that can run locally and which can be deployed unchanged to the Google Cloud in a fully managed environment.",
     "type":"cloud",
     "difficulty":202,
@@ -97,7 +97,7 @@
   },{
     "id":"s10",
     "title":"Guerrilla design en milieu hostile : responsive et mobilité",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"A l'heure actuelle, il n'est plus le possible de désigner tous les gabarits d'un site en tenant compte de tous les terminaux existants. C'est pour celà que de plus en plus de décisions d'optimisation du design mobile sont prises lors des tests en réel dans les navigateurs. Je vous propose donc 45 minutes d’astuces de toute sorte tirées de vrais projets qui nous ont permis de nous en sortir dans cette jungle mobile et communiquer efficacement entre créatifs de toute taille, clients et intégrateurs.",
     "type":"discovery",
     "difficulty":101,
@@ -107,6 +107,7 @@
     "speakers":["swalter"]
   },{
     "id":"s11",
+    "confRoom" : "Espace Tour Lu",
     "title":"Déjeuner",
     "type":"white",
     "desc":"Gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
@@ -115,7 +116,7 @@
   },{
     "id":"s12",
     "title":"Introduction to Android Wear – A Glimpse Into the Future",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"The recent unveiling of Android Wear introduced a brand new set of challenges and opportunities for application designers and developers. Indeed, wearable computing requires designers to think in a radically different manner while offering tremendous new ways to improve people lives. This session acts as a complete overview of the new Android Wear ecosystem and explains how developers can push their existing apps to the wearable level from both a designer and a developer perspective.",
     "type":"mobile",
     "difficulty":101,
@@ -126,7 +127,7 @@
   },{
     "id":"s13",
     "title":"JHipster, a Yeoman generator for AngularJS and Spring Boot",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"JHipster is an application generator that creates a modern JavaScript application (with AngularJS, Grunt, Bower...) that works seamlessly with a more classical Java back-end (with Spring Boot, Spring Data, Hibernate, Maven). With more 800 Github stars, 50 contributors, and articles on Infoworld and SDTimes, JHipster has become in less than a year the most widely used Spring application generator, and the #3 Yeoman generator. <br> In this session, we will show how to quickly create an application, modify it, work with hot reloading of both JavaScript and Java code, and deploy everything to the cloud. There will be live coding.",
     "type":"web",
     "difficulty":303,
@@ -137,7 +138,7 @@
   },{
     "id":"s14",
     "title":"'No one at Google uses MapReduce anymore' - Cloud Dataflow explained for dummies",
-    "confRoom":"",
+    "confRoom":"Salle Titan",
     "desc":"Warning: this an an algorithmics talk, and it also involves parallel processing. <br> The MapReduce paper, published by Google 10 years ago (2004!), sparked the parallel processing revolution and gave birth to countless open source and research projects. We have been busy since then and the MapReduce model is now officially obsolete. The new data processing models we use are called Flume (for the processing pipeline definition) and MillWheel for the real-time dataflow orchestration. We are releasing them as a public tool called Cloud Dataflow which allows you to specify both batch and real-time data processing pipelines and have them deployed and maintained automatically - and yes, dataflow can deploy *lots* of machines to handle Google-scale problems. <br> What is the magic behind the scenes ? What is the post-MapReduce dataflow model ? What are the flow optimisation algorithms ? Read the papers or come for a walk through of the algorithms with me.",
     "type":"cloud",
     "difficulty":202,
@@ -148,7 +149,7 @@
   },{
     "id":"s15",
     "title":"Google Tag Manager",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"Launched in October 2012, Google Tag Manager is huge change for any businesses which are used to analyze behaviors on their own websites and applications. This session will introduce the tool and the best practices in order to be able to try it on your own and use it for your next projects.",
     "type":"discovery",
     "difficulty":101,
@@ -159,7 +160,7 @@
   },{
     "id":"s16",
     "title":"Tests étendus pour construire des applications Android robustes, avec Genymotion",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"Les applications Android sont de plus en riches. Les tests qualités deviennent donc de plus en plus primordiaux et il est important qu'ils soient les plus complets possibles. <br> Durant cette session, nous vous présenterons comment il est facile d'utiliser Genymotion, ses APIs Java (pour les tests unitaires), et ses outils de contrôle scriptables (en ligne de commande et via Gradle) pour améliorer vos tests et votre système d'integration continue.",
     "type":"mobile",
     "difficulty":202,
@@ -170,7 +171,7 @@
   },{
     "id":"s17",
     "title":"Dans un monde où tout est composant",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"OSGI est une approche en composants. Polymer est une approche en composants. Je vais vous faire voir comment marier les deux. <br> Avec les conteneurs OSGI on peut facilement (re)déployer des bundles et avec des versions différentes, le tout à chaud. <br>Seule ombre au tableau, l’UI. Dans le cadre de SPA (Single Page App), il faut systématiquement redéployer tout le front. <br>C’est là que Polymer intervient…",
     "type":"web",
     "difficulty":303,
@@ -181,7 +182,7 @@
   },{
     "id":"s18",
     "title":"Launching and growing a startup on the Google Cloud Platform",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"You are a developer with exciting ideas to launch online, and you want to be all set for success from the start? This session will introduce the Google Cloud Platform key components by replaying the past 5 years at SnapEngage on the Cloud Platform, adding components of the platform one by one to grow from an idea, to a feature and finally to a software as a service serving billions of queries every month. We will cover Google AppEngine, Google CloudStorage, Google BigQuery, Google Compute Engine and also mention some interesting non-Google developer products which complement the Cloud Platform.",
     "type":"cloud",
     "difficulty":202,
@@ -192,7 +193,7 @@
   },{
     "id":"s19",
     "title":"The fine art of deploying web apps online",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"Nous savons tous coder, mais nous ne sommes pas tous à l'aise pour déployer. <br> La livraison d'une application est souvent un peu traumatique, mais c'est pourtant loin d'être une fatalité. Quelques outils essentiels, un peu de communication et d'anticipation vous feront oublier à tout jamais les sueurs froides du 'glisser-déposer' via FTP.  <br> La pratique du Delivery Driven Development n'est pas réservée à de grosses entreprises : nous l'appliquerons ici à des projets web à petits budgets et courts délais, typiques d'une agence web. Nos objectifs : Mettre en prod' beaucoup plus souvent, rattraper rapidement une mise en ligne qui a foiré, et mieux partager les connaissances et les responsabilités entre collègues. <br> En améliorant et en automatisant le processus de livraison des applications web, votre équipe gagne en assurance, se réconcilie avec les infogéreurs, conquiert la confiance du chef de projet, l'estime du client final, mais surtout elle dort l'esprit tranquille.",
     "type":"discovery",
     "difficulty":202,
@@ -202,6 +203,7 @@
     "speakers":["rguilloux"]
   },{
     "id":"s20",
+    "confRoom" : "Espace Les Machines",
     "title":"Pause",
     "type":"white",
     "all" : true,
@@ -209,7 +211,7 @@
   },{
     "id":"s21",
     "title":"v.zero SDK for android",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"Are you ready for the new generation of mobile payments? Braintree presents the new client-side SDK of the future: fast, elegant, light and secure. v.zero sdk is the new cross platform way for accepting payments: From your first payment to your billionth. In this talk you'll see the new features of the v.zero SDK and how it fits on Android devices.",
     "type":"mobile",
     "difficulty":202,
@@ -220,7 +222,7 @@
   },{
     "id":"s22",
     "title":"Dart, it's Angular too!",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"AngularJS is awesome and acclaimed, but few days ago AngularDart 1.0 has just landed and is the most structured and easy to understand version of Angular yet.<br>It keeps all the powerful features of its parent such as the two-way binding, the dependency injection but brings many changes and improvements on the APIs. For instance, it standardizes the way of registering core components to ease the immersion into the Dart version of Angular.<br>During this talk, I'll show the changes from AngularJS and I'll introduce the Dartisms which provides all its power to this whole new version of the framework.",
     "type":"web",
     "difficulty":202,
@@ -231,7 +233,7 @@
   },{
     "id":"s23",
     "title":"Lucy in the sky with docker",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"On parle beaucoup de Docker en ce moment. Je vais tenter de vous expliquer comment fonctionne Docker comme j’aurais aimé qu’on me l’explique. <br> Nous allons apprendre à prendre en main Docker pour construire une application web Java 8 et la déployer sur la Google Cloud Platform.",
     "type":"cloud",
     "difficulty":202,
@@ -242,7 +244,7 @@
   },{
     "id":"s24",
     "title":"L'expérience utilisateur est importante pour vous",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"Une bonne expérience utilisateur facilite l’adoption de l’application et améliore la productivité. Pourtant, cette discipline est très souvent négligée lors de la conception d’applications métier, du fait de budgets restreints et d’utilisateurs captifs.  <br> Dans beaucoup de projets, en particulier en mode agile, le développeur peut participer à la conception de l’interface utilisateur. Il est donc important qu’il soit sensibilisé à l’ergonomie afin de pouvoir faire des propositions pertinentes prenant en compte cette dimension essentielle pour la réussite d’un projet. C’est là le but de cette conférence, qui donnera également quelques pratiques pour améliorer l’expérience utilisateur. ",
     "type":"discovery",
     "difficulty":101,
@@ -253,7 +255,7 @@
   },{
     "id":"s25",
     "title":"Mettez un Panda roux dans votre Webview Android !",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"Au-delà du simple navigateur pour Android, Firefox est aussi une plateforme d'exécution d'applications HTML5 ouverte, les Open Web Apps.<br>Après une présentation de Mozilla Geckoview et de ce qu'il peut apporter à vos applications HTML5 sous Android par rapport à une Webview standard (modernité, performances...), nous détaillerons l'initiative de Mozilla avec les Open Web Apps et verrons concrètement comment l'utiliser pour déployer des applications HTML5 sous Android.",
     "type":"mobile",
     "difficulty":101,
@@ -264,7 +266,7 @@
   },{
     "id":"s26",
     "title":"Best development practices for GWT web applications",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"GWT est un framework puissant destiné à développer des applications web complexes. <br>Cependant développer de larges applications avec plusieurs développeurs peut devenir assez vite problématique tant pour maintenir une certaine structure dans le code que pour faire passer l'information à travers les développeurs ou encore garder un niveau de qualité du code élevé.<br>Dans cette présentation, nous allons développer les différentes bonne pratiques à mettre en oeuvre,<br>les différents outils et librairies à utiliser ainsi les différents processus que nous utilisons chez ArcBees pour développer des larges applications GWT de qualité.",
     "type":"web",
     "difficulty":202,
@@ -275,7 +277,7 @@
   },{
     "id":"s27",
     "title":"Fier d'etre polyglotte!",
-    "confRoom":"",
+    "confRoom":"Salle Bellem",
     "desc":"C'est un fait! Les nouvelles applications, et les nouveaux développeurs sont polyglottes!  Ils utilisent de différents langages, différentes solution de persistence...<br>Au cours de cette présentation vous verrez pourquoi il est intéressant, et important d'utiliser plusieurs technologies, langages et datastore, dans vos applications. Vous verrez comment mélanger des programmes Java/Java EE, des langages fonctionnels et langages de scripts mais aussi pourquoi utiliser plusieurs solution de persistence telles que des bases de données relationnelles, des bases NoSQL comme MongoDB mais aussi Hadoop pour répondre aux nouveaux besoin 'Big Data/Big Users'<br>En résumé : le bon outil pour le bon usage",
     "type":"discovery",
     "difficulty":101,
@@ -286,7 +288,7 @@
   },{
     "id":"s28",
     "title":"Transformez vos Google Spread Sheets en API Web",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"Découvrez comment tirer pleinement parti de vos Google Spread Sheet en les exposant via une API web. <br>A partir d'un Google Spread Sheet existant, nous verrons comment ajouter une API REST en quelques minutes pour des opérations courantes : partager ou soumettre des données, récupérer un résultat calculé. Par ailleurs, nous verrons comment consommer facilement cette API depuis un large nombre de clients (Angular, Androïd...), et comment ajoutez de la valeur avec des fonctionnalités telles que des “analytics”, “quotas”, “sécurité”, ...<br>Illustration au travers d'exemples concrets : tenir une ardoise entre amis, mettre en place une campagne marketing (WhereIsSparky ?).",
     "type":"cloud",
     "difficulty":101,
@@ -297,7 +299,7 @@
   },{
     "id":"s29",
     "title":"This session might interest you: an introduction to recommendation engines",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"Les moteurs de recommendation jouent un rôle de plus en plus important dans nos projets. Nous allons commencer avec une introduction aux principes, quelques exemples (parfois non-évident), et comment un moteur de recommandation peut aider (ou détruire) un projet.",
     "type":"discovery",
     "difficulty":202,
@@ -308,7 +310,7 @@
   },{
     "id":"s30",
     "title":"The Dart side of the moon, la face cachée du cloud",
-    "confRoom":"",
+    "confRoom":"Salle Bretagne",
     "desc":"Dart est un nouveau langage, un runtime et un ensemble de bibliothèques et d’outils pour construire des applications web modernes et scalables. Dans un avenir proche, il sera possible de profiter de la puissance et de la productivité de Dart sur le Cloud Google. Dans cette session, vous découvrirez comment construire une application Dart du serveur jusqu’au navigateur et comment la déployer sur les Managed VMs de Google App Engine. Vous apprendrez comment structurer votre application pour une factorisation maximale du code et une meilleure maintenabilité.",
     "type":"cloud",
     "difficulty":202,
@@ -319,7 +321,7 @@
   },{
     "id":"s31",
     "title":"The Android NDK",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"The Android NDK is used to integrate asm/C/C++ code into Android applications and libraries.<br>Learn how to use it as well as NDK-based libraries with Eclipse and Android Studio. Discover what changes from the new Android Runtime (ART) may break your integration, and what you need to do in order to take advantage of 64-bit architectures.",
     "type":"mobile",
     "difficulty":202,
@@ -330,7 +332,7 @@
   },{
     "id":"s32",
     "title":"The Intel XDK - Tips and Tricks",
-    "confRoom":"",
+    "confRoom":"Salle Graslin",
     "desc":"L'outil de développement XDK d'Intel® est une solution HTML5 qui permet aux développeurs d'écrire des applications Web et hybrides une seule fois et de les déployer vers de nombreux stores d'applications et appareils de formats différents.",
     "type":"web",
     "difficulty":101,
@@ -340,6 +342,7 @@
     "speakers":["gmenvielle"]
   },{
     "id":"s33",
+    "confRoom":"Espace Tour Lu",
     "title":"Afterparty",
     "type":"white",
     "desc":"Un moment de networking convivial pour les plus motivés :)",

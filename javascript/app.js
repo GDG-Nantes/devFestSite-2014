@@ -202,7 +202,7 @@ var DevFestApp = DevFestApp || function(){
           session.descLight = truncateDesc(session.desc);
         }
         if (session.difficulty){          
-          session.difficulty = ' Difficulté : <i>'+
+          session.difficulty = (session.confRoom ? ' - ' : '') + ' Difficulté : <i>'+
               (session.difficulty === 101 ?  'Débutant' : session.difficulty === 202 ? 'Intermédiaire' : 'Avancé')+
               '</i>';
         }        

@@ -97,7 +97,7 @@
   },{
     "id":"s10",
     "title":"Guerrilla design en milieu hostile : responsive et mobilité",
-    "confRoom":"Salle Bellem",
+    "confRoom":"Salle Titan",
     "desc":"A l'heure actuelle, il n'est plus le possible de désigner tous les gabarits d'un site en tenant compte de tous les terminaux existants. C'est pour celà que de plus en plus de décisions d'optimisation du design mobile sont prises lors des tests en réel dans les navigateurs. Je vous propose donc 45 minutes d’astuces de toute sorte tirées de vrais projets qui nous ont permis de nous en sortir dans cette jungle mobile et communiquer efficacement entre créatifs de toute taille, clients et intégrateurs.",
     "type":"discovery",
     "difficulty":101,
@@ -110,13 +110,13 @@
     "confRoom" : "Espace Tour Lu",
     "title":"Déjeuner",
     "type":"white",
-    "desc":"Gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
+    "desc":"Repas gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
     "all" : true,
     "hour":"h6"
   },{
     "id":"s12",
     "title":"Introduction to Android Wear – A Glimpse Into the Future",
-    "confRoom":"Salle Bellem",
+    "confRoom":"Salle Titan",
     "desc":"The recent unveiling of Android Wear introduced a brand new set of challenges and opportunities for application designers and developers. Indeed, wearable computing requires designers to think in a radically different manner while offering tremendous new ways to improve people lives. This session acts as a complete overview of the new Android Wear ecosystem and explains how developers can push their existing apps to the wearable level from both a designer and a developer perspective.",
     "type":"mobile",
     "difficulty":101,
@@ -255,7 +255,7 @@
   },{
     "id":"s25",
     "title":"Mettez un Panda roux dans votre Webview Android !",
-    "confRoom":"Salle Bretagne",
+    "confRoom":"Salle Graslin",
     "desc":"Au-delà du simple navigateur pour Android, Firefox est aussi une plateforme d'exécution d'applications HTML5 ouverte, les Open Web Apps.<br>Après une présentation de Mozilla Geckoview et de ce qu'il peut apporter à vos applications HTML5 sous Android par rapport à une Webview standard (modernité, performances...), nous détaillerons l'initiative de Mozilla avec les Open Web Apps et verrons concrètement comment l'utiliser pour déployer des applications HTML5 sous Android.",
     "type":"mobile",
     "difficulty":101,
@@ -320,9 +320,9 @@
     "speakers":["ggirou","nfrancois"]
   },{
     "id":"s31",
-    "title":"The Android NDK",
-    "confRoom":"Salle Graslin",
-    "desc":"The Android NDK is used to integrate asm/C/C++ code into Android applications and libraries.<br>Learn how to use it as well as NDK-based libraries with Eclipse and Android Studio. Discover what changes from the new Android Runtime (ART) may break your integration, and what you need to do in order to take advantage of 64-bit architectures.",
+    "title":"Développer pour Android TV",
+    "confRoom":"Salle Bretagne",
+    "desc":"Le Nexus Player est basé sur un SOC Intel. Découvrez ce que cela implique pour une application ou librairie existante, comme pour tout device Android utilisant une plateforme Intel, et ce qu’il faut faire pour rendre une application compatible Android TV de manière générale.",
     "type":"mobile",
     "difficulty":202,
     "all" : false,
@@ -345,7 +345,7 @@
     "confRoom":"Espace Tour Lu",
     "title":"Afterparty",
     "type":"white",
-    "desc":"Un moment de networking convivial pour les plus motivés :)",
+    "desc":"Un moment de networking convivial pour les plus motivés :)<br> L'utilisation de votre smartphone est fortement recommandée ;)",
     "all" : true,
     "hour":"h12"
   }

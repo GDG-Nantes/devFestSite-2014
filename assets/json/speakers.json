@@ -421,12 +421,13 @@
     "show":true,
     "name":"Xavier Hallade",
     "title":"Developer Evangelist <br> Intel",
-    "bio":"Xavier is Developer Evangelist in Intel Software and Service Group in Paris, France. He is helping developers to improve their support for new hardware and technologies backed by Intel, with a focus on the Android NDK, 64-bit and dual-displays.",
+    "bio":"Ingénieur logiciel chez Intel France, en charge d'aider les développeurs d'Applications et librairies Android à améliorer le support des architectures x86(_64) et autres technologies développées par Intel.",
     "type":"mobile",
     "socials":[
       {"type":"twitter","url":"https://twitter.com/ph0b"},
       {"type":"google-plus","url":"https://plus.google.com/+XavierHallade"},
-      {"type":"github-alt","url":"https://github.com/ph0b"}
+      {"type":"github-alt","url":"https://github.com/ph0b"},
+      {"type":"globe","url":"http://ph0b.com/"}
       ]
   },
   "tbd":{

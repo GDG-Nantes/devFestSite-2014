@@ -48,7 +48,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"en",
-    "hour":"h4",
+    "hour":"h7",
     "speakers":["bdorsey"]
   },{
     "id":"s6",
@@ -59,7 +59,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h7",
     "speakers":["jpalies","cbossard"]
   },{
     "id":"s7",
@@ -81,7 +81,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h4",
     "speakers":["arichard"]
   },{
     "id":"s9",
@@ -92,7 +92,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h7",
     "speakers":["lchampenois"]
   },{
     "id":"s10",
@@ -122,7 +122,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h7",
     "speakers":["cmottier"]
   },{
     "id":"s13",
@@ -177,7 +177,7 @@
     "difficulty":303,
     "all" : false,
     "lang":"fr",
-    "hour":"h5",
+    "hour":"h7",
     "speakers":["mbelmokhtar"]
   },{
     "id":"s18",
@@ -188,7 +188,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h4",
     "speakers":["jmouton"]
   },{
     "id":"s19",
@@ -199,7 +199,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h4",
     "speakers":["rguilloux"]
   },{
     "id":"s20",
@@ -283,7 +283,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h4",
+    "hour":"h7",
     "speakers":["tgrall"]
   },{
     "id":"s28",
@@ -338,7 +338,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h4",
+    "hour":"h7",
     "speakers":["gmenvielle"]
   },{
     "id":"s33",

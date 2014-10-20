@@ -37,7 +37,7 @@
   "h6":{
     "id":"h6",
     "hourStart":"12",
-    "minStart":"20",
+    "minStart":"30",
     "hourEnd":"14",
     "minEnd":"00"
   },

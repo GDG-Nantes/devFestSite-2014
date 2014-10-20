@@ -167,6 +167,16 @@
       {"type":"globe","url":"http://gplus.to/dartlangfr"}
       ]
   },
+  "gmenvielle":{
+    "show":false,
+    "name":"Gregory Menvielle",
+    "title":"Technical Evangelist<br> XDK",
+    "bio":"Gregory Menvielle  is the CEO and founder of Pyramedium, and is currently developing an HTML5 app called smartnotify (http://smartnotify.us/). Greg kindly consented to sitting down and giving us some information about his background, his current work, and his thoughts on HTML5.",
+    "type":"web",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/pyramedium"}
+      ]
+  },
   "hgonzalez":{
     "show":true,
     "name":"Horacio Gonzalez",

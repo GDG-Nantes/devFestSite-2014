@@ -48,7 +48,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"en",
-    "hour":"h7",
+    "hour":"h5",
     "speakers":["bdorsey"]
   },{
     "id":"s6",
@@ -283,7 +283,7 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h5",
     "speakers":["tgrall"]
   },{
     "id":"s28",
@@ -327,7 +327,7 @@
     "difficulty":202,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
+    "hour":"h5",
     "speakers":["xhallade"]
   },{
     "id":"s32",
@@ -338,7 +338,8 @@
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7"
+    "hour":"h5",
+    "speakers":[]
   },{
     "id":"s33",
     "confRoom":"Espace Tour Lu",

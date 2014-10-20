@@ -331,15 +331,14 @@
     "speakers":["xhallade"]
   },{
     "id":"s32",
-    "title":"The Intel XDK - Tips and Tricks",
+    "title":"TBD",
     "confRoom":"Salle Graslin",
-    "desc":"L'outil de développement XDK d'Intel® est une solution HTML5 qui permet aux développeurs d'écrire des applications Web et hybrides une seule fois et de les déployer vers de nombreux stores d'applications et appareils de formats différents.",
+    "desc":"Not Found",
     "type":"web",
     "difficulty":101,
     "all" : false,
     "lang":"fr",
-    "hour":"h7",
-    "speakers":["gmenvielle"]
+    "hour":"h7"
   },{
     "id":"s33",
     "confRoom":"Espace Tour Lu",

@@ -289,7 +289,7 @@
     "id":"s28",
     "title":"Transformez vos Google Spread Sheets en API Web",
     "confRoom":"Salle Graslin",
-    "desc":"Découvrez comment tirer pleinement parti de vos Google Spread Sheet en les exposant via une API web. <br>A partir d'un Google Spread Sheet existant, nous verrons comment ajouter une API REST en quelques minutes pour des opérations courantes : partager ou soumettre des données, récupérer un résultat calculé. Par ailleurs, nous verrons comment consommer facilement cette API depuis un large nombre de clients (Angular, Androïd...), et comment ajoutez de la valeur avec des fonctionnalités telles que des “analytics”, “quotas”, “sécurité”, ...<br>Illustration au travers d'exemples concrets : tenir une ardoise entre amis, mettre en place une campagne marketing (WhereIsSparky ?).",
+    "desc":"Découvrez comment tirer pleinement parti de vos Google Spread Sheet en les exposant via une API web. <br>A partir d'un Google Spread Sheet existant, nous verrons comment ajouter une API REST en quelques minutes pour des opérations courantes : partager ou soumettre des données, récupérer un résultat calculé. Par ailleurs, nous verrons comment consommer facilement cette API depuis un large nombre de clients (Angular, Androïd...), et comment ajouter de la valeur avec des fonctionnalités telles que des “analytics”, “quotas”, “sécurité”, ...<br>Illustration au travers d'exemples concrets : tenir une ardoise entre amis, mettre en place une campagne marketing (WhereIsSparky ?).",
     "type":"cloud",
     "difficulty":101,
     "all" : false,

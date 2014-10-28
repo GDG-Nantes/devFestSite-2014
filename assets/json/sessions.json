@@ -221,11 +221,11 @@
     "speakers":["alopez"]
   },{
     "id":"s22",
-    "title":"Dart, it's Angular too!",
+    "title":"AngularDart 1.0 and beyond!",
     "confRoom":"Salle Bellem",
     "desc":"AngularJS is awesome and acclaimed, but few days ago AngularDart 1.0 has just landed and is the most structured and easy to understand version of Angular yet.<br>It keeps all the powerful features of its parent such as the two-way binding, the dependency injection but brings many changes and improvements on the APIs. For instance, it standardizes the way of registering core components to ease the immersion into the Dart version of Angular.<br>During this talk, I'll show the changes from AngularJS and I'll introduce the Dartisms which provides all its power to this whole new version of the framework.",
     "type":"web",
-    "difficulty":202,
+    "difficulty":101,
     "all" : false,
     "lang":"fr",
     "hour":"h8",

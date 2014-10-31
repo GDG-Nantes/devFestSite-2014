@@ -108,9 +108,9 @@
   },{
     "id":"s11",
     "confRoom" : "Espace Tour Lu",
-    "title":"Déjeuner",
+    "title":"Déjeuner && Table Ronde : Mon Job en IT",
     "type":"white",
-    "desc":"Repas gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.",
+    "desc":"Repas gratuit pour tous les participants.<br>Profitez-en pour faire un tour des différents stands et démos.<br><br><b>Table Ronde : Mon nouveau job en IT</b> - Espace Bellem - 13h00 : <br> Aujourd'hui, quels choix avons-nous et comment s'y retrouver ? <br> Des professionnels du recrutement seront là pour échanger et partager sur les nouvelles pratiques, les conseils pour trouver le job de ses rêves, les attentes des sociétés, ….",
     "all" : true,
     "hour":"h6"
   },{
@@ -331,15 +331,15 @@
     "speakers":["xhallade"]
   },{
     "id":"s32",
-    "title":"TBD",
+    "title":"Intel XDK",
     "confRoom":"Salle Graslin",
-    "desc":"Not Found",
+    "desc":"I'm going to talk about the Intel XDk which is a software for mobile application.<br>First of all, I will speak about the editor into the Intel XDK.<br>After, I will speak about the emulator, and then how to create the application and deploy it !",
     "type":"web",
     "difficulty":101,
     "all" : false,
     "lang":"fr",
     "hour":"h5",
-    "speakers":[]
+    "speakers":["nlebot"]
   },{
     "id":"s33",
     "confRoom":"Espace Tour Lu",

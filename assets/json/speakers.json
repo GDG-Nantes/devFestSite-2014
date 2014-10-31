@@ -320,6 +320,17 @@
       {"type":"globe","url":"http://gplus.to/dartlangfr"}
       ]
   },
+  "nlebot":{
+    "show":true,
+    "name":"Nicolas Le Bot",
+    "title":"Developer<br>Mobile",
+    "bio":"I'm a epitech student in the last year working on mobile development. I'm always reading news in hi tech to learn new stuffs and others things.",
+    "type":"web",
+    "socials":[
+      {"type":"twitter","url":"https://twitter.com/Nicolas_lebot"},
+      {"type":"google-plus","url":"https://plus.google.com/+NicolasLeBot/"}
+      ]
+  },
   "pcans":{
     "show":false,
     "name":"Pascal Cans",

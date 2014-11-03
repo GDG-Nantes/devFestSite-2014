@@ -289,7 +289,7 @@
     "id":"s28",
     "title":"Transformez vos Google Spread Sheets en API Web",
     "confRoom":"Salle Graslin",
-    "desc":"Les données, il parait que c’est la clé du monde de demain : big data, object connectés, open data, … Mais pourquoi se ruer vers le NoSQL ou vers nos chers SGBD ?<br>Venez découvrir comment faire simple avec Google Spreadsheet.<br><br>Lors de cette session, nous verrons comment tirer pleinement parti de vos Google Spreadsheets.<br>Venez découvrir :<br><ul><li>comment utiliser le SDK de Google pour manipuler vos spreadsheets à partir d’applications Java,</li><li>comment ajouter une API REST en quelques minutes pour exposer vos données,</li><li>comment mettre à profit les fonctions intégrées du tableur,</li><li>comment ajouter de la valeur a vos APIs.</li></ul>",
+    "desc":"Les données, il parait que c’est la clé du monde de demain : big data, objets connectés, open data, … Mais pourquoi se ruer vers le NoSQL ou vers nos chers SGBD ?<br>Venez découvrir comment faire simple avec Google Spreadsheet.<br><br>Lors de cette session, nous verrons comment tirer pleinement parti de vos Google Spreadsheets.<br>Venez découvrir :<br><ul><li>comment utiliser le SDK de Google pour manipuler vos spreadsheets à partir d’applications Java,</li><li>comment ajouter une API REST en quelques minutes pour exposer vos données,</li><li>comment mettre à profit les fonctions intégrées du tableur,</li><li>comment ajouter de la valeur a vos APIs.</li></ul>",
     "type":"cloud",
     "difficulty":101,
     "all" : false,

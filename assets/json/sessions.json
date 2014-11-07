@@ -267,7 +267,7 @@
     "id":"s26",
     "title":"Best development practices for GWT web applications",
     "confRoom":"Salle Graslin",
-    "desc":"GWT est un framework puissant destiné à développer des applications web complexes. <br>Cependant développer de larges applications avec plusieurs développeurs peut devenir assez vite problématique tant pour maintenir une certaine structure dans le code que pour faire passer l'information à travers les développeurs ou encore garder un niveau de qualité du code élevé.<br>Dans cette présentation, nous allons développer les différentes bonne pratiques à mettre en oeuvre,<br>les différents outils et librairies à utiliser ainsi les différents processus que nous utilisons chez ArcBees pour développer des larges applications GWT de qualité.",
+    "desc":"GWT est un framework puissant destiné à développer des applications web complexes. <br>Cependant développer de larges applications avec plusieurs développeurs peut devenir assez vite problématique tant pour maintenir une certaine structure dans le code que pour faire passer l'information à travers les développeurs ou encore garder un niveau de qualité du code élevé.<br>Dans cette présentation, nous allons développer les différentes bonne pratiques à mettre en oeuvre,<br>les différents outils et librairies à utiliser ainsi les différents processus que nous utilisons chez ArcBees pour développer des larges applications GWT de qualité.<br/>On en profitera également pour faire le point sur la technologie et parler des prochaines releases à venir.",
     "type":"web",
     "difficulty":202,
     "all" : false,

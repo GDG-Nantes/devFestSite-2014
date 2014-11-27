@@ -135,19 +135,39 @@ $size-border-hover : 8px;
 		margin-right: 0px;
 	}
 
-	.row  .animated-expand.green-gdg .favorites{
+	.row .animated-expand .conf-video{
+		position: absolute;
+		top: 25px;
+		right: 0;		
+	}
+
+	.row .animated-expand .conf-slides{
+		position: absolute;
+		top: 45px;
+		right: 0;		
+	}
+
+	.row  .animated-expand.green-gdg .favorites,
+	.row  .animated-expand.green-gdg .conf-video a,
+	.row  .animated-expand.green-gdg .conf-slides a{
 		color: $green-gdg-color;
 	}
 
-	.row  .animated-expand.yellow-gdg .favorites{
+	.row  .animated-expand.yellow-gdg .favorites,
+	.row  .animated-expand.yellow-gdg .conf-video a,
+	.row  .animated-expand.yellow-gdg .conf-slides a{
 		color: $yellow-gdg-color;
 	}
 
-	.row  .animated-expand.red-gdg .favorites{
+	.row  .animated-expand.red-gdg .favorites,
+	.row  .animated-expand.red-gdg .conf-video a,
+	.row  .animated-expand.red-gdg .conf-slides a{
 		color: $red-gdg-color;
 	}
 
-	.row  .animated-expand.blue-gdg .favorites{
+	.row  .animated-expand.blue-gdg .favorites,
+	.row  .animated-expand.blue-gdg .conf-video a
+	.row  .animated-expand.blue-gdg .conf-slides a{
 		color: $blue-gdg-color;
 	}
 

@@ -39,3 +39,20 @@
 		margin-left: 100px;
 	}
 }
+
+#home .liens-video-photo{
+	font-size:2em;
+	color:white;
+
+	i{
+		margin-right:20px;
+	}
+
+	i.fa-camera{
+		color : #0c9a54;
+	}
+
+	i.fa-youtube{
+		color : #da483c;
+	}
+}

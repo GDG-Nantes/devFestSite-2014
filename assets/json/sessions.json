@@ -16,6 +16,7 @@
     "desc":"Conférence d'ouverture du DevFest",
     "type":"white",
     "all" : true,
+    "video" : "https://www.youtube.com/watch?v=NZ9DwaAbMcg",
     "hour":"h2"
   },{
     "id":"s3",
@@ -27,6 +28,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h3",
+    "video":"https://www.youtube.com/watch?v=8tbU8mL09WI",
+    "slides":"http://www.slideshare.net/fredericharper/html-pour-le-web-mobile-firefox-os-devfest-nantes-20141107",
     "speakers":["fharper"]
   },{
     "id":"s4",
@@ -38,6 +41,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h11",
+    "video":"https://www.youtube.com/watch?v=76McFL7EHn4",
     "speakers":["hgonzalez"]
   },{
     "id":"s5",
@@ -49,6 +53,7 @@
     "all" : false,
     "lang":"en",
     "hour":"h5",
+    "video":"https://www.youtube.com/watch?v=IR9UhW8k6Ag",
     "speakers":["bdorsey"]
   },{
     "id":"s6",
@@ -60,6 +65,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h7",
+    "video":"https://www.youtube.com/watch?v=-A5wDLPus5g",
+    "slides":"http://nanteswit.github.io/talkDiversite/#/",
     "speakers":["jpalies","cbossard"]
   },{
     "id":"s7",
@@ -71,6 +78,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h10",
+    "video":"https://www.youtube.com/watch?v=btiPlInpHnM",
+    "slides":"https://speakerdeck.com/romemore/always-fresh-data-in-your-mobile-application",
     "speakers":["rmenetrier"]
   },{
     "id":"s8",
@@ -82,6 +91,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h4",
+    "video":"https://www.youtube.com/watch?v=9xooG5KZluk",
+    "slides":"https://speakerdeck.com/antoinerichard/browserify-et-angularjs",
     "speakers":["arichard"]
   },{
     "id":"s9",
@@ -93,6 +104,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h7",
+    "video":"https://www.youtube.com/watch?v=RAkJTw2WOW4",
     "speakers":["lchampenois"]
   },{
     "id":"s10",
@@ -104,6 +116,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h10",
+    "video":"https://www.youtube.com/watch?v=ubDAng9cJmU",
+    "slides":"https://speakerdeck.com/inpixelitrust/guerrilla-design-en-milieu-hostile-responsive-et-mobilite",
     "speakers":["swalter"]
   },{
     "id":"s11",
@@ -123,6 +137,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h7",
+    "video":"https://www.youtube.com/watch?v=bdFr4AkZ4E0",
+    "slides":"https://speakerdeck.com/cyrilmottier/introduction-to-android-wear-a-glimpse-into-the-future",
     "speakers":["cmottier"]
   },{
     "id":"s13",
@@ -134,6 +150,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h10",
+    "video":"https://www.youtube.com/watch?v=cWMJqc_qfHI",
     "speakers":["jdubois"]
   },{
     "id":"s14",
@@ -145,6 +162,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h8",
+    "video":"https://www.youtube.com/watch?v=v_wdCc07M48",
+    "slides":"https://docs.google.com/presentation/d/1jrIY93r9HpB98tV4gUMybEPFd5x_R1vCNcVNQKtNl6g/edit#slide=id.p",
     "speakers":["mgorner"]
   },{
     "id":"s15",
@@ -156,6 +175,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h11",
+    "video":"https://www.youtube.com/watch?v=FvTgS4-V8Oc",
     "speakers":["rchardonneau"]
   },{
     "id":"s16",
@@ -167,6 +187,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h8",
+    "video":"https://www.youtube.com/watch?v=fK0cU7M0WzA",
+    "slides":"https://docs.google.com/presentation/d/10vZSlFHMS32qRUdvYIu2FH2EgEMK3zPenPbrb11nC7g/edit#slide=id.g11bf35b0a_2157",
     "speakers":["elezmy","fnoel"]
   },{
     "id":"s17",
@@ -178,6 +200,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h7",
+    "video":"https://www.youtube.com/watch?v=rG0OgU848IE",
     "speakers":["mbelmokhtar"]
   },{
     "id":"s18",
@@ -189,6 +212,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h4",
+    "video":"https://www.youtube.com/watch?v=U9oM7dEJCvk",
     "speakers":["jmouton"]
   },{
     "id":"s19",
@@ -200,6 +224,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h4",
+    "video":"https://www.youtube.com/watch?v=ysKczC2kFis",
+    "slides":"https://speakerdeck.com/ronanguilloux/the-fine-art-of-deploying-web-apps-online",
     "speakers":["rguilloux"]
   },{
     "id":"s20",
@@ -218,6 +244,8 @@
     "all" : false,
     "lang":"en",
     "hour":"h11",
+    "video": "https://www.youtube.com/watch?v=7QpU6_GkFHc",
+    "slides":"https://www.dropbox.com/s/6q4nhz4dz33lb2y/new%20v.zero%20SDK%20Braintree%20-%20DevFest%20Nantes.pdf?dl=0",
     "speakers":["alopez"]
   },{
     "id":"s22",
@@ -229,6 +257,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h8",
+    "video":"https://www.youtube.com/watch?v=waNQ0ziAZeU",
+    "slides":"http://pierrereliquet.github.io/talks/angulardart_1.0_beyond/index.html#/",
     "speakers":["preliquet"]
   },{
     "id":"s23",
@@ -240,6 +270,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h3",
+    "video":"https://www.youtube.com/watch?v=wEghVJygoOw",
     "speakers":["dgageot"]
   },{
     "id":"s24",
@@ -251,6 +282,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h3",
+    "video":"https://www.youtube.com/watch?v=m5X3nfR5wew",
+    "slides":"http://fr.slideshare.net/FlorenceHerrou/lexprience-utilisateur-est-importante-pour-nous",
     "speakers":["fherrou"]
   },{
     "id":"s25",
@@ -262,6 +295,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h4",
+    "video":"https://www.youtube.com/watch?v=SBzsADcBdBE",
+    "slides":"http://blog.dlecan.com/devfestnantes2014/prez-panda-roux-webview-android/",
     "speakers":["dlecan"]
   },{
     "id":"s26",
@@ -273,6 +308,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h3",
+    "video":"https://www.youtube.com/watch?v=IId5E5kQ3iw",
+    "slides":"https://docs.google.com/presentation/d/14ywGLNxh6Wjn7XR-kOjXybROn5kscURT8qF-UD__JS0/pub?start=false&loop=false&delayms=5000&slide=id.p",
     "speakers":["jdramaix"]
   },{
     "id":"s27",
@@ -284,6 +321,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h5",
+    "video":"https://www.youtube.com/watch?v=Epy4GdWX2x4",
+    "slides":"http://www.slideshare.net/tgrall/proud-to-be-polyglot",
     "speakers":["tgrall"]
   },{
     "id":"s28",
@@ -295,6 +334,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h10",
+    "video":"https://www.youtube.com/watch?v=wBZmY5cQNyQ",
     "speakers":["mboillod"]
   },{
     "id":"s29",
@@ -306,6 +346,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h8",
+    "video":"https://www.youtube.com/watch?v=0zkSSJGcueQ",
+    "slides":"https://github.com/JeffAbrahamson/talks/tree/master/devfest-2014-recommendation",
     "speakers":["jabrahamson"]
   },{
     "id":"s30",
@@ -317,6 +359,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h11",
+    "video":"https://www.youtube.com/watch?v=gWeWpfC6XzU",
+    "slides":"http://dartlangfr.net/conferences/2014-11-07/",
     "speakers":["ggirou","nfrancois"]
   },{
     "id":"s31",
@@ -328,6 +372,8 @@
     "all" : false,
     "lang":"fr",
     "hour":"h5",
+    "video":"https://www.youtube.com/watch?v=2dm_dRrnZE0",
+    "slides":"www.slideshare.net/ph0b/developing-for-android-tv-and-the-nexus-player",
     "speakers":["xhallade"]
   },{
     "id":"s32",
@@ -339,6 +385,7 @@
     "all" : false,
     "lang":"fr",
     "hour":"h5",
+    "video":"https://www.youtube.com/watch?v=oGxAFHM1O68",
     "speakers":["nlebot"]
   },{
     "id":"s33",

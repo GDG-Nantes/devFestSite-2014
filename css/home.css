@@ -42,3 +42,20 @@
     margin-left: 100px;
   }
 }
+/* line 43, ../scss/home.scss */
+#home .liens-video-photo {
+  font-size: 2em;
+  color: white;
+}
+/* line 47, ../scss/home.scss */
+#home .liens-video-photo i {
+  margin-right: 20px;
+}
+/* line 51, ../scss/home.scss */
+#home .liens-video-photo i.fa-camera {
+  color: #0c9a54;
+}
+/* line 55, ../scss/home.scss */
+#home .liens-video-photo i.fa-youtube {
+  color: #da483c;
+}

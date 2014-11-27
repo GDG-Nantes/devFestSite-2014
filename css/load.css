@@ -76,30 +76,24 @@
 }
 
 @keyframes translate {
-  /* line 72, ../scss/load.scss */
   100% {
     transform: translateX(200px);
   }
 }
 @keyframes scale {
-  /* line 76, ../scss/load.scss */
   100% {
     transform: scale(1);
   }
 }
 @keyframes zindex {
-  /* line 80, ../scss/load.scss */
   25% {
     z-index: 1;
   }
-
-  /* line 81, ../scss/load.scss */
   75% {
     z-index: -1;
   }
 }
 @keyframes fadeIn {
-  /* line 84, ../scss/load.scss */
   100% {
     opacity: 1;
   }

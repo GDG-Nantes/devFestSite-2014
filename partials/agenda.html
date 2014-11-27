@@ -69,10 +69,10 @@
 				- <img rv-src="session.lang">
 			</div>
 			<div rv-if="session.video" class="conf-video">
-				<a rv-href="session.video"><i class="fa fa-youtube-play"></i></a>
+				<a rv-href="session.video" target="_BLANK" ><i class="fa fa-youtube-play"></i></a>
 			</div>
 			<div rv-if="session.slides" class="conf-slides">
-				<a rv-href="session.slides"><i class="fa fa-file-powerpoint-o"></i></a>
+				<a rv-href="session.slides" target="_BLANK" ><i class="fa fa-file-powerpoint-o"></i></a>
 			</div>
 			<div rv-if="session.speakers" class="conf-speakers">
 				<div rv-each-speaker="session.speakers" class="speaker">

@@ -42,6 +42,7 @@
     "lang":"fr",
     "hour":"h11",
     "video":"https://www.youtube.com/watch?v=76McFL7EHn4",
+    "slides":"https://speakerdeck.com/lostinbrittany/devfest-nantes-2014-introduction-aux-web-components-and-polymer",
     "speakers":["hgonzalez"]
   },{
     "id":"s5",
@@ -201,6 +202,7 @@
     "lang":"fr",
     "hour":"h7",
     "video":"https://www.youtube.com/watch?v=rG0OgU848IE",
+    "slides":"./assets/slides/devfest_medy.pdf",
     "speakers":["mbelmokhtar"]
   },{
     "id":"s18",
